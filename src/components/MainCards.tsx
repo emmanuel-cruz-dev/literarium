@@ -1,13 +1,61 @@
-const MainCards = () => {
-  const CardArticle = () => {
+import { FaGift, FaBook, FaTruck, FaCalculator } from 'react-icons/fa';
+
+const cardItems = [
+  {
+    icon: FaGift,
+    title: 'Free Gift Wrap',
+    description: 'Free gift wrapping on all purchases. Wrapping includes a blue box with your choice with Ribbon.',
+    link: '#'
+  },
+  {
+    icon: FaBook,
+    title: 'Best Quality',
+    description: 'We provide the best quality books with the best price. We have a lot of books in our store.',
+    link: '#'
+  },
+  {
+    icon: FaTruck,
+    title: 'Fast Delivery',
+    description: 'We provide the best quality books with the best price. We have a lot of books in our store.',
+    link: '#'
+  },
+  {
+    icon: FaCalculator,
+    title: 'Best Price',
+    description: 'We provide the best quality books with the best price. We have a lot of books in our store.',
+    link: '#'
+  }
+]
+
+const CardArticle = () => {
     return (
-      <article className="flex flex-col gap-4 items-center text-center border border-gray-300 p-6">
+      <>
+        {cardItems.map((item, index) => (
+          <article key={index} className="flex flex-col gap-4 items-center text-center border border-gray-300 p-6">
+          
+            <item.icon className="text-4xl" />
+            <h3 className="font-medium text-lg">{item.title}</h3>
+            <p>{item.description}</p>
+            <a
+              href={item.link}
+              className=""
+              >
+              Read More
+            </a>
+          
+        </article>
+        ))}
+        </>
+)
+  }
+        {/* <FaGift className="text-4xl" />
         <h3 className="font-medium text-lg">Free Gift Wrap</h3>
         <p>Free gift wrapping on all purchases. Wrapping includes a blue box with your choice with Ribbon.</p>
-        <a href="#">Read More</a>
-      </article>
-    )
-  }
+        <a href="#">Read More</a> */}
+    
+  
+
+const MainCards = () => {
 
   return (
     <section className="main-cards w-11/12 mx-auto" id="main-cards">
@@ -17,9 +65,6 @@ const MainCards = () => {
       </div>
       <article>
         <div className="grid grid-cols-4">
-          <CardArticle />
-          <CardArticle />
-          <CardArticle />
           <CardArticle />
         </div>
       </article>
