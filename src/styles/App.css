@@ -24,6 +24,36 @@
   --sidebar-dark-color: #191d2b;
 }
 
+.text__accent-color {
+  color: var(--accent-color);
+}
+
+.section__title {
+  position: relative;
+}
+
+.section__title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  width: 80px;
+  height: 1px;
+  background-color: var(--accent-color);
+}
+
+.section__title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -12px;
+  width: 80px;
+  height: 1px;
+  background-color: var(--accent-color);
+}
+
 /***************************************
  *       Fin: Estilos Globales         *
  ***************************************/
