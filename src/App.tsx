@@ -1,9 +1,10 @@
 import './App.css'
+import MainCards from './components/MainCards'
 
 function App() {
   return (
     <>
-      <h1>Book Store</h1>  
+      <MainCards />
     </>
   )
 }
