@@ -1,15 +1,29 @@
+import { MdStar, MdStarOutline, MdStarHalf } from "react-icons/md";
 import bookImage from "../assets/images/juego-tronos-cover.jpg";
+
 const BookCard = () => {
   return (
-    <article className="book-card">
-      <div className="book-card__image">
-        <img src={bookImage} alt="Book Image" />
+    <article className="top-sellers__book-card">
+      <div>
+        <figure className="book-card__image">
+          <img src={bookImage} alt="Book Image" />
+        </figure>
+        <h3 className="book-card__title">Juego de Tronos</h3>
       </div>
-      <div className="book-card__content">
-        <h3 className="book-card__title">Book Title</h3>
-        <p className="book-card__author">Author Name</p>
-        <p className="book-card__price">Price</p>
-        <button className="btn btn-primary">Buy Now</button>
+      <div className="top-sellers__hidden-menu">
+        <h3 className="text-2xl font-bold">Juego de Tronos</h3>
+        <p>George R.R. Martin</p>
+        <div className="flex text-xl">
+          <MdStar />
+          <MdStar />
+          <MdStar />
+          <MdStarHalf />
+          <MdStarOutline />
+        </div>
+        <span className="text-4xl font-thin">$692.00</span>
+        <button className="font-semibold uppercase border-2 border-white py-2 px-4 hover:bg-white hover:text-gray-900 transition-colors duration-300 ease-in-out">
+          Add to Cart
+        </button>
       </div>
     </article>
   );

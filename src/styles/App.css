@@ -174,3 +174,30 @@
 /***************************************
  *          Fin: Main Cards            *
  ***************************************/
+
+/***************************************
+ *         Inicio: Top Sellers         *
+ ***************************************/
+
+.top-sellers__book-card {
+  position: relative;
+}
+
+.top-sellers__hidden-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+/***************************************
+ *          Fin: Top Sellers           *
+ ***************************************/
