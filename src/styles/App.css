@@ -192,6 +192,7 @@
   opacity: 0;
   background-color: var(--accent-color);
   color: var(--white-color);
+  overflow: hidden;
   transition: opacity 0.3s ease-in-out;
 }
 
