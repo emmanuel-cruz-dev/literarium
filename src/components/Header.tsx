@@ -1,8 +1,9 @@
 import Logo from "../assets/icons/libro.png";
+import { HiMenu } from "react-icons/hi";
 
 const Header = () => {
   return (
-    <header>
+    <header className="absolute top-0 left-0 right-0">
       <nav className="flex justify-between items-center py-2 px-4">
         <div className="flex items-center gap-2">
           <img
@@ -14,7 +15,7 @@ const Header = () => {
             Books Guide
           </a>
         </div>
-        <ul className="flex gap-4">
+        <ul className="gap-4 hidden md:flex">
           <li>
             <a href="/">Home</a>
           </li>
@@ -34,6 +35,9 @@ const Header = () => {
             <a href="/contact">Contact Us</a>
           </li>
         </ul>
+        <div className="block md:hidden">
+          <HiMenu className="text-2xl" />
+        </div>
       </nav>
     </header>
   );
