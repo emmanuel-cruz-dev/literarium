@@ -29,6 +29,10 @@
   color: var(--accent-color);
 }
 
+.background-accent__item {
+  background-color: var(--accent-color);
+}
+
 .section__title {
   position: relative;
 }
