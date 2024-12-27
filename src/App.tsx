@@ -3,6 +3,7 @@ import MainCards from "./components/MainCards";
 import Banner from "./components/Banner";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import TopSellers from "./components/TopSellers";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Banner />
       <MainCards />
+      <TopSellers />
     </>
   );
 }
