@@ -25,8 +25,8 @@ const Hero = () => {
             type="text"
             placeholder="Enter your book title here"
           />
-          <button className="w-[14%] flex justify-center items-center h-full background-accent__item">
-            <FaSearch className="text-white text-xl" />
+          <button className="w-[14%] flex justify-center items-center h-full background-accent__item hover:bg-white hover:text-gray-800 transition-colors duration-300 ease-in-out">
+            <FaSearch className="text-xl" />
           </button>
         </div>
       </div>
