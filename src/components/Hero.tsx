@@ -19,14 +19,14 @@ const Hero = () => {
           accusantium dolor emque laudantium, totam rem aperiam.ipsam
           voluptatem.
         </p>
-        <div className="rounded-xl overflow-hidden">
+        <div className="rounded-full overflow-hidden flex justify-between items-center w-[36rem] h-12">
           <input
-            className="bg-slate-300 text-white w-80 px-2"
+            className="bg-slate-900/70 w-[86%] h-full px-8"
             type="text"
             placeholder="Enter your book title here"
           />
-          <button className="background-accent__item w-10">
-            <FaSearch className="text-white h-full" />
+          <button className="w-[14%] flex justify-center items-center h-full background-accent__item">
+            <FaSearch className="text-white text-xl" />
           </button>
         </div>
       </div>

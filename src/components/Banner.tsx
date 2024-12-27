@@ -1,7 +1,7 @@
 const Banner = () => {
   return (
     <article
-      className="banner flex flex-col gap-4 lg:flex-row items-center justify-between text-center py-12 px-3 lg:px-16 bg-gray-800 text-white"
+      className="banner flex flex-col gap-4 lg:flex-row items-center justify-between text-center lg:text-left py-12 px-3 lg:px-16 bg-gray-800 text-white"
       id="banner"
     >
       <div className="flex flex-col gap-1">
