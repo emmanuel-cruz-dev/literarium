@@ -57,3 +57,24 @@
 /***************************************
  *       Fin: Estilos Globales         *
  ***************************************/
+
+/***************************************
+ *         Inicio: Main Cards          *
+ ***************************************/
+
+.main-cards__article-item {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.main-cards__article-item:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.main-cards__article-item:hover .main-cards__icon {
+  color: var(--accent-color);
+}
+
+/***************************************
+ *          Fin: Main Cards            *
+ ***************************************/
