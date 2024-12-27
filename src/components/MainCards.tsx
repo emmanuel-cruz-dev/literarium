@@ -40,7 +40,7 @@ const CardArticle = () => {
           className="main-cards__article-item flex flex-col gap-4 items-center text-center border border-gray-300 py-6 px-5 rounded-sm"
         >
           <div className="bg-slate-200 rounded-full p-5">
-            <item.icon className="main-cards__icon text-5xl text-slate-500" />
+            <item.icon className="main-cards__icon text-5xl" />
           </div>
           <h3 className="font-medium text-lg main-cards__title">
             {item.title}

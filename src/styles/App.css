@@ -43,7 +43,7 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: -8px;
-  width: 80px;
+  width: 3.5rem;
   height: 1px;
   background-color: var(--accent-color);
 }
@@ -54,7 +54,7 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: -12px;
-  width: 80px;
+  width: 3.5rem;
   height: 1px;
   background-color: var(--accent-color);
 }
@@ -77,8 +77,8 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: -8px;
-  width: 40px;
-  height: 1px;
+  width: 3.5rem;
+  height: 0.5px;
   background-color: var(--gray-color);
   transition: background-color 0.3s ease-in-out;
 }
@@ -89,14 +89,18 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: -12px;
-  width: 40px;
-  height: 1px;
+  width: 3.5rem;
+  height: 0.5px;
   background-color: var(--gray-color);
   transition: background-color 0.3s ease-in-out;
 }
 
 .main-cards__article-item {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.main-cards__article-item {
+  color: var(--gray-color);
 }
 
 .main-cards__article-item:hover {
