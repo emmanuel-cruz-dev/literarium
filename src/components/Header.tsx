@@ -3,8 +3,8 @@ import { HiMenu } from "react-icons/hi";
 
 const Header = () => {
   return (
-    <header className="absolute top-0 left-0 right-0">
-      <nav className="flex justify-between items-center py-2 px-4">
+    <header className="absolute top-0 left-0 right-0 text-white">
+      <nav className="flex justify-between items-center py-6 px-16">
         <div className="flex items-center gap-2">
           <img
             className="w-8"
