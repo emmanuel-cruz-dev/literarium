@@ -26,7 +26,7 @@ const cardItems = [
     icon: FaCalculator,
     title: "Returns & Exchanges",
     description:
-      "Returns and exchanges are accepted within 30 days of purchase. In case of lost or damage, Returns & Exchanges are not possible.",
+      "Return and Exchange is possible in 5 days. In case of lost or damage Return & Exchange is not possible.",
     link: "#",
   },
 ];
@@ -37,12 +37,14 @@ const CardArticle = () => {
       {cardItems.map((item, index) => (
         <article
           key={index}
-          className="main-cards__article-item flex flex-col gap-4 items-center text-center border border-gray-300 p-6 rounded-sm"
+          className="main-cards__article-item flex flex-col gap-4 items-center text-center border border-gray-300 py-6 px-5 rounded-sm"
         >
-          <div className="bg-slate-200 rounded-full p-6">
+          <div className="bg-slate-200 rounded-full p-5">
             <item.icon className="main-cards__icon text-5xl text-slate-500" />
           </div>
-          <h3 className="font-medium text-lg">{item.title}</h3>
+          <h3 className="font-medium text-lg main-cards__title">
+            {item.title}
+          </h3>
           <p>{item.description}</p>
           <a
             href={item.link}
