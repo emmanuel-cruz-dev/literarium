@@ -1,8 +1,8 @@
 const MainCards = () => {
   const CardArticle = () => {
     return (
-      <article>
-        <h3>Free Gift Wrap</h3>
+      <article className="flex flex-col gap-4 items-center text-center border border-gray-300 p-6">
+        <h3 className="font-medium text-lg">Free Gift Wrap</h3>
         <p>Free gift wrapping on all purchases. Wrapping includes a blue box with your choice with Ribbon.</p>
         <a href="#">Read More</a>
       </article>
