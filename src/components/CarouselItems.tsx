@@ -14,9 +14,12 @@ import StarRating from "./StarRating";
 const BookArticleCard = () => {
   return (
     <article className="h-full flex gap-6">
-      <figure className="w-32 h-full">
+      <div className="relative w-32 h-full">
         <img src={AprendaMafia} alt="" />
-      </figure>
+        <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center text-white font-extrabold text-6xl background-accent__item">
+          +
+        </div>
+      </div>
       <div className="flex flex-col gap-2">
         <div>
           <h2 className="uppercase font-bold text-lg">The Winning</h2>
