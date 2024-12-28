@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { FC, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperType } from "swiper";
 import { Grid, Autoplay } from "swiper/modules";
@@ -11,9 +11,13 @@ import {
 import AprendaMafia from "../assets/images/aprenda-de-la-mafia-cover.jpg";
 import StarRating from "./StarRating";
 
-const BookArticleCard = () => {
+interface CarouselItemsProps {
+  title: string;
+}
+
+const BookArticleCard: FC = () => {
   return (
-    <article className="products__article-item h-full flex gap-6">
+    <article className="products__article-item h-full flex gap-4">
       <div className="relative w-32 h-full">
         <img src={AprendaMafia} alt="" />
         <a href="#" className="products__plus-item">
@@ -38,13 +42,13 @@ const BookArticleCard = () => {
   );
 };
 
-const CarouselItems = () => {
+const CarouselItems: FC<CarouselItemsProps> = ({ title }) => {
   const swiperRef = useRef<SwiperType>();
 
   return (
     <article className="w-[21rem] flex flex-col gap-4 mx-auto">
       <div className="flex justify-between border-b border-slate-300 pb-4">
-        <h2 className="uppercase text-2xl">New Product</h2>
+        <h2 className="uppercase text-2xl">{title}</h2>
         <div className="flex gap-2">
           <button
             onClick={() => swiperRef.current?.slidePrev()}

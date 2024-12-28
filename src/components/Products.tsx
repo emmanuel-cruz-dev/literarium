@@ -5,9 +5,9 @@ const Products = () => {
     <section className="products w-full" id="products">
       <article className="w-11/12 mx-auto py-20">
         <div className="w-full grid grid-cols-3 justify-between">
-          <CarouselItems />
-          <CarouselItems />
-          <CarouselItems />
+          <CarouselItems title="New Product" />
+          <CarouselItems title="Best Seller" />
+          <CarouselItems title="Pre-Order" />
         </div>
       </article>
     </section>
