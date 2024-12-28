@@ -1,48 +1,51 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Grid, Navigation, Autoplay } from "swiper/modules";
 
 const CarouselItems = () => {
   return (
     <Swiper
-      modules={[Navigation, Pagination, Autoplay]}
-      spaceBetween={30}
-      slidesPerView={2}
+      modules={[Grid, Navigation, Autoplay]}
       navigation
-      pagination={{ clickable: true }}
+      grid={{
+        rows: 2,
+        fill: "row",
+      }}
+      spaceBetween={30}
+      slidesPerView={1}
       loop={true}
       autoplay={{
-        delay: 2500,
-        // disableOnInteraction: false,
+        delay: 3500,
+        disableOnInteraction: false,
       }}
-      className="w-full h-64" // Clases de Tailwind
+      className="w-96 h-[500px]" // Clases de Tailwind
     >
       <SwiperSlide>
-        <div className="bg-blue-500 h-full flex items-center justify-center text-white">
+        <div className="bg-blue-500 h-1/2 flex items-center justify-center text-white">
           Slide 1
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="bg-red-500 h-full flex items-center justify-center text-white">
+        <div className="bg-red-500 h-1/2 flex items-center justify-center text-white">
           Slide 2
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="bg-green-500 h-full flex items-center justify-center text-white">
+        <div className="bg-green-500 h-1/2 flex items-center justify-center text-white">
           Slide 3
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="bg-blue-500 h-full flex items-center justify-center text-white">
+        <div className="bg-blue-500 h-1/2 flex items-center justify-center text-white">
           Slide 4
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="bg-red-500 h-full flex items-center justify-center text-white">
+        <div className="bg-red-500 h-1/2 flex items-center justify-center text-white">
           Slide 5
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="bg-green-500 h-full flex items-center justify-center text-white">
+        <div className="bg-green-500 h-1/2 flex items-center justify-center text-white">
           Slide 6
         </div>
       </SwiperSlide>
