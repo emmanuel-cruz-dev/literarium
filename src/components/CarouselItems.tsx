@@ -2,9 +2,42 @@ import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperType } from "swiper";
 import { Grid, Autoplay } from "swiper/modules";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import {
+  AiOutlineLeft,
+  AiOutlineRight,
+  AiOutlineDoubleRight,
+} from "react-icons/ai";
 
+import { MdStar, MdStarOutline } from "react-icons/md";
 import AprendaMafia from "../assets/images/aprenda-de-la-mafia-cover.jpg";
+
+const BookArticleCard = () => {
+  return (
+    <article className="h-full flex gap-4">
+      <figure className="w-32 h-full">
+        <img src={AprendaMafia} alt="" />
+      </figure>
+      <div className="flex flex-col gap-2">
+        <h2 className="uppercase font-bold">The Winning</h2>
+        <p>Mind Set</p>
+        <div className="flex">
+          <MdStar />
+          <MdStarOutline />
+          <MdStarOutline />
+          <MdStarOutline />
+          <MdStarOutline />
+        </div>
+        <span className="background-accent__item text-center text-white font-bold w-14 h-7">
+          $452
+        </span>
+        <button className="w-fit uppercase flex items-center gap-2">
+          Add to Cart
+          <AiOutlineDoubleRight />
+        </button>
+      </div>
+    </article>
+  );
+};
 
 const CarouselItems = () => {
   const swiperRef = useRef<SwiperType>();
@@ -47,32 +80,16 @@ const CarouselItems = () => {
         className="w-80 h-[400px]" // Clases de Tailwind
       >
         <SwiperSlide>
-          <div className="h-full flex gap-4">
-            <figure className="w-32 h-full">
-              <img src={AprendaMafia} alt="" />
-            </figure>
-            <div className="flex flex-col">
-              <h2>The Winnig</h2>
-              <p>Mind Set</p>
-              <span>$452</span>
-              <button>Add to Cart</button>
-            </div>
-          </div>
+          <BookArticleCard />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-red-500 h-full flex items-center justify-center text-white">
-            Slide 2
-          </div>
+          <BookArticleCard />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-green-500 h-full flex items-center justify-center text-white">
-            Slide 3
-          </div>
+          <BookArticleCard />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-blue-500 h-full flex items-center justify-center text-white">
-            Slide 4
-          </div>
+          <BookArticleCard />
         </SwiperSlide>
       </Swiper>
     </article>
