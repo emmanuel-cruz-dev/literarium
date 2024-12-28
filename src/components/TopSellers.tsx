@@ -1,8 +1,9 @@
-import { MdStar, MdStarOutline, MdStarHalf } from "react-icons/md";
+import { MdStar, MdStarOutline } from "react-icons/md";
 import JuegoTronos from "../assets/images/juego-tronos-cover.jpg";
 import DoceReglas from "../assets/images/12-reglas-para-vivir-cover.jpg";
 import LibertadPrimera from "../assets/images/libertad-primera-y-ultima-cover.jpg";
 import PoderHabitos from "../assets/images/poder-habitos-cover.jpg";
+import React from "react";
 
 const books = [
   {
@@ -10,7 +11,7 @@ const books = [
     title: "Juego de tronos",
     author: "George R. R. Martin",
     img: JuegoTronos,
-    stars: 5,
+    rating: 5,
     price: 692,
   },
   {
@@ -18,7 +19,7 @@ const books = [
     title: "12 reglas para vivir",
     author: "Jordan Peterson",
     img: DoceReglas,
-    stars: 4,
+    rating: 4,
     price: 789,
   },
   {
@@ -26,7 +27,7 @@ const books = [
     title: "La libertad primera y última",
     author: "Jiddu Krishnamurti",
     img: LibertadPrimera,
-    stars: 5,
+    rating: 5,
     price: 849,
   },
   {
@@ -34,44 +35,59 @@ const books = [
     title: "El poder de los hábitos",
     author: "Charles Duhigg",
     img: PoderHabitos,
-    stars: 5,
+    rating: 5,
     price: 526,
   },
 ];
 
-const BookCard = () => {
+interface BookCardProps {
+  id: string;
+  img: string;
+  title: string;
+  author: string;
+  price: number;
+  rating: number;
+}
+
+const BookCard: React.FC<BookCardProps> = ({
+  id,
+  img,
+  title,
+  author,
+  price,
+  rating,
+}) => {
+  const totalStars = 5;
+
+  // Crea un array dinámico para representar las estrellas
+  const stars: any = Array.from({ length: totalStars }, (_, index) =>
+    index < rating ? (
+      <MdStar key={index} color="#ffc107" />
+    ) : (
+      <MdStarOutline key={index} color="#e4e5e9" />
+    )
+  );
+
   return (
-    <>
-      {books.map((book) => {
-        return (
-          <article key={book.id} className="top-sellers__book-card bg-white">
-            <div className="flex flex-col items-center">
-              <figure className="book-card__image">
-                <img src={book.img} alt="Book Image" />
-              </figure>
-              <h3 className="py-2 text-lg">{book.title}</h3>
-            </div>
-            <div className="top-sellers__hidden-menu">
-              <div className="top-sellers__hidden-menu__body">
-                <h3 className="text-3xl font-bold">{book.title}</h3>
-                <p className="text-lg">{book.author}</p>
-                <div className="flex text-xl">
-                  <MdStar />
-                  <MdStar />
-                  <MdStar />
-                  <MdStarHalf />
-                  <MdStarOutline />
-                </div>
-                <span className="text-4xl font-thin">${book.price}.00</span>
-                <button className="font-semibold uppercase border-2 border-white py-2 px-4 hover:bg-white hover:text-gray-900 transition-colors duration-300 ease-in-out">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </article>
-        );
-      })}
-    </>
+    <article key={id} className="top-sellers__book-card bg-white">
+      <div className="flex flex-col items-center">
+        <figure className="book-card__image">
+          <img src={img} alt="Book Image" />
+        </figure>
+        <h3 className="py-2 text-lg">{title}</h3>
+      </div>
+      <div className="top-sellers__hidden-menu">
+        <div className="top-sellers__hidden-menu__body">
+          <h3 className="text-3xl font-bold">{title}</h3>
+          <p className="text-lg">{author}</p>
+          <div className="flex text-xl">{stars}</div>
+          <span className="text-4xl font-thin">${price}.00</span>
+          <button className="font-semibold uppercase border-2 border-white py-2 px-4 hover:bg-white hover:text-gray-900 transition-colors duration-300 ease-in-out">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </article>
   );
 };
 
@@ -91,7 +107,9 @@ const TopSellers = () => {
         </div>
         <article>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            <BookCard />
+            {books.map((book) => (
+              <BookCard {...book} />
+            ))}
           </div>
         </article>
       </article>
