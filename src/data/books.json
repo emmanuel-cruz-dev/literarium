@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Juego de tronos",
+    "title": "Aprenda de la mafia",
     "author": "George R. R. Martin",
     "img": "JuegoTronos",
     "rating": 5,
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "title": "12 reglas para vivir",
+    "title": "El señor de los anillos - La comunidad del anillo",
     "author": "Jordan Peterson",
     "img": "DoceReglas",
     "rating": 4,
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "title": "La libertad primera y última",
+    "title": "Harry Potter y la piedra filosofal",
     "author": "Jiddu Krishnamurti",
     "img": "LibertadPrimera",
     "rating": 5,
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "title": "El poder de los hábitos",
+    "title": "It",
     "author": "Charles Duhigg",
     "img": "PoderHabitos",
     "rating": 5,
