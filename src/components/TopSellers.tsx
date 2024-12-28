@@ -1,12 +1,50 @@
 import { MdStar, MdStarOutline, MdStarHalf } from "react-icons/md";
-import bookImage from "../assets/images/juego-tronos-cover.jpg";
+import JuegoTronos from "../assets/images/juego-tronos-cover.jpg";
+import DoceReglas from "../assets/images/12-reglas-para-vivir-cover.jpg";
+import LibertadPrimera from "../assets/images/libertad-primera-y-ultima-cover.jpg";
+import PoderHabitos from "../assets/images/poder-habitos-cover.jpg";
+
+const books = [
+  {
+    id: 1,
+    title: "Juego de Tronos",
+    author: "George R. R. Martin",
+    img: JuegoTronos,
+    stars: 5,
+    price: 692,
+  },
+  {
+    id: 2,
+    title: "12 Reglas para vivir",
+    author: "Jordan Peterson",
+    img: DoceReglas,
+    stars: 4,
+    price: 870,
+  },
+  {
+    id: 3,
+    title: "La libertad primera y última",
+    author: "Jiddu Krishnamurti",
+    img: LibertadPrimera,
+    stars: 5,
+    price: 849,
+  },
+  {
+    id: 4,
+    title: "El poder de los hábitos",
+    author: "Charles Duhigg",
+    img: PoderHabitos,
+    stars: 5,
+    price: 526,
+  },
+];
 
 const BookCard = () => {
   return (
     <article className="top-sellers__book-card bg-white">
       <div className="flex flex-col items-center">
         <figure className="book-card__image">
-          <img src={bookImage} alt="Book Image" />
+          <img src={books[0].img} alt="Book Image" />
         </figure>
         <h3 className="py-1 text-lg">Juego de Tronos</h3>
       </div>
