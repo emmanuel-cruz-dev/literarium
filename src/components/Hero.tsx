@@ -7,7 +7,7 @@ const Hero = () => {
       id="hero"
     >
       <div className="hidden lg:flex flex-grow"></div>
-      <div className="flex flex-col items-center gap-6 text-center pb-8">
+      <div className="flex flex-col items-center gap-6 text-center pb-8 w-11/12">
         <h1 className="text-6xl lg:text-8xl font-bold uppercase tracking-wide">
           Book Store
         </h1>
