@@ -7,7 +7,7 @@ import PoderHabitos from "../assets/images/poder-habitos-cover.jpg";
 const books = [
   {
     id: 1,
-    title: "Juego de Tronos",
+    title: "Juego de tronos",
     author: "George R. R. Martin",
     img: JuegoTronos,
     stars: 5,
@@ -15,7 +15,7 @@ const books = [
   },
   {
     id: 2,
-    title: "12 Reglas para vivir",
+    title: "12 reglas para vivir",
     author: "Jordan Peterson",
     img: DoceReglas,
     stars: 4,
@@ -49,12 +49,12 @@ const BookCard = () => {
               <figure className="book-card__image">
                 <img src={book.img} alt="Book Image" />
               </figure>
-              <h3 className="py-1 text-lg">{book.title}</h3>
+              <h3 className="py-2 text-lg">{book.title}</h3>
             </div>
             <div className="top-sellers__hidden-menu">
               <div className="top-sellers__hidden-menu__body">
-                <h3 className="text-2xl font-bold">{book.title}</h3>
-                <p>{book.author}</p>
+                <h3 className="text-3xl font-bold">{book.title}</h3>
+                <p className="text-lg">{book.author}</p>
                 <div className="flex text-xl">
                   <MdStar />
                   <MdStar />
