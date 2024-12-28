@@ -8,7 +8,7 @@ const CarouselItems = () => {
   const swiperRef = useRef<SwiperType>();
 
   return (
-    <article className="w-80 flex flex-col gap-4">
+    <article className="w-80 flex flex-col gap-4 mx-auto">
       <div className="flex justify-between border-b border-slate-300 pb-4">
         <h2 className="uppercase text-2xl">New Product</h2>
         <div className="flex gap-2">
