@@ -12,7 +12,7 @@ const Header = () => {
             alt="Icono de librería, 3 libros apilados uno sobre otro"
           />
           <a href="/" className="text-2xl">
-            Books Guide
+            Literarium
           </a>
         </div>
         <ul className="gap-4 hidden md:flex text-lg">
