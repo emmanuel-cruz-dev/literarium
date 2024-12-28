@@ -33,7 +33,7 @@ const CarouselItems = () => {
         // navigation
         grid={{
           rows: 2,
-          fill: "row",
+          fill: "column",
         }}
         spaceBetween={30}
         slidesPerView={1}
