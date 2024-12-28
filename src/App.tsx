@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import TopSellers from "./components/TopSellers";
 import Footer from "./components/Footer";
-import CarouselItems from "./components/CarouselItems";
+import Products from "./components/Products";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <Banner />
       <MainCards />
       <TopSellers />
-      <CarouselItems />
+      <Products />
       <Footer />
     </>
   );
