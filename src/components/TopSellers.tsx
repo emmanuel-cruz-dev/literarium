@@ -41,7 +41,7 @@ const books = [
 ];
 
 interface BookCardProps {
-  id: string;
+  id: number;
   img: string;
   title: string;
   author: string;
@@ -108,7 +108,7 @@ const TopSellers = () => {
         <article>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {books.map((book) => (
-              <BookCard {...book} />
+              <BookCard key={book.id} {...book} />
             ))}
           </div>
         </article>
