@@ -16,7 +16,9 @@ const BookArticleCard = () => {
     <article className="products__article-item h-full flex gap-6">
       <div className="relative w-32 h-full">
         <img src={AprendaMafia} alt="" />
-        <div className="products__plus-item">+</div>
+        <a href="#" className="products__plus-item">
+          +
+        </a>
       </div>
       <div className="flex flex-col gap-2">
         <div>
