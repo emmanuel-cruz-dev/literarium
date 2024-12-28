@@ -19,7 +19,7 @@ const books = [
     author: "Jordan Peterson",
     img: DoceReglas,
     stars: 4,
-    price: 870,
+    price: 789,
   },
   {
     id: 3,
@@ -41,31 +41,37 @@ const books = [
 
 const BookCard = () => {
   return (
-    <article className="top-sellers__book-card bg-white">
-      <div className="flex flex-col items-center">
-        <figure className="book-card__image">
-          <img src={books[0].img} alt="Book Image" />
-        </figure>
-        <h3 className="py-1 text-lg">Juego de Tronos</h3>
-      </div>
-      <div className="top-sellers__hidden-menu">
-        <div className="top-sellers__hidden-menu__body">
-          <h3 className="text-2xl font-bold">Juego de Tronos</h3>
-          <p>George R.R. Martin</p>
-          <div className="flex text-xl">
-            <MdStar />
-            <MdStar />
-            <MdStar />
-            <MdStarHalf />
-            <MdStarOutline />
-          </div>
-          <span className="text-4xl font-thin">$692.00</span>
-          <button className="font-semibold uppercase border-2 border-white py-2 px-4 hover:bg-white hover:text-gray-900 transition-colors duration-300 ease-in-out">
-            Add to Cart
-          </button>
-        </div>
-      </div>
-    </article>
+    <>
+      {books.map((book) => {
+        return (
+          <article key={book.id} className="top-sellers__book-card bg-white">
+            <div className="flex flex-col items-center">
+              <figure className="book-card__image">
+                <img src={book.img} alt="Book Image" />
+              </figure>
+              <h3 className="py-1 text-lg">{book.title}</h3>
+            </div>
+            <div className="top-sellers__hidden-menu">
+              <div className="top-sellers__hidden-menu__body">
+                <h3 className="text-2xl font-bold">{book.title}</h3>
+                <p>{book.author}</p>
+                <div className="flex text-xl">
+                  <MdStar />
+                  <MdStar />
+                  <MdStar />
+                  <MdStarHalf />
+                  <MdStarOutline />
+                </div>
+                <span className="text-4xl font-thin">${book.price}.00</span>
+                <button className="font-semibold uppercase border-2 border-white py-2 px-4 hover:bg-white hover:text-gray-900 transition-colors duration-300 ease-in-out">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+        );
+      })}
+    </>
   );
 };
 
@@ -85,9 +91,6 @@ const TopSellers = () => {
         </div>
         <article>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            <BookCard />
-            <BookCard />
-            <BookCard />
             <BookCard />
           </div>
         </article>
