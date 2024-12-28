@@ -17,35 +17,35 @@ const CarouselItems = () => {
         delay: 3500,
         disableOnInteraction: false,
       }}
-      className="w-96 h-[500px]" // Clases de Tailwind
+      className="w-80 h-[400px]" // Clases de Tailwind
     >
       <SwiperSlide>
-        <div className="bg-blue-500 h-1/2 flex items-center justify-center text-white">
+        <div className="bg-blue-500 h-full flex items-center justify-center text-white">
           Slide 1
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="bg-red-500 h-1/2 flex items-center justify-center text-white">
+        <div className="bg-red-500 h-full flex items-center justify-center text-white">
           Slide 2
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="bg-green-500 h-1/2 flex items-center justify-center text-white">
+        <div className="bg-green-500 h-full flex items-center justify-center text-white">
           Slide 3
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="bg-blue-500 h-1/2 flex items-center justify-center text-white">
+        <div className="bg-blue-500 h-full flex items-center justify-center text-white">
           Slide 4
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="bg-red-500 h-1/2 flex items-center justify-center text-white">
+        <div className="bg-red-500 h-full flex items-center justify-center text-white">
           Slide 5
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="bg-green-500 h-1/2 flex items-center justify-center text-white">
+        <div className="bg-green-500 h-full flex items-center justify-center text-white">
           Slide 6
         </div>
       </SwiperSlide>
