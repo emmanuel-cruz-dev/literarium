@@ -8,25 +8,21 @@ import {
   AiOutlineDoubleRight,
 } from "react-icons/ai";
 
-import { MdStar, MdStarOutline } from "react-icons/md";
 import AprendaMafia from "../assets/images/aprenda-de-la-mafia-cover.jpg";
+import StarRating from "./StarRating";
 
 const BookArticleCard = () => {
   return (
-    <article className="h-full flex gap-4">
+    <article className="h-full flex gap-6">
       <figure className="w-32 h-full">
         <img src={AprendaMafia} alt="" />
       </figure>
       <div className="flex flex-col gap-2">
-        <h2 className="uppercase font-bold">The Winning</h2>
-        <p>Mind Set</p>
-        <div className="flex">
-          <MdStar />
-          <MdStarOutline />
-          <MdStarOutline />
-          <MdStarOutline />
-          <MdStarOutline />
+        <div>
+          <h2 className="uppercase font-bold text-lg">The Winning</h2>
+          <p className="text-slate-500">Mind Set</p>
         </div>
+        <StarRating />
         <span className="background-accent__item text-center text-white font-bold w-14 h-7">
           $452
         </span>

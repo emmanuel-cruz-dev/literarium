@@ -7,18 +7,18 @@ const StarRating = () => {
   const stars = [1, 2, 3, 4, 5]; // Representa el número de estrellas
 
   return (
-    <div style={{ display: "flex", gap: "5px" }}>
+    <div style={{ display: "flex" }}>
       {stars.map((star) => (
         <div
           key={star}
           onMouseEnter={() => setHoveredStar(star)} // Cambiar la estrella en hover
           onMouseLeave={() => setHoveredStar(null)} // Resetear el hover al salir
-          style={{ cursor: "pointer", fontSize: "24px" }}
+          style={{ cursor: "pointer", fontSize: "20px" }}
         >
           {hoveredStar !== null && hoveredStar >= star ? (
-            <MdStar />
+            <MdStar className="text-yellow-400" />
           ) : (
-            <MdStarOutline />
+            <MdStarOutline className="text-yellow-400" />
           )}
         </div>
       ))}
