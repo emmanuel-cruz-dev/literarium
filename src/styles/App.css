@@ -1,3 +1,8 @@
+/* Estilos básicos de Swiper */
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
 /***************************************
  *      Inicio: Estilos Globales       *
  ***************************************/
