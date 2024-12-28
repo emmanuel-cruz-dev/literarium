@@ -12,7 +12,7 @@ const books = [
     author: "George R. R. Martin",
     img: JuegoTronos,
     rating: 5,
-    price: 692,
+    price: 692.99,
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const books = [
     author: "Jordan Peterson",
     img: DoceReglas,
     rating: 4,
-    price: 789,
+    price: 789.65,
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const books = [
     author: "Jiddu Krishnamurti",
     img: LibertadPrimera,
     rating: 5,
-    price: 849,
+    price: 849.39,
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const books = [
     author: "Charles Duhigg",
     img: PoderHabitos,
     rating: 5,
-    price: 526,
+    price: 526.15,
   },
 ];
 
@@ -57,10 +57,10 @@ const BookCard: React.FC<BookCardProps> = ({
   price,
   rating,
 }) => {
-  const totalStars = 5;
+  const totalStars: number = 5;
 
   // Crea un array dinámico para representar las estrellas
-  const stars: any = Array.from({ length: totalStars }, (_, index) =>
+  const stars: JSX.Element[] = Array.from({ length: totalStars }, (_, index) =>
     index < rating ? (
       <MdStar key={index} color="#ffc107" />
     ) : (
@@ -81,7 +81,7 @@ const BookCard: React.FC<BookCardProps> = ({
           <h3 className="text-3xl font-bold">{title}</h3>
           <p className="text-lg">{author}</p>
           <div className="flex text-xl">{stars}</div>
-          <span className="text-4xl font-thin">${price}.00</span>
+          <span className="text-4xl font-thin">${price}</span>
           <button className="font-semibold uppercase border-2 border-white py-2 px-4 hover:bg-white hover:text-gray-900 transition-colors duration-300 ease-in-out">
             Add to Cart
           </button>
