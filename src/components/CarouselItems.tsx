@@ -4,6 +4,8 @@ import type { Swiper as SwiperType } from "swiper";
 import { Grid, Autoplay } from "swiper/modules";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
+import AprendaMafia from "../assets/images/aprenda-de-la-mafia-cover.jpg";
+
 const CarouselItems = () => {
   const swiperRef = useRef<SwiperType>();
 
@@ -45,8 +47,16 @@ const CarouselItems = () => {
         className="w-80 h-[400px]" // Clases de Tailwind
       >
         <SwiperSlide>
-          <div className="bg-blue-500 h-full flex items-center justify-center text-white">
-            Slide 1
+          <div className="h-full flex gap-4">
+            <figure className="w-32 h-full">
+              <img src={AprendaMafia} alt="" />
+            </figure>
+            <div className="flex flex-col">
+              <h2>The Winnig</h2>
+              <p>Mind Set</p>
+              <span>$452</span>
+              <button>Add to Cart</button>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
