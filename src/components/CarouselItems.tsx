@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperType } from "swiper";
-import { Grid, Navigation, Autoplay } from "swiper/modules";
+import { Grid, Autoplay } from "swiper/modules";
 
 const CarouselItems = () => {
   const swiperRef = useRef<SwiperType>();
@@ -29,8 +29,7 @@ const CarouselItems = () => {
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper;
         }}
-        modules={[Grid, Navigation, Autoplay]}
-        // navigation
+        modules={[Grid, Autoplay]}
         grid={{
           rows: 2,
           fill: "column",
