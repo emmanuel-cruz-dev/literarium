@@ -3,7 +3,7 @@ import StarRating from "./StarRating";
 
 const BookGuideItem = () => {
   return (
-    <article className="products__article-item flex flex-col border border-slate-200">
+    <article className="products__article-item flex flex-col border border-slate-200 hover:border-transparent">
       <div className="relative mt-6 w-9/12 mx-auto">
         <div className="relative">
           <img className="border-2 border-white" src={Cover} alt="" />
@@ -25,7 +25,7 @@ const BookGuideItem = () => {
           <StarRating />
         </div>
         <a
-          className="book-guide__btn absolute top-0 left-0 w-full h-full flex items-center text-lg justify-center font-bold text-white text-center background-accent__item uppercase"
+          className="book-guide__btn absolute top-0 left-[-.9px] bottom-[-.9px] right-[-.9px] flex items-center text-lg justify-center font-bold text-white text-center background-accent__item uppercase"
           href="#"
         >
           Add to Cart
