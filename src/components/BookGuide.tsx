@@ -25,7 +25,7 @@ const BookGuideItem = () => {
           <StarRating />
         </div>
         <a
-          className="book-guide__btn absolute top-0 left-0 flex items-center text-lg justify-center font-bold text-white w-full h-full text-center background-accent__item uppercase"
+          className="book-guide__btn absolute top-0 left-0 w-full h-full flex items-center text-lg justify-center font-bold text-white text-center background-accent__item uppercase"
           href="#"
         >
           Add to Cart
