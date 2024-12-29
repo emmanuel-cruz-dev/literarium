@@ -4,8 +4,11 @@ import StarRating from "./StarRating";
 const BookGuideItem = () => {
   return (
     <article className="products__article-item flex flex-col border border-slate-200">
-      <div className="relative m-4">
-        <img src={Cover} alt="" />
+      <div className="relative mt-5 mx-5">
+        <div className="relative">
+          <img className="border-2 border-white" src={Cover} alt="" />
+          <span className="absolute top-4 left-0 bottom-4 -right-2 z-[-1] bg-slate-300"></span>
+        </div>
         <a href="#" className="book-guide__plus-item">
           +
         </a>
@@ -17,7 +20,7 @@ const BookGuideItem = () => {
         <p className="text-slate-500">Sed ut perspiciatis</p>
       </div>
       <div className="flex justify-between items-center relative py-3 px-2">
-        <span>$24.75</span>
+        <span className="font-semibold text-slate-500">$24.75</span>
         <div>
           <StarRating />
         </div>
