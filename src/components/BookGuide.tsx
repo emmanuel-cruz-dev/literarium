@@ -4,15 +4,17 @@ import StarRating from "./StarRating";
 const BookGuideItem = () => {
   return (
     <article className="products__article-item flex flex-col border border-slate-200">
-      <div className="relative">
+      <div className="relative m-4">
         <img src={Cover} alt="" />
-        <a href="#" className="products__plus-item book-guide__plus-item">
+        <a href="#" className="book-guide__plus-item">
           +
         </a>
       </div>
-      <div className="text-center border-b border-slate-200">
-        <h2>Basic Time Management Course</h2>
-        <p>Sed ut perspiciatis</p>
+      <div className="text-center border-b border-slate-200 py-4 px-6">
+        <h2 className="font-bold text-xl text-slate-700">
+          Basic Time Management Course
+        </h2>
+        <p className="text-slate-500">Sed ut perspiciatis</p>
       </div>
       <div className="flex justify-between items-center relative py-3 px-2">
         <span>$24.75</span>

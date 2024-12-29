@@ -19,6 +19,7 @@
   --primary-color: #007bff;
   --secondary-color: #6c757d;
   --accent-color: #32b5f3;
+  --accent-color-fade: #32b6f397;
   --background-dark-color: #10121a;
   --background-dark-grey: #191d2b;
   --border-color: #2e344e;
@@ -265,9 +266,27 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.products__article-item:hover .products__plus-item.book-guide__plus-item {
-  opacity: 0.5;
+.book-guide__plus-item {
+  position: absolute;
+  background-color: var(--accent-color-fade);
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  color: var(--white-color);
+  font-weight: 800;
+  font-size: 3.5rem;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
 }
+
+.products__article-item:hover .book-guide__plus-item {
+  opacity: 1;
+}
+
 .products__article-item:hover .book-guide__btn {
   opacity: 1;
 }
