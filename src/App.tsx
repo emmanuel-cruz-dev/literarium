@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import TopSellers from "./components/TopSellers";
 import Footer from "./components/Footer";
 import Products from "./components/Products";
+import CounterBanner from "./components/CounterBanner";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <MainCards />
       <TopSellers />
       <Products />
+      <CounterBanner />
       <Footer />
     </>
   );

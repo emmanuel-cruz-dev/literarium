@@ -78,9 +78,9 @@ const BookCard: React.FC<BookCardProps> = ({
       </div>
       <div className="top-sellers__hidden-menu">
         <div className="top-sellers__hidden-menu__body">
-          <h3 className="text-3xl font-bold">{title}</h3>
+          <h3 className="text-3xl font-bold w-11/12">{title}</h3>
           <p className="text-lg">{author}</p>
-          <div className="flex text-xl">{stars}</div>
+          <div className="flex text-2xl">{stars}</div>
           <span className="text-4xl font-thin">${price}</span>
           <button className="font-semibold uppercase border-2 border-white py-2 px-4 hover:bg-white hover:text-gray-900 transition-colors duration-300 ease-in-out">
             Add to Cart
