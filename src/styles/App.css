@@ -232,8 +232,7 @@
  *           Inicio: Products          *
  ***************************************/
 
-
-.products__plus-item{
+.products__plus-item {
   position: absolute;
   top: 0;
   left: 0;
@@ -247,7 +246,7 @@
   color: var(--white-color);
   font-weight: 800;
   font-size: 3.75rem;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .products__article-item:hover .products__plus-item {
@@ -257,3 +256,22 @@
  *           Fin: Products             *
  ***************************************/
 
+/***************************************
+ *         Inicio: Book Guide          *
+ ***************************************/
+
+.book-guide__btn {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.products__article-item:hover .products__plus-item.book-guide__plus-item {
+  opacity: 0.5;
+}
+.products__article-item:hover .book-guide__btn {
+  opacity: 1;
+}
+
+/***************************************
+ *          Fin: Book Guide            *
+ ***************************************/
