@@ -291,6 +291,13 @@
   opacity: 1;
 }
 
+.products__card-title {
+  transition: color 0.3s ease-in-out;
+}
+
+.products__article-item:hover .products__card-title {
+  color: var(--accent-color);
+}
 /***************************************
  *          Fin: Book Guide            *
  ***************************************/
