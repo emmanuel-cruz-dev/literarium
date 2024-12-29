@@ -67,6 +67,15 @@
   background-color: var(--accent-color);
 }
 
+.box-shadow__item {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.box-shadow__item:hover {
+  box-shadow: 8px 8px 16px rgba(165, 177, 198, 0.8),
+    -8px -8px 16px rgba(255, 255, 255, 0.8);
+}
+
 /***************************************
  *       Fin: Estilos Globales         *
  ***************************************/

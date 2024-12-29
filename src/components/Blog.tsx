@@ -1,20 +1,30 @@
 import Image from "../assets/images/blog.jpg";
+import { AiOutlineDoubleRight } from "react-icons/ai";
 
 const BlogCard = () => {
   return (
-    <article className="flex gap-4">
-      <figure className="w-96">
-        <img className="w-full h-full object-cover" src={Image} alt="" />
-      </figure>
-      <div>
-        <p>Posted by Cartel</p>
-        <h2 className="uppercase blog__card-title">Book Lovers</h2>
-        <p>
+    <article className="flex items-center gap-4 box-shadow__item bg-slate-100 hover:bg-white transition-colors duration-300 ease-in-out">
+      <div className="relative">
+        <img src={Image} alt="" />
+        <div className="absolute bottom-0 right-0 left-44 text-white text-center">
+          <p className="flex flex-col">
+            <span className="bg-slate-100/70 text-slate-600 text-4xl">15</span>
+            <span className="background-accent__item py-2">August</span>
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-col gap-2">
+        <p className="text-slate-400">Posted by Cartel</p>
+        <h2 className="uppercase font-semibold text-2xl blog__card-title">
+          Book Lovers
+        </h2>
+        <p className="w-64 text-slate-400">
           The Book Lovers is a research project on the phenomenon of artist's
           novels avaible today.
         </p>
-        <a className="uppercase" href="#">
+        <a className="flex items-center gap-2 uppercase font-semibold" href="#">
           See More
+          <AiOutlineDoubleRight />
         </a>
       </div>
     </article>
