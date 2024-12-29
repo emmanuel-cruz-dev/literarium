@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Products from "./components/Products";
 import CounterBanner from "./components/CounterBanner";
 import BookGuide from "./components/BookGuide";
+import Blog from "./components/Blog";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Products />
       <BookGuide />
       <CounterBanner />
+      <Blog />
       <Footer />
     </>
   );
