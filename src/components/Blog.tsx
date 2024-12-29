@@ -3,9 +3,9 @@ import { AiOutlineDoubleRight } from "react-icons/ai";
 
 const BlogCard = () => {
   return (
-    <article className="flex items-center gap-4 box-shadow__item bg-slate-100 hover:bg-white transition-colors duration-300 ease-in-out">
-      <div className="relative">
-        <img src={Image} alt="" />
+    <article className="flex flex-col md:flex-row md:w-fit mx-auto items-center gap-4 box-shadow__item bg-slate-100 hover:bg-white transition-colors duration-300 ease-in-out">
+      <div className="relative w-full h-96 md:h-full">
+        <img className="h-full object-cover" src={Image} alt="" />
         <div className="absolute bottom-0 right-0 left-44 hover:left-0 transition-all duration-300 text-white text-center">
           <p className="flex flex-col">
             <span className="bg-slate-100/70 text-slate-600 text-4xl">15</span>
@@ -13,10 +13,10 @@ const BlogCard = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 p-6 pt-0">
         <p className="text-slate-400">Posted by Cartel</p>
         <h2 className="blog__card-title">Book Lovers</h2>
-        <p className="w-64 text-slate-400">
+        <p className="md:w-64 text-slate-400">
           The Book Lovers is a research project on the phenomenon of artist's
           novels avaible today.
         </p>
@@ -46,7 +46,7 @@ const Blog = () => {
           </p>
         </div>
         <article className="py-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
             <BlogCard />
             <BlogCard />
             <BlogCard />
