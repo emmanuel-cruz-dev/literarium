@@ -7,6 +7,7 @@ import TopSellers from "./components/TopSellers";
 import Footer from "./components/Footer";
 import Products from "./components/Products";
 import CounterBanner from "./components/CounterBanner";
+import BookGuide from "./components/BookGuide";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <MainCards />
       <TopSellers />
       <Products />
+      <BookGuide />
       <CounterBanner />
       <Footer />
     </>
