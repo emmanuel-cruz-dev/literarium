@@ -8,30 +8,39 @@ import {
   AiOutlineDoubleRight,
 } from "react-icons/ai";
 
-import AprendaMafia from "../assets/images/aprenda-de-la-mafia.jpg";
+// import AprendaMafia from "../assets/images/aprenda-de-la-mafia.jpg";
 import StarRating from "./StarRating";
 
-interface CarouselItemsProps {
+interface CarouselItem {
+  id: number;
   title: string;
+  author: string;
+  img: string;
+  price: number;
 }
 
-const BookArticleCard: FC = () => {
+interface CarouselItemsProps {
+  articleTitle: string;
+  arr: CarouselItem[];
+}
+
+const BookArticleCard: FC<CarouselItem> = ({ title, author, img, price }) => {
   return (
     <article className="products__article-item box-shadow-mode h-full flex gap-4">
       <div className="relative w-32 h-full">
-        <img src={AprendaMafia} alt="" />
+        <img src={img} alt="" />
         <a href="#" className="products__plus-item">
           +
         </a>
       </div>
       <div className="flex flex-col gap-2">
         <div>
-          <h2 className="uppercase font-bold text-lg">Aprenda de la mafia</h2>
-          <p className="text-slate-500">Mind Set</p>
+          <h2 className="uppercase font-bold text-lg">{title}</h2>
+          <p className="text-slate-500">{author}</p>
         </div>
         <StarRating />
-        <span className="background-accent__item text-center text-white font-bold w-14 h-7">
-          $452
+        <span className="background-accent__item text-center text-white font-bold w-fit px-1 h-7">
+          ${price}
         </span>
         <button className="w-fit uppercase flex items-center gap-2">
           Add to Cart
@@ -42,13 +51,13 @@ const BookArticleCard: FC = () => {
   );
 };
 
-const CarouselItems: FC<CarouselItemsProps> = ({ title }) => {
+const CarouselItems: FC<CarouselItemsProps> = ({ articleTitle, arr }) => {
   const swiperRef = useRef<SwiperType>();
 
   return (
     <article className="w-[21rem] flex flex-col gap-4 mx-auto">
       <div className="flex justify-between border-b border-slate-300 pb-4">
-        <h2 className="uppercase text-2xl">{title}</h2>
+        <h2 className="uppercase text-2xl">{articleTitle}</h2>
         <div className="flex gap-2">
           <button
             onClick={() => swiperRef.current?.slidePrev()}
@@ -82,7 +91,12 @@ const CarouselItems: FC<CarouselItemsProps> = ({ title }) => {
         }}
         className="w-80 h-[400px]" // Clases de Tailwind
       >
-        <SwiperSlide>
+        {arr.map((item) => (
+          <SwiperSlide key={item.id}>
+            <BookArticleCard {...item} />
+          </SwiperSlide>
+        ))}
+        {/* <SwiperSlide>
           <BookArticleCard />
         </SwiperSlide>
         <SwiperSlide>
@@ -93,7 +107,7 @@ const CarouselItems: FC<CarouselItemsProps> = ({ title }) => {
         </SwiperSlide>
         <SwiperSlide>
           <BookArticleCard />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </article>
   );

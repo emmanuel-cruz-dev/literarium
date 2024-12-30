@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Coraline",
+    "author": "Neil Gaiman",
+    "img": "/public/images/coraline1.jpg",
+    "price": 695.89
+  },
+  {
+    "id": 2,
+    "title": "El Resplandor",
+    "author": "Stephen King",
+    "img": "/public/images/el-resplandor.jpg",
+    "price": 1123.35
+  },
+  {
+    "id": 3,
+    "title": "El Exorcista",
+    "author": "William Peter Blatty",
+    "img": "/public/images/el-exorcista.jpg",
+    "price": 759.89
+  },
+  {
+    "id": 4,
+    "title": "Amor Locura",
+    "author": "Horacia Quiroga",
+    "img": "/public/images/cuentos-amor-locura-muerte.jpg",
+    "price": 936.71
+  }
+]
