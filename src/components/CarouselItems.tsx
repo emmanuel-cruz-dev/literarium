@@ -8,7 +8,7 @@ import {
   AiOutlineDoubleRight,
 } from "react-icons/ai";
 
-import AprendaMafia from "../assets/images/aprenda-de-la-mafia-cover.jpg";
+import AprendaMafia from "../assets/images/aprenda-de-la-mafia.jpg";
 import StarRating from "./StarRating";
 
 interface CarouselItemsProps {

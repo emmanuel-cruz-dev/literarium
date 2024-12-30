@@ -1,38 +1,41 @@
-import Cover from "../assets/images/juego-tronos-cover.jpg";
+import AprendaMafia from "../assets/images/aprenda-de-la-mafia.jpg";
+import ComunidadAnillo from "../assets/images/comunidad-anillo.jpg";
+import HarryPotter from "../assets/images/harry-potter.jpg";
+import It from "../assets/images/it.jpg";
 import StarsElement from "./StarsElement";
 
 const books = [
   {
     id: 1,
-    title: "Juego de tronos",
-    author: "George R. R. Martin",
-    img: Cover,
+    title: "Aprenda de la Mafia",
+    author: "Louis Ferrante",
+    img: AprendaMafia,
     rating: 5,
-    price: 692.99,
+    price: 695.99,
   },
   {
     id: 2,
-    title: "12 reglas para vivir",
-    author: "Jordan Peterson",
-    img: DoceReglas,
+    title: "El Señor de los Anillos - La Comunidad del Anillo",
+    author: "J. R. R. Tolkien",
+    img: ComunidadAnillo,
     rating: 4,
-    price: 789.65,
+    price: 1132.25,
   },
   {
     id: 3,
-    title: "La libertad primera y última",
-    author: "Jiddu Krishnamurti",
-    img: LibertadPrimera,
+    title: "Harry Potter y la Piedra Filosofal",
+    author: "J. K. Rowling",
+    img: HarryPotter,
     rating: 5,
     price: 849.39,
   },
   {
     id: 4,
-    title: "El poder de los hábitos",
-    author: "Charles Duhigg",
-    img: PoderHabitos,
+    title: "It",
+    author: "Stephen King",
+    img: It,
     rating: 5,
-    price: 526.15,
+    price: 926.75,
   },
 ];
 
@@ -41,7 +44,7 @@ const BookGuideItem = () => {
     <article className="products__article-item flex flex-col border border-slate-200 hover:border-transparent">
       <div className="relative mt-6 w-9/12 mx-auto">
         <div className="relative">
-          <img className="border-2 border-white" src={Cover} alt="" />
+          <img className="border-2 border-white" src={AprendaMafia} alt="" />
           <span className="absolute top-4 left-0 bottom-4 -right-2 z-[-1] bg-slate-300"></span>
         </div>
         <a href="#" className="book-guide__plus-item">
