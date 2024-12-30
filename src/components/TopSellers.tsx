@@ -90,9 +90,9 @@ const TopSellers = () => {
             Best <span className="text__accent-color">top</span> Sellers
           </h2>
           <p>
-            The Book Guide and the Book Library has one of the top sellers books
-            with them. Those books which are sold with in few days and still
-            available in our stock which you can get with us easily.
+            Discover the most popular and best-selling books in record time. Our
+            collection includes bestsellers that are still available for you to
+            easily purchase.
           </p>
         </div>
         <article>
