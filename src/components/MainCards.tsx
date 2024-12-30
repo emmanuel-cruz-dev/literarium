@@ -5,29 +5,25 @@ const cardItems = [
     icon: FaGift,
     title: "Free Gift Wrap",
     description:
-      "Free gift wrapping on all purchases. Wrapping includes a blue box with your choice with Ribbon.",
-    link: "#",
+      "We offer personalized gift wrapping, with blue boxes and ribbons of your choice, completely free of charge.",
   },
   {
     icon: FaBook,
     title: "Buy Selling Used Books",
     description:
-      "We provide the best selling of the used books. You can sell them to us if you have read them once.",
-    link: "#",
+      "Buy and sell used books with ease. We offer a reliable platform to give new life to the books you've already read.",
   },
   {
     icon: FaTruck,
     title: "Free Shipping",
     description:
-      "We provide free shipping over the $1000 purchase from one country to another with extra discount.",
-    link: "#",
+      "Enjoy free international shipping on purchases over $1000, with additional discounts for you.",
   },
   {
     icon: FaCalculator,
     title: "Returns & Exchanges",
     description:
-      "Return and Exchange is possible in 5 days. In case of lost or damage Return & Exchange is not possible.",
-    link: "#",
+      "Returns or exchanges within 5 days. Please note that we do not accept returns in case of loss or damage.",
   },
 ];
 
@@ -47,7 +43,7 @@ const CardArticle = () => {
           </h3>
           <p>{item.description}</p>
           <a
-            href={item.link}
+            href="#"
             className="text-sm border border-gray-300 py-2 px-4 hover:bg-white hover:border-white hover:text-gray-600"
           >
             Read More
@@ -63,14 +59,13 @@ const MainCards = () => {
     <section className="main-cards w-11/12 mx-auto py-12" id="main-cards">
       <div className="flex flex-col gap-4 justify-center items-center text-center py-4">
         <h2 className="uppercase font-bold text-3xl section__title">
-          The Book guide <span className="text__accent-color">online</span> book
-          store
+          Your Ultimate{" "}
+          <span className="text__accent-color">Guide to Online</span> Books
         </h2>
         <p>
-          The online Books Guide is the biggest big store and the biggest books
-          library in the world that has a lot of the popular and the most top
-          category books presented here. Top Authors are here just subscribe
-          your email address and get updated with us.
+          Find a wide selection of popular books and top-rated categories on our
+          platform. Subscribe with your email to stay up to date with the latest
+          news and the best authors.
         </p>
       </div>
       <article>
