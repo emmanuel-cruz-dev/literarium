@@ -73,19 +73,19 @@ const BlogCard: React.FC<BlogCardProps> = ({
     >
       <div className="relative w-full h-96 md:h-full">
         <img className="h-full object-cover" src={image} alt="" />
-        <div className="blog__card-article__date absolute bottom-0 right-0 left-44 transition-all duration-300 text-white text-center">
+        <div className="blog__card-article__date absolute bottom-0 right-0 left-40 transition-all duration-300 text-white text-center">
           <p className="flex flex-col">
-            <span className="bg-slate-100/70 text-slate-600 text-4xl">
+            <span className="bg-slate-100/70 text-slate-600 text-2xl">
               {date}
             </span>
-            <span className="background-accent__item py-2">{month}</span>
+            <span className="background-accent__item py-1">{month}</span>
           </p>
         </div>
       </div>
       <div className="flex flex-col gap-2 py-6">
         <p className="text-slate-400">Posted by {author}</p>
         <h2 className="blog__card-title">{title}</h2>
-        <p className="md:w-64 text-slate-400">{description}</p>
+        <p className="md:w-72 text-slate-500 pr-6">{description}</p>
         <a
           className="blog__card-anchor flex items-center gap-2 uppercase font-semibold"
           href="#"
@@ -104,14 +104,13 @@ const Blog = () => {
       <article className="w-11/12 mx-auto py-12">
         <div className="flex flex-col gap-4 justify-center items-center text-center py-4">
           <h2 className="uppercase font-bold text-3xl section__title">
-            The Book Guide <span className="text__accent-color">online</span>{" "}
-            book store
+            Explore the <span className="text__accent-color">world</span> of
+            books and reading
           </h2>
           <p>
-            We're breaking new ground in online book selling. We believe that
-            education and access to books are basic human rights. That's why
-            books sold on BetterWorldBooks.com help fund high-impact literacy
-            projects in the United States and around the world.
+            Discover inspiring articles on reading trends, innovation in the
+            publishing industry, and resources to further enjoy the exciting
+            world of books.
           </p>
         </div>
         <article className="py-6">
