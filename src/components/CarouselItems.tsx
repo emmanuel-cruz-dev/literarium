@@ -66,12 +66,14 @@ const CarouselItems: FC<CarouselItemsProps> = ({ articleTitle, arr }) => {
           <button
             onClick={() => swiperRef.current?.slidePrev()}
             className="p-2 bg-gray-200/60 text-gray-600 hover:bg-gray-300"
+            title="Previous"
           >
             <AiOutlineLeft />
           </button>
           <button
             onClick={() => swiperRef.current?.slideNext()}
             className="p-2 bg-gray-200/60 text-gray-600 hover:bg-gray-300"
+            title="Next"
           >
             <AiOutlineRight />
           </button>

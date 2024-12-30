@@ -54,7 +54,7 @@ const CardArticle: FC<CardArticleProps> = ({
         <span className="main-cards__icon text-5xl">{icon}</span>
       </div>
       <h3 className="font-medium text-lg main-cards__title mb-2">{title}</h3>
-      <p>{description}</p>
+      <p className="w-2/3 md:w-11/12">{description}</p>
       <a
         href="#"
         className="text-sm border border-gray-300 py-2 px-4 hover:bg-white hover:border-white hover:text-gray-600"
