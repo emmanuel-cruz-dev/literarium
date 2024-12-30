@@ -3,7 +3,7 @@ import { AiOutlineDoubleRight } from "react-icons/ai";
 
 const BlogCard = () => {
   return (
-    <article className="flex flex-col md:flex-row md:w-fit mx-auto items-center gap-4 box-shadow__item bg-slate-100 hover:bg-white transition-colors duration-300 ease-in-out">
+    <article className="flex flex-col md:flex-row md:w-fit mx-auto items-center gap-6 box-shadow__item bg-slate-100 hover:bg-white transition-colors duration-300 ease-in-out">
       <div className="relative w-full h-96 md:h-full">
         <img className="h-full object-cover" src={Image} alt="" />
         <div className="absolute bottom-0 right-0 left-44 hover:left-0 transition-all duration-300 text-white text-center">
@@ -13,14 +13,17 @@ const BlogCard = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-2 p-6 pt-0">
+      <div className="flex flex-col gap-2 py-6">
         <p className="text-slate-400">Posted by Cartel</p>
         <h2 className="blog__card-title">Book Lovers</h2>
         <p className="md:w-64 text-slate-400">
           The Book Lovers is a research project on the phenomenon of artist's
           novels avaible today.
         </p>
-        <a className="flex items-center gap-2 uppercase font-semibold" href="#">
+        <a
+          className="blog__card-anchor flex items-center gap-2 uppercase font-semibold"
+          href="#"
+        >
           See More
           <AiOutlineDoubleRight />
         </a>
@@ -39,7 +42,7 @@ const Blog = () => {
             book store
           </h2>
           <p>
-            We’re breaking new ground in online bookselling. We believe that
+            We’re breaking new ground in online book selling. We believe that
             education and access to books are basic human rights. That's why
             books sold on BetterWorldBooks.com help fund high-impact literacy
             projects in the United States and around the world.

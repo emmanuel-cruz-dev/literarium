@@ -346,3 +346,13 @@
 /***************************************
  *          Fin: Book Guide            *
  ***************************************/
+
+.blog__card-anchor {
+  width: fit-content;
+  transition: color 0.3s ease-in-out, gap 0.3s ease-in-out;
+}
+
+.blog__card-anchor:hover {
+  color: var(--accent-color);
+  gap: 1rem;
+}
