@@ -1,6 +1,41 @@
 import Cover from "../assets/images/juego-tronos-cover.jpg";
 import StarsElement from "./StarsElement";
 
+const books = [
+  {
+    id: 1,
+    title: "Juego de tronos",
+    author: "George R. R. Martin",
+    img: Cover,
+    rating: 5,
+    price: 692.99,
+  },
+  {
+    id: 2,
+    title: "12 reglas para vivir",
+    author: "Jordan Peterson",
+    img: DoceReglas,
+    rating: 4,
+    price: 789.65,
+  },
+  {
+    id: 3,
+    title: "La libertad primera y última",
+    author: "Jiddu Krishnamurti",
+    img: LibertadPrimera,
+    rating: 5,
+    price: 849.39,
+  },
+  {
+    id: 4,
+    title: "El poder de los hábitos",
+    author: "Charles Duhigg",
+    img: PoderHabitos,
+    rating: 5,
+    price: 526.15,
+  },
+];
+
 const BookGuideItem = () => {
   return (
     <article className="products__article-item flex flex-col border border-slate-200 hover:border-transparent">
