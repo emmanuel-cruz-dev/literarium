@@ -3,28 +3,28 @@
     "id": 1,
     "title": "Hábitos Atómicos",
     "author": "James Clear",
-    "img": "/public/images/coraline.jpg",
+    "img": "/public/images/habitos-atomicos.jpg",
     "price": 695.89
   },
   {
     "id": 2,
     "title": "Poder sin Límites",
     "author": "Tony Robbins",
-    "img": "/public/images/el-resplandor.jpg",
+    "img": "/public/images/poder-sin-limites.jpg",
     "price": 1123.35
   },
   {
     "id": 3,
     "title": "Más Allá del Orden",
     "author": "Jordan B. Peterson",
-    "img": "/public/images/el-exorcista.jpg",
+    "img": "/public/images/mas-alla-del-orden.jpg",
     "price": 759.89
   },
   {
     "id": 4,
     "title": "Si lo Crees, lo Creas",
     "author": "Brian Tracy",
-    "img": "/public/images/cuentos-amor-locura-muerte.jpg",
+    "img": "/public/images/si-lo-crees-lo-creas.jpg",
     "price": 936.71
   }
 ]
