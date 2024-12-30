@@ -7,8 +7,6 @@ import {
   AiOutlineRight,
   AiOutlineDoubleRight,
 } from "react-icons/ai";
-
-// import AprendaMafia from "../assets/images/aprenda-de-la-mafia.jpg";
 import StarRating from "./StarRating";
 
 interface CarouselItem {
@@ -46,7 +44,7 @@ const BookArticleCard: FC<CarouselItem> = ({ title, author, img, price }) => {
         <span className="background-accent__item text-center text-white font-bold w-fit px-2 py-1">
           ${price}
         </span>
-        <button className="w-fit uppercase flex items-center gap-2">
+        <button className="w-fit uppercase text-sm flex items-center gap-2">
           Add to Cart
           <AiOutlineDoubleRight />
         </button>
@@ -102,18 +100,6 @@ const CarouselItems: FC<CarouselItemsProps> = ({ articleTitle, arr }) => {
             <BookArticleCard {...item} />
           </SwiperSlide>
         ))}
-        {/* <SwiperSlide>
-          <BookArticleCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <BookArticleCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <BookArticleCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <BookArticleCard />
-        </SwiperSlide> */}
       </Swiper>
     </article>
   );
