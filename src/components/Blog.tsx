@@ -116,7 +116,7 @@ const Blog = () => {
         <article className="py-6">
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
             {posts.map((post) => (
-              <BlogCard {...post} />
+              <BlogCard key={post.id} {...post} />
             ))}
           </div>
         </article>

@@ -41,14 +41,12 @@ const BookGuide = () => {
       <article className="w-11/12 mx-auto py-12">
         <div className="flex flex-col gap-4 justify-center items-center text-center py-4">
           <h2 className="uppercase font-bold text-3xl section__title">
-            The Book Guide <span className="text__accent-color">online</span>{" "}
-            Book Store
+            Browse Our <span className="text__accent-color">Book</span>{" "}
+            Selection
           </h2>
           <p>
-            We're breaking new ground in online bookselling. We believe that
-            education and access to books are basic human rights. That's why
-            books sold on BetterWorldBooks.com help fund high-impact literacy
-            projects in the United States and around the world.
+            Discover unique and featured titles in our store. Add your favorites
+            to your cart and enjoy a quick and easy shopping experience.
           </p>
         </div>
         <article className="py-6">

@@ -87,7 +87,7 @@ const TopSellers = () => {
       <article className="w-11/12 mx-auto py-12">
         <div className="flex flex-col gap-4 justify-center items-center text-center py-4">
           <h2 className="uppercase font-bold text-3xl section__title">
-            Best <span className="text__accent-color">top</span> Sellers
+            Top <span className="text__accent-color">Best</span> Sellers
           </h2>
           <p>
             Discover the most popular and best-selling books in record time. Our
@@ -96,7 +96,7 @@ const TopSellers = () => {
           </p>
         </div>
         <article>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 py-6">
             {books.map((book) => (
               <BookCard key={book.id} {...book} />
             ))}
