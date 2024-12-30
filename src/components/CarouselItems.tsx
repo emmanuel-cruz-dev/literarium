@@ -35,8 +35,8 @@ const BookArticleCard: FC<CarouselItem> = ({ title, author, img, price }) => {
       </div>
       <div className="flex flex-col gap-2">
         <div>
-          <h2 className="uppercase font-bold">{title}</h2>
-          <p className="text-slate-500">{author}</p>
+          <h2 className="uppercase font-bold w-44 truncate">{title}</h2>
+          <p className="text-slate-500 w-44 truncate">{author}</p>
         </div>
         <StarRating />
         <span className="background-accent__item text-center text-white font-bold w-fit px-1 h-7">

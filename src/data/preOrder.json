@@ -2,29 +2,29 @@
   {
     "id": 1,
     "title": "Design Patterns",
-    "author": "James Clear",
-    "img": "/public/images/habitos-atomicos.jpg",
+    "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+    "img": "/public/images/design-patterns.jpg",
     "price": 695.89
   },
   {
     "id": 2,
-    "title": "Clean Code",
-    "author": "Tony Robbins",
-    "img": "/public/images/poder-sin-limites.jpg",
+    "title": "Código Limpio",
+    "author": "Robert C. Martin",
+    "img": "/public/images/codigo-limpio.jpg",
     "price": 1123.35
   },
   {
     "id": 3,
-    "title": "Más Allá del Orden",
-    "author": "Jordan B. Peterson",
-    "img": "/public/images/mas-alla-del-orden.jpg",
+    "title": "Atomic Design",
+    "author": "Brad Frost",
+    "img": "/public/images/atomic-design.jpg",
     "price": 759.89
   },
   {
     "id": 4,
-    "title": "Si lo Crees, lo Creas",
-    "author": "Brian Tracy",
-    "img": "/public/images/si-lo-crees-lo-creas.jpg",
+    "title": "La Guerra del Arte",
+    "author": "Steven Pressfield",
+    "img": "/public/images/la-guerra-del-arte.jpg",
     "price": 936.71
   }
 ]
