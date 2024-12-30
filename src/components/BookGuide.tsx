@@ -16,19 +16,19 @@ interface BookGuideProps {
 const books = [
   {
     id: 1,
+    title: "La Comunidad del Anillo",
+    author: "J. R. R. Tolkien",
+    img: ComunidadAnillo,
+    rating: 4,
+    price: 1132.25,
+  },
+  {
+    id: 2,
     title: "Aprenda de la Mafia",
     author: "Louis Ferrante",
     img: AprendaMafia,
     rating: 5,
     price: 695.99,
-  },
-  {
-    id: 2,
-    title: "El Señor de los Anillos - La Comunidad del Anillo",
-    author: "J. R. R. Tolkien",
-    img: ComunidadAnillo,
-    rating: 4,
-    price: 1132.25,
   },
   {
     id: 3,

@@ -294,6 +294,7 @@
 }
 
 .products__article-item {
+  height: fit-content;
   transition: box-shadow 0.3s ease-in-out;
 }
 
@@ -316,6 +317,14 @@
 .products__article-item:hover .products__card-title {
   color: var(--accent-color);
 }
+
+/***************************************
+ *          Fin: Book Guide            *
+ ***************************************/
+
+/***************************************
+ *           Inicio: Blog              *
+ ***************************************/
 
 .blog__card-title {
   position: relative;
@@ -344,9 +353,6 @@
   height: 0.5px;
   background-color: var(--accent-color);
 }
-/***************************************
- *          Fin: Book Guide            *
- ***************************************/
 
 .blog__card-article:hover .blog__card-article__date {
   left: 0;
@@ -361,3 +367,7 @@
   color: var(--accent-color);
   gap: 1rem;
 }
+
+/***************************************
+ *             Fin: Blog               *
+ ***************************************/
