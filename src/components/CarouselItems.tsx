@@ -28,14 +28,14 @@ const BookArticleCard: FC<CarouselItem> = ({ title, author, img, price }) => {
   return (
     <article className="products__article-item box-shadow-mode h-full flex gap-4">
       <div className="relative w-32 h-full">
-        <img src={img} alt="" />
+        <img className="w-full" src={img} alt="" />
         <a href="#" className="products__plus-item">
           +
         </a>
       </div>
       <div className="flex flex-col gap-2">
         <div>
-          <h2 className="uppercase font-bold text-lg">{title}</h2>
+          <h2 className="uppercase font-bold">{title}</h2>
           <p className="text-slate-500">{author}</p>
         </div>
         <StarRating />
