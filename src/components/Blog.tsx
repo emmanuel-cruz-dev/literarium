@@ -12,7 +12,7 @@ const posts = [
     description:
       "This research project explores the fascinating world of artists' novels, analysing their cultural relevance and impact today.",
     image: BlogImage1,
-    date: 15,
+    date: 25,
     month: "July",
   },
   {
@@ -22,7 +22,7 @@ const posts = [
     description:
       "A remarkable work that has captivated readers with its narrative and innovative approach, becoming a benchmark in Indian literature.",
     image: BlogImage2,
-    date: 10,
+    date: 4,
     month: "August",
   },
   {
@@ -32,8 +32,8 @@ const posts = [
     description:
       "A revolutionary way to buy books that has transformed the reading experience, making access to digital titles easier than ever.",
     image: BlogImage3,
-    date: 21,
-    month: "September",
+    date: 10,
+    month: "August",
   },
   {
     id: 4,
@@ -42,8 +42,8 @@ const posts = [
     description:
       "An educational approach designed to combine accessibility and fun, offering a platform that makes learning a pleasant experience.",
     image: BlogImage4,
-    date: 26,
-    month: "October",
+    date: 16,
+    month: "August",
   },
 ];
 
@@ -82,10 +82,10 @@ const BlogCard: React.FC<BlogCardProps> = ({
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-2 py-6">
+      <div className="flex flex-col px-6 pb-6 gap-2 md:px-0 md:py-6">
         <p className="text-slate-400">Posted by {author}</p>
         <h2 className="blog__card-title">{title}</h2>
-        <p className="md:w-72 text-slate-500 pr-6">{description}</p>
+        <p className="md:w-72 text-slate-500 md:pr-6">{description}</p>
         <a
           className="blog__card-anchor flex items-center gap-2 uppercase font-semibold"
           href="#"
