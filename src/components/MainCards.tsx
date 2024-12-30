@@ -1,6 +1,14 @@
 import { FaGift, FaBook, FaTruck, FaCalculator } from "react-icons/fa";
+import { FC } from "react";
 
-const cardItems = [
+interface CardArticleProps {
+  id: number;
+  icon: JSX.Element;
+  title: string;
+  description: string;
+}
+
+const cardItems: CardArticleProps[] = [
   {
     id: 1,
     icon: <FaGift />,
@@ -31,7 +39,12 @@ const cardItems = [
   },
 ];
 
-const CardArticle = ({ id, icon, title, description }) => {
+const CardArticle: FC<CardArticleProps> = ({
+  id,
+  icon,
+  title,
+  description,
+}) => {
   return (
     <article
       key={id}
@@ -52,7 +65,7 @@ const CardArticle = ({ id, icon, title, description }) => {
   );
 };
 
-const MainCards = () => {
+const MainCards: FC = () => {
   return (
     <section className="main-cards w-11/12 mx-auto py-12" id="main-cards">
       <div className="flex flex-col gap-4 justify-center items-center text-center py-4">
@@ -68,8 +81,8 @@ const MainCards = () => {
       </div>
       <article>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {cardItems.map((item) => (
-            <CardArticle {...item} />
+          {cardItems.map((item, index) => (
+            <CardArticle key={index} {...item} />
           ))}
         </div>
       </article>
