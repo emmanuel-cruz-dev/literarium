@@ -1,9 +1,21 @@
 import Image from "../assets/images/blog.jpg";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 
+const posts = [
+  {
+    id: 1,
+    author: "Cartel",
+    title: "Book Lovers",
+    description:
+      "The Book Lovers is a research project exploring the unique world of artist's novels, delving into their cultural significance and impact.",
+    date: 15,
+    month: "July",
+  },
+];
+
 const BlogCard = () => {
   return (
-    <article className="blog__card-article flex flex-col md:flex-row md:w-fit mx-auto items-center gap-6 box-shadow__item bg-slate-100 hover:bg-white transition-colors duration-300 ease-in-out">
+    <article className="blog__card-article flex flex-col md:flex-row md:w-fit mx-auto items-center gap-6 box-shadow__item bg-gray-100/60 hover:bg-white transition-colors duration-300 ease-in-out">
       <div className="relative w-full h-96 md:h-full">
         <img className="h-full object-cover" src={Image} alt="" />
         <div className="blog__card-article__date absolute bottom-0 right-0 left-44 transition-all duration-300 text-white text-center">
