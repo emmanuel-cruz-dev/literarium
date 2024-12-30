@@ -70,7 +70,7 @@ const BookGuideItem: FC<BookGuideProps> = ({
         <h2 className="products__card-title leading-tight font-bold text-xl text-slate-700">
           {title}
         </h2>
-        <p className="text-slate-500">{author}</p>
+        <p className="font-light text-slate-500">{author}</p>
       </div>
       <div className="flex justify-between items-center relative py-3 px-3">
         <span className="font-semibold text-lg text-slate-500">${price}</span>

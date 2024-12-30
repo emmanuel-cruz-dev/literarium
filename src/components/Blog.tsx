@@ -83,7 +83,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
         </div>
       </div>
       <div className="flex flex-col px-6 pb-6 gap-2 md:px-0 md:py-6">
-        <p className="text-slate-400">Posted by {author}</p>
+        <p className="font-light text-slate-500">Posted by {author}</p>
         <h2 className="blog__card-title">{title}</h2>
         <p className="md:w-72 text-slate-500 md:pr-6">{description}</p>
         <a
