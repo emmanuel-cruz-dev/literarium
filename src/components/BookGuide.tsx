@@ -1,5 +1,5 @@
 import Cover from "../assets/images/juego-tronos-cover.jpg";
-import StarRating from "./StarRating";
+import StarsElement from "./StarsElement";
 
 const BookGuideItem = () => {
   return (
@@ -22,7 +22,7 @@ const BookGuideItem = () => {
       <div className="flex justify-between items-center relative py-3 px-3">
         <span className="font-semibold text-lg text-slate-500">$24.75</span>
         <div>
-          <StarRating />
+          <StarsElement num={4} />
         </div>
         <a
           className="book-guide__btn absolute top-0 left-[-.9px] bottom-[-.9px] right-[-.9px] flex items-center text-lg justify-center font-bold text-white text-center background-accent__item uppercase"

@@ -3,7 +3,6 @@ import JuegoTronos from "../assets/images/juego-tronos-cover.jpg";
 import DoceReglas from "../assets/images/12-reglas-para-vivir-cover.jpg";
 import LibertadPrimera from "../assets/images/libertad-primera-y-ultima-cover.jpg";
 import PoderHabitos from "../assets/images/poder-habitos-cover.jpg";
-import React from "react";
 
 const books = [
   {
