@@ -263,6 +263,35 @@
 .products__article-item:hover .products__plus-item {
   opacity: 1;
 }
+
+.products__article-item {
+  height: fit-content;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.products__article-item:hover {
+  box-shadow: 0px 8px 16px rgba(165, 177, 198, 0.7);
+}
+
+.products__article-item:hover .book-guide__plus-item {
+  opacity: 1;
+}
+
+.products__article-item:hover .book-guide__btn {
+  opacity: 1;
+}
+
+.products__card-title {
+  transition: color 0.3s ease-in-out;
+}
+
+.products__article-item:hover .products__card-title {
+  color: var(--accent-color);
+}
+
+.products__article-item.box-shadow-mode {
+  box-shadow: none;
+}
 /***************************************
  *           Fin: Products             *
  ***************************************/
@@ -291,31 +320,6 @@
   justify-content: center;
   align-items: center;
   transition: opacity 0.3s ease-in-out;
-}
-
-.products__article-item {
-  height: fit-content;
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.products__article-item:hover {
-  box-shadow: 0px 8px 16px rgba(165, 177, 198, 0.7);
-}
-
-.products__article-item:hover .book-guide__plus-item {
-  opacity: 1;
-}
-
-.products__article-item:hover .book-guide__btn {
-  opacity: 1;
-}
-
-.products__card-title {
-  transition: color 0.3s ease-in-out;
-}
-
-.products__article-item:hover .products__card-title {
-  color: var(--accent-color);
 }
 
 /***************************************

@@ -17,7 +17,7 @@ interface CarouselItemsProps {
 
 const BookArticleCard: FC = () => {
   return (
-    <article className="products__article-item h-full flex gap-4">
+    <article className="products__article-item box-shadow-mode h-full flex gap-4">
       <div className="relative w-32 h-full">
         <img src={AprendaMafia} alt="" />
         <a href="#" className="products__plus-item">
@@ -26,7 +26,7 @@ const BookArticleCard: FC = () => {
       </div>
       <div className="flex flex-col gap-2">
         <div>
-          <h2 className="uppercase font-bold text-lg">The Winning</h2>
+          <h2 className="uppercase font-bold text-lg">Aprenda de la mafia</h2>
           <p className="text-slate-500">Mind Set</p>
         </div>
         <StarRating />
