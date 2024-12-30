@@ -43,6 +43,7 @@
 
 .section__title {
   position: relative;
+  margin-bottom: 0.25rem;
 }
 
 .section__title::before {

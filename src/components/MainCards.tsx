@@ -53,7 +53,7 @@ const CardArticle: FC<CardArticleProps> = ({
       <div className="bg-slate-200 rounded-full p-5">
         <span className="main-cards__icon text-5xl">{icon}</span>
       </div>
-      <h3 className="font-medium text-lg main-cards__title">{title}</h3>
+      <h3 className="font-medium text-lg main-cards__title mb-2">{title}</h3>
       <p>{description}</p>
       <a
         href="#"
@@ -80,7 +80,7 @@ const MainCards: FC = () => {
         </p>
       </div>
       <article>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 py-6">
           {cardItems.map((item, index) => (
             <CardArticle key={index} {...item} />
           ))}

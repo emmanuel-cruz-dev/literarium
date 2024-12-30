@@ -9,7 +9,8 @@ const Banner = () => {
           The World's Largest Online Bookstore
         </h2>
         <p className="text-[17px]">
-          Here you can get the Ebooks easily where are available in our stock.
+          Easily find available eBooks in our collection. Explore a wide variety
+          of titles with just a click.
         </p>
       </div>
       <div className="flex gap-4 uppercase font-semibold [&>a]:py-3 [&>a]:px-4">
