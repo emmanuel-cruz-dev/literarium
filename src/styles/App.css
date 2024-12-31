@@ -506,6 +506,10 @@ body {
 /***************************************
  *             Fin: Gift               *
  ***************************************/
+.price-card-container {
+  position: relative;
+  overflow: hidden;
+}
 
 .price-card__price-circle {
   border: 4px solid var(--font-light-color);
@@ -517,6 +521,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 2;
   transition: transform 0.3s ease, background-color 0.3s ease-in-out,
     color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
