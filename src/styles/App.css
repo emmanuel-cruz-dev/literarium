@@ -465,6 +465,27 @@ body {
   background-color: var(--white-color);
 }
 
+.gift__card-item {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.gift__card-item__arrow {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.gift__card-body:hover .gift__card-item {
+  background-color: #47bdf4;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.gift__card-body:hover .gift__card-item__arrow {
+  opacity: 1;
+  background-color: #47bdf4;
+}
 /***************************************
  *             Fin: Gift               *
  ***************************************/

@@ -38,15 +38,15 @@ const cards = [
 
 const GiftCard: FC<GiftCardProps> = ({ icon, title, description }) => {
   return (
-    <article className="flex items-center w-[52%]">
-      <div className="flex flex-col p-4 py-6 hover:bg-white/20">
+    <article className="gift__card-body flex items-center w-[52%]">
+      <div className="gift__card-item flex flex-col p-6">
         <div className="flex items-center gap-2 text-2xl uppercase font-bold">
           <span className="text-3xl">{icon}</span>
           <h2>{title}</h2>
         </div>
         <p className="font-light">{description}</p>
       </div>
-      <span className="-ml-3 rounded-full bg-white/20 p-2">
+      <span className="gift__card-item__arrow -ml-4 rounded-full p-[7px]">
         <FaChevronRight />
       </span>
     </article>
