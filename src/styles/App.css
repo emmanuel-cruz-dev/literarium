@@ -444,7 +444,7 @@ body {
 .gift {
   position: relative;
   overflow: visible;
-  height: 130vh;
+  height: 120vh;
 }
 
 .gift__background-image {
@@ -468,7 +468,7 @@ body {
 .gift__card-item {
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
 .gift__card-item__arrow {
