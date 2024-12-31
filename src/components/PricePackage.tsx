@@ -2,8 +2,9 @@ import PersonalImg from "../assets/images/package1.jpg";
 
 const PriceCard = () => {
   return (
-    <article className="box-shadow__item price-card-container flex flex-col justify-center items-center gap-6 text-center py-8 bg-slate-100/70 hover:bg-white transition-colors duration-300 ease-in-out">
+    <article className="box-shadow__item price-card-container flex flex-col justify-center items-center gap-6 text-center py-8 bg-slate-100 hover:bg-white transition-colors duration-300 ease-in-out">
       <img className="absolute top-0 w-full" src={PersonalImg} alt="" />
+      <div className="price-card__fill-item"></div>
       <h2 className="uppercase z-10 text-white font-bold text-2xl">Personal</h2>
       <div className="price-card__price-circle">
         <p className="text-3xl font-light">$77</p>
@@ -15,7 +16,7 @@ const PriceCard = () => {
         <li>5 Books</li>
         <li>36 Magazines</li>
       </ul>
-      <a className="btn" href="#">
+      <a className="btn z-10" href="#">
         Purchase Now
       </a>
     </article>

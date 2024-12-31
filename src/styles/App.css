@@ -511,6 +511,26 @@ body {
   overflow: hidden;
 }
 
+.price-card-container img {
+  transition: transform 1s ease-in;
+}
+
+.price-card-container:hover img {
+  transform: scale(2);
+}
+
+.price-card__fill-item {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  top: 9.2rem;
+  background-color: #f1f5f9;
+}
+
+.price-card-container:hover .price-card__fill-item {
+  background-color: var(--white-color);
+}
+
 .price-card__price-circle {
   border: 4px solid var(--font-light-color);
   border-radius: 50%;
@@ -545,7 +565,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   height: 0.8px;
-  width: 18rem;
+  width: 260%;
   bottom: -8px;
   background-color: rgba(0, 0, 0, 0.2);
 }
