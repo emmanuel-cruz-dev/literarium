@@ -55,8 +55,9 @@ const GiftCard: FC<GiftCardProps> = ({ icon, title, description }) => {
 
 const Gift = () => {
   return (
-    <section className="blog background-accent__item" id="blog">
+    <section className="gift background-accent__item" id="gift">
       <article className="w-11/12 mx-auto py-12 px-4">
+        <div className="gift__background-image"></div>
         <div className="flex flex-col gap-4 justify-center items-center text-center py-4">
           <h2 className="uppercase font-bold text-3xl text-white section__title gift__title">
             Bookstore Gift Cards

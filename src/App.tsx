@@ -11,6 +11,7 @@ import BookGuide from "./components/BookGuide";
 import Blog from "./components/Blog";
 import Testimonies from "./components/Testimonies";
 import Gift from "./components/Gift";
+import PricePackage from "./components/PricePackage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <CounterBanner />
       <Blog />
       <Gift />
+      <PricePackage />
       <Footer />
     </>
   );

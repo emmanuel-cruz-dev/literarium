@@ -16,6 +16,10 @@
   /* border: 1px solid red; */
 }
 
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --primary-color: #007bff;
   --secondary-color: #6c757d;
@@ -437,6 +441,24 @@
 /***************************************
  *           Inicio: Gift              *
  ***************************************/
+.gift {
+  position: relative;
+  overflow: visible;
+  height: 130vh;
+}
+
+.gift__background-image {
+  background-image: url("../assets/images/laptop.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 92vh;
+  width: 92vw;
+  z-index: 100;
+  /* overflow: visible; */
+  position: absolute;
+  bottom: -68px;
+  right: -44%;
+}
 
 .gift__title::after,
 .gift__title::before {
