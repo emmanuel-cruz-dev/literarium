@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay, Pagination } from "swiper/modules";
+import { EffectFade, Navigation, Autoplay, Pagination } from "swiper/modules";
 
 import Img1 from "../assets/images/testimonials-img1.jpg";
 import Img2 from "../assets/images/testimonials-img2.jpg";
@@ -36,7 +36,7 @@ const testimoniesArr = [
     name: "Anna Hawke",
     occupation: "Marketing Manager",
     description:
-      "Thank you for your support over the years! I would gladly recommend you to my friends.",
+      "Thank you for your support over the years! Every interaction I've had with your team has been positive and seamless. I would gladly recommend you to my friends.",
   },
 ];
 
@@ -66,12 +66,16 @@ const Testimonies = () => {
   return (
     <section className="testimonies" id="testimonies">
       <article className="py-12">
-        <h2 className="text-center uppercase text-white font-semibold text-3xl">
+        <h2 className="text-center uppercase text-white font-bold text-3xl">
           What Our Clients Are Saying About Us
         </h2>
         <div>
           <Swiper
-            modules={[Navigation, Autoplay, Pagination]}
+            modules={[EffectFade, Navigation, Autoplay, Pagination]}
+            effect="fade" // Activar el efecto de desvanecimiento
+            fadeEffect={{
+              crossFade: true,
+            }}
             spaceBetween={30}
             slidesPerView={1}
             navigation
