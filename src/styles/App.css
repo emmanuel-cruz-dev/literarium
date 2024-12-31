@@ -567,6 +567,14 @@ body {
   background-color: var(--accent-color);
 }
 
+.price-card__paragraph {
+  color: var(--secondary-color);
+}
+
+.price-card-container:hover .price-card__paragraph {
+  color: var(--white-color);
+}
+
 .price-card__list {
   z-index: 5;
 }

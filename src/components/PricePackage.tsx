@@ -62,7 +62,7 @@ const PriceCard: FC<PriceCardProps> = ({
       <h2 className="uppercase z-10 text-white font-bold text-2xl">{title}</h2>
       <div className="price-card__price-circle">
         <p className="text-3xl font-light">${price}</p>
-        <p className="text-sm">Per Month</p>
+        <p className="text-sm price-card__paragraph">Per Month</p>
       </div>
       <ul className="price-card__list flex flex-col gap-4 text-lg font-thin text-slate-600">
         <li>{eBooks} E-Books</li>
