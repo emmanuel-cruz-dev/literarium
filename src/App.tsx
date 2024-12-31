@@ -10,6 +10,7 @@ import CounterBanner from "./components/CounterBanner";
 import BookGuide from "./components/BookGuide";
 import Blog from "./components/Blog";
 import Testimonies from "./components/Testimonies";
+import Gift from "./components/Gift";
 
 function App() {
   return (
@@ -19,11 +20,12 @@ function App() {
       <Banner />
       <MainCards />
       <TopSellers />
-      <Testimonies />
       <Products />
+      <Testimonies />
       <BookGuide />
       <CounterBanner />
       <Blog />
+      <Gift />
       <Footer />
     </>
   );
