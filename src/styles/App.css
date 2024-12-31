@@ -517,7 +517,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease-in, background-color 0.3s ease-in-out,
+  transition: transform 0.3s ease, background-color 0.3s ease-in-out,
     color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
@@ -528,4 +528,19 @@ body {
   transform: rotate(360deg);
   color: var(--white-color);
   background-color: var(--accent-color);
+}
+
+.price-card__list li {
+  position: relative;
+}
+
+.price-card__list li:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.8px;
+  width: 18rem;
+  bottom: -8px;
+  background-color: rgba(0, 0, 0, 0.2);
 }

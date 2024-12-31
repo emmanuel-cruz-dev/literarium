@@ -1,12 +1,12 @@
 const PriceCard = () => {
   return (
-    <article className="price-card-container flex flex-col justify-center items-center gap-6 text-center py-6 bg-slate-100/70 hover:bg-white transition-colors duration-300 ease-in-out">
+    <article className="box-shadow__item price-card-container flex flex-col justify-center items-center gap-6 text-center py-8 bg-slate-100/70 hover:bg-white transition-colors duration-300 ease-in-out">
       <h2 className="uppercase">Personal</h2>
       <div className="price-card__price-circle">
         <p className="text-3xl font-light">$77</p>
         <p className="text-sm">Per Month</p>
       </div>
-      <ul>
+      <ul className="price-card__list flex flex-col gap-4 text-lg font-thin text-slate-500">
         <li>250 E-Books</li>
         <li>10 Comics</li>
         <li>5 Books</li>
