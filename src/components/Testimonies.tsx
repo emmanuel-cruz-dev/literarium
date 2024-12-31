@@ -48,8 +48,8 @@ const TestimoniesCard: FC<TestimoniesCardProps> = ({
 }) => {
   return (
     <article className="flex flex-col gap-5 justify-center items-center h-full">
-      <figure className="rounded-full w-40 overflow-hidden border-4 border-cyan-400">
-        <img src={image} alt="" />
+      <figure className="testimonies__card-container">
+        <img className="object-cover" src={image} alt="" />
       </figure>
       <div className="flex flex-col gap-3 [&>h4]:uppercase justify-center text-center text-white">
         <h3 className="text__accent-color uppercase font-bold text-3xl">
@@ -65,7 +65,7 @@ const TestimoniesCard: FC<TestimoniesCardProps> = ({
 const Testimonies = () => {
   return (
     <section className="testimonies" id="testimonies">
-      <article className="py-12">
+      <article className="py-16">
         <h2 className="text-center uppercase text-white font-bold text-3xl">
           What Our Clients Are Saying About Us
         </h2>
@@ -76,6 +76,7 @@ const Testimonies = () => {
             fadeEffect={{
               crossFade: true,
             }}
+            speed={800}
             spaceBetween={30}
             slidesPerView={1}
             navigation
