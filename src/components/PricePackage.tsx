@@ -1,6 +1,17 @@
+import { FC } from "react";
 import PersonalImg from "../assets/images/package1.jpg";
 import ProfessionalImg from "../assets/images/package2.jpg";
 import BusinessImg from "../assets/images/package3.jpg";
+
+interface PriceCardProps {
+  title: string;
+  image: string;
+  price: number;
+  eBooks: number;
+  comics: number;
+  books: number;
+  magazines: number;
+}
 
 const plans = [
   {
@@ -35,7 +46,7 @@ const plans = [
   },
 ];
 
-const PriceCard = ({
+const PriceCard: FC<PriceCardProps> = ({
   title,
   image,
   price,
