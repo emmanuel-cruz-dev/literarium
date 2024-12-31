@@ -4,27 +4,27 @@
     "title": "Hábitos Atómicos",
     "author": "James Clear",
     "img": "/images/habitos-atomicos.jpg",
-    "price": 695.89
+    "price": 695
   },
   {
     "id": 2,
     "title": "Poder sin Límites",
     "author": "Tony Robbins",
     "img": "/images/poder-sin-limites.jpg",
-    "price": 1123.35
+    "price": 1123
   },
   {
     "id": 3,
     "title": "Más Allá del Orden",
     "author": "Jordan B. Peterson",
     "img": "/images/mas-alla-del-orden.jpg",
-    "price": 759.89
+    "price": 759
   },
   {
     "id": 4,
     "title": "Si lo Crees, lo Creas",
     "author": "Brian Tracy",
     "img": "/images/si-lo-crees-lo-creas.jpg",
-    "price": 936.71
+    "price": 936
   }
 ]
