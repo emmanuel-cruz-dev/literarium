@@ -451,13 +451,15 @@ body {
   background-image: url("../assets/images/laptop.png");
   background-repeat: no-repeat;
   background-size: auto;
-  height: 92vh;
-  width: 92vw;
+  /* height: 92vh;
+  width: 92vw; */
+  height: 470px;
+  width: 891px;
   z-index: 100;
   /* overflow: visible; */
   position: absolute;
-  bottom: -68px;
-  right: -44%;
+  bottom: -4%;
+  right: -22%;
 }
 
 .gift__title::after,
