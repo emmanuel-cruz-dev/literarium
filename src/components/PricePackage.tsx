@@ -1,5 +1,38 @@
 import PersonalImg from "../assets/images/package1.jpg";
 
+const plans = [
+  {
+    id: 1,
+    title: "Personal",
+    image: PersonalImg,
+    price: 77,
+    eBooks: 250,
+    comics: 10,
+    books: 5,
+    magazines: 36,
+  },
+  {
+    id: 1,
+    title: "Personal",
+    image: PersonalImg,
+    price: 77,
+    eBooks: 250,
+    comics: 10,
+    books: 5,
+    magazines: 36,
+  },
+  {
+    id: 1,
+    title: "Personal",
+    image: PersonalImg,
+    price: 77,
+    eBooks: 250,
+    comics: 10,
+    books: 5,
+    magazines: 36,
+  },
+];
+
 const PriceCard = () => {
   return (
     <article className="box-shadow__item price-card-container flex flex-col justify-center items-center gap-6 text-center py-8 bg-slate-100 hover:bg-white transition-colors duration-300 ease-in-out">
