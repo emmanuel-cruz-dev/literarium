@@ -519,6 +519,11 @@ body {
 /***************************************
  *             Fin: Gift               *
  ***************************************/
+
+/***************************************
+ *       Inicio: Price Package         *
+ ***************************************/
+
 .price-card-container {
   position: relative;
   overflow: hidden;
@@ -605,3 +610,27 @@ body {
   bottom: -8px;
   background-color: var(--background-dark-fade);
 }
+
+/***************************************
+ *         Fin: Price Package           *
+ ***************************************/
+
+/***************************************
+ *         Inicio: Newsletter          *
+ ***************************************/
+
+.newsletter {
+  background-image: url("../assets/images/newsletter-bg.png");
+  background-size: auto;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.newsletter input {
+  color: var(--secondary-color);
+  outline: none;
+}
+
+/***************************************
+ *          Fin: Newsletter            *
+ ***************************************/
