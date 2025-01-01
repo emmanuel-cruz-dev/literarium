@@ -1,6 +1,10 @@
 import { FC } from "react";
 import { FaChevronRight } from "react-icons/fa";
 
+interface InformationListProps {
+  data: string[];
+}
+
 const data = [
   "Specials",
   "New Products",
@@ -10,7 +14,7 @@ const data = [
   "Site Map",
 ];
 
-const InformationList = ({ data }) => {
+const InformationList: FC<InformationListProps> = ({ data }) => {
   return (
     <ul>
       {data.map((item) => (
@@ -29,7 +33,7 @@ const InformationList = ({ data }) => {
 const Footer = () => {
   return (
     <footer className="footer bg-black text-white" id="footer">
-      <article className="grid grid-cols-4 gap-4 w-11/12 py-12 mx-auto">
+      <article className="grid grid-cols-4 gap-4 px-8 py-12 mx-auto">
         <div>
           <h2>About Us</h2>
           <ul>
@@ -58,15 +62,14 @@ const Footer = () => {
             <li>
               <p>
                 🌟 "Un libro es un sueño que puedes sostener en tus manos." -
-                Neil Gaiman ¿Qué libro estás sosteniendo hoy? Comenta abajo 👇
+                Neil Gaiman
               </p>
               <span>⏰ Publicado hace 5 horas</span>
             </li>
             <li>
               <p>
-                🙏 Gracias a nuestros seguidores por hacer de nuestra comunidad
-                un lugar lleno de historias. ¡Ya somos 10,000! 🎉 📚 Nos esperan
-                grandes cosas juntos.
+                🙏 Gracias a nuestros seguidores por hacer de esta comunidad un
+                lugar lleno de historias. ¡Ya somos 10,000! 🎉
               </p>
               <span>⏰ Publicado hace 2 días</span>
             </li>
@@ -76,6 +79,24 @@ const Footer = () => {
         <div>
           <h2>Information</h2>
           <InformationList data={data} />
+        </div>
+
+        <div>
+          <h2>Newsletter</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore.
+          </p>
+          <form className="flex flex-col gap-2">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="p-2 bg-slate-700"
+            />
+            <button className="background-accent__item uppercase p-2 w-fit">
+              Subscribe
+            </button>
+          </form>
         </div>
       </article>
       <article className="bg-gray-900 px-4 py-12 lg:py-6 lg:px-8 mx-auto flex flex-col lg:flex-row gap-4 justify-between items-center text-center">
