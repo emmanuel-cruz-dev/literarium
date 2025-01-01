@@ -103,7 +103,7 @@ const BookGuide = () => {
           </p>
         </div>
         <article className="py-6">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 lg:gap-8">
             {books.map((book) => (
               <BookGuideItem key={book.id} {...book} />
             ))}
