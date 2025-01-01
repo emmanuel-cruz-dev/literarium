@@ -93,7 +93,7 @@ const Footer = () => {
               placeholder="Enter your email"
               className="p-2 bg-slate-700"
             />
-            <button className="background-accent__item uppercase p-2 w-fit">
+            <button className="background-accent__item font-bold uppercase py-2 px-3 w-fit hover:bg-slate-700 transition-colors duration-300 ease-in-out">
               Subscribe
             </button>
           </form>
