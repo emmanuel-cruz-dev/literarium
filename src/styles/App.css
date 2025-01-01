@@ -475,6 +475,19 @@ body {
   position: absolute;
   bottom: -4%;
   right: -22%;
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .gift__background-image {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .gift {
+    height: fit-content;
+  }
 }
 
 .gift__title::after,

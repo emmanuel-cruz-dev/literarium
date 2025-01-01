@@ -38,7 +38,7 @@ const cards = [
 
 const GiftCard: FC<GiftCardProps> = ({ icon, title, description }) => {
   return (
-    <article className="gift__card-body flex items-center w-[56%]">
+    <article className="gift__card-body flex items-center lg:w-[56%]">
       <div className="gift__card-item flex flex-col gap-2 p-6">
         <div className="flex items-center gap-2 text-xl uppercase font-bold">
           <span className="text-2xl">{icon}</span>
@@ -46,7 +46,7 @@ const GiftCard: FC<GiftCardProps> = ({ icon, title, description }) => {
         </div>
         <p className="font-light">{description}</p>
       </div>
-      <span className="gift__card-item__arrow -ml-4 rounded-full p-[7px]">
+      <span className="hidden lg:block gift__card-item__arrow -ml-4 rounded-full p-[7px]">
         <FaChevronRight />
       </span>
     </article>
@@ -63,7 +63,7 @@ const Gift = () => {
             Bookstore Gift Cards
           </h2>
         </div>
-        <article className=" flex flex-col py-6 text-white">
+        <article className="flex flex-col py-12 lg:py-6 text-white">
           {cards.map((card) => (
             <GiftCard key={card.id} {...card} />
           ))}

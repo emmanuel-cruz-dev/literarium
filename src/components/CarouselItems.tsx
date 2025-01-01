@@ -63,7 +63,7 @@ const CarouselItems: FC<CarouselItemsProps> = ({ articleTitle, arr }) => {
   const swiperRef = useRef<SwiperType>();
 
   return (
-    <article className="w-full lg:w-[21rem] flex flex-col gap-4 mx-auto">
+    <article className="w-full lg:w-[21rem] flex flex-col gap-4 mx-auto mb-12 xl:mb-0">
       <div className="flex justify-between border-b border-slate-300 pb-4">
         <h2 className="uppercase text-2xl">{articleTitle}</h2>
         <div className="flex gap-2">
