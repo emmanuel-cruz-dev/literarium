@@ -408,7 +408,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .testimonies__card-container {

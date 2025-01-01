@@ -49,14 +49,14 @@ const TestimoniesCard: FC<TestimoniesCardProps> = ({
   return (
     <article className="flex flex-col gap-5 justify-center items-center h-full">
       <figure className="testimonies__card-container">
-        <img className="object-cover" src={image} alt="" />
+        <img className="object-cover" src={image} alt={name} />
       </figure>
       <div className="flex flex-col gap-3 [&>h4]:uppercase justify-center text-center text-white">
         <h3 className="text__accent-color uppercase font-bold text-3xl">
           {name}
         </h3>
         <h4>{occupation}</h4>
-        <p className="text-lg">"{description}"</p>
+        <p className="text-lg mb-12">"{description}"</p>
       </div>
     </article>
   );
@@ -65,7 +65,7 @@ const TestimoniesCard: FC<TestimoniesCardProps> = ({
 const Testimonies = () => {
   return (
     <section className="testimonies" id="testimonies">
-      <article className="py-16">
+      <article className="w-11/12 mx-auto flex flex-col justify-center gap-12 py-16 h-full">
         <h2 className="text-center uppercase text-white font-bold text-3xl">
           What Our Clients Are Saying About Us
         </h2>
@@ -86,7 +86,7 @@ const Testimonies = () => {
               delay: 5000,
               disableOnInteraction: false,
             }}
-            className="w-2/3 h-[420px]" // Clases de Tailwind
+            className="lg:w-2/3 h-full" // Clases de Tailwind
           >
             {testimoniesArr.map((testimony) => (
               <SwiperSlide key={testimony.id}>
