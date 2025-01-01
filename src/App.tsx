@@ -12,6 +12,7 @@ import Blog from "./components/Blog";
 import Testimonies from "./components/Testimonies";
 import Gift from "./components/Gift";
 import PricePackage from "./components/PricePackage";
+import Newsletter from "./components/Newsletter";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Blog />
       <Gift />
       <PricePackage />
+      <Newsletter />
       <Footer />
     </>
   );
