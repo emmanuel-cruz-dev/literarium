@@ -21,7 +21,7 @@ const cardItems: CardArticleProps[] = [
     icon: <FaBook />,
     title: "Buy Selling Used Books",
     description:
-      "Buy and sell used books with ease. We offer a reliable platform to give new life to the books you've already read.",
+      "Buy and sell books with ease. We offer a reliable platform to give new life to the books you've already read.",
   },
   {
     id: 3,

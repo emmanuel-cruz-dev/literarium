@@ -118,7 +118,7 @@ body {
 
 .header__list-container li {
   position: relative;
-  /* height: 3rem; */
+  font-size: 1.1em;
 }
 
 .header__list-container li a {
