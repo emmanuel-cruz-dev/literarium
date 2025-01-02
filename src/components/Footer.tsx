@@ -48,27 +48,26 @@ const Footer = () => {
 
         <div>
           <h2 className="footer__list-title">Latest Tweets</h2>
-          <ul className="footer__list-container [&>li>span]:text-xs">
+          <ul className="footer__list-container">
             <li>
               <p>
-                "The Art of Storytelling" está arrasando en nuestra tienda esta
-                semana! #LibrosRecomendados
+                "Design Patterns" is sweeping our store this week!
+                #RecommendedBooks
               </p>
-              <span>⏰ Publicado hace 4 horas</span>
+              <span>⏰ Posted 4 hours ago</span>
             </li>
             <li>
               <p>
-                🌟 "Un libro es un sueño que puedes sostener en tus manos." -
-                Neil Gaiman
+                🌟 "A book is a dream you can hold in your hands." - Neil Gaiman
               </p>
-              <span>⏰ Publicado hace 5 horas</span>
+              <span>⏰ Posted 5 hours ago</span>
             </li>
             <li>
               <p>
-                🙏 Gracias a nuestros seguidores por hacer de esta comunidad un
-                lugar lleno de historias. ¡Ya somos 10,000! 🎉
+                🙏 Thank you to our followers for making this community a place
+                full of stories. We are already 10,000! 🎉
               </p>
-              <span>⏰ Publicado hace 2 días</span>
+              <span>⏰ Posted 2 days ago</span>
             </li>
           </ul>
         </div>
@@ -88,7 +87,7 @@ const Footer = () => {
               </p>
             </li>
             <li>
-              <form className="flex flex-col gap-2">
+              <form className="flex flex-col gap-4">
                 <input
                   type="email"
                   placeholder="Enter your email"
