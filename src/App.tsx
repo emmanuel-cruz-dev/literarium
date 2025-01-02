@@ -15,6 +15,8 @@ import Gift from "./components/Gift";
 import PricePackage from "./components/PricePackage";
 import Newsletter from "./components/Newsletter";
 
+import About from "./components/routes/About";
+
 const Home = () => {
   return (
     <>
@@ -40,7 +42,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<div>About</div>} />
+        <Route path="/about" element={<About />} />
         <Route path="/blog" element={<div>Blog</div>} />
         <Route path="/teams" element={<div>Teams</div>} />
         <Route path="/products" element={<div>Products</div>} />

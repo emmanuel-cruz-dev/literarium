@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "../assets/icons/literarium-icono.png";
 import { HiMenu } from "react-icons/hi";
 
@@ -17,22 +18,22 @@ const Header = () => {
         </div>
         <ul className="header__list-container gap-4 hidden md:flex text-lg">
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/about">About Us</a>
+            <Link to="/about">About Us</Link>
           </li>
           <li>
-            <a href="/blog">Our Blog</a>
+            <Link to="/blog">Our Blog</Link>
           </li>
           <li>
-            <a href="/teams">Teams</a>
+            <Link to="/teams">Teams</Link>
           </li>
           <li>
-            <a href="/products">Products</a>
+            <Link to="/products">Products</Link>
           </li>
           <li>
-            <a href="/contact">Contact Us</a>
+            <Link to="/contact">Contact Us</Link>
           </li>
         </ul>
         <div className="block md:hidden">

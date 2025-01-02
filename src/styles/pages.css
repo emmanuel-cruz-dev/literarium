@@ -1,0 +1,16 @@
+/***************************************
+ *            Inicio: About            *
+ ***************************************/
+
+.about-page {
+  background-image: url("../assets/images/inner-banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100vw;
+}
+
+/***************************************
+ *            Fin: About              *
+ ***************************************/
