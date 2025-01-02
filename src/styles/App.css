@@ -168,8 +168,8 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: -45%;
-  width: 6.5rem;
+  left: -16%;
+  width: 5rem;
   height: 1.3px; /* Grosor de la línea */
   background-color: white; /* Color de la línea */
 }
@@ -179,8 +179,8 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: -45%;
-  width: 6.5rem;
+  right: -16%;
+  width: 5rem;
   height: 1.3px; /* Grosor de la línea */
   background-color: white; /* Color de la línea */
 }

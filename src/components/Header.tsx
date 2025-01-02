@@ -36,7 +36,7 @@ const Header = () => {
           </li>
         </ul>
         <div className="block md:hidden">
-          <HiMenu className="text-2xl" />
+          <HiMenu className="text-3xl" />
         </div>
       </nav>
     </header>

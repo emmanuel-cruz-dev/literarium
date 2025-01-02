@@ -8,16 +8,15 @@ const Hero = () => {
     >
       <div className="hidden lg:flex flex-grow"></div>
       <div className="flex flex-col items-center gap-6 text-center pb-8 w-11/12">
-        <h1 className="text-6xl lg:text-8xl font-bold uppercase tracking-wide">
-          Book Store
+        <h1 className="text-6xl lg:text-6xl font-bold uppercase tracking-wide">
+          Your trusted bookstore
         </h1>
-        <h2 className="hidden md:block text-3xl lg:text-4xl font-bold uppercase title__double-lines">
-          Book Guiders
+        <h2 className="hidden md:block text-3xl lg:text-3xl font-bold uppercase title__double-lines">
+          Inspiring readers, one book at a time
         </h2>
         <p className="lg:w-3/5">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium dolor emque laudantium, totam rem aperiam.ipsam
-          voluptatem.
+          Dive into a universe of knowledge and entertainment. Physical and
+          digital books and home deliveries at your fingertips.
         </p>
         <div className="rounded-full overflow-hidden hidden lg:flex justify-between items-center w-[36rem] h-12">
           <input
