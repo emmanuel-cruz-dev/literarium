@@ -110,13 +110,13 @@ const Footer = () => {
               </p>
             </li>
             <li>
-              <form className="flex flex-col gap-4">
+              <form className="flex flex-col gap-4 w-full">
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="xl:w-64 p-2 bg-slate-700"
+                  className="p-2 bg-neutral-900"
                 />
-                <button className="background-accent__item font-bold uppercase py-2 px-4 w-fit hover:bg-slate-700 transition-colors duration-300 ease-in-out">
+                <button className="background-accent__item font-bold uppercase py-2 px-4 w-fit hover:bg-neutral-900 transition-colors duration-300 ease-in-out">
                   Subscribe
                 </button>
               </form>
@@ -124,18 +124,19 @@ const Footer = () => {
           </ul>
         </div>
       </article>
-      <article className="bg-gray-900 px-4 py-12 lg:py-6 lg:px-8 mx-auto flex flex-col lg:flex-row gap-4 justify-between items-center text-center">
+      <article className="bg-neutral-900/60 px-4 py-12 lg:py-6 lg:px-12 mx-auto flex flex-col lg:flex-row gap-4 justify-between items-center text-center">
         <span>
-          Copyright © 2024-25{" "}
+          Crafted by{" "}
           <a
             className="hover:underline"
             href="https://emmanuel-cruz.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
+            title="Emmanuel Cruz Portfolio"
           >
             Emmanuel
-          </a>
-          . All rights reserved.
+          </a>{" "}
+          © 2024-25 · All rights reserved.
         </span>
         <img className="w-64" src={CreditCards} alt="Credit Cards" />
       </article>
