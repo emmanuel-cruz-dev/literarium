@@ -44,6 +44,14 @@ const AboutWelcome = () => {
             exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat.
           </p>
+          <ul className="w-full grid grid-cols-1 lg:grid-cols-2 gap-2">
+            <li>Consectetur adipiscing elit</li>
+            <li>Sed do eiusmod tempor incididunt ut labore</li>
+            <li>Ut labore et dolore magna aliqua</li>
+            <li>Consectetur adipiscing elit</li>
+            <li>Sed do eiusmod tempor incididunt ut labore</li>
+            <li>Ut labore et dolore magna aliqua</li>
+          </ul>
         </div>
       </article>
     </section>
