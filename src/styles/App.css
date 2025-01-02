@@ -661,10 +661,31 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  font-size: 0.95em;
+}
+
+.footer__list-container li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer__list-container .footer__tweets {
+  align-items: baseline;
+}
+
+.footer__list-container .footer__tweets svg {
+  flex-shrink: 0;
+}
+
+.footer__tweets p {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__list-container span {
-  font-size: 0.8em;
+  margin-top: 0.4rem;
+  font-size: 0.86em;
   color: var(--accent-color);
 }
 

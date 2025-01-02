@@ -1,3 +1,4 @@
+import { FaTags, FaPhoneAlt, FaEnvelope, FaTwitter } from "react-icons/fa";
 import { FC } from "react";
 import { FaChevronRight } from "react-icons/fa";
 
@@ -38,10 +39,23 @@ const Footer = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore.
             </li>
-            <li>450 Fifth Avenue, 34th floor. NYC</li>
-            <li>(+800) 123 4567 890</li>
             <li>
-              <a href="#">info@literarium.com</a>
+              <FaTags />
+              450 Fifth Avenue, 34th floor. NYC
+            </li>
+            <li>
+              <FaPhoneAlt />
+              (+800) 123 4567 890
+            </li>
+            <li>
+              <FaEnvelope />
+              <a
+                target="_blank"
+                href="https://kodeforest.net/html/books/store/index.html"
+                title="Main Template"
+              >
+                info@literarium.com
+              </a>
             </li>
           </ul>
         </div>
@@ -49,25 +63,28 @@ const Footer = () => {
         <div>
           <h2 className="footer__list-title">Latest Tweets</h2>
           <ul className="footer__list-container">
-            <li>
+            <li className="footer__tweets">
+              <FaTwitter />
               <p>
                 "Design Patterns" is sweeping our store this week!
-                #RecommendedBooks
+                #recommendedBooks
+                <span>⏰ Posted 4 hours ago</span>
               </p>
-              <span>⏰ Posted 4 hours ago</span>
             </li>
-            <li>
+            <li className="footer__tweets">
+              <FaTwitter />
               <p>
                 🌟 "A book is a dream you can hold in your hands." - Neil Gaiman
+                <span>⏰ Posted 5 hours ago</span>
               </p>
-              <span>⏰ Posted 5 hours ago</span>
             </li>
-            <li>
+            <li className="footer__tweets">
+              <FaTwitter />
               <p>
                 🙏 Thank you to our followers for making this community a place
                 full of stories. We are already 10,000! 🎉
+                <span>⏰ Posted 2 days ago</span>
               </p>
-              <span>⏰ Posted 2 days ago</span>
             </li>
           </ul>
         </div>
@@ -103,7 +120,7 @@ const Footer = () => {
       </article>
       <article className="bg-gray-900 px-4 py-12 lg:py-6 lg:px-8 mx-auto flex flex-col lg:flex-row gap-4 justify-between items-center text-center">
         <span>
-          Copyrights © 2024-25{" "}
+          Copyright © 2024-25{" "}
           <a
             className="hover:underline"
             href="https://emmanuel-cruz.netlify.app/"
