@@ -8,13 +8,16 @@ const AboutWelcome = () => {
           Welcome to <span className="text__accent-color">Literarium</span>
         </h2>
       </div>
-      <article className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-12 lg:gap-8 py-6">
+      <article className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-12 lg:gap-16 py-6">
         <figure className="col-span-1">
           <img src={PeopleImage} alt="People" />
         </figure>
         <div className="col-span-2 tracking-wider flex flex-col gap-4 items-center">
           <p>
-            PLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            <span className="float-left text-white text-6xl font-semibold p-1 pb-2 px-3 mr-3 background-accent__item">
+              P
+            </span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
