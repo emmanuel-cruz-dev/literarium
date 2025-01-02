@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom";
 import "./styles/App.css";
 import MainCards from "./components/MainCards";
 import Banner from "./components/Banner";
@@ -14,10 +15,9 @@ import Gift from "./components/Gift";
 import PricePackage from "./components/PricePackage";
 import Newsletter from "./components/Newsletter";
 
-function App() {
+const Home = () => {
   return (
     <>
-      <Header />
       <Hero />
       <Banner />
       <MainCards />
@@ -30,6 +30,23 @@ function App() {
       <Gift />
       <PricePackage />
       <Newsletter />
+    </>
+  );
+};
+
+function App() {
+  return (
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<div>About</div>} />
+        <Route path="/blog" element={<div>Blog</div>} />
+        <Route path="/teams" element={<div>Teams</div>} />
+        <Route path="/products" element={<div>Products</div>} />
+        <Route path="/contact" element={<div>Contact</div>} />
+      </Routes>
+
       <Footer />
     </>
   );
