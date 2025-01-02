@@ -52,6 +52,9 @@ body {
 }
 
 .section__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.85rem;
   position: relative;
   margin-bottom: 0.25rem;
 }
@@ -109,12 +112,6 @@ body {
 /****************************************
  *           Inicio: Header             *
  *****************************************/
-
-/* .header__list-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-} */
 
 .header__list-container li {
   position: relative;

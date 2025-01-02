@@ -69,7 +69,7 @@ const MainCards: FC = () => {
   return (
     <section className="main-cards w-11/12 mx-auto py-12" id="main-cards">
       <div className="flex flex-col gap-4 justify-center items-center text-center py-4">
-        <h2 className="uppercase font-bold text-3xl section__title">
+        <h2 className="section__title">
           Your Ultimate <span className="text__accent-color">Guide</span> to
           Online Books
         </h2>
