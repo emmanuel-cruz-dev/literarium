@@ -112,9 +112,24 @@ body {
 /****************************************
  *           Inicio: Header             *
  *****************************************/
+.header__list-container {
+  height: 100%;
+}
 
 .header__list-container li {
   position: relative;
+  /* height: 3rem; */
+}
+
+.header__list-container li a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 1rem 0;
+  color: var(--white-color);
+  font-size: 0.9em;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
 }
 
 .header__list-container li::after {
@@ -132,7 +147,7 @@ body {
 }
 
 .header__list-container li {
-  padding: 0.75rem 0;
+  /* padding: 0.75rem 0; */
 }
 
 .header__list-container li:hover::after {
