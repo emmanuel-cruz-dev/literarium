@@ -15,7 +15,7 @@ const Header = () => {
             Literarium
           </a>
         </div>
-        <ul className="gap-4 hidden md:flex text-lg">
+        <ul className="header__list-container gap-4 hidden md:flex text-lg">
           <li>
             <a href="/">Home</a>
           </li>
