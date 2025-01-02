@@ -1,3 +1,4 @@
+import CreditCards from "../assets/images/credit-cards.png";
 import {
   FaTags,
   FaPhoneAlt,
@@ -113,7 +114,7 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="p-2 bg-slate-700"
+                  className="xl:w-64 p-2 bg-slate-700"
                 />
                 <button className="background-accent__item font-bold uppercase py-2 px-4 w-fit hover:bg-slate-700 transition-colors duration-300 ease-in-out">
                   Subscribe
@@ -136,14 +137,7 @@ const Footer = () => {
           </a>
           . All rights reserved.
         </span>
-        <a
-          className="font-medium hover:underline"
-          href="https://kodeforest.net/html/books/store/index.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Plantilla Principal
-        </a>
+        <img className="w-64" src={CreditCards} alt="Credit Cards" />
       </article>
     </footer>
   );
