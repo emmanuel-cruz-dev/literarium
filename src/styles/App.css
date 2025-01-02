@@ -662,6 +662,7 @@ body {
   flex-direction: column;
   gap: 1rem;
   font-size: 0.95em;
+  line-height: 1.8;
 }
 
 .footer__list-container li {
@@ -684,7 +685,7 @@ body {
 }
 
 .footer__list-container span {
-  margin-top: 0.4rem;
+  margin-top: 0.2rem;
   font-size: 0.86em;
   color: var(--accent-color);
 }

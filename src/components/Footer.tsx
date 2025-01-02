@@ -1,6 +1,11 @@
-import { FaTags, FaPhoneAlt, FaEnvelope, FaTwitter } from "react-icons/fa";
+import {
+  FaTags,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaTwitter,
+  FaChevronRight,
+} from "react-icons/fa";
 import { FC } from "react";
-import { FaChevronRight } from "react-icons/fa";
 
 interface InformationListProps {
   data: string[];
@@ -31,13 +36,13 @@ const InformationList: FC<InformationListProps> = ({ data }) => {
 const Footer = () => {
   return (
     <footer className="footer bg-black text-white" id="footer">
-      <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-8 py-12 mx-auto">
+      <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 p-12 mx-auto">
         <div>
           <h2 className="footer__list-title">About Us</h2>
           <ul className="footer__list-container">
             <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore.
+              We are passionate about the world of books. We are more than just
+              a bookstore, we are a place where words come to life.
             </li>
             <li>
               <FaTags />
@@ -99,8 +104,8 @@ const Footer = () => {
           <ul className="footer__list-container">
             <li>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore.
+                Subscribe and stay up to date with the latest literary news,
+                promotions and recommendations specially selected for you.
               </p>
             </li>
             <li>
