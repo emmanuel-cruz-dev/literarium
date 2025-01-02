@@ -16,13 +16,10 @@ const data = [
 
 const InformationList: FC<InformationListProps> = ({ data }) => {
   return (
-    <ul>
+    <ul className="unordered__list-container hover-item">
       {data.map((item) => (
         <li key={item}>
-          <a
-            className="flex justify-between items-center hover:px-2 transition-all duration-300"
-            href="#"
-          >
+          <a className="flex items-center justify-between" href="#">
             {item} <FaChevronRight />
           </a>
         </li>
@@ -33,10 +30,10 @@ const InformationList: FC<InformationListProps> = ({ data }) => {
 const Footer = () => {
   return (
     <footer className="footer bg-black text-white" id="footer">
-      <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-8 py-12 mx-auto">
+      <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-8 py-12 mx-auto">
         <div>
           <h2 className="footer__list-title">About Us</h2>
-          <ul>
+          <ul className="footer__list-container">
             <li>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore.
@@ -51,7 +48,7 @@ const Footer = () => {
 
         <div>
           <h2 className="footer__list-title">Latest Tweets</h2>
-          <ul className="[&>li>span]:text-xs flex flex-col gap-2">
+          <ul className="footer__list-container [&>li>span]:text-xs">
             <li>
               <p>
                 "The Art of Storytelling" está arrasando en nuestra tienda esta
@@ -83,20 +80,26 @@ const Footer = () => {
 
         <div>
           <h2 className="footer__list-title">Newsletter</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore.
-          </p>
-          <form className="flex flex-col gap-2">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="p-2 bg-slate-700"
-            />
-            <button className="background-accent__item font-bold uppercase py-2 px-4 w-fit hover:bg-slate-700 transition-colors duration-300 ease-in-out">
-              Subscribe
-            </button>
-          </form>
+          <ul className="footer__list-container">
+            <li>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore.
+              </p>
+            </li>
+            <li>
+              <form className="flex flex-col gap-2">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="p-2 bg-slate-700"
+                />
+                <button className="background-accent__item font-bold uppercase py-2 px-4 w-fit hover:bg-slate-700 transition-colors duration-300 ease-in-out">
+                  Subscribe
+                </button>
+              </form>
+            </li>
+          </ul>
         </div>
       </article>
       <article className="bg-gray-900 px-4 py-12 lg:py-6 lg:px-8 mx-auto flex flex-col lg:flex-row gap-4 justify-between items-center text-center">
