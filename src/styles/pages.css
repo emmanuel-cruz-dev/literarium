@@ -2,8 +2,8 @@
  *            Inicio: About            *
  ***************************************/
 
-.about-page {
-  background-image: url("../assets/images/inner-banner.png");
+.about-hero {
+  background-image: url("../assets/images/inner-banner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

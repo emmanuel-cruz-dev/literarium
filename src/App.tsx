@@ -15,7 +15,7 @@ import Gift from "./components/Gift";
 import PricePackage from "./components/PricePackage";
 import Newsletter from "./components/Newsletter";
 
-import About from "./components/routes/About";
+import About from "./components/routes/about/About";
 
 const Home = () => {
   return (
