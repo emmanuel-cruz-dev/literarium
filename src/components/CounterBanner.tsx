@@ -29,7 +29,7 @@ const CounterItem: FC<CounterItemProps> = ({ number, title }) => {
   return (
     <div className="text-center">
       <p className="text-7xl">{currentNumber}</p>
-      <p className="text-lg uppercase">{title}</p>
+      <p className="w-2/3 mx-auto uppercase">{title}</p>
     </div>
   );
 };
@@ -64,10 +64,10 @@ const CounterBanner: FC = () => {
     >
       {animate && (
         <>
-          <CounterItem number={3578} title="Books to Read" />
-          <CounterItem number={589} title="Online Users" />
-          <CounterItem number={1254} title="Best Authors" />
-          <CounterItem number={98} title="Awards" />
+          <CounterItem number={3578} title="Books to Discover" />
+          <CounterItem number={589} title="Active Readers" />
+          <CounterItem number={1254} title="Renowned Authors" />
+          <CounterItem number={98} title="Awards Won" />
         </>
       )}
     </article>
