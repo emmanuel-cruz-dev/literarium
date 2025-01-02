@@ -14,3 +14,17 @@
 /***************************************
  *            Fin: About              *
  ***************************************/
+
+/***************************************
+ *            Inicio: Contact          *
+ ***************************************/
+
+.welcome__custom-list {
+  list-style-type: square; /* Cambia la forma de la viñeta */
+  padding-left: 1.5rem;
+}
+
+.welcome__custom-list li::marker {
+  color: var(--accent-color); /* Cambia el color de las viñetas */
+  font-size: 1.5rem; /* Cambia el tamaño de las viñetas */
+}
