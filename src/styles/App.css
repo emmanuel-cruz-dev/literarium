@@ -634,3 +634,25 @@ body {
 /***************************************
  *          Fin: Newsletter            *
  ***************************************/
+
+/***************************************
+ *         Inicio: Footer              *
+ ***************************************/
+
+.footer__list-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.3rem;
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+
+.footer__list-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 1.75rem;
+  height: 0.9px;
+  background-color: var(--white-color);
+}
