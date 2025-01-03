@@ -44,7 +44,7 @@ const items: Item[] = [
 
 const MissionRender: FC<MissionRenderProps> = ({ arr }) => {
   return (
-    <article>
+    <article className="flex flex-col gap-4">
       <div className="relative">
         <img src={arr[0].img} alt="mission" />
         <div className="flex gap-4 justify-center absolute bottom-0 left-0 w-full">
@@ -81,7 +81,7 @@ const AboutMission = () => {
           <div>
             <details>
               <summary>Our Mission and Vision</summary>
-              <div>
+              <div className="border border-gray-200 p-4">
                 <p>
                   Our Mission and Vision cliche reprehenderit, enim eiusmod high
                   life accusamus terry richardson ad squid. 3 wolf moon officia
@@ -100,7 +100,7 @@ const AboutMission = () => {
 
             <details>
               <summary>24 Hours full video support</summary>
-              <div>
+              <div className="border border-gray-200 p-4">
                 <p>
                   24 Hours full video pariatur cliche reprehenderit, enim
                   eiusmod high life accusamus terry richardson ad squid. 3 wolf
@@ -119,7 +119,7 @@ const AboutMission = () => {
 
             <details>
               <summary>User-friendly Design</summary>
-              <div>
+              <div className="border border-gray-200 p-4">
                 <p>
                   User friendly design pariatur cliche reprehenderit, enim
                   eiusmod high life accusamus terry richardson ad squid. 3 wolf
