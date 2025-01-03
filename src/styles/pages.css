@@ -58,6 +58,7 @@
  ***************************************/
 
 .about-mission summary {
+  border-bottom: 1px solid var(--background-dark-fade);
   color: black;
   font-size: 1.15em;
   font-weight: 600;
