@@ -12,11 +12,19 @@ import TabImg9 from "../../../assets/images/tabs-img9.jpg";
 import TabImg10 from "../../../assets/images/tabs-img10.jpg";
 import TabImg11 from "../../../assets/images/tabs-img11.jpg";
 
-interface TabsRenderProps {
-  arr: any[];
+interface Item {
+  id: number;
+  title: string;
+  img: string;
+  text1: string;
+  text2: string;
 }
 
-const tabs = [
+interface TabsRenderProps {
+  arr: Item[];
+}
+
+const tabs: Item[] = [
   {
     id: 1,
     title: "Passionate About Every Page",
