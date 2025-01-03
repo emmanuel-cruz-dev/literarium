@@ -79,13 +79,13 @@ const AboutMission = () => {
         <div className="leading-relaxed text-gray-600 grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto">
           <MissionRender arr={items} />
           <div>
-            <details>
+            <details open>
               <summary className="flex justify-between items-center gap-4">
                 Our Mission and Vision
-                <span className="background-accent__item hidden items-center pb-[9px] justify-center text-white font-bold text-4xl w-10 h-10">
+                <span className="decrement-symbol background-accent__item hidden items-center pb-[9px] justify-center text-white font-bold text-4xl w-10 h-10">
                   –
                 </span>
-                <span className="background-accent__item flex items-center pb-2 justify-center text-white font-bold text-4xl w-10 h-10">
+                <span className="plus-symbol background-accent__item flex items-center pb-2 justify-center text-white font-bold text-4xl w-10 h-10">
                   +
                 </span>
               </summary>
@@ -110,10 +110,10 @@ const AboutMission = () => {
             <details>
               <summary className="flex justify-between items-center gap-4">
                 24 Hours full video support
-                <span className="background-accent__item hidden items-center pb-[9px] justify-center text-white font-bold text-4xl w-10 h-10">
+                <span className="decrement-symbol background-accent__item hidden items-center pb-[9px] justify-center text-white font-bold text-4xl w-10 h-10">
                   –
                 </span>
-                <span className="background-accent__item flex items-center pb-2 justify-center text-white font-bold text-4xl w-10 h-10">
+                <span className="plus-symbol background-accent__item flex items-center pb-2 justify-center text-white font-bold text-4xl w-10 h-10">
                   +
                 </span>
               </summary>
@@ -138,10 +138,10 @@ const AboutMission = () => {
             <details>
               <summary className="flex justify-between items-center gap-4">
                 User-friendly Design
-                <span className="hidden background-accent__item items-center pb-[9px] justify-center text-white font-bold text-4xl w-10 h-10">
+                <span className="decrement-symbol hidden background-accent__item items-center pb-[9px] justify-center text-white font-bold text-4xl w-10 h-10">
                   –
                 </span>
-                <span className="background-accent__item flex items-center pb-2 justify-center text-white font-bold text-4xl w-10 h-10">
+                <span className="plus-symbol background-accent__item flex items-center pb-2 justify-center text-white font-bold text-4xl w-10 h-10">
                   +
                 </span>
               </summary>
