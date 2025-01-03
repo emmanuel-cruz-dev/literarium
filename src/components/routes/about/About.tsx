@@ -1,4 +1,5 @@
 import AboutHero from "./AboutHero";
+import AboutTabs from "./AboutTabs";
 import AboutWelcome from "./AboutWelcome";
 
 const About = () => {
@@ -6,6 +7,7 @@ const About = () => {
     <>
       <AboutHero />
       <AboutWelcome />
+      <AboutTabs />
     </>
   );
 };
