@@ -1,9 +1,29 @@
+import MissionImg1 from "../../../assets/images/mission-img1.jpg";
+
 const AboutMission = () => {
   return (
-    <section className="bg-gray-800 text-white" id="about-mission">
+    <section className="about-mission" id="about-mission">
       <article className="w-11/12 mx-auto py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto">
-          <div>Info</div>
+          <div>
+            <div className="relative">
+              <img src={MissionImg1} alt="mission" />
+              <h2 className="absolute uppercase font-bold text-2xl bottom-0">
+                Info
+              </h2>
+            </div>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam.ipsam
+              voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+              quia consequuntur magni dolores eos qui ratione voluptatem sequi
+              nesciunt. Sed ut perspiciatis unde omnis iste natus error sit
+              voluptatem accusantium doloremque laudantium, totam rem
+              aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+              fugit, sed quia consequuntur magni dolores eos qui ratione
+              voluptatem sequi nesciunt.
+            </p>
+          </div>
           <div>
             <details>
               <summary>Our Mission and Vision</summary>
