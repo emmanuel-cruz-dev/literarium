@@ -10,9 +10,9 @@ const AboutWelcome = () => {
       </div>
       <article className="grid grid-cols-1 xl:grid-cols-3 gap-12 lg:gap-16 py-6 font-thin">
         <figure className="mx-auto lg:col-span-1">
-          <img src={PeopleImage} alt="People" />
+          <img src={PeopleImage} alt="people" />
         </figure>
-        <div className="col-span-2 tracking-wider flex flex-col gap-4 items-center">
+        <div className="lg:col-span-2 tracking-wider flex flex-col gap-4 items-center">
           <p>
             <span className="float-left text-white text-6xl font-semibold p-1 pb-2 px-3 mr-3 background-accent__item">
               A

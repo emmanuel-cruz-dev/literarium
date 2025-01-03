@@ -50,7 +50,7 @@ const MissionRender: FC<MissionRenderProps> = ({ arr }) => {
         <div className="flex gap-4 justify-center absolute bottom-0 left-0 w-full">
           {arr.map((item) => (
             <h2
-              className="bg-slate-100/70 px-4 py-2 uppercase font-bold text-center"
+              className="bg-slate-100/70 text-sm lg:text-base px-2 lg:px-4 py-2 uppercase font-bold text-center"
               key={item.id}
             >
               {item.title}
