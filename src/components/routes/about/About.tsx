@@ -1,4 +1,5 @@
 import AboutHero from "./AboutHero";
+import AboutMedia from "./AboutMedia";
 import AboutTabs from "./AboutTabs";
 import AboutWelcome from "./AboutWelcome";
 
@@ -8,6 +9,7 @@ const About = () => {
       <AboutHero />
       <AboutWelcome />
       <AboutTabs />
+      <AboutMedia />
     </>
   );
 };
