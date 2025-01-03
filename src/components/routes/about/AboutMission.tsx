@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC } from "react";
 import MissionImg1 from "../../../assets/images/mission-img1.jpg";
 import MissionImg2 from "../../../assets/images/mission-img2.jpg";
 import MissionImg3 from "../../../assets/images/mission-img3.jpg";
@@ -73,32 +73,24 @@ const MissionRender: FC<MissionRenderProps> = ({ arr }) => {
 };
 
 const AboutMission = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <section className="about-mission" id="about-mission">
       <article className="w-11/12 mx-auto py-12">
         <div className="leading-relaxed text-gray-600 grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto">
           <MissionRender arr={items} />
           <div>
-            <details onClick={toggle}>
+            <details>
               <summary className="flex justify-between items-center gap-4">
                 Our Mission and Vision
-                {isOpen ? (
-                  <span className="background-accent__item flex items-center pb-[9px] justify-center text-white font-bold text-4xl w-10 h-10">
-                    –
-                  </span>
-                ) : (
-                  <span className="background-accent__item flex items-center pb-2 justify-center text-white font-bold text-4xl w-10 h-10">
-                    +
-                  </span>
-                )}
+                <span className="background-accent__item hidden items-center pb-[9px] justify-center text-white font-bold text-4xl w-10 h-10">
+                  –
+                </span>
+                <span className="background-accent__item flex items-center pb-2 justify-center text-white font-bold text-4xl w-10 h-10">
+                  +
+                </span>
               </summary>
-              <div className="border border-gray-200 p-4">
+
+              <div className={`border border-gray-200 p-4 `}>
                 <p>
                   Our Mission and Vision cliche reprehenderit, enim eiusmod high
                   life accusamus terry richardson ad squid. 3 wolf moon officia
@@ -115,19 +107,17 @@ const AboutMission = () => {
               </div>
             </details>
 
-            <details onClick={toggle}>
+            <details>
               <summary className="flex justify-between items-center gap-4">
                 24 Hours full video support
-                {isOpen ? (
-                  <span className="background-accent__item flex items-center pb-[9px] justify-center text-white font-bold text-4xl w-10 h-10">
-                    –
-                  </span>
-                ) : (
-                  <span className="background-accent__item flex items-center pb-2 justify-center text-white font-bold text-4xl w-10 h-10">
-                    +
-                  </span>
-                )}
+                <span className="background-accent__item hidden items-center pb-[9px] justify-center text-white font-bold text-4xl w-10 h-10">
+                  –
+                </span>
+                <span className="background-accent__item flex items-center pb-2 justify-center text-white font-bold text-4xl w-10 h-10">
+                  +
+                </span>
               </summary>
+
               <div className="border border-gray-200 p-4">
                 <p>
                   24 Hours full video pariatur cliche reprehenderit, enim
@@ -146,21 +136,16 @@ const AboutMission = () => {
             </details>
 
             <details>
-              <summary
-                onClick={toggle}
-                className="flex justify-between items-center gap-4"
-              >
+              <summary className="flex justify-between items-center gap-4">
                 User-friendly Design
-                {isOpen ? (
-                  <span className="background-accent__item flex items-center pb-[9px] justify-center text-white font-bold text-4xl w-10 h-10">
-                    –
-                  </span>
-                ) : (
-                  <span className="background-accent__item flex items-center pb-2 justify-center text-white font-bold text-4xl w-10 h-10">
-                    +
-                  </span>
-                )}
+                <span className="hidden background-accent__item items-center pb-[9px] justify-center text-white font-bold text-4xl w-10 h-10">
+                  –
+                </span>
+                <span className="background-accent__item flex items-center pb-2 justify-center text-white font-bold text-4xl w-10 h-10">
+                  +
+                </span>
               </summary>
+
               <div className="border border-gray-200 p-4">
                 <p>
                   User friendly design pariatur cliche reprehenderit, enim
