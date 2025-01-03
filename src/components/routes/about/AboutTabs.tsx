@@ -133,8 +133,8 @@ const TabsRender: FC<TabsRenderProps> = ({ arr }) => {
   };
 
   return (
-    <article className="grid grid-cols-4 gap-4" key={activeTab}>
-      <div className="flex col-span-1 flex-col gap-4">
+    <article className="grid md:grid-cols-4 gap-4" key={activeTab}>
+      <div className="flex md:col-span-1 flex-col gap-4">
         {arr.map((tab) => (
           <button
             className={`btn__accent-color__hover ${
@@ -147,7 +147,7 @@ const TabsRender: FC<TabsRenderProps> = ({ arr }) => {
           </button>
         ))}
       </div>
-      <div className="col-span-3 flex flex-col gap-4 items-center">
+      <div className="md:col-span-3 flex flex-col gap-4 items-center">
         <img className="w-full" src={arr[activeTab].img} alt="img" />
         <div className="flex flex-col gap-4">
           <p>{arr[activeTab].text1}</p>
