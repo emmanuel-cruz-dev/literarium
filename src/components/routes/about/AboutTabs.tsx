@@ -5,6 +5,12 @@ import TabImg2 from "../../../assets/images/tabs-img2.jpg";
 import TabImg3 from "../../../assets/images/tabs-img3.jpg";
 import TabImg4 from "../../../assets/images/tabs-img4.jpg";
 import TabImg5 from "../../../assets/images/tabs-img5.jpg";
+import TabImg6 from "../../../assets/images/tabs-img6.jpg";
+import TabImg7 from "../../../assets/images/tabs-img7.jpg";
+import TabImg8 from "../../../assets/images/tabs-img8.jpg";
+import TabImg9 from "../../../assets/images/tabs-img9.jpg";
+import TabImg10 from "../../../assets/images/tabs-img10.jpg";
+import TabImg11 from "../../../assets/images/tabs-img11.jpg";
 
 interface TabsRenderProps {
   arr: any[];
@@ -59,7 +65,7 @@ const tabs = [
   {
     id: 6,
     title: "Where Readers Find Home",
-    img: TabImg1,
+    img: TabImg6,
     text1:
       "We've intentionally created an environment where the love of reading is celebrated and nurtured. Our space is designed to encourage exploration, with comfortable reading nooks, thoughtfully organized sections, and displays that invite discovery. We understand that finding the right book is a deeply personal experience, which is why we've cultivated an atmosphere that welcomes browsing and reflection. Our regular customers often tell us that stepping into our store feels like coming home, and we take pride in maintaining this warm, inviting atmosphere. ",
     text2:
@@ -68,7 +74,7 @@ const tabs = [
   {
     id: 7,
     title: "Knowledge Share With Care",
-    img: TabImg1,
+    img: TabImg7,
     text1:
       "Our approach to bookselling is rooted in the belief that knowledge should be shared with enthusiasm and understanding. Each member of our team brings unique expertise and a genuine passion for helping others discover the perfect book. We invest significant time in staff training and development, ensuring that our booksellers are well-versed not only in literature but also in the art of listening and understanding customer needs. Our recommendations come from a place of genuine knowledge and experience, as we personally read and discuss many of the books we stock.",
     text2:
@@ -77,7 +83,7 @@ const tabs = [
   {
     id: 8,
     title: "Building Literary Connections Daily",
-    img: TabImg1,
+    img: TabImg8,
     text1:
       "Every day brings new opportunities to connect readers with stories that could change their lives. We see ourselves as bridge builders, linking people to ideas, adventures, and perspectives through carefully chosen books. These connections happen in countless ways – through our personalized recommendation service, our themed book displays, our active social media presence, and our engaging newsletter. We work diligently to understand the latest literary trends while maintaining our appreciation for timeless classics, ensuring we can connect readers across all genres and interests.",
     text2:
@@ -86,7 +92,7 @@ const tabs = [
   {
     id: 9,
     title: "Your Reading Adventure Begins",
-    img: TabImg1,
+    img: TabImg9,
     text1:
       "We believe that every visit to our bookstore marks the potential beginning of a new adventure. Whether you're a seasoned reader or just starting your literary journey, we've created an environment that encourages exploration and discovery. Our carefully organized sections invite wandering, while our knowledgeable staff stands ready to guide you toward your next great read. We understand that choosing a new book is both exciting and sometimes overwhelming, which is why we've developed various ways to help you discover books that match your interests.",
     text2:
@@ -95,7 +101,7 @@ const tabs = [
   {
     id: 10,
     title: "Growing Minds Through Books",
-    img: TabImg1,
+    img: TabImg10,
     text1:
       "Education and personal growth have always been at the heart of our mission. We believe that books are essential tools for developing critical thinking, empathy, and understanding. Our children's section is carefully curated to support young readers at every stage of their development, while our adult selections span the breadth of human knowledge and experience. We work closely with local educators and parents to ensure our inventory supports both academic needs and personal enrichment.",
     text2:
@@ -104,7 +110,7 @@ const tabs = [
   {
     id: 11,
     title: "Stories Connect Our World",
-    img: TabImg1,
+    img: TabImg11,
     text1:
       "Our belief in the universal language of storytelling drives everything we do. As cultural bridges, books have the unique ability to transport readers across time, space, and perspective, fostering understanding between diverse communities. Our selection reflects this global outlook, featuring translated works, international authors, and stories that highlight our shared human experience.",
     text2:
@@ -113,9 +119,9 @@ const tabs = [
 ];
 
 const TabsRender: FC<TabsRenderProps> = ({ arr }) => {
-  const [activeTab, setActiveTab] = useState(1);
+  const [activeTab, setActiveTab] = useState(0);
   const handleClick = (index: number) => {
-    setActiveTab(index - 1);
+    setActiveTab(index - 1); // -1 porque el primer elemento es el index 0
   };
 
   return (
