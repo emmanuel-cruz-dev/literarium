@@ -16,15 +16,19 @@
  ***************************************/
 
 /***************************************
- *            Inicio: Contact          *
+ *            Inicio: Welcome          *
  ***************************************/
 
 .welcome__custom-list {
-  list-style-type: square; /* Cambia la forma de la viñeta */
+  list-style-type: disc;
   padding-left: 1.5rem;
 }
 
 .welcome__custom-list li::marker {
-  color: var(--accent-color); /* Cambia el color de las viñetas */
-  font-size: 1.5rem; /* Cambia el tamaño de las viñetas */
+  color: var(--accent-color);
+  font-size: 1.5rem;
 }
+
+/***************************************
+ *            Fin: Welcome            *
+ ***************************************/
