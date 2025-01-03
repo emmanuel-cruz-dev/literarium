@@ -1,9 +1,21 @@
+import { FC } from "react";
 import MissionImg1 from "../../../assets/images/mission-img1.jpg";
 import MissionImg2 from "../../../assets/images/mission-img2.jpg";
 import MissionImg3 from "../../../assets/images/mission-img3.jpg";
 import MissionImg4 from "../../../assets/images/mission-img4.jpg";
 
-const items = [
+interface Item {
+  id: number;
+  title: string;
+  img: string;
+  text: string;
+}
+
+interface MissionRenderProps {
+  arr: Item[];
+}
+
+const items: Item[] = [
   {
     id: 1,
     title: "Info",
@@ -12,48 +24,57 @@ const items = [
   },
   {
     id: 2,
-    title: "Our Mission and Vision",
+    title: "Why Us",
     img: MissionImg2,
     text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
   },
   {
     id: 3,
-    title: "24 Hours full video support",
+    title: "Involve",
     img: MissionImg3,
     text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
   },
   {
     id: 4,
-    title: "User-friendly Design",
+    title: "Support",
     img: MissionImg4,
     text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
   },
 ];
+
+const MissionRender: FC<MissionRenderProps> = ({ arr }) => {
+  return (
+    <article>
+      <div className="relative">
+        <img src={arr[0].img} alt="mission" />
+        <div className="flex gap-4 justify-center absolute bottom-0 left-0 w-full">
+          {arr.map((item) => (
+            <h2 className="uppercase font-bold text-lg" key={item.id}>
+              {item.title}
+            </h2>
+          ))}
+        </div>
+      </div>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem
+        quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+        magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut
+        perspiciatis unde omnis iste natus error sit voluptatem accusantium
+        doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas
+        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+        eos qui ratione voluptatem sequi nesciunt.
+      </p>
+    </article>
+  );
+};
 
 const AboutMission = () => {
   return (
     <section className="about-mission" id="about-mission">
       <article className="w-11/12 mx-auto py-12">
         <div className="leading-relaxed grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto">
-          <div>
-            <div className="relative">
-              <img src={MissionImg1} alt="mission" />
-              <h2 className="absolute uppercase font-bold text-2xl bottom-0">
-                Info
-              </h2>
-            </div>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.ipsam
-              voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-              quia consequuntur magni dolores eos qui ratione voluptatem sequi
-              nesciunt. Sed ut perspiciatis unde omnis iste natus error sit
-              voluptatem accusantium doloremque laudantium, totam rem
-              aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-              fugit, sed quia consequuntur magni dolores eos qui ratione
-              voluptatem sequi nesciunt.
-            </p>
-          </div>
+          <MissionRender arr={items} />
           <div>
             <details>
               <summary>Our Mission and Vision</summary>
