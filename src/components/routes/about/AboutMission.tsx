@@ -80,7 +80,12 @@ const AboutMission = () => {
           <MissionRender arr={items} />
           <div>
             <details>
-              <summary>Our Mission and Vision</summary>
+              <summary className="flex justify-between items-center gap-4">
+                Our Mission and Vision
+                <span className="background-accent__item text-white font-bold text-4xl w-10 h-10 text-center">
+                  +
+                </span>
+              </summary>
               <div className="border border-gray-200 p-4">
                 <p>
                   Our Mission and Vision cliche reprehenderit, enim eiusmod high
