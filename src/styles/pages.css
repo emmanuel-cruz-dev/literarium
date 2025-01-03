@@ -41,7 +41,7 @@
 .btn__accent-color__hover.active::after {
   content: "";
   position: absolute;
-  right: -20px; /* Ajusta la posición */
+  right: -19px; /* Ajusta la posición */
   top: 50%;
   transform: translateY(-50%);
   border-width: 10px;
