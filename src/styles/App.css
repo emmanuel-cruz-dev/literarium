@@ -43,6 +43,16 @@ body {
   --sidebar-dark-color: #191d2b;
 }
 
+.btn__accent-color__hover {
+  color: inherit;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn__accent-color__hover:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
 .text__accent-color {
   color: var(--accent-color);
 }

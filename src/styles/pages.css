@@ -29,6 +29,26 @@
   font-size: 1.5rem;
 }
 
+.btn__accent-color__hover.active {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.btn__accent-color__hover.active {
+  position: relative;
+}
+
+.btn__accent-color__hover.active::after {
+  content: "";
+  position: absolute;
+  right: -20px; /* Ajusta la posición */
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--accent-color);
+}
+
 /***************************************
  *            Fin: Welcome            *
  ***************************************/
