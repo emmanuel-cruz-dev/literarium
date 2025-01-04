@@ -43,7 +43,7 @@ const items: Item[] = [
 ];
 
 const MissionRender: FC<MissionRenderProps> = ({ arr }) => {
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(1);
 
   const handleClick = (index: number) => {
     setActive(index);
