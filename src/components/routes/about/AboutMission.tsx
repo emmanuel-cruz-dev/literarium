@@ -22,6 +22,7 @@ interface MissionRenderProps {
 }
 
 interface DetailsItemProps {
+  id: number;
   title: string;
   text: string;
 }
@@ -49,7 +50,7 @@ const items: Item[] = [
     id: 4,
     title: "Support",
     img: MissionImg4,
-    text: "Your support allows us to continue promoting culture and reading. With each purchase, you help us to continue expanding our catalogue and offering unforgettable literary experiences. In addition, we are committed to educational causes, allocating part of our profits to initiatives that promote access to reading for all.",
+    text: "Your support allows us to continue promoting culture and reading. With each purchase, you help us to continue expanding our catalogue and offering literary experiences. In addition, we are committed to educational causes, allocating part of our profits to initiatives that promote access to reading for all.",
   },
 ];
 
@@ -86,7 +87,7 @@ const MissionRender: FC<MissionRenderProps> = ({ arr }) => {
           {arr.map((item) => (
             <button
               onClick={() => handleClick(item.id)}
-              className={`text-sm lg:text-base px-2 lg:px-4 uppercase font-bold text-center ${
+              className={`text-sm lg:text-base px-2 lg:px-6 uppercase font-bold text-center ${
                 active === item.id
                   ? "about-mission__title-btn py-[10px] bg-slate-100"
                   : "bg-slate-100/70 py-2"
@@ -103,9 +104,9 @@ const MissionRender: FC<MissionRenderProps> = ({ arr }) => {
   );
 };
 
-const DetailsItem: FC<DetailsItemProps> = ({ title, text }) => {
+const DetailsItem: FC<DetailsItemProps> = ({ title, text, id }) => {
   return (
-    <details>
+    <details key={id}>
       <summary className="flex justify-between items-center gap-4">
         {title}
         <span className="decrement-symbol background-accent__item hidden items-center pb-[9px] justify-center text-white font-bold text-4xl w-10 h-10">
