@@ -52,7 +52,7 @@ const MissionRender: FC<MissionRenderProps> = ({ arr }) => {
   return (
     <article className="flex flex-col gap-4">
       <div className="relative">
-        <img src={arr[0].img} alt="mission" />
+        <img src={arr[active - 1].img} alt="mission" />
         <div className="flex gap-4 justify-center items-end absolute bottom-0 left-0 w-full">
           {arr.map((item) => (
             <button
