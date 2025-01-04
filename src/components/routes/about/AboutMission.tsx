@@ -11,8 +11,19 @@ interface Item {
   text: string;
 }
 
+interface DetailsItem {
+  id: number;
+  title: string;
+  text: string;
+}
+
 interface MissionRenderProps {
   arr: Item[];
+}
+
+interface DetailsItemProps {
+  title: string;
+  text: string;
 }
 
 const items: Item[] = [
@@ -39,6 +50,24 @@ const items: Item[] = [
     title: "Support",
     img: MissionImg4,
     text: "Your support allows us to continue promoting culture and reading. With each purchase, you help us to continue expanding our catalogue and offering unforgettable literary experiences. In addition, we are committed to educational causes, allocating part of our profits to initiatives that promote access to reading for all.",
+  },
+];
+
+const detailsItems: DetailsItem[] = [
+  {
+    id: 1,
+    title: "Our Mission and Vision",
+    text: "Our mission is to bring the magic of reading to every corner, promoting knowledge and creativity. Our vision is to become a reference for readers of all ages, offering an inclusive space where stories come to life. We believe in the transformative power of books and the positive impact they generate by sharing knowledge, ideas and emotions with the world.",
+  },
+  {
+    id: 2,
+    title: "Round-the-Clock Video Assistance",
+    text: "We're here for you at all times. Our 24/7 video support ensures you get immediate help to resolve questions, explore features, and get the most out of our services. Whether you need guidance on purchasing, shipping, or accessing eBooks, our team is ready to assist you quickly and effectively, providing you with a smooth and reliable experience.",
+  },
+  {
+    id: 3,
+    title: "Intuitive and Accessible Design",
+    text: "Enjoy a browsing experience designed with you in mind. Our platform combines functionality and aesthetics to offer an intuitive and pleasant environment. Easily find your favorite books, explore our recommendations and make purchases without complications. With an accessible and modern design, we guarantee that every user can enjoy our bookstore without technological barriers.",
   },
 ];
 
@@ -74,6 +103,26 @@ const MissionRender: FC<MissionRenderProps> = ({ arr }) => {
   );
 };
 
+const DetailsItem: FC<DetailsItemProps> = ({ title, text }) => {
+  return (
+    <details open>
+      <summary className="flex justify-between items-center gap-4">
+        {title}
+        <span className="decrement-symbol background-accent__item hidden items-center pb-[9px] justify-center text-white font-bold text-4xl w-10 h-10">
+          –
+        </span>
+        <span className="plus-symbol background-accent__item flex items-center pb-2 justify-center text-white font-bold text-4xl w-10 h-10">
+          +
+        </span>
+      </summary>
+
+      <div className={`border border-gray-200 p-4 `}>
+        <p>{text}</p>
+      </div>
+    </details>
+  );
+};
+
 const AboutMission = () => {
   return (
     <section className="about-mission" id="about-mission">
@@ -81,89 +130,9 @@ const AboutMission = () => {
         <div className="leading-relaxed text-gray-600 grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto">
           <MissionRender arr={items} />
           <div>
-            <details open>
-              <summary className="flex justify-between items-center gap-4">
-                Our Mission and Vision
-                <span className="decrement-symbol background-accent__item hidden items-center pb-[9px] justify-center text-white font-bold text-4xl w-10 h-10">
-                  –
-                </span>
-                <span className="plus-symbol background-accent__item flex items-center pb-2 justify-center text-white font-bold text-4xl w-10 h-10">
-                  +
-                </span>
-              </summary>
-
-              <div className={`border border-gray-200 p-4 `}>
-                <p>
-                  Our Mission and Vision cliche reprehenderit, enim eiusmod high
-                  life accusamus terry richardson ad squid. 3 wolf moon officia
-                  aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
-                </p>
-              </div>
-            </details>
-
-            <details>
-              <summary className="flex justify-between items-center gap-4">
-                24 Hours full video support
-                <span className="decrement-symbol background-accent__item hidden items-center pb-[9px] justify-center text-white font-bold text-4xl w-10 h-10">
-                  –
-                </span>
-                <span className="plus-symbol background-accent__item flex items-center pb-2 justify-center text-white font-bold text-4xl w-10 h-10">
-                  +
-                </span>
-              </summary>
-
-              <div className="border border-gray-200 p-4">
-                <p>
-                  24 Hours full video pariatur cliche reprehenderit, enim
-                  eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                  moon officia aute, non cupidatat skateboard dolor brunch. Food
-                  truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                  tempor, sunt aliqua put a bird on it squid single-origin
-                  coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                  helvetica, craft beer labore wes anderson cred nesciunt
-                  sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                  Leggings occaecat craft beer farm-to-table, raw denim
-                  aesthetic synth nesciunt you probably haven't heard of them
-                  accusamus labore sustainable VHS.
-                </p>
-              </div>
-            </details>
-
-            <details>
-              <summary className="flex justify-between items-center gap-4">
-                User-friendly Design
-                <span className="decrement-symbol hidden background-accent__item items-center pb-[9px] justify-center text-white font-bold text-4xl w-10 h-10">
-                  –
-                </span>
-                <span className="plus-symbol background-accent__item flex items-center pb-2 justify-center text-white font-bold text-4xl w-10 h-10">
-                  +
-                </span>
-              </summary>
-
-              <div className="border border-gray-200 p-4">
-                <p>
-                  User friendly design pariatur cliche reprehenderit, enim
-                  eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                  moon officia aute, non cupidatat skateboard dolor brunch. Food
-                  truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                  tempor, sunt aliqua put a bird on it squid single-origin
-                  coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                  helvetica, craft beer labore wes anderson cred nesciunt
-                  sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                  Leggings occaecat craft beer farm-to-table, raw denim
-                  aesthetic synth nesciunt you probably haven't heard of them
-                  accusamus labore sustainable VHS.
-                </p>
-              </div>
-            </details>
+            {detailsItems.map((item) => (
+              <DetailsItem key={item.title} {...item} />
+            ))}
           </div>
         </div>
       </article>
