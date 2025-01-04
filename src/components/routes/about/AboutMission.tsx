@@ -20,25 +20,25 @@ const items: Item[] = [
     id: 1,
     title: "Info",
     img: MissionImg1,
-    text: "Info id1 perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    text: "At Literarium, we believe in the transformative power of books. Our goal is to provide access to a wide variety of titles that inspire, educate, and entertain. From classics to new releases, we offer books in physical and digital formats, as well as home delivery so that reading is always within your reach.",
   },
   {
     id: 2,
     title: "Why Us",
     img: MissionImg2,
-    text: "Why Us id2 perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    text: "Choosing us means trusting a bookstore committed to quality and a passion for reading. We have an expert team that carefully selects each title to ensure that you always find what you are looking for. In addition, our flexible delivery options and competitive prices set us apart in the market.",
   },
   {
     id: 3,
     title: "Involve",
     img: MissionImg3,
-    text: "Involve id3 perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    text: "Join our community of passionate readers. At Literarium, we organize literary events, book clubs, and workshops to foster a love of books. We want you to be part of a network that shares stories, ideas, and experiences, helping us strengthen the bond between readers and authors.",
   },
   {
     id: 4,
     title: "Support",
     img: MissionImg4,
-    text: "Suppor id4 perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    text: "Your support allows us to continue promoting culture and reading. With each purchase, you help us to continue expanding our catalogue and offering unforgettable literary experiences. In addition, we are committed to educational causes, allocating part of our profits to initiatives that promote access to reading for all.",
   },
 ];
 
