@@ -74,6 +74,11 @@ details[open] summary .plus-symbol {
   display: none;
 }
 
+.about-mission__title-btn {
+  color: var(--accent-color);
+  border-top: 4px solid var(--accent-color);
+}
+
 /***************************************
  *            Fin: Mission            *
  ***************************************/

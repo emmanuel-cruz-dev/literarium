@@ -53,12 +53,14 @@ const MissionRender: FC<MissionRenderProps> = ({ arr }) => {
     <article className="flex flex-col gap-4">
       <div className="relative">
         <img src={arr[0].img} alt="mission" />
-        <div className="flex gap-4 justify-center absolute bottom-0 left-0 w-full">
+        <div className="flex gap-4 justify-center items-end absolute bottom-0 left-0 w-full">
           {arr.map((item) => (
             <button
               onClick={() => handleClick(item.id)}
-              className={`bg-slate-100/70 text-sm lg:text-base px-2 lg:px-4 py-2 uppercase font-bold text-center ${
-                active === item.id ? "background-accent__item" : ""
+              className={`text-sm lg:text-base px-2 lg:px-4 uppercase font-bold text-center ${
+                active === item.id
+                  ? "about-mission__title-btn py-[10px] bg-slate-100"
+                  : "bg-slate-100/70 py-2"
               }`}
               key={item.id}
             >
