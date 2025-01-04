@@ -5,6 +5,30 @@ interface CounterItemProps {
   title: string;
 }
 
+interface CounterItem {
+  number: number;
+  title: string;
+}
+
+const items: CounterItemProps[] = [
+  {
+    number: 3578,
+    title: "Books to Discover",
+  },
+  {
+    number: 589,
+    title: "Active Readers",
+  },
+  {
+    number: 1254,
+    title: "Renowned Authors",
+  },
+  {
+    number: 98,
+    title: "Awards Won",
+  },
+];
+
 const CounterItem: FC<CounterItemProps> = ({ number, title }) => {
   const [currentNumber, setCurrentNumber] = useState(0);
 
@@ -64,10 +88,9 @@ const CounterBanner: FC = () => {
     >
       {animate && (
         <>
-          <CounterItem number={3578} title="Books to Discover" />
-          <CounterItem number={589} title="Active Readers" />
-          <CounterItem number={1254} title="Renowned Authors" />
-          <CounterItem number={98} title="Awards Won" />
+          {items.map((item) => (
+            <CounterItem key={item.number} {...item} />
+          ))}
         </>
       )}
     </article>

@@ -61,12 +61,12 @@ const detailsItems: DetailsItem[] = [
   },
   {
     id: 2,
-    title: "Round-the-Clock Video Assistance",
+    title: "24/7 Video Support",
     text: "We're here for you at all times. Our 24/7 video support ensures you get immediate help to resolve questions, explore features, and get the most out of our services. Whether you need guidance on purchasing, shipping, or accessing eBooks, our team is ready to assist you quickly and effectively, providing you with a smooth and reliable experience.",
   },
   {
     id: 3,
-    title: "Intuitive and Accessible Design",
+    title: "User-Friendly Design",
     text: "Enjoy a browsing experience designed with you in mind. Our platform combines functionality and aesthetics to offer an intuitive and pleasant environment. Easily find your favorite books, explore our recommendations and make purchases without complications. With an accessible and modern design, we guarantee that every user can enjoy our bookstore without technological barriers.",
   },
 ];
@@ -105,7 +105,7 @@ const MissionRender: FC<MissionRenderProps> = ({ arr }) => {
 
 const DetailsItem: FC<DetailsItemProps> = ({ title, text }) => {
   return (
-    <details open>
+    <details>
       <summary className="flex justify-between items-center gap-4">
         {title}
         <span className="decrement-symbol background-accent__item hidden items-center pb-[9px] justify-center text-white font-bold text-4xl w-10 h-10">
@@ -116,7 +116,9 @@ const DetailsItem: FC<DetailsItemProps> = ({ title, text }) => {
         </span>
       </summary>
 
-      <div className={`border border-gray-200 p-4 `}>
+      <div
+        className={`border border-gray-200 p-4 about-mission__summary-content`}
+      >
         <p>{text}</p>
       </div>
     </details>
@@ -128,12 +130,12 @@ const AboutMission = () => {
     <section className="about-mission" id="about-mission">
       <article className="w-11/12 mx-auto py-12">
         <div className="leading-relaxed text-gray-600 grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto">
-          <MissionRender arr={items} />
           <div>
             {detailsItems.map((item) => (
-              <DetailsItem key={item.title} {...item} />
+              <DetailsItem key={item.id} {...item} />
             ))}
           </div>
+          <MissionRender arr={items} />
         </div>
       </article>
     </section>
