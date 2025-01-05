@@ -37,7 +37,7 @@ const InformationList: FC<InformationListProps> = ({ data }) => {
 const Footer = () => {
   return (
     <footer className="footer bg-black text-white" id="footer">
-      <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 p-12 mx-auto">
+      <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 px-4 py-8 md:p-12 mx-auto">
         <div>
           <h2 className="footer__list-title">About Us</h2>
           <ul className="footer__list-container">
