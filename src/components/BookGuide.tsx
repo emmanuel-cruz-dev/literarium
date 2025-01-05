@@ -14,12 +14,7 @@ interface BookGuideProps {
   price: number;
 }
 
-interface CounterItemProps {
-  number: number;
-  title: string;
-}
-
-const items: CounterItemProps[] = [
+const items = [
   {
     number: 3578,
     title: "Books to Discover",
