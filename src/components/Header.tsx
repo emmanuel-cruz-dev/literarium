@@ -1,16 +1,9 @@
-import { FC, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/icons/literarium-icono.png";
 import { HiMenu, HiX } from "react-icons/hi";
 
-interface HeaderProps {
-  menu: boolean;
-  setMenu: React.Dispatch<React.SetStateAction<boolean>>;
-  handleClick: () => void;
-  children: React.ReactNode;
-}
-
-const Header: FC<HeaderProps> = () => {
+const Header = () => {
   const [menu, setMenu] = useState(false);
 
   const handleClick = () => {
