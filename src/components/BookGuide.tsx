@@ -16,15 +16,15 @@ interface BookGuideProps {
 
 const items = [
   {
-    number: 3578,
+    number: 3500,
     title: "Books to Discover",
   },
   {
-    number: 589,
+    number: 500,
     title: "Active Readers",
   },
   {
-    number: 1254,
+    number: 1200,
     title: "Renowned Authors",
   },
   {
