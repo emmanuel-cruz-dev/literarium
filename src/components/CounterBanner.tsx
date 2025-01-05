@@ -32,7 +32,9 @@ const CounterItem: FC<CounterItemProps> = ({ number, title }) => {
 
   return (
     <div className="text-center">
-      <p className="text-7xl">{currentNumber}</p>
+      <p className="text-7xl">
+        {currentNumber > 400 ? currentNumber + "+" : currentNumber}
+      </p>
       <p className="w-2/3 mx-auto uppercase">{title}</p>
     </div>
   );
