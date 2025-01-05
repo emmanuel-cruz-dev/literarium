@@ -8,6 +8,11 @@ const Header = () => {
 
   const handleClick = () => {
     setMenu(!menu);
+    if (!menu) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
   };
 
   return (
