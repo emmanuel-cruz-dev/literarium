@@ -1,12 +1,26 @@
+import { FC, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/icons/literarium-icono.png";
 import { HiMenu } from "react-icons/hi";
 
-const Header = () => {
+interface HeaderProps {
+  menu: boolean;
+  setMenu: React.Dispatch<React.SetStateAction<boolean>>;
+  handleClick: () => void;
+  children: React.ReactNode;
+}
+
+const Header: FC<HeaderProps> = () => {
+  const [menu, setMenu] = useState(false);
+
+  const handleClick = () => {
+    setMenu(!menu);
+  };
+
   return (
     <header className="absolute top-0 left-0 right-0 text-white">
-      <nav className="flex justify-between items-center h-full px-4 md:px-16">
-        <div className="flex items-center gap-2">
+      <nav className="flex justify-between items-center h-full px-4 md:px-8 lg:px-16">
+        <div className="flex items-center gap-2 py-6">
           <img
             className="w-8"
             src={Logo}
@@ -37,7 +51,33 @@ const Header = () => {
           </li>
         </ul>
         <div className="block md:hidden">
-          <HiMenu className="text-3xl" />
+          <span onClick={handleClick} className="cursor-pointer">
+            <HiMenu className="text-3xl" />
+          </span>
+          {menu && (
+            <div className="absolute top-16 right-0 bg-cyan-400/70">
+              <ul className="flex flex-col gap-6 px-12 py-6 text-xl">
+                <li onClick={handleClick}>
+                  <Link to="/">Home</Link>
+                </li>
+                <li onClick={handleClick}>
+                  <Link to="/about">About Us</Link>
+                </li>
+                <li onClick={handleClick}>
+                  <Link to="/blog">Our Blog</Link>
+                </li>
+                <li onClick={handleClick}>
+                  <Link to="/teams">Teams</Link>
+                </li>
+                <li onClick={handleClick}>
+                  <Link to="/products">Products</Link>
+                </li>
+                <li onClick={handleClick}>
+                  <Link to="/contact">Contact Us</Link>
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
       </nav>
     </header>
