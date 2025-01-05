@@ -7,7 +7,6 @@ import Hero from "./components/Hero";
 import TopSellers from "./components/TopSellers";
 import Footer from "./components/Footer";
 import Products from "./components/Products";
-import CounterBanner from "./components/CounterBanner";
 import BookGuide from "./components/BookGuide";
 import Blog from "./components/Blog";
 import Testimonies from "./components/Testimonies";
@@ -27,7 +26,7 @@ const Home = () => {
       <Products />
       <Testimonies />
       <BookGuide />
-      <CounterBanner />
+
       <Blog />
       <Gift />
       <PricePackage />
