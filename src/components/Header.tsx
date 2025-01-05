@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/icons/literarium-icono.png";
-import { HiMenu } from "react-icons/hi";
+import { HiMenu, HiX } from "react-icons/hi";
 
 interface HeaderProps {
   menu: boolean;
@@ -54,30 +54,35 @@ const Header: FC<HeaderProps> = () => {
           <span onClick={handleClick} className="cursor-pointer">
             <HiMenu className="text-3xl" />
           </span>
-          {menu && (
-            <div className="absolute top-16 right-0 bg-cyan-400/70">
-              <ul className="flex flex-col gap-6 px-12 py-6 text-xl">
-                <li onClick={handleClick}>
-                  <Link to="/">Home</Link>
-                </li>
-                <li onClick={handleClick}>
-                  <Link to="/about">About Us</Link>
-                </li>
-                <li onClick={handleClick}>
-                  <Link to="/blog">Our Blog</Link>
-                </li>
-                <li onClick={handleClick}>
-                  <Link to="/teams">Teams</Link>
-                </li>
-                <li onClick={handleClick}>
-                  <Link to="/products">Products</Link>
-                </li>
-                <li onClick={handleClick}>
-                  <Link to="/contact">Contact Us</Link>
-                </li>
-              </ul>
-            </div>
-          )}
+
+          <div className={`${menu ? "active" : ""} header__hidden-menu`}>
+            <span
+              className="absolute top-6 right-4 cursor-pointer"
+              onClick={handleClick}
+            >
+              <HiX className="text-3xl" />
+            </span>
+            <ul className="h-full flex flex-col justify-center items-center gap-5 text-xl">
+              <li onClick={handleClick}>
+                <Link to="/">Home</Link>
+              </li>
+              <li onClick={handleClick}>
+                <Link to="/about">About Us</Link>
+              </li>
+              <li onClick={handleClick}>
+                <Link to="/blog">Our Blog</Link>
+              </li>
+              <li onClick={handleClick}>
+                <Link to="/teams">Teams</Link>
+              </li>
+              <li onClick={handleClick}>
+                <Link to="/products">Products</Link>
+              </li>
+              <li onClick={handleClick}>
+                <Link to="/contact">Contact Us</Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
