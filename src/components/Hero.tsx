@@ -20,6 +20,7 @@ const Hero = () => {
         </p>
         <div className="rounded-full overflow-hidden hidden lg:flex justify-between items-center w-[36rem] h-12">
           <input
+            name="search"
             className="bg-slate-900/70 w-[86%] h-full px-8"
             type="text"
             placeholder="Enter your book title here"

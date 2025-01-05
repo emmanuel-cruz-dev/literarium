@@ -110,8 +110,17 @@ const Footer = () => {
               </p>
             </li>
             <li>
-              <form className="flex flex-col gap-4 w-full">
+              <form
+                className="flex flex-col gap-4 w-full"
+                action="#"
+                method="post"
+                id="footer__newsletter-form"
+              >
                 <input
+                  required
+                  autoComplete="off"
+                  name="email"
+                  id="footer__email"
                   type="email"
                   placeholder="Enter your email"
                   className="p-2 bg-neutral-900"

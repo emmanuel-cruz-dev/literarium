@@ -13,8 +13,17 @@ const Newsletter = () => {
           </p>
         </div>
         <article className="flex w-full lg:w-2/3 p-3 items-center mx-auto bg-white text-white">
-          <form className="flex w-full">
+          <form
+            className="flex w-full"
+            action="#"
+            method="post"
+            id="newsletter-form"
+          >
             <input
+              required
+              autoComplete="off"
+              name="email"
+              id="email"
               type="email"
               placeholder="Your email address"
               className="w-5/6 lg:p-4 py-2 rounded-xs"
