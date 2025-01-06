@@ -67,7 +67,9 @@
 }
 
 .about-mission__accordion-title {
-  /* border-bottom: 1px solid var(--background-dark-fade); */
+  color: var(--black-color);
+  font-size: 1.1em;
+  font-weight: 700;
   padding-block: 0.5rem;
   cursor: pointer;
 }
@@ -81,7 +83,7 @@
 }
 
 .about-mission__accordion-block.active-item .about-mission__accordion-content {
-  height: 10rem;
+  height: 18rem;
   padding: 1rem;
 }
 
@@ -98,6 +100,19 @@
   border-top: 4px solid var(--accent-color);
 }
 
+@media (min-width: 1024px) {
+  .about-mission__accordion-block.active-item
+    .about-mission__accordion-content {
+    height: 14rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about-mission__accordion-block.active-item
+    .about-mission__accordion-content {
+    height: 10rem;
+  }
+}
 /***************************************
  *            Fin: Mission            *
  ***************************************/
