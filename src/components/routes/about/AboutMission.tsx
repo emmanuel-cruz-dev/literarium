@@ -70,7 +70,7 @@ const detailsItems: DetailsItem[] = [
   {
     id: 3,
     title: "User-Friendly Design",
-    text: "Enjoy a browsing experience designed with you in mind. Our platform combines functionality and aesthetics to offer an intuitive and pleasant environment. Easily find your favorite books, explore our recommendations and make purchases without complications. With an accessible and modern design, we guarantee that every user can enjoy our bookstore without technological barriers.",
+    text: "Enjoy a browsing experience designed with you in mind. Our platform combines functionality and aesthetics to offer an intuitive and pleasant environment. Easily find your favorite books, explore our recommendations and make purchases without complications. We guarantee that every user can enjoy our bookstore without technological barriers.",
   },
 ];
 
@@ -107,22 +107,48 @@ const MissionRender: FC<MissionRenderProps> = ({ arr }) => {
 };
 
 const DetailsItem: FC<DetailsItemProps> = ({ title, text, id }) => {
+  // const [active, setActive] = useState(1);
+
+  const handleClick = (index: number) => {
+    document
+      .querySelector(`.about-mission__accordion-block:nth-child(${1})`)
+      ?.classList.add("active-item");
+
+    document
+      .querySelectorAll(".about-mission__accordion-block")
+      .forEach((item) => {
+        item.classList.remove("active-item");
+      });
+
+    document
+      .querySelector(`.about-mission__accordion-block:nth-child(${index})`)
+      ?.classList.add("active-item");
+
+    // setActive(index);
+  };
+
   return (
-    <details key={id}>
-      <summary className="flex justify-between items-center gap-4">
+    <div
+      className={`${
+        id === 1 ? "active-item" : ""
+      } about-mission__accordion-block`}
+      key={id}
+    >
+      <h2
+        onClick={() => handleClick(id)}
+        className="about-mission__accordion-title flex justify-between items-center gap-4"
+      >
         {title}
         <span className="background-accent__item flex items-center justify-center text-white text-3xl w-10 h-10">
-          <AiOutlineMinus className="decrement-symbol hidden" />
-          <AiOutlinePlus className="plus-symbol" />
+          <AiOutlineMinus className={`decrement-symbol hidden`} />
+          <AiOutlinePlus className={`plus-symbol`} />
         </span>
-      </summary>
+      </h2>
 
-      <div
-        className={`border border-gray-200 p-4 about-mission__summary-content`}
-      >
+      <div className={`about-mission__accordion-content`}>
         <p>{text}</p>
       </div>
-    </details>
+    </div>
   );
 };
 
@@ -131,7 +157,7 @@ const AboutMission = () => {
     <section className="about-mission" id="about-mission">
       <article className="w-11/12 mx-auto py-12">
         <div className="leading-relaxed text-gray-600 grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto">
-          <div>
+          <div className="about-mission__accordion">
             {detailsItems.map((item) => (
               <DetailsItem key={item.id} {...item} />
             ))}

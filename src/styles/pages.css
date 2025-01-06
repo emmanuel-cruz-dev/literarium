@@ -66,11 +66,30 @@
   cursor: pointer;
 }
 
-details[open] summary .decrement-symbol {
+.about-mission__accordion-title {
+  /* border-bottom: 1px solid var(--background-dark-fade); */
+  padding-block: 0.5rem;
+  cursor: pointer;
+}
+
+.about-mission__accordion-content {
+  border: 1px solid var(--background-dark-fade);
+  height: 0;
+  padding-inline: 1rem;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.about-mission__accordion-block.active-item .about-mission__accordion-content {
+  height: 10rem;
+  padding: 1rem;
+}
+
+.about-mission__accordion-block.active-item .decrement-symbol {
   display: flex;
 }
 
-details[open] summary .plus-symbol {
+.about-mission__accordion-block.active-item .plus-symbol {
   display: none;
 }
 
