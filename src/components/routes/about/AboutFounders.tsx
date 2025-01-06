@@ -45,37 +45,35 @@ const members: Founder[] = [
 
 const FounderCard: FC<FounderCardProps> = ({ name, title, img }) => {
   return (
-    <article className="about-founders__card relative">
+    <article className="about-founders__card">
       <figure>
-        <img src={img} alt="" />
+        <img className="w-full h-full" src={img} alt="" />
       </figure>
       <div className="about-founders__card__info">
-        <div className="about-founders__card__body">
-          <h2 className="uppercase text-xl font-bold">{name}</h2>
-          <h3>{title}</h3>
-          <ul className="about-founders__card__social-icons flex gap-2">
-            <li>
-              <a href="#">
-                <FaFacebookF />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <FaTwitter />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <FaGooglePlusG />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <FaLinkedinIn />
-              </a>
-            </li>
-          </ul>
-        </div>
+        <h2 className="uppercase text-xl font-bold">{name}</h2>
+        <h3>{title}</h3>
+        <ul className="about-founders__card__social-icons text-lg">
+          <li>
+            <a href="#">
+              <FaFacebookF />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <FaTwitter />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <FaGooglePlusG />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <FaLinkedinIn />
+            </a>
+          </li>
+        </ul>
       </div>
     </article>
   );
@@ -95,7 +93,7 @@ const AboutFounders = () => {
             readers a unique space to discover extraordinary stories.
           </p>
         </div>
-        <article className="grid grid-cols-1 xl:grid-cols-3 gap-12 lg:gap-16 py-6 font-thin">
+        <article className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 lg:gap-16 py-6 font-thin">
           {members.map((member) => (
             <FounderCard key={member.id} {...member} />
           ))}

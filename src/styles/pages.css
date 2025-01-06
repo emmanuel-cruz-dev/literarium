@@ -121,45 +121,99 @@
  *            Inicio: Founders         *
  ***************************************/
 
+.about-founders__card {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-founders__card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.about-founders__card:hover::after {
+  opacity: 0.8;
+}
+
+.about-founders__card::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  bottom: 8px;
+  right: 8px;
+  margin: 1rem;
+  border: 3px solid var(--white-color);
+  opacity: 0;
+  z-index: 10;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.about-founders__card:hover::before {
+  opacity: 1;
+}
+
 .about-founders__card__info {
-  background-color: var(--white-color);
+  padding: 0.5rem 1rem;
   position: absolute;
   bottom: 0;
   right: 0;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  z-index: 10;
+  transition: color 0.3s ease-in-out, left 0.3s ease-in-out,
+    right 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.about-founders__card__info::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-color);
+  z-index: -1;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.about-founders__card:hover .about-founders__card__info::after {
+  transform: scale(2, 4);
+  opacity: 0;
 }
 
 .about-founders__card__social-icons {
+  color: var(--white-color);
   opacity: 0;
   height: 0;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.about-founders__card__social-icons li {
+  transition: color 0.3s ease-in-out;
+}
+
+.about-founders__card__social-icons li:hover {
+  color: var(--black-color);
 }
 
 .about-founders__card:hover .about-founders__card__info {
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
+  left: 8%;
+  transform: translateY(-36%);
   color: var(--white-color);
-  background-color: var(--accent-color-fade);
-}
-
-.about-founders__card__body {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  padding: 0.2rem 0.75rem;
-  width: 100%;
-  height: 100%;
-  border: 1px solid var(--white-color);
 }
 
 .about-founders__card:hover .about-founders__card__social-icons {
+  margin-top: 8px;
   opacity: 1;
-  height: fit-content;
-}
-
-.about-founders__card:hover .about-founders__card__body {
-  gap: 0.5rem;
-  padding: 1rem;
+  height: auto;
 }
 
 /***************************************
