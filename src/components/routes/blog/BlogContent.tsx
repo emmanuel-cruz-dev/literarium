@@ -1,4 +1,5 @@
 import BlogImg1 from "../../../assets/images/blog-detail-img.jpg";
+import BlogUser1 from "../../../assets/images/blog-user1.jpg";
 
 const BlogContent = () => {
   return (
@@ -11,6 +12,16 @@ const BlogContent = () => {
             <p className="font-bold text-lg">May</p>
           </div>
         </div>
+        <article>
+          <div>
+            <figure className="rounded-full overflow-hidden w-20 h-20 border-4 border-cyan-400">
+              <img src={BlogUser1} alt="" />
+            </figure>
+            <h3 className="uppercase font-bold text-xl">
+              Anni Hollin, <span className="text__accent-color">Author</span>
+            </h3>
+          </div>
+        </article>
       </article>
     </section>
   );
