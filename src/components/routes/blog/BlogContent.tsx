@@ -1,3 +1,4 @@
+import { FaHeart } from "react-icons/fa";
 import BlogImg1 from "../../../assets/images/blog-detail-img.jpg";
 import BlogUser1 from "../../../assets/images/blog-user1.jpg";
 
@@ -13,22 +14,28 @@ const BlogContent = () => {
               <p className="font-bold text-lg">May</p>
             </div>
           </div>
-          <article className="flex justify-between items-center gap-4">
+          <article className="flex justify-between items-center gap-4 text-slate-500">
             <div className="flex items-center gap-4">
               <figure className="rounded-full overflow-hidden w-20 h-20 border-4 border-cyan-400">
                 <img src={BlogUser1} alt="" />
               </figure>
               <div>
-                <h3 className="uppercase font-bold text-xl">
+                <h3 className="uppercase font-bold text-xl text-black">
                   Anni Hollin,{" "}
                   <span className="text__accent-color">Author</span>
                 </h3>
                 <p>Books Designer</p>
               </div>
             </div>
-            <div className="flex gap-4">
-              <p>208 likes</p>
-              <p>71 comments</p>
+            <div className="flex gap-4 [&>a]:flex [&>a]:items-center [&>a]:gap-2">
+              <a href="#">
+                <FaHeart />
+                208 likes
+              </a>
+              <a href="#">
+                <FaHeart />
+                71 comments
+              </a>
             </div>
           </article>
         </article>
