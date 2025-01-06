@@ -24,7 +24,7 @@ const items = [
 const AboutMedia = () => {
   return (
     <>
-      <section className="bg-black/95 text-white" id="about-media">
+      <section className="about-media bg-black/95 text-white" id="about-media">
         <article className="w-11/12 mx-auto py-16" id="main-cards">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto">
             <div className="relative mx-auto w-full h-full">
