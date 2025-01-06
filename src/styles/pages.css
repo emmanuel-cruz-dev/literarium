@@ -146,8 +146,7 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
-  gap: 0.5rem;
-  padding: 1rem;
+  padding: 0.2rem 0.75rem;
   width: 100%;
   height: 100%;
   border: 1px solid var(--white-color);
@@ -156,6 +155,11 @@
 .about-founders__card:hover .about-founders__card__social-icons {
   opacity: 1;
   height: fit-content;
+}
+
+.about-founders__card:hover .about-founders__card__body {
+  gap: 0.5rem;
+  padding: 1rem;
 }
 
 /***************************************
