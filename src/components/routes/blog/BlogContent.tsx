@@ -5,7 +5,7 @@ import BlogUser1 from "../../../assets/images/blog-user1.jpg";
 const BlogContent = () => {
   return (
     <section className="blog-content" id="blog-content">
-      <article className="w-11/12 mx-auto grid grid-cols-3 gap-10 py-6 text-slate-500">
+      <article className="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 py-6 text-slate-500">
         <article className="col-span-2 mx-auto flex flex-col gap-4">
           <div className="relative">
             <img src={BlogImg1} alt="" />
@@ -14,7 +14,7 @@ const BlogContent = () => {
               <p className="font-bold text-lg">May</p>
             </div>
           </div>
-          <article className="flex justify-between items-center gap-4 ">
+          <article className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 ">
             <div className="flex items-center gap-4">
               <figure className="rounded-full overflow-hidden w-20 h-20 border-4 border-cyan-400">
                 <img src={BlogUser1} alt="" />
