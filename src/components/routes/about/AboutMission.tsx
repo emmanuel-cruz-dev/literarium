@@ -1,4 +1,6 @@
 import { FC, useState } from "react";
+import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
+
 import MissionImg1 from "../../../assets/images/mission-img1.jpg";
 import MissionImg2 from "../../../assets/images/mission-img2.jpg";
 import MissionImg3 from "../../../assets/images/mission-img3.jpg";
@@ -109,11 +111,9 @@ const DetailsItem: FC<DetailsItemProps> = ({ title, text, id }) => {
     <details key={id}>
       <summary className="flex justify-between items-center gap-4">
         {title}
-        <span className="decrement-symbol background-accent__item hidden items-center pb-[9px] justify-center text-white font-bold text-4xl w-10 h-10">
-          –
-        </span>
-        <span className="plus-symbol background-accent__item flex items-center pb-2 justify-center text-white font-bold text-4xl w-10 h-10">
-          +
+        <span className="background-accent__item flex items-center justify-center text-white text-3xl w-10 h-10">
+          <AiOutlineMinus className="decrement-symbol hidden" />
+          <AiOutlinePlus className="plus-symbol" />
         </span>
       </summary>
 
