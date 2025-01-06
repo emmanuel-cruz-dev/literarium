@@ -93,7 +93,7 @@ const AboutFounders = () => {
             readers a unique space to discover extraordinary stories.
           </p>
         </div>
-        <article className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 lg:gap-16 py-6 font-thin">
+        <article className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 py-6">
           {members.map((member) => (
             <FounderCard key={member.id} {...member} />
           ))}

@@ -15,6 +15,7 @@ import PricePackage from "./components/PricePackage";
 import Newsletter from "./components/Newsletter";
 
 import About from "./components/routes/about/About";
+import BlogPage from "./components/routes/blog/BlogPage";
 
 const Home = () => {
   return (
@@ -42,7 +43,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<div>Blog</div>} />
+        <Route path="/blog" element={<BlogPage />} />
         <Route path="/teams" element={<div>Teams</div>} />
         <Route path="/products" element={<div>Products</div>} />
         <Route path="/contact" element={<div>Contact</div>} />

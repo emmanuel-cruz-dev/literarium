@@ -160,16 +160,6 @@
   opacity: 1;
 }
 
-.about-founders__card__info {
-  padding: 0.5rem 1rem;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 10;
-  transition: color 0.3s ease-in-out, left 0.3s ease-in-out,
-    right 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
 .about-founders__card__info::after {
   content: "";
   position: absolute;
@@ -204,9 +194,20 @@
   color: var(--black-color);
 }
 
+.about-founders__card__info {
+  padding: 0.5rem 0.75rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  transition: color 0.3s ease-in-out, left 0.3s ease-in-out,
+    right 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
 .about-founders__card:hover .about-founders__card__info {
   left: 8%;
   transform: translateY(-36%);
+
   color: var(--white-color);
 }
 
