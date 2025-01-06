@@ -1,3 +1,4 @@
+import AboutFounders from "./AboutFounders";
 import AboutHero from "./AboutHero";
 import AboutMedia from "./AboutMedia";
 import AboutMission from "./AboutMission";
@@ -12,6 +13,7 @@ const About = () => {
       <AboutTabs />
       <AboutMedia />
       <AboutMission />
+      <AboutFounders />
     </>
   );
 };
