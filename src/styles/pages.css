@@ -335,6 +335,27 @@
   background-color: var(--accent-color);
 }
 
+.blog-content__aside__unordered-list li {
+  transition: color 0.3s ease-in-out;
+  border-bottom: 1px solid var(--background-dark-fade);
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+.blog-content__aside__unordered-list a {
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease-in-out;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.blog-content__aside__unordered-list li:hover,
+.blog-content__aside__unordered-list a:hover {
+  color: var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
 /***************************************
  *             Fin: Blog              *
  ***************************************/

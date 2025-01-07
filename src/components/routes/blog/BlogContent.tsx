@@ -2,6 +2,8 @@ import { FC } from "react";
 import {
   FaFacebookF,
   FaTwitter,
+  FaLinkedinIn,
+  FaSkype,
   FaGooglePlusG,
   FaHeart,
   FaChevronLeft,
@@ -31,6 +33,12 @@ interface CommentCardProps {
 interface AsideItemListProps {
   title: string;
   dataArr: string[];
+}
+
+interface LatestPostsProps {
+  title: string;
+  date: string;
+  img: string;
 }
 
 type UserItem = {
@@ -113,6 +121,27 @@ const data2 = [
   "Mastering the Creative Process",
 ];
 
+const posts = [
+  {
+    id: 1,
+    title: "Lorem ipsum dolor sit amet",
+    date: "07 January, 2025",
+    img: CommentUser1,
+  },
+  {
+    id: 2,
+    title: "Lorem ipsum dolor sit amet",
+    date: "30 December, 2024",
+    img: CommentUser2,
+  },
+  {
+    id: 3,
+    title: "Lorem ipsum dolor sit amet",
+    date: "25 December, 2024",
+    img: CommentUser3,
+  },
+];
+
 const AsideItemList: FC<AsideItemListProps> = ({ title, dataArr }) => {
   return (
     <article className="blog-content__aside__item-container flex flex-col gap-6">
@@ -143,6 +172,18 @@ const CommentCard: FC<CommentCardProps> = ({ img, name, date, children }) => {
         </p>
         <button className="blog-content__btn__comment md:hidden">Reply</button>
         <div className="mt-4">{children}</div>
+      </div>
+    </article>
+  );
+};
+
+const LatestPosts: FC<LatestPostsProps> = ({ title, date, img }) => {
+  return (
+    <article className="flex items-center gap-4 pb-4 border-b border-slate-300">
+      <img className="w-16 h-16 rounded-full" src={img} alt={title} />
+      <div className="uppercase text-sm">
+        <h3 className="font-bold text-black">{title}</h3>
+        <p>{date}</p>
       </div>
     </article>
   );
@@ -325,7 +366,7 @@ const BlogContent = () => {
             </form>
           </article>
         </article>
-        <aside className="lg:col-span-1 flex flex-col gap-4">
+        <aside className="lg:col-span-1 flex flex-col gap-8">
           <div className="flex flex-col gap-4">
             <h2 className="blog-content__aside__item-title">Search</h2>
             <div className="flex items-center border border-slate-300 py-2 px-3">
@@ -354,6 +395,46 @@ const BlogContent = () => {
                 Submit
               </button>
             </div>
+            <div>
+              <ul className="blog-content__aside__unordered-list flex justify-between gap-4 text-lg">
+                <li>
+                  <a href="#">
+                    <FaFacebookF />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <FaTwitter />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <FaGooglePlusG />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <FaSkype />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <FaLinkedinIn />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <h2 className="blog-content__aside__item-title">Latest Posts</h2>
+            {posts.map((post) => (
+              <LatestPosts key={post.id} {...post} />
+            ))}
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <h2 className="blog-content__aside__item-title">Instagram</h2>
           </div>
 
           <AsideItemList title="Archive" dataArr={data2} />
