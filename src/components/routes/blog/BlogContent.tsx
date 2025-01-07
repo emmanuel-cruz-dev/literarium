@@ -453,7 +453,7 @@ const BlogContent = () => {
                   <img
                     className="w-full h-full object-cover hover:opacity-40 transition-opacity duration-300 ease-in-out"
                     src={image}
-                    alt=""
+                    alt="People reading books"
                   />
                 </a>
               ))}
@@ -461,6 +461,16 @@ const BlogContent = () => {
           </div>
 
           <AsideItemList title="Archive" dataArr={data2} />
+
+          <div className="flex flex-col gap-4">
+            <h2 className="blog-content__aside__item-title">Advertisement</h2>
+            <a className="w-full overflow-hidden aspect-square" href="#">
+              <img
+                src="https://i0.wp.com/ebookfriendly.com/wp-content/uploads/2014/05/Books-make-you-someone-else-ad-4.jpg?resize=1066%2C1600&ssl=1"
+                alt="Advertisement girl reading a book"
+              />
+            </a>
+          </div>
         </aside>
       </article>
     </section>
