@@ -21,7 +21,7 @@ const data = [
   "Site Map",
 ];
 
-const InformationList: FC<InformationListProps> = ({ data }) => {
+export const InformationList: FC<InformationListProps> = ({ data }) => {
   return (
     <ul className="unordered__list-container hover-item">
       {data.map((item) => (
@@ -34,6 +34,7 @@ const InformationList: FC<InformationListProps> = ({ data }) => {
     </ul>
   );
 };
+
 const Footer = () => {
   return (
     <footer className="footer bg-black text-white" id="footer">

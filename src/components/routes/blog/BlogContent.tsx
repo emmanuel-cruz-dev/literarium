@@ -6,7 +6,9 @@ import {
   FaHeart,
   FaChevronLeft,
   FaChevronRight,
+  FaSearch,
 } from "react-icons/fa";
+import { InformationList } from "../../Footer";
 import BlogImg1 from "../../../assets/images/blog-detail-img.jpg";
 import BlogUser1 from "../../../assets/images/blog-user1.jpg";
 import FounderImg2 from "../../../assets/images/founder2.jpg";
@@ -26,7 +28,19 @@ interface CommentCardProps {
   children?: React.ReactNode;
 }
 
-const users = [
+interface AsideItemListProps {
+  title: string;
+  dataArr: string[];
+}
+
+type UserItem = {
+  id: number;
+  name: string;
+  date: string;
+  img: string;
+};
+
+const users: UserItem[] = [
   {
     id: 1,
     name: "Clara Hoffman",
@@ -53,7 +67,7 @@ const users = [
   },
 ];
 
-const usersReply1 = [
+const usersReply1: UserItem[] = [
   {
     id: 1,
     name: "Amelie Schneider",
@@ -68,7 +82,7 @@ const usersReply1 = [
   },
 ];
 
-const usersReply2 = [
+const usersReply2: UserItem[] = [
   {
     id: 3,
     name: "Freya Nielsen",
@@ -76,6 +90,37 @@ const usersReply2 = [
     img: CommentUser6,
   },
 ];
+
+const data1 = [
+  "Photoshop",
+  "Graphic Design",
+  "Mobile Development",
+  "Illustration",
+  "Video Editing",
+  "UX Design",
+  "3D Modeling",
+  "Animation Graphics",
+];
+
+const data2 = [
+  "Creative Workflow Tips",
+  "Breaking the Rules of Design",
+  "From Concept to Creation",
+  "Inspiration from the Masters",
+  "The Art of Minimalism",
+  "Building Better Portfolio",
+  "Color Psychology in Media",
+  "Mastering the Creative Process",
+];
+
+const AsideItemList: FC<AsideItemListProps> = ({ title, dataArr }) => {
+  return (
+    <article className="blog-content__aside__item-container flex flex-col gap-6">
+      <h2 className="blog-content__aside__item-title">{title}</h2>
+      <InformationList data={dataArr} />
+    </article>
+  );
+};
 
 const CommentCard: FC<CommentCardProps> = ({ img, name, date, children }) => {
   return (
@@ -106,7 +151,7 @@ const CommentCard: FC<CommentCardProps> = ({ img, name, date, children }) => {
 const BlogContent = () => {
   return (
     <section className="blog-content mt-8" id="blog-content">
-      <article className="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-4 gap-10 py-6 text-slate-500 font-light">
+      <article className="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 py-6 text-slate-500 font-light">
         <article className="lg:col-span-3 mx-auto flex flex-col gap-4">
           <div className="relative">
             <img src={BlogImg1} alt="" />
@@ -282,19 +327,36 @@ const BlogContent = () => {
         </article>
         <aside className="lg:col-span-1 flex flex-col gap-4">
           <div className="flex flex-col gap-4">
-            <h2 className="uppercase font-bold text-2xl">Books Designer</h2>
-            <p>
-              Books Designer is a creative and innovative business that offers
-              bespoke design services for books, magazines, and other printed
-              materials. Our team of experts works closely with authors to
-              create unique and visually stunning designs that enhance the
-              reading experience. Whether you're a seasoned designer or just
-              starting out, we're here to help you bring your vision to life.
-            </p>
-            <button className="w-fit py-3 px-6 text-lg background-accent__item uppercase font-bold hover:bg-white hover:text-gray-900 transition-colors duration-300 ease-in-out">
-              Read More
-            </button>
+            <h2 className="blog-content__aside__item-title">Search</h2>
+            <div className="flex items-center border border-slate-300 py-2 px-3">
+              <input
+                className="focus:outline-none w-11/12"
+                type="text"
+                placeholder="Enter Keyword"
+              />
+              <a className="w-1/12" href="#">
+                <FaSearch />
+              </a>
+            </div>
           </div>
+
+          <AsideItemList title="Categories" dataArr={data1} />
+
+          <div className="flex flex-col gap-4">
+            <h2 className="blog-content__aside__item-title">Stay Tuned</h2>
+            <div className="flex items-center border border-slate-300">
+              <input
+                className="py-2 px-3 focus:outline-none"
+                type="text"
+                placeholder="Subscribe Us"
+              />
+              <button className="h-full px-2 text-white background-accent__item uppercase font-bold hover:bg-black transition-colors duration-300 ease-in-out">
+                Submit
+              </button>
+            </div>
+          </div>
+
+          <AsideItemList title="Archive" dataArr={data2} />
         </aside>
       </article>
     </section>

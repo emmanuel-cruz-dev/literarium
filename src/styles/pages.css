@@ -312,6 +312,29 @@
   min-height: 16rem;
 }
 
+.blog-content__aside__item-container ul li:hover {
+  color: var(--white-color);
+}
+
+.blog-content__aside__item-title {
+  position: relative;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--black-color);
+  margin-bottom: 0.5rem;
+}
+
+.blog-content__aside__item-title::after {
+  position: absolute;
+  content: "";
+  bottom: -8px;
+  left: 0;
+  width: 4rem;
+  height: 0.5px;
+  background-color: var(--accent-color);
+}
+
 /***************************************
  *             Fin: Blog              *
  ***************************************/
