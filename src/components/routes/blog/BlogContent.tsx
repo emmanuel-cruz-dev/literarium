@@ -10,21 +10,49 @@ import {
 import BlogImg1 from "../../../assets/images/blog-detail-img.jpg";
 import BlogUser1 from "../../../assets/images/blog-user1.jpg";
 import FounderImg2 from "../../../assets/images/founder2.jpg";
+import CommentUser1 from "../../../assets/images/comment-user1.jpg";
+import CommentUser2 from "../../../assets/images/comment-user2.jpg";
+import CommentUser3 from "../../../assets/images/comment-user3.jpg";
 
 interface CommentCardProps {
+  id: number;
+  img: string;
+  name: string;
+  date: string;
   children?: React.ReactNode;
 }
 
-const CommentCard: FC<CommentCardProps> = ({ children }) => {
+const users = [
+  {
+    id: 1,
+    name: "Clara Hoffman",
+    date: "June 20, 2024",
+    img: CommentUser1,
+  },
+  {
+    id: 2,
+    name: "Isabelle McKenzie",
+    date: "August 12, 2024",
+    img: CommentUser2,
+  },
+  {
+    id: 3,
+    name: "Luca Moretti",
+    date: "September 18, 2024",
+    img: CommentUser3,
+  },
+];
+
+const CommentCard: FC<CommentCardProps> = ({ img, name, date, children }) => {
   return (
     <article className="flex gap-6 relative">
       <button className="blog-content__btn__comment">Reply</button>
       <figure className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
-        <img className="w-full h-full object-cover" src={BlogUser1} alt="" />
+        <img className="w-full h-full object-cover" src={img} alt="" />
       </figure>
       <div className="flex flex-col gap-2 uppercase">
-        <h3 className="font-semibold text-[17px] text-black">Saul Bellow</h3>
-        <p className="text-[13px]">June 20, 2022</p>
+        <h3 className="font-semibold text-[17px] text-black">{name}</h3>
+        <p className="text-[13px]">{date}</p>
         <p className="normal-case">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
@@ -174,14 +202,9 @@ const BlogContent = () => {
               132 Comments
             </h2>
             <div className="flex flex-col gap-4">
-              <CommentCard>
-                <CommentCard />
-                <CommentCard />
-              </CommentCard>
-              <CommentCard>
-                <CommentCard />
-              </CommentCard>
-              <CommentCard />
+              {users.map((user) => (
+                <CommentCard key={user.id} {...user}></CommentCard>
+              ))}
             </div>
           </article>
         </article>
