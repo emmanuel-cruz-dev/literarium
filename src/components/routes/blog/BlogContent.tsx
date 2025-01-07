@@ -16,6 +16,7 @@ import CommentUser3 from "../../../assets/images/comment-user3.jpg";
 import CommentUser4 from "../../../assets/images/comment-user4.jpg";
 import CommentUser5 from "../../../assets/images/comment-user5.jpg";
 import CommentUser6 from "../../../assets/images/comment-user6.jpg";
+import CommentUser7 from "../../../assets/images/comment-user7.jpg";
 
 interface CommentCardProps {
   id: number;
@@ -43,6 +44,12 @@ const users = [
     name: "Luca Moretti",
     date: "September 18, 2024",
     img: CommentUser3,
+  },
+  {
+    id: 4,
+    name: "James Green",
+    date: "June 09, 2024",
+    img: CommentUser7,
   },
 ];
 
@@ -108,7 +115,7 @@ const BlogContent = () => {
               <p className="font-bold text-lg">May</p>
             </div>
           </div>
-          <article className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 ">
+          <article className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 py-2">
             <div className="flex items-center gap-4">
               <figure className="blog-content__user-image__container">
                 <img src={BlogUser1} alt="" />
@@ -243,6 +250,7 @@ const BlogContent = () => {
                   <CommentCard key={reply.id} {...reply}></CommentCard>
                 ))}
               </CommentCard>
+              <CommentCard {...users[3]} />
             </div>
           </article>
           <article className="flex flex-col gap-4 mb-12">
