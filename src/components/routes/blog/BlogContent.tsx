@@ -5,8 +5,8 @@ import BlogUser1 from "../../../assets/images/blog-user1.jpg";
 const BlogContent = () => {
   return (
     <section className="blog-content" id="blog-content">
-      <article className="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 py-6 text-slate-500 font-light">
-        <article className="lg:col-span-2 mx-auto flex flex-col gap-4">
+      <article className="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-4 gap-10 py-6 text-slate-500 font-light">
+        <article className="lg:col-span-3 mx-auto flex flex-col gap-4">
           <div className="relative">
             <img src={BlogImg1} alt="" />
             <div className="background-accent__item absolute top-0 left-0 flex flex-col justify-center items-center gap-1 py-3 px-8 text-white text-4xl uppercase">
@@ -19,8 +19,8 @@ const BlogContent = () => {
               <figure className="blog-content__user-image__container">
                 <img src={BlogUser1} alt="" />
               </figure>
-              <div className="uppercase [&>p]:text-sm">
-                <h3 className="font-bold text-xl text-black">
+              <div className="flex flex-col gap-1 uppercase [&>p]:text-sm">
+                <h3 className="font-bold text-lg text-black">
                   Anni Hollin,{" "}
                   <span className="text__accent-color">Author</span>
                 </h3>
@@ -39,7 +39,7 @@ const BlogContent = () => {
             </div>
           </article>
           <div className="flex flex-col gap-4">
-            <h4 className="uppercase text-black font-bold text-[1.4rem]">
+            <h4 className="uppercase text-black font-bold text-[1.3rem]">
               Where I'm Reading From: The Changing World of Books Now
             </h4>
             <p>
@@ -75,7 +75,7 @@ const BlogContent = () => {
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
               dolor sit amet.
             </p>
-            <p className="italic bg-slate-200/40 px-6 py-8 border-l-4 border-cyan-400">
+            <p className="blog-content__paragraph-italic bg-slate-200/40">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
