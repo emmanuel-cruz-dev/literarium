@@ -169,12 +169,19 @@ const CommentCard: FC<CommentCardProps> = ({ img, name, date, children }) => {
       <button className="blog-content__btn__comment hidden absolute md:block">
         Reply
       </button>
-      <figure className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
+      <a
+        href="#"
+        className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0"
+      >
         <img className="w-full h-full object-cover" src={img} alt="" />
-      </figure>
+      </a>
       <div className="flex flex-col gap-2 uppercase">
-        <h3 className="font-semibold text-[17px] text-black">{name}</h3>
-        <p className="text-[13px]">{date}</p>
+        <a href="#">
+          <h3 className="font-semibold text-[17px] text-black">{name}</h3>
+        </a>
+        <a href="#" className="text-[13px]">
+          {date}
+        </a>
         <p className="normal-case">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
@@ -204,7 +211,7 @@ const LatestPosts: FC<LatestPostsProps> = ({ title, date, img }) => {
 const BlogContent = () => {
   return (
     <section className="blog-content mt-8" id="blog-content">
-      <article className="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 py-6 text-slate-500 font-light">
+      <article className="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 py-6 text-neutral-600 font-light">
         <article className="lg:col-span-3 mx-auto flex flex-col gap-4">
           <div className="relative">
             <img src={BlogImg1} alt="" />
@@ -215,9 +222,9 @@ const BlogContent = () => {
           </div>
           <article className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 py-2">
             <div className="flex items-center gap-4">
-              <figure className="blog-content__user-image__container">
+              <a href="#" className="blog-content__user-image__container">
                 <img src={BlogUser1} alt="" />
-              </figure>
+              </a>
               <div className="flex flex-col gap-1 uppercase [&>p]:text-sm">
                 <h3 className="font-bold text-lg text-black">
                   Anni Hollin,{" "}
@@ -226,7 +233,7 @@ const BlogContent = () => {
                 <p>Books Designer</p>
               </div>
             </div>
-            <div className="flex gap-4 [&>a]:flex [&>a]:items-center [&>a]:gap-2">
+            <div className="blog-content__likes-comments flex gap-4 [&>a]:flex [&>a]:items-center [&>a]:gap-2">
               <a href="#">
                 <FaHeart />
                 208 likes

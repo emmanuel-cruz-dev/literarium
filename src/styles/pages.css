@@ -233,6 +233,14 @@
   border: 3px solid var(--accent-color);
 }
 
+.blog-content__likes-comments a {
+  transition: color 0.3s ease-in-out;
+}
+
+.blog-content__likes-comments a:hover {
+  color: var(--accent-color);
+}
+
 .blog-content__paragraph-italic {
   font-size: 17px;
   font-style: italic;
