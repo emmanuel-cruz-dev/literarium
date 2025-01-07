@@ -1,4 +1,4 @@
-import { FaHeart } from "react-icons/fa";
+import { FaHeart, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import BlogImg1 from "../../../assets/images/blog-detail-img.jpg";
 import BlogUser1 from "../../../assets/images/blog-user1.jpg";
 
@@ -89,6 +89,17 @@ const BlogContent = () => {
               dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
               sanctus est Lorem ipsum dolor sit amet.
             </p>
+          </div>
+          <hr className="border-b border-slate-300" />
+          <div className="flex justify-between items-center gap-4">
+            <button className="blog-content__btn">
+              <FaChevronLeft />
+              <span>Previous Post</span>
+            </button>
+            <button className="blog-content__btn">
+              <span>Next Post</span>
+              <FaChevronRight />
+            </button>
           </div>
         </article>
         <aside className="lg:col-span-1 flex flex-col gap-4">
