@@ -10,6 +10,28 @@ import BlogImg1 from "../../../assets/images/blog-detail-img.jpg";
 import BlogUser1 from "../../../assets/images/blog-user1.jpg";
 import FounderImg2 from "../../../assets/images/founder2.jpg";
 
+const CommentCard = () => {
+  return (
+    <article className="flex gap-6 relative">
+      <button className="blog-content__btn__comment">Reply</button>
+      <figure className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
+        <img className="w-full h-full object-cover" src={BlogUser1} alt="" />
+      </figure>
+      <div className="flex flex-col gap-2 uppercase">
+        <h3 className="font-semibold text-[17px] text-black">Saul Bellow</h3>
+        <p className="text-[13px]">June 20, 2022</p>
+        <p className="normal-case">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet.
+        </p>
+      </div>
+    </article>
+  );
+};
+
 const BlogContent = () => {
   return (
     <section className="blog-content" id="blog-content">
@@ -141,6 +163,15 @@ const BlogContent = () => {
               </p>
             </div>
           </div>
+          <article className="flex flex-col gap-4">
+            <h2 className="uppercase font-bold text-2xl">132 Comments</h2>
+            <div className="flex flex-col gap-4">
+              <CommentCard />
+              <CommentCard />
+              <CommentCard />
+              <CommentCard />
+            </div>
+          </article>
         </article>
         <aside className="lg:col-span-1 flex flex-col gap-4">
           <div className="flex flex-col gap-4">

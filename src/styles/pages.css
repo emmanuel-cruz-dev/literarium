@@ -282,6 +282,24 @@
   color: var(--white-color);
 }
 
+.blog-content__btn__comment {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid var(--background-dark-fade);
+  text-transform: uppercase;
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    border 0.3s ease-in-out;
+}
+
+.blog-content__btn__comment:hover {
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
 /***************************************
  *             Fin: Blog              *
  ***************************************/
