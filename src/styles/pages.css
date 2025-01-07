@@ -300,6 +300,18 @@
   background-color: var(--accent-color);
   color: var(--white-color);
 }
+
+.blog-content__form input,
+.blog-content__form textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  border: 1px solid var(--background-dark-fade);
+}
+
+.blog-content__form textarea {
+  min-height: 16rem;
+}
+
 /***************************************
  *             Fin: Blog              *
  ***************************************/

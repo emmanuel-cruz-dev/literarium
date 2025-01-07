@@ -13,6 +13,9 @@ import FounderImg2 from "../../../assets/images/founder2.jpg";
 import CommentUser1 from "../../../assets/images/comment-user1.jpg";
 import CommentUser2 from "../../../assets/images/comment-user2.jpg";
 import CommentUser3 from "../../../assets/images/comment-user3.jpg";
+import CommentUser4 from "../../../assets/images/comment-user4.jpg";
+import CommentUser5 from "../../../assets/images/comment-user5.jpg";
+import CommentUser6 from "../../../assets/images/comment-user6.jpg";
 
 interface CommentCardProps {
   id: number;
@@ -40,6 +43,30 @@ const users = [
     name: "Luca Moretti",
     date: "September 18, 2024",
     img: CommentUser3,
+  },
+];
+
+const usersReply1 = [
+  {
+    id: 1,
+    name: "Amelie Schneider",
+    date: "June 21, 2024",
+    img: CommentUser4,
+  },
+  {
+    id: 2,
+    name: "Erik Johansson",
+    date: "June 22, 2024",
+    img: CommentUser5,
+  },
+];
+
+const usersReply2 = [
+  {
+    id: 3,
+    name: "Freya Nielsen",
+    date: "August 29, 2024",
+    img: CommentUser6,
   },
 ];
 
@@ -202,10 +229,39 @@ const BlogContent = () => {
               132 Comments
             </h2>
             <div className="flex flex-col gap-4">
-              {users.map((user) => (
-                <CommentCard key={user.id} {...user}></CommentCard>
-              ))}
+              <CommentCard {...users[2]} />
+              <CommentCard {...users[1]}>
+                {usersReply2.map((reply) => (
+                  <CommentCard key={reply.id} {...reply}></CommentCard>
+                ))}
+              </CommentCard>
+              <CommentCard {...users[0]}>
+                {usersReply1.map((reply) => (
+                  <CommentCard key={reply.id} {...reply}></CommentCard>
+                ))}
+              </CommentCard>
             </div>
+          </article>
+          <article className="w-full">
+            <form className="blog-content__form flex flex-col gap-4" action="">
+              <h2>Write Your Review</h2>
+              <div className="grid grid-cols-3 gap-4">
+                <input type="text" name="name" id="name" placeholder="Name" />
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+                <input
+                  type="text"
+                  name="phone-number"
+                  id="phone-number"
+                  placeholder="Phone Number"
+                />
+              </div>
+              <textarea name="" id=""></textarea>
+            </form>
           </article>
         </article>
         <aside className="lg:col-span-1 flex flex-col gap-4">
