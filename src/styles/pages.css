@@ -367,3 +367,29 @@
 /***************************************
  *             Fin: Blog              *
  ***************************************/
+
+/***************************************
+ *            Inicio: Products        *
+ ***************************************/
+
+.products-content__article-container {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.products-content__hidden-container {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.products-content__article-container:hover .products-content__hidden-container {
+  opacity: 1;
+  /* box-shadow: 0px 8px 16px rgba(165, 177, 198, 0.7); */
+}
+
+.products-content__article-container:hover {
+  box-shadow: 0px 8px 16px rgba(165, 177, 198, 0.7);
+}
+
+/**************************************
+ *            Fin: Products          *
+ ***************************************/
