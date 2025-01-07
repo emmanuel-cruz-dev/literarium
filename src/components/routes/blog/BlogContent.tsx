@@ -73,7 +73,9 @@ const usersReply2 = [
 const CommentCard: FC<CommentCardProps> = ({ img, name, date, children }) => {
   return (
     <article className="flex gap-6 relative">
-      <button className="blog-content__btn__comment">Reply</button>
+      <button className="blog-content__btn__comment hidden absolute md:block">
+        Reply
+      </button>
       <figure className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
         <img className="w-full h-full object-cover" src={img} alt="" />
       </figure>
@@ -87,6 +89,7 @@ const CommentCard: FC<CommentCardProps> = ({ img, name, date, children }) => {
           rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
           ipsum dolor sit amet.
         </p>
+        <button className="blog-content__btn__comment md:hidden">Reply</button>
         <div className="mt-4">{children}</div>
       </div>
     </article>
@@ -95,7 +98,7 @@ const CommentCard: FC<CommentCardProps> = ({ img, name, date, children }) => {
 
 const BlogContent = () => {
   return (
-    <section className="blog-content" id="blog-content">
+    <section className="blog-content mt-8" id="blog-content">
       <article className="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-4 gap-10 py-6 text-slate-500 font-light">
         <article className="lg:col-span-3 mx-auto flex flex-col gap-4">
           <div className="relative">
@@ -242,10 +245,12 @@ const BlogContent = () => {
               </CommentCard>
             </div>
           </article>
-          <article className="w-full">
-            <form className="blog-content__form flex flex-col gap-4" action="">
-              <h2>Write Your Review</h2>
-              <div className="grid grid-cols-3 gap-4">
+          <article className="flex flex-col gap-4 mb-12">
+            <h2 className="uppercase font-semibold text-2xl text-black">
+              Leave a Reply
+            </h2>
+            <form className="blog-content__form flex flex-col gap-6" action="">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <input type="text" name="name" id="name" placeholder="Name" />
                 <input
                   type="text"
@@ -261,6 +266,9 @@ const BlogContent = () => {
                 />
               </div>
               <textarea name="" id=""></textarea>
+              <button className="w-fit py-3 px-6 text-white text-lg background-accent__item uppercase font-bold hover:bg-black transition-colors duration-300 ease-in-out">
+                Submit
+              </button>
             </form>
           </article>
         </article>

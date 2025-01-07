@@ -283,7 +283,7 @@
 }
 
 .blog-content__btn__comment {
-  position: absolute;
+  width: fit-content;
   top: 0;
   right: 0;
   border: 1px solid var(--background-dark-fade);
