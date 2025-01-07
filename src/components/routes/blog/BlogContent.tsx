@@ -41,6 +41,10 @@ interface LatestPostsProps {
   img: string;
 }
 
+interface FormItemProps {
+  title: string;
+}
+
 type UserItem = {
   id: number;
   name: string;
@@ -192,6 +196,30 @@ const CommentCard: FC<CommentCardProps> = ({ img, name, date, children }) => {
         <button className="blog-content__btn__comment md:hidden">Reply</button>
         <div className="mt-4">{children}</div>
       </div>
+    </article>
+  );
+};
+
+const FormItem: FC<FormItemProps> = ({ title }) => {
+  return (
+    <article className="flex flex-col gap-4 mb-12">
+      <h2 className="uppercase font-semibold text-2xl text-black">{title}</h2>
+      <form className="blog-content__form flex flex-col gap-6" action="">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <input type="text" name="name" id="name" placeholder="Name" />
+          <input type="text" name="email" id="email" placeholder="Email" />
+          <input
+            type="text"
+            name="phone-number"
+            id="phone-number"
+            placeholder="Phone Number"
+          />
+        </div>
+        <textarea name="" id=""></textarea>
+        <button className="w-fit py-3 px-6 text-white text-lg background-accent__item uppercase font-bold hover:bg-black transition-colors duration-300 ease-in-out">
+          Submit
+        </button>
+      </form>
     </article>
   );
 };
@@ -358,32 +386,7 @@ const BlogContent = () => {
               <CommentCard {...users[3]} />
             </div>
           </article>
-          <article className="flex flex-col gap-4 mb-12">
-            <h2 className="uppercase font-semibold text-2xl text-black">
-              Leave a Reply
-            </h2>
-            <form className="blog-content__form flex flex-col gap-6" action="">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <input type="text" name="name" id="name" placeholder="Name" />
-                <input
-                  type="text"
-                  name="email"
-                  id="email"
-                  placeholder="Email"
-                />
-                <input
-                  type="text"
-                  name="phone-number"
-                  id="phone-number"
-                  placeholder="Phone Number"
-                />
-              </div>
-              <textarea name="" id=""></textarea>
-              <button className="w-fit py-3 px-6 text-white text-lg background-accent__item uppercase font-bold hover:bg-black transition-colors duration-300 ease-in-out">
-                Submit
-              </button>
-            </form>
-          </article>
+          <FormItem title="Leave a Reply" />
         </article>
         <aside className="lg:col-span-1 flex flex-col gap-8">
           <div className="flex flex-col gap-4">
