@@ -406,9 +406,9 @@
   box-shadow: 0px 8px 16px rgba(165, 177, 198, 0.7);
 }
 
-.products-content__article-container:hover .products-content__hidden-container {
+/* .products-content__article-container:hover .products-content__hidden-container {
   height: 7rem;
-}
+} */
 
 /**************************************
  *            Fin: Products          *

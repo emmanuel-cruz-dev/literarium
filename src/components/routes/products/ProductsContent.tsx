@@ -3,7 +3,10 @@ import BookImg1 from "../../../assets/images/books-list1.jpg";
 
 const ProductCard = () => {
   return (
-    <article className="products-content__article-container flex flex-col gap-4 mb-12 bg-white">
+    <a
+      href="#"
+      className="products-content__article-container flex flex-col gap-4 mb-12 bg-white"
+    >
       <img src={BookImg1} alt="" />
       <div className="flex flex-col gap-2 text-center">
         <div>
@@ -35,7 +38,7 @@ const ProductCard = () => {
           </div>
         </div>
       </div>
-    </article>
+    </a>
   );
 };
 
