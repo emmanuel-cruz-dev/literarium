@@ -397,13 +397,13 @@ const BlogContent = () => {
 
           <div className="flex flex-col gap-4">
             <h2 className="blog-content__aside__item-title">Stay Tuned</h2>
-            <div className="flex items-center border border-slate-300">
+            <div className="grid grid-cols-3 items-center border border-slate-300 overflow-hidden">
               <input
-                className="py-2 px-3 focus:outline-none"
+                className="col-span-2 py-2 px-3 focus:outline-none"
                 type="text"
                 placeholder="Subscribe Us"
               />
-              <button className="h-full px-2 text-white background-accent__item uppercase font-bold hover:bg-black transition-colors duration-300 ease-in-out">
+              <button className="w-full h-full text-white background-accent__item uppercase font-bold hover:bg-black transition-colors duration-300 ease-in-out">
                 Submit
               </button>
             </div>
@@ -447,9 +447,13 @@ const BlogContent = () => {
 
           <div className="flex flex-col gap-4">
             <h2 className="blog-content__aside__item-title">Instagram</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
               {instagramImages.map((image, index) => (
-                <a key={index} className="bg-cyan-400 aspect-square" href="#">
+                <a
+                  key={index}
+                  className="background-accent__item aspect-square"
+                  href="#"
+                >
                   <img
                     className="w-full h-full object-cover hover:opacity-40 transition-opacity duration-300 ease-in-out"
                     src={image}
@@ -463,9 +467,10 @@ const BlogContent = () => {
           <AsideItemList title="Archive" dataArr={data2} />
 
           <div className="flex flex-col gap-4">
-            <h2 className="blog-content__aside__item-title">Advertisement</h2>
+            <h2 className="blog-content__aside__item-title">Highlights</h2>
             <a className="w-full overflow-hidden aspect-square" href="#">
               <img
+                className="hover:scale-110 transition-transform duration-300 ease-in-out"
                 src="https://i0.wp.com/ebookfriendly.com/wp-content/uploads/2014/05/Books-make-you-someone-else-ad-4.jpg?resize=1066%2C1600&ssl=1"
                 alt="Advertisement girl reading a book"
               />
