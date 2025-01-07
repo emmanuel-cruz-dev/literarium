@@ -142,6 +142,18 @@ const posts = [
   },
 ];
 
+const instagramImages = [
+  "https://images.freejpg.com.ar/900/2512/woman-reading-a-book-in-bed-before-sleeping-F100030927.jpg",
+  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/ba/86/b5/and-even-more-books.jpg?w=900&h=500&s=1",
+  "https://img.freepik.com/fotos-premium/mujer-leyendo-libro-biblioteca_123211-3375.jpg",
+  "https://assets.weforum.org/article/image/RM56CoG0a4-UPVNMyAkMKRGkCBkJiIwH5wOsupmChbE.jpg",
+  "https://image.freepik.com/foto-gratis/hombre-negocios-sentado-mesa-leyendo-libro_1423-256.jpg",
+  "https://media.istockphoto.com/id/1402835350/photo/pensive-relaxed-african-american-woman-reading-a-book-at-home-drinking-coffee-sitting-on-the.jpg?s=612x612&w=0&k=20&c=aw9R68ENkPNqEQqQKcPqIlwAefRSQnymCifEjKd-4aE=",
+  "https://cdn.zmescience.com/wp-content/uploads/2015/04/Girl-reading-book-.jpg",
+  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/96/40/00/the-new-fiction-table.jpg?w=900&h=500&s=1",
+  "https://thumbs.dreamstime.com/b/old-man-sitting-home-reading-16618123.jpg",
+];
+
 const AsideItemList: FC<AsideItemListProps> = ({ title, dataArr }) => {
   return (
     <article className="blog-content__aside__item-container flex flex-col gap-6">
@@ -435,6 +447,17 @@ const BlogContent = () => {
 
           <div className="flex flex-col gap-4">
             <h2 className="blog-content__aside__item-title">Instagram</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+              {instagramImages.map((image, index) => (
+                <a key={index} className="bg-cyan-400 aspect-square" href="#">
+                  <img
+                    className="w-full h-full object-cover hover:opacity-40 transition-opacity duration-300 ease-in-out"
+                    src={image}
+                    alt=""
+                  />
+                </a>
+              ))}
+            </div>
           </div>
 
           <AsideItemList title="Archive" dataArr={data2} />
