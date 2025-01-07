@@ -258,6 +258,30 @@
   color: var(--white-color);
 }
 
+.blog-content__social-icons {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+}
+
+.blog-content__social-icons ul {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.blog-content__social-icons li a {
+  display: flex;
+  padding: 0.4rem;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.blog-content__social-icons li a:hover {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
 /***************************************
  *             Fin: Blog              *
  ***************************************/

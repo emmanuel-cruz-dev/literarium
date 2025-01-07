@@ -1,6 +1,14 @@
-import { FaHeart, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaGooglePlusG,
+  FaHeart,
+  FaChevronLeft,
+  FaChevronRight,
+} from "react-icons/fa";
 import BlogImg1 from "../../../assets/images/blog-detail-img.jpg";
 import BlogUser1 from "../../../assets/images/blog-user1.jpg";
+import FounderImg2 from "../../../assets/images/founder2.jpg";
 
 const BlogContent = () => {
   return (
@@ -100,6 +108,38 @@ const BlogContent = () => {
               <span>Next Post</span>
               <FaChevronRight />
             </button>
+          </div>
+          <div className="flex gap-4 border border-slate-300 p-4 relative">
+            <div className="blog-content__social-icons">
+              <ul className="[&>li]:border [&>li]:border-slate-300">
+                <li>
+                  <a href="#">
+                    <FaFacebookF />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <FaTwitter />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <FaGooglePlusG />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <img className="w-20 h-20" src={FounderImg2} alt="" />
+            <div>
+              <h2 className="uppercase font-bold text-lg text-black">
+                Jhony Thapya
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua.
+              </p>
+            </div>
           </div>
         </article>
         <aside className="lg:col-span-1 flex flex-col gap-4">
