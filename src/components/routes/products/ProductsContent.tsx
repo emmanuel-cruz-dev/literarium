@@ -3,9 +3,9 @@ import BookImg1 from "../../../assets/images/books-list1.jpg";
 
 const ProductCard = () => {
   return (
-    <article className="products-content__article-container flex flex-col gap-4 mb-12 bg-white relative">
+    <article className="products-content__article-container flex flex-col gap-4 mb-12 bg-white">
       <img src={BookImg1} alt="" />
-      <div className="flex flex-col gap-2 text-center px-4">
+      <div className="flex flex-col gap-2 text-center">
         <div>
           <div className="flex gap-2 justify-center items-center">
             <span>$80.75</span>
@@ -15,21 +15,23 @@ const ProductCard = () => {
             Stephen King
           </h2>
         </div>
-        <div className="products-content__hidden-container flex flex-col gap-2 absolute bottom-0 left-0 translate-y-full bg-white pb-4 px-4">
-          <p>
-            Well, reading books as a hobby was always a noble, pleasant and very
-            u
-          </p>
-          <div className="flex gap-4 justify-center items-center">
-            <a href="#">
-              <FaHeart />
-            </a>
-            <a href="#">
-              <FaShoppingCart />
-            </a>
-            <a href="#">
-              <FaLink />
-            </a>
+        <div className="products-content__hidden-container">
+          <div className="products-content__hidden-container__body">
+            <p>
+              Well, reading books as a hobby was always a noble, pleasant and
+              very u
+            </p>
+            <div className="flex gap-4 justify-center items-center">
+              <a href="#">
+                <FaHeart />
+              </a>
+              <a href="#">
+                <FaShoppingCart />
+              </a>
+              <a href="#">
+                <FaLink />
+              </a>
+            </div>
           </div>
         </div>
       </div>
