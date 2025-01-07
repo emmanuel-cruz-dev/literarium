@@ -6,7 +6,7 @@ const BlogContent = () => {
   return (
     <section className="blog-content" id="blog-content">
       <article className="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 py-6 text-slate-500 font-thin">
-        <article className="col-span-2 mx-auto flex flex-col gap-4">
+        <article className="lg:col-span-2 mx-auto flex flex-col gap-4">
           <div className="relative">
             <img src={BlogImg1} alt="" />
             <div className="background-accent__item absolute top-0 left-0 flex flex-col justify-center items-center gap-1 py-3 px-8 text-white text-4xl uppercase">
@@ -91,7 +91,7 @@ const BlogContent = () => {
             </p>
           </div>
         </article>
-        <aside className="col-span-1 flex flex-col gap-4">
+        <aside className="lg:col-span-1 flex flex-col gap-4">
           <div className="flex flex-col gap-4">
             <h2 className="uppercase font-bold text-2xl">Books Designer</h2>
             <p>
