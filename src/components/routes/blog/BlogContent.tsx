@@ -1,3 +1,4 @@
+import { FC } from "react";
 import {
   FaFacebookF,
   FaTwitter,
@@ -10,7 +11,11 @@ import BlogImg1 from "../../../assets/images/blog-detail-img.jpg";
 import BlogUser1 from "../../../assets/images/blog-user1.jpg";
 import FounderImg2 from "../../../assets/images/founder2.jpg";
 
-const CommentCard = () => {
+interface CommentCardProps {
+  children?: React.ReactNode;
+}
+
+const CommentCard: FC<CommentCardProps> = ({ children }) => {
   return (
     <article className="flex gap-6 relative">
       <button className="blog-content__btn__comment">Reply</button>
@@ -27,6 +32,7 @@ const CommentCard = () => {
           rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
           ipsum dolor sit amet.
         </p>
+        <div className="mt-4">{children}</div>
       </div>
     </article>
   );
@@ -164,11 +170,17 @@ const BlogContent = () => {
             </div>
           </div>
           <article className="flex flex-col gap-4">
-            <h2 className="uppercase font-bold text-2xl">132 Comments</h2>
+            <h2 className="uppercase font-bold text-2xl text-black">
+              132 Comments
+            </h2>
             <div className="flex flex-col gap-4">
-              <CommentCard />
-              <CommentCard />
-              <CommentCard />
+              <CommentCard>
+                <CommentCard />
+                <CommentCard />
+              </CommentCard>
+              <CommentCard>
+                <CommentCard />
+              </CommentCard>
               <CommentCard />
             </div>
           </article>
