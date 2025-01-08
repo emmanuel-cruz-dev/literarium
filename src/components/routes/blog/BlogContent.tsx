@@ -200,6 +200,26 @@ const CommentCard: FC<CommentCardProps> = ({ img, name, date, children }) => {
   );
 };
 
+const SearchItem = () => {
+  return (
+    <article className="flex flex-col gap-4">
+      <h2 className="blog-content__aside__item-title">Search</h2>
+      <div className="flex items-center border border-slate-300 py-2 px-3">
+        <input
+          name="search"
+          id="search"
+          className="focus:outline-none w-11/12"
+          type="text"
+          placeholder="Enter Keyword"
+        />
+        <a className="w-1/12" href="#">
+          <FaSearch />
+        </a>
+      </div>
+    </article>
+  );
+};
+
 const FormItem: FC<FormItemProps> = ({ title }) => {
   return (
     <article className="flex flex-col gap-4 mb-12">
@@ -401,7 +421,8 @@ const BlogContent = () => {
           <FormItem title="Leave a Reply" />
         </article>
         <aside className="lg:col-span-1 flex flex-col gap-8">
-          <div className="flex flex-col gap-4">
+          <SearchItem />
+          {/* <div className="flex flex-col gap-4">
             <h2 className="blog-content__aside__item-title">Search</h2>
             <div className="flex items-center border border-slate-300 py-2 px-3">
               <input
@@ -415,7 +436,7 @@ const BlogContent = () => {
                 <FaSearch />
               </a>
             </div>
-          </div>
+          </div> */}
 
           <AsideItemList title="Categories" dataArr={data1} />
 
