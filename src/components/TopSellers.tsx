@@ -49,6 +49,10 @@ interface BookCardProps {
   rating: number;
 }
 
+interface BookArticleItemsProps {
+  cols: number;
+}
+
 const BookCard: FC<BookCardProps> = ({
   id,
   img,
@@ -82,10 +86,12 @@ const BookCard: FC<BookCardProps> = ({
   );
 };
 
-export const BookArticleItems = () => {
+export const BookArticleItems: FC<BookArticleItemsProps> = ({ cols }) => {
   return (
     <article>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 lg:gap-8 py-6">
+      <div
+        className={`grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-${cols} gap-12 lg:gap-8 py-6`}
+      >
         {books.map((book) => (
           <BookCard key={book.id} {...book} />
         ))}
@@ -108,7 +114,7 @@ const TopSellers = () => {
             easily purchase.
           </p>
         </div>
-        <BookArticleItems />
+        <BookArticleItems cols={4} />
         {/* <article>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 lg:gap-8 py-6">
             {books.map((book) => (

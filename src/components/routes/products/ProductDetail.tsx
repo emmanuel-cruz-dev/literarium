@@ -1,10 +1,12 @@
 import { FC } from "react";
 import BookDetail from "../../../assets/images/book-detail.jpg";
 import StarsElement from "../../StarsElement";
+import { BookArticleItems } from "../../TopSellers";
+import ProductTabs from "./ProductTabs";
 
 const ProductDetail: FC = () => {
   return (
-    <section className="col-span-3">
+    <section className="col-span-3 flex flex-col gap-6">
       <article className="flex gap-4">
         <img src={BookDetail} alt="" />
         <div className="flex flex-col gap-4">
@@ -46,10 +48,12 @@ const ProductDetail: FC = () => {
           </div>
         </div>
       </article>
+      <ProductTabs />
       <article>
         <h2 className="uppercase font-bold text-3xl text-black">
           Related Books
         </h2>
+        <BookArticleItems cols={3} />
       </article>
     </section>
   );
