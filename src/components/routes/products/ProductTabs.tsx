@@ -94,7 +94,16 @@ const ProductTabs = () => {
         <TagItem arr={tags} />
       </div>
       <div>
-        <h2 className="uppercase font-semibold text-xl">Description</h2>
+        <div className="flex gap-1">
+          <button className="product-detail__tabs-btn__title active">
+            Description
+          </button>
+          <button className="product-detail__tabs-btn__title">Reviews</button>
+          <button className="product-detail__tabs-btn__title">Tags</button>
+          <button className="product-detail__tabs-btn__title">
+            Custom Tab
+          </button>
+        </div>
         <div className="flex flex-col gap-3 text-lg border border-slate-300 py-10 px-8">
           <p>
             Cum altera mandamus in, mea verear disputationi et. Vel regione

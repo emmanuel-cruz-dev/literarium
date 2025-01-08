@@ -48,6 +48,7 @@ const ProductDetail: FC = () => {
           </div>
         </div>
       </article>
+
       <ProductTabs />
       <article>
         <h2 className="uppercase font-bold text-3xl text-black">
