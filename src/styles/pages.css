@@ -441,6 +441,17 @@
   z-index: 10;
 }
 
+.new-arrivals__img-container {
+  overflow: hidden;
+}
+
+.new-arrivals__img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.new-arrivals__card:hover .new-arrivals__img {
+  transform: scale(1.2);
+}
 /**************************************
  *            Fin: Products          *
  ***************************************/
