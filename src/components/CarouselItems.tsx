@@ -63,7 +63,7 @@ const CarouselItems: FC<CarouselItemsProps> = ({ articleTitle, arr }) => {
   const swiperRef = useRef<SwiperType>();
 
   return (
-    <article className="w-full lg:w-[21rem] flex flex-col gap-4 mx-auto mb-12 xl:mb-0">
+    <article className="w-full lg:w-[21rem] xl:w-full flex flex-col gap-4 mx-auto mb-12 xl:mb-0">
       <div className="flex justify-between border-b border-slate-300 pb-4">
         <h2 className="uppercase text-2xl">{articleTitle}</h2>
         <div className="flex gap-2">
@@ -99,7 +99,7 @@ const CarouselItems: FC<CarouselItemsProps> = ({ articleTitle, arr }) => {
           delay: 5000,
           disableOnInteraction: false,
         }}
-        className="w-full lg:w-80 h-[400px]" // Clases de Tailwind
+        className="w-full lg:w-80 xl:w-full h-[400px]" // Clases de Tailwind
       >
         {arr.map((item) => (
           <SwiperSlide key={item.id}>
