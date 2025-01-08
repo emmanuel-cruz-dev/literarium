@@ -85,8 +85,11 @@ const NewArrivals = () => {
   return (
     <article className="new-arrivals__container flex flex-col gap-4">
       <h2 className="blog-content__aside__item-title">New Arrivals</h2>
-      {arrivalsData.map((item) => (
-        <article className="new-arrivals__card flex gap-4 border border-slate-300 p-4 hover:shadow-xl transition-shadow duration-300 ease-in-out">
+      {arrivalsData.map((item, index) => (
+        <article
+          key={index}
+          className="new-arrivals__card flex gap-4 border border-slate-300 p-4 hover:shadow-xl transition-shadow duration-300 ease-in-out"
+        >
           <a
             href="#"
             className="new-arrivals__img-container w-20 flex-shrink-0"
@@ -111,7 +114,7 @@ const NewArrivals = () => {
 
 const ProductMain = () => {
   return (
-    <article className="auto-rows-[440px] md:col-span-3 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <article className="auto-rows-[440px] md:col-span-2 grid md:grid-cols-2 xl:col-span-3 xl:grid-cols-3 gap-8">
       <ProductCard />
       <ProductCard />
       <ProductCard />
@@ -134,7 +137,7 @@ const ProductsContent = () => {
 
   return (
     <section className="products-content bg-neutral-100" id="products-content">
-      <article className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 py-6 text-neutral-600 font-light">
+      <article className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-8 py-12 text-neutral-600 font-light">
         <aside className="md:col-span-1 flex flex-col gap-6">
           <SearchItem />
           <NewArrivals />
@@ -149,11 +152,6 @@ const ProductsContent = () => {
           Click
         </button>
         {!isVisible ? <ProductMain /> : <ProductDetail />}
-
-        {/* <Routes>
-          <Route path="/" element={<ProductMain />} />
-          <Route path="/products/:id" element={<ProductDetail />} />
-        </Routes> */}
       </article>
     </section>
   );

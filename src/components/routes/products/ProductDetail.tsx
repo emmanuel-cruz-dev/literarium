@@ -6,18 +6,18 @@ import ProductTabs from "./ProductTabs";
 
 const ProductDetail: FC = () => {
   return (
-    <section className="col-span-3 flex flex-col gap-8">
-      <article className="flex gap-4">
+    <section className="md:col-span-2 xl:col-span-3 flex flex-col gap-8">
+      <article className="flex flex-col lg:flex-row gap-4">
         <img className="h-96 object-cover" src={BookDetail} alt="" />
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-4">
             <h2 className="uppercase font-semibold text-3xl text-black">
               Application Health and Well-Being
             </h2>
-            <p className="flex gap-2">
+            <div className="flex gap-2">
               <StarsElement num={4} />
               <span>4 Customer Reviews</span>
-            </p>
+            </div>
             <span className="text__accent-color font-bold text-4xl">
               $ 19.90
             </span>

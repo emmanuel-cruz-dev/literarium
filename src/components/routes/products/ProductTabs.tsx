@@ -71,7 +71,7 @@ const ProductTabs = () => {
   };
 
   return (
-    <article>
+    <article className="w-full">
       <div>
         <div className="flex gap-1">
           <button
