@@ -1,3 +1,4 @@
+import { FC } from "react";
 import JuegoTronos from "../assets/images/juego-tronos.jpg";
 import DoceReglas from "../assets/images/12-reglas-para-vivir.jpg";
 import LibertadPrimera from "../assets/images/libertad-primera-y-ultima.jpg";
@@ -48,7 +49,7 @@ interface BookCardProps {
   rating: number;
 }
 
-const BookCard: React.FC<BookCardProps> = ({
+const BookCard: FC<BookCardProps> = ({
   id,
   img,
   title,
@@ -81,6 +82,18 @@ const BookCard: React.FC<BookCardProps> = ({
   );
 };
 
+export const BookArticleItems = () => {
+  return (
+    <article>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 lg:gap-8 py-6">
+        {books.map((book) => (
+          <BookCard key={book.id} {...book} />
+        ))}
+      </div>
+    </article>
+  );
+};
+
 const TopSellers = () => {
   return (
     <section className="top-sellers bg-slate-100" id="top-sellers">
@@ -95,13 +108,14 @@ const TopSellers = () => {
             easily purchase.
           </p>
         </div>
-        <article>
+        <BookArticleItems />
+        {/* <article>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 lg:gap-8 py-6">
             {books.map((book) => (
               <BookCard key={book.id} {...book} />
             ))}
           </div>
-        </article>
+        </article> */}
       </article>
     </section>
   );

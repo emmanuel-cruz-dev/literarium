@@ -3,6 +3,8 @@ import BookImg1 from "../../../assets/images/books-list1.jpg";
 import { SearchItem, AsideItemList } from "../blog/BlogContent";
 import CarouselItems from "../../CarouselItems";
 import preOrder from "../../../data/preOrder.json";
+import { useState } from "react";
+import ProductDetail from "./ProductDetail";
 
 const data1 = [
   "Fiction",
@@ -39,9 +41,9 @@ const arrivalsData = [
 const ProductCard = () => {
   return (
     <article className="products-content__article-container flex flex-col gap-4 pb-4 bg-white">
-      <a href="#">
+      <figure>
         <img src={BookImg1} alt="" />
-      </a>
+      </figure>
       <div className="flex flex-col gap-2 text-center">
         <div className="products-content__article-text">
           <p className="flex gap-2 justify-center items-center font-bold text-xl">
@@ -107,7 +109,29 @@ const NewArrivals = () => {
   );
 };
 
+const ProductMain = () => {
+  return (
+    <article className="auto-rows-[440px] md:col-span-3 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+    </article>
+  );
+};
+
 const ProductsContent = () => {
+  const [isVisible, setVisible] = useState(false);
+
+  const handleClick = () => {
+    setVisible(!isVisible);
+  };
+
   return (
     <section className="products-content bg-neutral-100" id="products-content">
       <article className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 py-6 text-neutral-600 font-light">
@@ -117,17 +141,19 @@ const ProductsContent = () => {
           <AsideItemList title="Categories" dataArr={data1} />
           <CarouselItems key={3} articleTitle="Pre-Order" arr={preOrder} />
         </aside>
-        <article className="auto-rows-[440px] md:col-span-3 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-        </article>
+
+        <button
+          className="font-bold uppercase text-black absolute left-[38%] z-20 bg-white px-4 py-2"
+          onClick={handleClick}
+        >
+          Click
+        </button>
+        {!isVisible ? <ProductMain /> : <ProductDetail />}
+
+        {/* <Routes>
+          <Route path="/" element={<ProductMain />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
+        </Routes> */}
       </article>
     </section>
   );
