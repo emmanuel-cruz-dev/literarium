@@ -42,7 +42,7 @@ const ProductCard = () => {
   return (
     <article className="products-content__article-container flex flex-col gap-4 pb-4 bg-white">
       <figure>
-        <img src={BookImg1} alt="" />
+        <img className="w-full object-cover" src={BookImg1} alt="" />
       </figure>
       <div className="flex flex-col gap-2 text-center">
         <div className="products-content__article-text">
@@ -88,7 +88,7 @@ const NewArrivals = () => {
       {arrivalsData.map((item, index) => (
         <article
           key={index}
-          className="new-arrivals__card flex gap-4 border border-slate-300 p-4 hover:shadow-xl transition-shadow duration-300 ease-in-out"
+          className="new-arrivals__card flex  gap-4 border border-slate-300 p-4 hover:shadow-xl transition-shadow duration-300 ease-in-out"
         >
           <a
             href="#"
