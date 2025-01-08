@@ -1,5 +1,30 @@
 import { FC } from "react";
 
+// const tabsContent = [
+//   {
+//     id: 1,
+//     title: "Description",
+//     text1:
+//       "Cum altera mandamus in, mea verear disputationi et. Vel regione discere ut, legere expetenda ut eos. In nam nibh invenire similique. Atqui mollis ea his, ius graecis accommodare te. No eam tota nostrum cotidieque. Est cu nibh clita. Sed an nominavi maiestatis, et duo corrumpit constituto, duo id rebum lucilius. Te eam iisque deseruisse, ipsum euismod his at. Eu putent habemus voluptua sit, sit cu rationibus scripserit, modus voluptaria ex per. Aeque dicam consulatu eu his, probatus neglegentur disputationi sit et. Ei nec ludus epicuri petentium, vis appetere maluisset ad. Et hinc exerci utinam cum. Sonet saperet nominavi est at, vel eu sumo tritani. Cum ex minim legere.",
+//     text2:
+//       "Sed an nominavi maiestatis, et duo corrumpit constituto, duo id rebum lucilius. Te eam iisque deseruisse, ipsum euismod his at. Eu putent habemus voluptua sit, sit cu rationibus scripserit, modus voluptaria ex per. Aeque dicam consulatu eu his, probatus neglegentur disputationi sit et. Ei nec ludus epicuri petentium, vis appetere maluisset ad. Et hinc exerci utinam cum. Sonet saperet nominavi est at, vel eu sumo tritani. Cum ex minim legere.",
+//     text3:
+//       "Ipsum euismod his at. Eu putent habemus voluptua sit, sit cu rationibus scripserit, modus voluptaria ex per. Aeque dicam consulatu eu his, probatus neglegentur disputationi sit et. Ei nec ludus epicuri petentium, vis appetere maluisset ad. Et hinc exerci utinam cum. Sonet saperet nominavi est at, vel eu sumo tritani. Cum ex minim legere.",
+//   },
+//   {
+//     id: 2,
+//     title: "Custom Tab",
+//     text1:
+//       "Ipsum euismod his at. Eu putent habemus voluptua sit, sit cu rationibus scripserit, modus voluptaria ex per. Aeque dicam consulatu eu his, probatus neglegentur disputationi sit et. Ei nec ludus epicuri petentium, vis appetere maluisset ad. Et hinc exerci utinam cum. Sonet saperet nominavi est at, vel eu sumo tritani. Cum ex minim legere.",
+//     text2:
+//       "Te eam iisque deseruisse, ipsum euismod his at. Eu putent habemus voluptua sit, sit cu rationibus scripserit, modus voluptaria ex per. Aeque dicam consulatu eu his, probatus neglegentur disputationi sit et. Ei nec ludus epicuri petentium, vis appetere maluisset ad. Et hinc exerci utinam cum. Sonet saperet nominavi est at, vel eu sumo tritani. Cum ex minim legere.",
+//     text3:
+//       "Sed an nominavi maiestatis, et duo corrumpit constituto, duo id rebum lucilius. Te eam iisque deseruisse, ipsum euismod his at. Eu putent habemus voluptua sit, sit cu rationibus scripserit, modus voluptaria ex per. Aeque dicam consulatu eu his, probatus neglegentur disputationi sit et. Ei nec ludus epicuri petentium, vis appetere maluisset ad. Et hinc exerci utinam cum. Sonet saperet nominavi est at, vel eu sumo tritani. Cum ex minim legere.",
+//     text4:
+//       "Ipsum euismod his at. Eu putent habemus voluptua sit, sit cu rationibus scripserit, modus voluptaria ex per. Aeque dicam consulatu eu his, probatus neglegentur disputationi sit et. Ei nec ludus epicuri petentium, vis appetere maluisset ad. Et hinc exerci utinam cum. Sonet saperet nominavi est at, vel eu sumo tritani. Cum ex minim legere.",
+//   },
+// ];
+
 const tags = [
   "Ficción",
   "No ficción",
@@ -47,7 +72,7 @@ interface TagItemProps {
 
 const TagItem: FC<TagItemProps> = ({ arr }) => {
   return (
-    <>
+    <div className="flex gap-2 flex-wrap">
       {arr.map((item, index) => (
         <a
           href="#"
@@ -57,18 +82,53 @@ const TagItem: FC<TagItemProps> = ({ arr }) => {
           {item}
         </a>
       ))}
-    </>
+    </div>
   );
 };
 
 const ProductTabs = () => {
   return (
-    <div className="flex flex-col gap-4">
-      <h2>Tags</h2>
-      <div className="flex gap-2 flex-wrap">
+    <article>
+      <div className="flex flex-col gap-4">
+        <h2>Tags</h2>
         <TagItem arr={tags} />
       </div>
-    </div>
+      <div>
+        <h2 className="uppercase font-semibold text-xl">Description</h2>
+        <div className="flex flex-col gap-3 text-lg border border-slate-300 py-10 px-8">
+          <p>
+            Cum altera mandamus in, mea verear disputationi et. Vel regione
+            discere ut, legere expetenda ut eos. In nam nibh invenire similique.
+            Atqui mollis ea his, ius graecis accommodare te. No eam tota nostrum
+            cotidieque. Est cu nibh clita. Sed an nominavi maiestatis, et duo
+            corrumpit constituto, duo id rebum lucilius. Te eam iisque
+            deseruisse, ipsum euismod his at. Eu putent habemus voluptua sit,
+            sit cu rationibus scripserit, modus voluptaria ex per. Aeque dicam
+            consulatu eu his, probatus neglegentur disputationi sit et. Ei nec
+            ludus epicuri petentium, vis appetere maluisset ad. Et hinc exerci
+            utinam cum. Sonet saperet nominavi est at, vel eu sumo tritani. Cum
+            ex minim legere.
+          </p>
+          <p>
+            Sed an nominavi maiestatis, et duo corrumpit constituto, duo id
+            rebum lucilius. Te eam iisque deseruisse, ipsum euismod his at. Eu
+            putent habemus voluptua sit, sit cu rationibus scripserit, modus
+            voluptaria ex per. Aeque dicam consulatu eu his, probatus
+            neglegentur disputationi sit et. Ei nec ludus epicuri petentium, vis
+            appetere maluisset ad. Et hinc exerci utinam cum. Sonet saperet
+            nominavi est at, vel eu sumo tritani. Cum ex minim legere.
+          </p>
+          <p>
+            Ipsum euismod his at. Eu putent habemus voluptua sit, sit cu
+            rationibus scripserit, modus voluptaria ex per. Aeque dicam
+            consulatu eu his, probatus neglegentur disputationi sit et. Ei nec
+            ludus epicuri petentium, vis appetere maluisset ad. Et hinc exerci
+            utinam cum. Sonet saperet nominavi est at, vel eu sumo tritani. Cum
+            ex minim legere.
+          </p>
+        </div>
+      </div>
+    </article>
   );
 };
 
