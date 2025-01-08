@@ -18,6 +18,7 @@ interface CarouselItem {
 }
 
 interface CarouselItemsProps {
+  articleClass?: string;
   articleTitle: string;
   arr: CarouselItem[];
 }
@@ -59,13 +60,17 @@ const BookArticleCard: FC<CarouselItem> = ({ title, author, img, price }) => {
   );
 };
 
-const CarouselItems: FC<CarouselItemsProps> = ({ articleTitle, arr }) => {
+const CarouselItems: FC<CarouselItemsProps> = ({
+  articleClass,
+  articleTitle,
+  arr,
+}) => {
   const swiperRef = useRef<SwiperType>();
 
   return (
     <article className="w-full lg:w-[21rem] xl:w-full flex flex-col gap-4 mx-auto mb-12 xl:mb-0">
       <div className="flex justify-between border-b border-slate-300 pb-4">
-        <h2 className="uppercase text-2xl">{articleTitle}</h2>
+        <h2 className={`uppercase text-2xl ${articleClass}`}>{articleTitle}</h2>
         <div className="flex gap-2">
           <button
             onClick={() => swiperRef.current?.slidePrev()}

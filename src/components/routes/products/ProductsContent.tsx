@@ -88,7 +88,7 @@ const NewArrivals = () => {
       {arrivalsData.map((item, index) => (
         <article
           key={index}
-          className="new-arrivals__card flex md:flex-col md:items-center lg:flex-row  gap-4 border border-slate-300 p-4 hover:shadow-xl transition-shadow duration-300 ease-in-out"
+          className="new-arrivals__card flex md:flex-col md:items-center lg:flex-row lg:items-start gap-4 border border-slate-300 p-4 hover:shadow-xl transition-shadow duration-300 ease-in-out"
         >
           <a
             href="#"
@@ -142,7 +142,12 @@ const ProductsContent = () => {
           <SearchItem />
           <NewArrivals />
           <AsideItemList title="Categories" dataArr={data1} />
-          <CarouselItems key={3} articleTitle="Pre-Order" arr={preOrder} />
+          <CarouselItems
+            key={3}
+            articleClass="blog-content__aside__item-title"
+            articleTitle="Pre-Order"
+            arr={preOrder}
+          />
         </aside>
 
         <button
