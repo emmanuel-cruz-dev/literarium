@@ -3,36 +3,41 @@ import BookImg1 from "../../../assets/images/books-list1.jpg";
 
 const ProductCard = () => {
   return (
-    <article className="products-content__article-container flex flex-col gap-4 mb-12 bg-white">
-      <img src={BookImg1} alt="" />
+    <article className="products-content__article-container flex flex-col gap-4 pb-4 bg-white">
+      <a href="#">
+        <img src={BookImg1} alt="" />
+      </a>
       <div className="flex flex-col gap-2 text-center">
-        <div>
-          <div className="flex gap-2 justify-center items-center">
-            <span>$80.75</span>
-            <span className="line-through">$90.75</span>
-          </div>
-          <h2 className="uppercase font-semibold text-2xl text-black mb-2">
+        <div className="products-content__article-text">
+          <p className="flex gap-2 justify-center items-center font-bold text-xl">
+            <span className="text-neutral-600">$80.75</span>
+            <span className="text-neutral-400/70 line-through">$90.75</span>
+          </p>
+          <h2 className="uppercase font-bold text-2xl text-black">
             Stephen King
           </h2>
         </div>
         <div className="products-content__hidden-container">
-          <div className="products-content__hidden-container__body">
-            <p>
-              Well, reading books as a hobby was always a noble, pleasant and
-              very u
-            </p>
-            <div className="flex gap-4 justify-center items-center">
+          <p>
+            Reading books as a hobby was always a noble and pleasant pastime.
+          </p>
+          <ul className="products-content__hidden-container__list">
+            <li>
               <a href="#">
                 <FaHeart />
               </a>
+            </li>
+            <li>
               <a href="#">
                 <FaShoppingCart />
               </a>
+            </li>
+            <li>
               <a href="#">
                 <FaLink />
               </a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </article>
