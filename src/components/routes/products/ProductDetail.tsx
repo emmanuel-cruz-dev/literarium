@@ -6,9 +6,9 @@ import ProductTabs from "./ProductTabs";
 
 const ProductDetail: FC = () => {
   return (
-    <section className="col-span-3 flex flex-col gap-6">
+    <section className="col-span-3 flex flex-col gap-8">
       <article className="flex gap-4">
-        <img src={BookDetail} alt="" />
+        <img className="h-96 object-cover" src={BookDetail} alt="" />
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-4">
             <h2 className="uppercase font-semibold text-3xl text-black">
@@ -50,6 +50,7 @@ const ProductDetail: FC = () => {
       </article>
 
       <ProductTabs />
+
       <article>
         <h2 className="uppercase font-bold text-3xl text-black">
           Related Books

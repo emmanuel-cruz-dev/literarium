@@ -268,6 +268,15 @@ const LatestPosts: FC<LatestPostsProps> = ({ title, date, img }) => {
   );
 };
 
+export const CommentContentReview: FC = () => {
+  return (
+    <>
+      <CommentCard {...users[2]} />
+      <CommentCard {...users[1]} />
+    </>
+  );
+};
+
 const BlogContent = () => {
   return (
     <section className="blog-content mt-8" id="blog-content">
