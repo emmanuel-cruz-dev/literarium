@@ -158,7 +158,7 @@ const instagramImages = [
   "https://thumbs.dreamstime.com/b/old-man-sitting-home-reading-16618123.jpg",
 ];
 
-const AsideItemList: FC<AsideItemListProps> = ({ title, dataArr }) => {
+export const AsideItemList: FC<AsideItemListProps> = ({ title, dataArr }) => {
   return (
     <article className="blog-content__aside__item-container flex flex-col gap-6">
       <h2 className="blog-content__aside__item-title">{title}</h2>
@@ -200,7 +200,7 @@ const CommentCard: FC<CommentCardProps> = ({ img, name, date, children }) => {
   );
 };
 
-const SearchItem = () => {
+export const SearchItem = () => {
   return (
     <article className="flex flex-col gap-4">
       <h2 className="blog-content__aside__item-title">Search</h2>
@@ -208,7 +208,7 @@ const SearchItem = () => {
         <input
           name="search"
           id="search"
-          className="focus:outline-none w-11/12"
+          className="focus:outline-none w-11/12 bg-inherit"
           type="text"
           placeholder="Enter Keyword"
         />
@@ -422,21 +422,6 @@ const BlogContent = () => {
         </article>
         <aside className="lg:col-span-1 flex flex-col gap-8">
           <SearchItem />
-          {/* <div className="flex flex-col gap-4">
-            <h2 className="blog-content__aside__item-title">Search</h2>
-            <div className="flex items-center border border-slate-300 py-2 px-3">
-              <input
-                name="search"
-                id="search"
-                className="focus:outline-none w-11/12"
-                type="text"
-                placeholder="Enter Keyword"
-              />
-              <a className="w-1/12" href="#">
-                <FaSearch />
-              </a>
-            </div>
-          </div> */}
 
           <AsideItemList title="Categories" dataArr={data1} />
 

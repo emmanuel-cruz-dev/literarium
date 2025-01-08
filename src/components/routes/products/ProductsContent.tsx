@@ -1,5 +1,17 @@
 import { FaHeart, FaShoppingCart, FaLink } from "react-icons/fa";
 import BookImg1 from "../../../assets/images/books-list1.jpg";
+import { SearchItem, AsideItemList } from "../blog/BlogContent";
+
+const data1 = [
+  "Fiction",
+  "Non-fiction",
+  "Mystery & Suspense",
+  "Fantasy & Science Fiction",
+  "Romance",
+  "History",
+  "Self-Help",
+  "Children & Young Adult",
+];
 
 const ProductCard = () => {
   return (
@@ -48,7 +60,10 @@ const ProductsContent = () => {
   return (
     <section className="products-content bg-neutral-100" id="products-content">
       <article className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 py-6 text-neutral-600 font-light">
-        <aside className="md:col-span-1 bg-cyan-400"></aside>
+        <aside className="md:col-span-1 flex flex-col gap-6">
+          <SearchItem />
+          <AsideItemList title="Categories" dataArr={data1} />
+        </aside>
         <article className="auto-rows-[440px] md:col-span-3 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <ProductCard />
           <ProductCard />
