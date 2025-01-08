@@ -114,7 +114,7 @@ const NewArrivals = () => {
 
 const ProductMain = () => {
   return (
-    <article className="auto-rows-[600px] md:auto-rows-[400px] lg:auto-rows-[460px] xl:auto-rows-[440px] md:col-span-2 grid md:grid-cols-2 xl:col-span-3 xl:grid-cols-3 gap-8">
+    <article className="auto-rows-[600px] md:auto-rows-[400px] lg:auto-rows-[528px] xl:auto-rows-[440px] md:col-span-2 grid md:grid-cols-2 xl:col-span-3 xl:grid-cols-3 gap-8">
       <ProductCard />
       <ProductCard />
       <ProductCard />
