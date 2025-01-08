@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 
 // const tabsContent = [
 //   {
@@ -87,54 +87,135 @@ const TagItem: FC<TagItemProps> = ({ arr }) => {
 };
 
 const ProductTabs = () => {
+  const [active, setActive] = useState<number | null>(null);
+
+  const handleClick = (id: number) => {
+    if (active === id) return;
+    setActive((prevActive) => (prevActive === id ? null : id)); // Cambiar el estado del componente
+  };
+
   return (
     <article>
-      <div className="flex flex-col gap-4">
-        <h2>Tags</h2>
-        <TagItem arr={tags} />
-      </div>
       <div>
         <div className="flex gap-1">
-          <button className="product-detail__tabs-btn__title active">
+          <button
+            key={1}
+            onClick={() => handleClick(1)}
+            className={`${
+              active === 1 ? "active" : ""
+            } product-detail__tabs-btn__title`}
+          >
             Description
           </button>
-          <button className="product-detail__tabs-btn__title">Reviews</button>
-          <button className="product-detail__tabs-btn__title">Tags</button>
-          <button className="product-detail__tabs-btn__title">
+          <button
+            key={2}
+            onClick={() => handleClick(2)}
+            className={`${
+              active === 2 ? "active" : ""
+            } product-detail__tabs-btn__title`}
+          >
+            Reviews
+          </button>
+          <button
+            key={3}
+            onClick={() => handleClick(3)}
+            className={`${
+              active === 3 ? "active" : ""
+            } product-detail__tabs-btn__title`}
+          >
+            Tags
+          </button>
+          <button
+            key={4}
+            onClick={() => handleClick(4)}
+            className={`${
+              active === 4 ? "active" : ""
+            } product-detail__tabs-btn__title`}
+          >
             Custom Tab
           </button>
         </div>
         <div className="flex flex-col gap-3 text-lg border border-slate-300 py-10 px-8">
-          <p>
-            Cum altera mandamus in, mea verear disputationi et. Vel regione
-            discere ut, legere expetenda ut eos. In nam nibh invenire similique.
-            Atqui mollis ea his, ius graecis accommodare te. No eam tota nostrum
-            cotidieque. Est cu nibh clita. Sed an nominavi maiestatis, et duo
-            corrumpit constituto, duo id rebum lucilius. Te eam iisque
-            deseruisse, ipsum euismod his at. Eu putent habemus voluptua sit,
-            sit cu rationibus scripserit, modus voluptaria ex per. Aeque dicam
-            consulatu eu his, probatus neglegentur disputationi sit et. Ei nec
-            ludus epicuri petentium, vis appetere maluisset ad. Et hinc exerci
-            utinam cum. Sonet saperet nominavi est at, vel eu sumo tritani. Cum
-            ex minim legere.
-          </p>
-          <p>
-            Sed an nominavi maiestatis, et duo corrumpit constituto, duo id
-            rebum lucilius. Te eam iisque deseruisse, ipsum euismod his at. Eu
-            putent habemus voluptua sit, sit cu rationibus scripserit, modus
-            voluptaria ex per. Aeque dicam consulatu eu his, probatus
-            neglegentur disputationi sit et. Ei nec ludus epicuri petentium, vis
-            appetere maluisset ad. Et hinc exerci utinam cum. Sonet saperet
-            nominavi est at, vel eu sumo tritani. Cum ex minim legere.
-          </p>
-          <p>
-            Ipsum euismod his at. Eu putent habemus voluptua sit, sit cu
-            rationibus scripserit, modus voluptaria ex per. Aeque dicam
-            consulatu eu his, probatus neglegentur disputationi sit et. Ei nec
-            ludus epicuri petentium, vis appetere maluisset ad. Et hinc exerci
-            utinam cum. Sonet saperet nominavi est at, vel eu sumo tritani. Cum
-            ex minim legere.
-          </p>
+          {active === 1 && (
+            <>
+              <p>
+                Cum altera mandamus in, mea verear disputationi et. Vel regione
+                discere ut, legere expetenda ut eos. In nam nibh invenire
+                similique. Atqui mollis ea his, ius graecis accommodare te. No
+                eam tota nostrum cotidieque. Est cu nibh clita. Sed an nominavi
+                maiestatis, et duo corrumpit constituto, duo id rebum lucilius.
+                Te eam iisque deseruisse, ipsum euismod his at. Eu putent
+                habemus voluptua sit, sit cu rationibus scripserit, modus
+                voluptaria ex per. Aeque dicam consulatu eu his, probatus
+                neglegentur disputationi sit et. Ei nec ludus epicuri petentium,
+                vis appetere maluisset ad. Et hinc exerci utinam cum. Sonet
+                saperet nominavi est at, vel eu sumo tritani. Cum ex minim
+                legere.
+              </p>
+              <p>
+                Sed an nominavi maiestatis, et duo corrumpit constituto, duo id
+                rebum lucilius. Te eam iisque deseruisse, ipsum euismod his at.
+                Eu putent habemus voluptua sit, sit cu rationibus scripserit,
+                modus voluptaria ex per. Aeque dicam consulatu eu his, probatus
+                neglegentur disputationi sit et. Ei nec ludus epicuri petentium,
+                vis appetere maluisset ad. Et hinc exerci utinam cum. Sonet
+                saperet nominavi est at, vel eu sumo tritani. Cum ex minim
+                legere.
+              </p>
+              <p>
+                Ipsum euismod his at. Eu putent habemus voluptua sit, sit cu
+                rationibus scripserit, modus voluptaria ex per. Aeque dicam
+                consulatu eu his, probatus neglegentur disputationi sit et. Ei
+                nec ludus epicuri petentium, vis appetere maluisset ad. Et hinc
+                exerci utinam cum. Sonet saperet nominavi est at, vel eu sumo
+                tritani. Cum ex minim legere.
+              </p>
+            </>
+          )}
+
+          {active === 2 && <p>Reviews acá</p>}
+
+          {active === 3 && <TagItem arr={tags} />}
+
+          {active === 4 && (
+            <>
+              <p>
+                Ipsum euismod his at. Eu putent habemus voluptua sit, sit cu
+                rationibus scripserit, modus voluptaria ex per. Aeque dicam
+                consulatu eu his, probatus neglegentur disputationi sit et. Ei
+                nec ludus epicuri petentium, vis appetere maluisset ad. Et hinc
+                exerci utinam cum. Sonet saperet nominavi est at, vel eu sumo
+                tritani. Cum ex minim legere.
+              </p>
+              <p>
+                Te eam iisque deseruisse, ipsum euismod his at. Eu putent
+                habemus voluptua sit, sit cu rationibus scripserit, modus
+                voluptaria ex per. Aeque dicam consulatu eu his, probatus
+                neglegentur disputationi sit et. Ei nec ludus epicuri petentium,
+                vis appetere maluisset ad. Et hinc exerci utinam cum. Sonet
+                saperet nominavi est at, vel eu sumo tritani. Cum ex minim
+                legere.
+              </p>
+              <p>
+                Sed an nominavi maiestatis, et duo corrumpit constituto, duo id
+                rebum lucilius. Te eam iisque deseruisse, ipsum euismod his at.
+                Eu putent habemus voluptua sit, sit cu rationibus scripserit,
+                modus voluptaria ex per. Aeque dicam consulatu eu his, probatus
+                neglegentur disputationi sit et. Ei nec ludus epicuri petentium,
+                vis appetere maluisset ad. Et hinc exerci utinam cum. Sonet
+                saperet nominavi est at, vel eu sumo tritani. Cum ex minim
+                legere.
+              </p>
+              <p>
+                Ipsum euismod his at. Eu putent habemus voluptua sit, sit cu
+                rationibus scripserit, modus voluptaria ex per. Aeque dicam
+                consulatu eu his, probatus neglegentur disputationi sit et. Ei
+                nec ludus epicuri petentium, vis appetere maluisset ad. Et hinc
+                exerci utinam cum. Sonet saperet nominavi est at, vel eu sumo
+                tritani. Cum ex minim legere.
+              </p>
+            </>
+          )}
         </div>
       </div>
     </article>

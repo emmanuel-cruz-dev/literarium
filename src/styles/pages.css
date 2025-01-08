@@ -455,12 +455,12 @@
 
 .product-detail__tabs-btn__title {
   width: fit-content;
-  padding: 1rem;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   transition: background-color 0.3s ease-in-out;
 }
 
