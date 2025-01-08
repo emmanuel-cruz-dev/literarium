@@ -41,9 +41,9 @@ const arrivalsData = [
 const ProductCard = () => {
   return (
     <article className="products-content__article-container flex flex-col gap-4 pb-4 bg-white">
-      <figure>
+      <button>
         <img className="w-full object-cover" src={BookImg1} alt="" />
-      </figure>
+      </button>
       <div className="flex flex-col gap-2 text-center">
         <div className="products-content__article-text">
           <p className="flex gap-2 justify-center items-center font-bold text-xl">

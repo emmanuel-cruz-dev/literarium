@@ -11,7 +11,7 @@ const ProductDetail: FC = () => {
         <img className="h-96 object-cover" src={BookDetail} alt="" />
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-4">
-            <h2 className="uppercase font-semibold text-3xl text-black">
+            <h2 className="uppercase font-bold text-2xl text-black">
               Application Health and Well-Being
             </h2>
             <div className="flex gap-2">
@@ -52,7 +52,7 @@ const ProductDetail: FC = () => {
       <ProductTabs />
 
       <article>
-        <h2 className="uppercase font-bold text-3xl text-black">
+        <h2 className="uppercase font-bold text-2xl text-black">
           Related Books
         </h2>
         <BookArticleItems cols={3} />
