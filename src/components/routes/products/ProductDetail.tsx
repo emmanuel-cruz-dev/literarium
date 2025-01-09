@@ -3,10 +3,14 @@ import BookDetail from "../../../assets/images/book-detail.jpg";
 import StarsElement from "../../StarsElement";
 import { BookArticleItems } from "../../TopSellers";
 import ProductTabs from "./ProductTabs";
+import { ProductsContext } from "./ProductsContext";
+import { useContext } from "react";
 
 const ProductDetail: FC = () => {
+  const { handleClick } = useContext(ProductsContext);
+
   return (
-    <section className="md:col-span-2 xl:col-span-3 flex flex-col gap-8">
+    <section className="md:col-span-2 xl:col-span-3 flex flex-col gap-8 relative">
       <article className="flex flex-col lg:flex-row gap-4">
         <img className="h-96 object-cover" src={BookDetail} alt="" />
         <div className="flex flex-col gap-4">
@@ -47,6 +51,9 @@ const ProductDetail: FC = () => {
             <button className="btn">Get a Quote</button>
           </div>
         </div>
+        <button className="btn absolute top-0 right-0" onClick={handleClick}>
+          Back
+        </button>
       </article>
 
       <ProductTabs />

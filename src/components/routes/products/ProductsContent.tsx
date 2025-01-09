@@ -163,13 +163,6 @@ const ProductsContent = () => {
             arr={preOrder}
           />
         </aside>
-
-        {/* <button
-          className="font-bold uppercase text-black absolute left-[38%] z-20 bg-white px-4 py-2"
-          onClick={handleClick}
-        >
-          Click
-        </button> */}
         {!isVisible ? <ProductMain /> : <ProductDetail />}
       </article>
     </section>

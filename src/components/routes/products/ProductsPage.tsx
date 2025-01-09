@@ -8,6 +8,7 @@ const ProductsPage = () => {
 
   const handleClick = () => {
     setVisible(!isVisible);
+    window.scrollTo(450, 450);
   };
 
   return (
