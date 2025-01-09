@@ -204,7 +204,7 @@ export const SearchItem = () => {
   return (
     <article className="flex flex-col gap-4">
       <h2 className="blog-content__aside__item-title">Search</h2>
-      <div className="flex items-center border border-slate-300 py-2 px-3">
+      <div className="flex items-center border border-slate-300 py-2 px-3 text-inherit">
         <input
           name="search"
           id="search"
