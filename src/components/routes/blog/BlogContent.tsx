@@ -68,7 +68,8 @@ const users: UserItem[] = [
     id: 2,
     name: "Isabelle McKenzie",
     date: "August 12, 2024",
-    comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    comment:
+      "This article really resonated with me. I’ve been exploring global literature recently, and it’s opened my eyes to so many new perspectives!",
     img: CommentUser2,
   },
   {
@@ -83,7 +84,8 @@ const users: UserItem[] = [
     id: 4,
     name: "James Green",
     date: "June 09, 2024",
-    comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    comment:
+      "This was such a thoughtful piece. I’d love to hear more about your favorite global authors and their impact on literature.",
     img: CommentUser7,
   },
 ];
@@ -93,14 +95,16 @@ const usersReply1: UserItem[] = [
     id: 1,
     name: "Amelie Schneider",
     date: "June 21, 2024",
-    comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    comment:
+      "I hadn’t thought about how algorithms are shaping what we read. It’s fascinating and a bit scary. Excellent read!",
     img: CommentUser4,
   },
   {
     id: 2,
     name: "Erik Johansson",
     date: "June 22, 2024",
-    comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    comment:
+      "Thank you for highlighting the impact of self-publishing. As an aspiring author, it’s encouraging to see these changes.",
     img: CommentUser5,
   },
 ];
@@ -110,7 +114,8 @@ const usersReply2: UserItem[] = [
     id: 3,
     name: "Freya Nielsen",
     date: "August 29, 2024",
-    comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    comment:
+      "Beautifully written! Stories truly connect us all, no matter the format. I hope printed books never disappear completely",
     img: CommentUser6,
   },
 ];
@@ -410,9 +415,10 @@ const BlogContent = () => {
                 Jhony Thapya
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
+                Great insights! I love audio books for busy days, but I still
+                enjoy my cozy nights with a hardcover book. I’m excited to see
+                how technology will continue to shape the way we read and
+                interact with literature.
               </p>
             </div>
           </div>
