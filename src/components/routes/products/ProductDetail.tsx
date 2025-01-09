@@ -54,6 +54,7 @@ const ProductDetail: FC = () => {
         <button
           className="btn absolute top-0 right-0 uppercase"
           onClick={handleClick}
+          title="Back to Products"
         >
           Back
         </button>

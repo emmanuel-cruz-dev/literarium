@@ -44,7 +44,7 @@ const ProductCard = () => {
 
   return (
     <article className="products-content__article-container flex flex-col gap-4 pb-4 bg-white">
-      <button onClick={handleClick}>
+      <button onClick={handleClick} title="Go to Details">
         <img className="w-full object-cover" src={BookImg1} alt="" />
       </button>
       <div className="flex flex-col gap-2 text-center">
@@ -53,9 +53,11 @@ const ProductCard = () => {
             <span className="text-neutral-600">$80.75</span>
             <span className="text-neutral-400/70 line-through">$90.75</span>
           </p>
-          <h2 className="uppercase font-bold text-2xl text-black">
-            Stephen King
-          </h2>
+          <button onClick={handleClick} title="Go to Details">
+            <h2 className="uppercase font-bold text-2xl text-black">
+              Stephen King
+            </h2>
+          </button>
         </div>
         <div className="products-content__hidden-container">
           <p>

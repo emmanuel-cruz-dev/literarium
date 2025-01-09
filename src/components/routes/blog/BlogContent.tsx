@@ -300,7 +300,7 @@ const BlogContent = () => {
                   Anni Hollin,{" "}
                   <span className="text__accent-color">Author</span>
                 </h3>
-                <p>Books Designer</p>
+                <p>Professor of Literature</p>
               </div>
             </div>
             <div className="blog-content__likes-comments flex gap-4 [&>a]:flex [&>a]:items-center [&>a]:gap-2">
@@ -316,7 +316,7 @@ const BlogContent = () => {
           </article>
           <div className="flex flex-col gap-4">
             <h4 className="uppercase text-black font-bold text-[1.3rem]">
-              Where I'm Reading From: The Changing World of Books Now
+              Where I'm Reading From: Exploring the Changing World of Books
             </h4>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
