@@ -363,7 +363,8 @@ body {
   background-color: var(--accent-color);
   color: var(--white-color);
   font-weight: 800;
-  font-size: 3.75rem;
+  /* font-size: 3.75rem; */
+  font-size: 2.75em;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -542,6 +543,7 @@ body {
 /***************************************
  *           Inicio: Gift              *
  ***************************************/
+
 .gift {
   position: relative;
   overflow: visible;
