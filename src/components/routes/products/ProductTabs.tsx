@@ -155,34 +155,21 @@ const ProductTabs = () => {
                 for creating products that are functional, aesthetically
                 pleasing, and enjoyable to use. His insights extend beyond
                 physical objects to digital interfaces, making the book highly
-                relevant in today’s technology-driven world.
+                relevant in today's technology-driven world.
               </p>
               <p>
-                Te eam iisque deseruisse, ipsum euismod his at. Eu putent
-                habemus voluptua sit, sit cu rationibus scripserit, modus
-                voluptaria ex per. Aeque dicam consulatu eu his, probatus
-                neglegentur disputationi sit et. Ei nec ludus epicuri petentium,
-                vis appetere maluisset ad. Et hinc exerci utinam cum. Sonet
-                saperet nominavi est at, vel eu sumo tritani. Cum ex minim
-                legere.
+                The Design of Everyday Things is not just a manual for
+                designers—it's a thought-provoking look at how better design can
+                lead to a better world. Norman's witty and accessible writing
+                makes complex design principles easy to understand, leaving
+                readers with a deeper appreciation for the importance of good
+                design in their everyday lives.
               </p>
               <p>
-                Sed an nominavi maiestatis, et duo corrumpit constituto, duo id
-                rebum lucilius. Te eam iisque deseruisse, ipsum euismod his at.
-                Eu putent habemus voluptua sit, sit cu rationibus scripserit,
-                modus voluptaria ex per. Aeque dicam consulatu eu his, probatus
-                neglegentur disputationi sit et. Ei nec ludus epicuri petentium,
-                vis appetere maluisset ad. Et hinc exerci utinam cum. Sonet
-                saperet nominavi est at, vel eu sumo tritani. Cum ex minim
-                legere.
-              </p>
-              <p>
-                Ipsum euismod his at. Eu putent habemus voluptua sit, sit cu
-                rationibus scripserit, modus voluptaria ex per. Aeque dicam
-                consulatu eu his, probatus neglegentur disputationi sit et. Ei
-                nec ludus epicuri petentium, vis appetere maluisset ad. Et hinc
-                exerci utinam cum. Sonet saperet nominavi est at, vel eu sumo
-                tritani. Cum ex minim legere.
+                The book is a must-read for anyone interested in design,
+                technology, or the intersection of the two. It's a must-read for
+                anyone who wants to understand how design can be used to create
+                a better world.
               </p>
             </>
           )}

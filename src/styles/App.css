@@ -107,7 +107,7 @@ body {
   font-size: 1.1em;
   width: fit-content;
   border: 1px solid var(--background-dark-fade);
-  font-weight: 300;
+  font-weight: 600;
   padding: 0.7rem 1.5rem;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
