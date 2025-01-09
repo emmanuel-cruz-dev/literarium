@@ -16,10 +16,10 @@ const ContactPage = () => {
           out anytime. Your love for books inspires us to serve better!
         </p>
       </div>
-      <article className="grid grid-cols-1 xl:grid-cols-2 gap-12 lg:gap-16 py-6">
+      <article className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 pb-6 pt-8">
         <FormItem title="Drop us an email" button="Your message" />
         <article className="flex flex-col gap-6 [&>div>h3]:text-2xl [&>div>h3]:uppercase [&>div>h3]:font-semibold leading-relaxed">
-          <div>
+          <div className="flex flex-col gap-4">
             <h3>We're Always Here to Help!</h3>
             <p>
               At Literarium, we value your connection. Reach out to us for any
@@ -28,18 +28,36 @@ const ContactPage = () => {
               making your experience smooth and enjoyable. Contact us today!
             </p>
           </div>
-          <div>
+          <div className="flex flex-col gap-4">
             <h3>Our Contact Channels</h3>
-            <div className="contact-page__icons flex gap-4 justify-center text-4xl">
-              <span className="red">
-                <BiWorld />
-              </span>
-              <span className="yellow">
-                <BsTelephone />
-              </span>
-              <span className="skyblue">
-                <MdEmail />
-              </span>
+            <div className="contact-page__icons-container flex justify-around gap-4 text-center">
+              <div className="contact-page__icons">
+                <span className="red">
+                  <BiWorld />
+                </span>
+                <div>
+                  <h4>Address</h4>
+                  <p>New York Street 12</p>
+                </div>
+              </div>
+              <div className="contact-page__icons">
+                <span className="yellow">
+                  <BsTelephone />
+                </span>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+1 (123) 456-7890</p>
+                </div>
+              </div>
+              <div className="contact-page__icons">
+                <span className="skyblue">
+                  <MdEmail />
+                </span>
+                <div>
+                  <h4>Email</h4>
+                  <p>literarium@gmail.com</p>
+                </div>
+              </div>
             </div>
           </div>
         </article>
