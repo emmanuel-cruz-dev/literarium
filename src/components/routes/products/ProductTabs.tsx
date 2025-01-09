@@ -106,7 +106,7 @@ const ProductTabs = () => {
             onClick={() => handleClick(4)}
             className={`${
               active === 4 ? "active" : ""
-            } product-detail__tabs-btn__title`}
+            } product-detail__tabs-btn__title hidden lg:block`}
           >
             Custom Tab
           </button>

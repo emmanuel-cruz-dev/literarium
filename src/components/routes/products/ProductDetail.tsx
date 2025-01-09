@@ -12,7 +12,9 @@ const ProductDetail: FC = () => {
   return (
     <section className="md:col-span-2 xl:col-span-3 flex flex-col gap-8 relative">
       <article className="flex flex-col lg:flex-row gap-4">
-        <img className="h-96 object-cover" src={BookDetail} alt="" />
+        <figure className="max-w-xs md:w-64 lg:shrink-0">
+          <img className="w-full object-cover" src={BookDetail} alt="" />
+        </figure>
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-4">
             <h2 className="uppercase font-bold text-2xl text-black">
