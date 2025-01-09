@@ -30,7 +30,7 @@ const ContactContent = () => {
           </div>
           <div className="flex flex-col gap-4">
             <h3>Our Contact Channels</h3>
-            <div className="contact-page__icons-container flex justify-around gap-4 text-center">
+            <div className="contact-page__icons-container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-around gap-4 text-center">
               <div className="contact-page__icons">
                 <span className="red">
                   <BiWorld />
