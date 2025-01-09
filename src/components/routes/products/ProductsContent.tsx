@@ -3,8 +3,9 @@ import BookImg1 from "../../../assets/images/books-list1.jpg";
 import { SearchItem, AsideItemList } from "../blog/BlogContent";
 import CarouselItems from "../../CarouselItems";
 import preOrder from "../../../data/preOrder.json";
-import { useState } from "react";
+import { useContext } from "react";
 import ProductDetail from "./ProductDetail";
+import { ProductsContext } from "./ProductsContext";
 
 const data1 = [
   "Fiction",
@@ -39,9 +40,11 @@ const arrivalsData = [
 ];
 
 const ProductCard = () => {
+  const { handleClick } = useContext(ProductsContext);
+
   return (
     <article className="products-content__article-container flex flex-col gap-4 pb-4 bg-white">
-      <button>
+      <button onClick={handleClick}>
         <img className="w-full object-cover" src={BookImg1} alt="" />
       </button>
       <div className="flex flex-col gap-2 text-center">
@@ -129,11 +132,7 @@ const ProductMain = () => {
 };
 
 const ProductsContent = () => {
-  const [isVisible, setVisible] = useState(false);
-
-  const handleClick = () => {
-    setVisible(!isVisible);
-  };
+  const { isVisible } = useContext(ProductsContext);
 
   return (
     <section className="products-content bg-neutral-100" id="products-content">
@@ -165,12 +164,12 @@ const ProductsContent = () => {
           />
         </aside>
 
-        <button
+        {/* <button
           className="font-bold uppercase text-black absolute left-[38%] z-20 bg-white px-4 py-2"
           onClick={handleClick}
         >
           Click
-        </button>
+        </button> */}
         {!isVisible ? <ProductMain /> : <ProductDetail />}
       </article>
     </section>
