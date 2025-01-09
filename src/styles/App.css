@@ -18,11 +18,13 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
   overflow-x: hidden;
 }
+
+/* index.html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+} */
 
 :root {
   --primary-color: #007bff;
