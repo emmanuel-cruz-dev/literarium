@@ -1,10 +1,10 @@
+import PagesHero from "../PagesHero";
 import BlogContent from "./BlogContent";
-import BlogHero from "./BlogHero";
 
 const BlogPage = () => {
   return (
     <>
-      <BlogHero />
+      <PagesHero title="Blog" />
       <BlogContent />
     </>
   );

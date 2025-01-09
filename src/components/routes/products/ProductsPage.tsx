@@ -1,6 +1,6 @@
+import PagesHero from "../PagesHero";
 import ProductsContent from "./ProductsContent";
 import { ProductsContext } from "./ProductsContext";
-import ProductsHero from "./ProductsHero";
 import { useState } from "react";
 
 const ProductsPage = () => {
@@ -14,7 +14,7 @@ const ProductsPage = () => {
   return (
     <>
       <ProductsContext.Provider value={{ isVisible, handleClick }}>
-        <ProductsHero />
+        <PagesHero title="Products" />
         <ProductsContent />
       </ProductsContext.Provider>
     </>
