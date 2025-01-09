@@ -170,7 +170,7 @@ export const AsideItemList: FC<AsideItemListProps> = ({ title, dataArr }) => {
 
 const CommentCard: FC<CommentCardProps> = ({ img, name, date, children }) => {
   return (
-    <article className="flex gap-6 relative">
+    <article className="flex flex-row gap-6 relative">
       <button className="blog-content__btn__comment hidden absolute md:block">
         Reply
       </button>
@@ -190,9 +190,7 @@ const CommentCard: FC<CommentCardProps> = ({ img, name, date, children }) => {
         <p className="normal-case">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet.
+          sed diam voluptua.
         </p>
         <button className="blog-content__btn__comment md:hidden">Reply</button>
         <div className="mt-4">{children}</div>
@@ -319,51 +317,47 @@ const BlogContent = () => {
               Where I'm Reading From: Exploring the Changing World of Books
             </h4>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet.
+              The world of books is undergoing a profound transformation,
+              reshaping not only how we read but also how we think about
+              literature. As a professor of literature and lifelong lover of the
+              written word, I have spent years immersed in the study of stories,
+              from the classics that defined eras to contemporary works that
+              challenge traditional norms. Today, I find myself reflecting on
+              how technology, culture, and global connectivity are altering our
+              relationship with books.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
-              sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-              tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet.
+              One of the most noticeable changes is the shift from physical
+              books to digital formats. E-readers and audiobooks have opened up
+              new ways to engage with stories, making literature more accessible
+              than ever. For many, this evolution is a gift, breaking down
+              barriers for those who previously struggled to find time or
+              resources to enjoy reading. However, this change also raises
+              questions about the future of printed books. Will they become
+              relics of the past, or will their tactile nature preserve their
+              place in our hearts and homes?
             </p>
             <p className="blog-content__paragraph-italic bg-slate-200/40">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet.
+              Another fascinating trend is the democratization of publishing. In
+              the past, authors often faced immense hurdles to bring their work
+              to light. Today, self-publishing platforms and online communities
+              have empowered countless voices, allowing stories to reach
+              audiences directly. This diversity has enriched the literary
+              landscape, offering perspectives that were once marginalized or
+              unheard.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet.
+              Finally, literature is becoming more global. Readers can now
+              discover works from different cultures and languages with
+              unprecedented ease, fostering greater empathy and understanding.
+              As we navigate this changing world of books, one thing remains
+              clear: stories are as vital as ever.
+            </p>
+            <p>
+              In this era of transformation, books continue to serve as mirrors,
+              windows, and escape routes, connecting us to ourselves and the
+              world around us. The form may change, but the power of
+              storytelling endures.
             </p>
           </div>
           <hr className="border-b border-slate-300" />
