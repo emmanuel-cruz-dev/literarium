@@ -146,7 +146,7 @@ const Footer = () => {
           >
             Emmanuel
           </a>{" "}
-          © 2024-25 · All rights reserved.
+          © 2024-25 · Bringing the web to life, one component at a time.
         </span>
         <img className="w-64" src={CreditCards} alt="Credit Cards" />
       </article>
