@@ -27,6 +27,7 @@ interface CommentCardProps {
   img: string;
   name: string;
   date: string;
+  comment: string;
   children?: React.ReactNode;
 }
 
@@ -50,6 +51,7 @@ type UserItem = {
   id: number;
   name: string;
   date: string;
+  comment: string;
   img: string;
 };
 
@@ -58,24 +60,30 @@ const users: UserItem[] = [
     id: 1,
     name: "Clara Hoffman",
     date: "June 20, 2024",
+    comment:
+      "I completely agree! Digital formats have made reading more accessible, but there’s nothing like holding a physical book in your hands.",
     img: CommentUser1,
   },
   {
     id: 2,
     name: "Isabelle McKenzie",
     date: "August 12, 2024",
+    comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     img: CommentUser2,
   },
   {
     id: 3,
     name: "Luca Moretti",
     date: "September 18, 2024",
+    comment:
+      "The diversity in self-published books is amazing, but sometimes it's hard to find quality stories. Any tips on good curation platforms?",
     img: CommentUser3,
   },
   {
     id: 4,
     name: "James Green",
     date: "June 09, 2024",
+    comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     img: CommentUser7,
   },
 ];
@@ -85,12 +93,14 @@ const usersReply1: UserItem[] = [
     id: 1,
     name: "Amelie Schneider",
     date: "June 21, 2024",
+    comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     img: CommentUser4,
   },
   {
     id: 2,
     name: "Erik Johansson",
     date: "June 22, 2024",
+    comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     img: CommentUser5,
   },
 ];
@@ -100,6 +110,7 @@ const usersReply2: UserItem[] = [
     id: 3,
     name: "Freya Nielsen",
     date: "August 29, 2024",
+    comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     img: CommentUser6,
   },
 ];
@@ -129,19 +140,19 @@ const data2 = [
 const posts = [
   {
     id: 1,
-    title: "Lorem ipsum dolor sit amet",
+    title: "The Power of Storytelling",
     date: "07 January, 2025",
     img: CommentUser1,
   },
   {
     id: 2,
-    title: "Lorem ipsum dolor sit amet",
+    title: "Hidden Gems of Literature",
     date: "30 December, 2024",
     img: CommentUser2,
   },
   {
     id: 3,
-    title: "Lorem ipsum dolor sit amet",
+    title: "From Literature to Life",
     date: "25 December, 2024",
     img: CommentUser3,
   },
@@ -168,7 +179,13 @@ export const AsideItemList: FC<AsideItemListProps> = ({ title, dataArr }) => {
   );
 };
 
-const CommentCard: FC<CommentCardProps> = ({ img, name, date, children }) => {
+const CommentCard: FC<CommentCardProps> = ({
+  img,
+  name,
+  date,
+  comment,
+  children,
+}) => {
   return (
     <article className="flex flex-row gap-6 relative">
       <button className="blog-content__btn__comment hidden absolute md:block">
@@ -187,11 +204,7 @@ const CommentCard: FC<CommentCardProps> = ({ img, name, date, children }) => {
         <a href="#" className="text-[13px]">
           {date}
         </a>
-        <p className="normal-case">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
-        </p>
+        <p className="normal-case">{comment}</p>
         <button className="blog-content__btn__comment md:hidden">Reply</button>
         <div className="mt-4">{children}</div>
       </div>
