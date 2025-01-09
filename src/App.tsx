@@ -17,6 +17,7 @@ import Newsletter from "./components/Newsletter";
 import About from "./components/routes/about/About";
 import BlogPage from "./components/routes/blog/BlogPage";
 import ProductsPage from "./components/routes/products/ProductsPage";
+import ContactPage from "./components/routes/contact/ContactPage";
 
 const Home = () => {
   return (
@@ -46,7 +47,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/products" element={<ProductsPage />} />
-        <Route path="/contact" element={<div>Contact</div>} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<Home />} />
       </Routes>
 

@@ -51,7 +51,10 @@ const ProductDetail: FC = () => {
             <button className="btn">Get a Quote</button>
           </div>
         </div>
-        <button className="btn absolute top-0 right-0" onClick={handleClick}>
+        <button
+          className="btn absolute top-0 right-0 uppercase"
+          onClick={handleClick}
+        >
           Back
         </button>
       </article>

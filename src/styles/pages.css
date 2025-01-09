@@ -476,3 +476,29 @@
 /**************************************
  *            Fin: Products          *
  ***************************************/
+
+/**************************************
+ *            Inicio: Contact         *
+ ***************************************/
+
+.contact-page__icons span {
+  padding: 1rem;
+  border-radius: 50%;
+  color: #4a4a4a;
+}
+
+.contact-page__icons span.red {
+  border: 6px solid red;
+}
+
+.contact-page__icons span.yellow {
+  border: 6px solid rgb(255, 255, 3);
+}
+
+.contact-page__icons span.skyblue {
+  border: 6px solid var(--accent-color);
+}
+
+/***************************************
+ *            Fin: Contact            *
+ ***************************************/

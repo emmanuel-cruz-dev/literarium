@@ -43,6 +43,7 @@ interface LatestPostsProps {
 
 interface FormItemProps {
   title: string;
+  button: string;
 }
 
 type UserItem = {
@@ -220,7 +221,7 @@ export const SearchItem = () => {
   );
 };
 
-const FormItem: FC<FormItemProps> = ({ title }) => {
+export const FormItem: FC<FormItemProps> = ({ title, button }) => {
   return (
     <article className="flex flex-col gap-4 mb-12">
       <h2 className="uppercase font-semibold text-2xl text-black">{title}</h2>
@@ -249,7 +250,7 @@ const FormItem: FC<FormItemProps> = ({ title }) => {
         </div>
         <textarea name="form__message" id="form__message"></textarea>
         <button className="w-fit py-3 px-6 text-white text-lg background-accent__item uppercase font-bold hover:bg-black transition-colors duration-300 ease-in-out">
-          Submit
+          {button}
         </button>
       </form>
     </article>
@@ -427,7 +428,7 @@ const BlogContent = () => {
               <CommentCard {...users[3]} />
             </div>
           </article>
-          <FormItem title="Leave a Reply" />
+          <FormItem title="Leave a Reply" button="Submit" />
         </article>
         <aside className="lg:col-span-1 flex flex-col gap-8">
           <SearchItem />
