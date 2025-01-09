@@ -16,7 +16,7 @@ const ProductDetail: FC = () => {
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-4">
             <h2 className="uppercase font-bold text-2xl text-black">
-              Application Health and Well-Being
+              The Design of Everyday Things
             </h2>
             <div className="flex gap-2">
               <StarsElement num={4} />
@@ -27,7 +27,7 @@ const ProductDetail: FC = () => {
             </span>
             <p className="font-medium">
               Author :{" "}
-              <span className="text__accent-color">Robert L. Lukdke</span>
+              <span className="text__accent-color">Donald A. Norman</span>
             </p>
           </div>
           <hr />
@@ -38,9 +38,9 @@ const ProductDetail: FC = () => {
           </p>
           <hr />
           <ul>
-            <li>Category: Books.</li>
-            <li>Tag: books.</li>
-            <li>Author: Daniel Abraham</li>
+            <li>Category: Design Books.</li>
+            <li>Tag: design.</li>
+            <li>Author: Donald A. Norman</li>
             <li>Publisher: Journal inc</li>
             <li>Product ID: 1100</li>
           </ul>
