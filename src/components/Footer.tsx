@@ -73,8 +73,7 @@ const Footer = () => {
             <li className="footer__tweets">
               <FaTwitter />
               <p>
-                "Design Patterns" is sweeping our store this week!
-                #recommendedBooks
+                "Design Patterns" is sweeping our store this week! #recommended
                 <span>⏰ Posted 4 hours ago</span>
               </p>
             </li>
@@ -88,8 +87,8 @@ const Footer = () => {
             <li className="footer__tweets">
               <FaTwitter />
               <p>
-                🙏 Thank you to our followers for making this community a place
-                full of stories. We are already 10,000! 🎉
+                🙏 Thank you for making this community thrive with stories.
+                We’re now 10,000 strong! 🎉
                 <span>⏰ Posted 2 days ago</span>
               </p>
             </li>
