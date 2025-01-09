@@ -18,7 +18,7 @@ const ContactPage = () => {
       </div>
       <article className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 pb-6 pt-8">
         <FormItem title="Drop us an email" button="Your message" />
-        <article className="flex flex-col gap-6 [&>div>h3]:text-2xl [&>div>h3]:uppercase [&>div>h3]:font-semibold leading-relaxed">
+        <article className="flex flex-col gap-8 [&>div>h3]:text-2xl [&>div>h3]:uppercase [&>div>h3]:font-semibold leading-relaxed">
           <div className="flex flex-col gap-4">
             <h3>We're Always Here to Help!</h3>
             <p>
