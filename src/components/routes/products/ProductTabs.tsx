@@ -115,36 +115,31 @@ const ProductTabs = () => {
           {active === 1 && (
             <>
               <p>
-                Cum altera mandamus in, mea verear disputationi et. Vel regione
-                discere ut, legere expetenda ut eos. In nam nibh invenire
-                similique. Atqui mollis ea his, ius graecis accommodare te. No
-                eam tota nostrum cotidieque. Est cu nibh clita. Sed an nominavi
-                maiestatis, et duo corrumpit constituto, duo id rebum lucilius.
-                Te eam iisque deseruisse, ipsum euismod his at. Eu putent
-                habemus voluptua sit, sit cu rationibus scripserit, modus
-                voluptaria ex per. Aeque dicam consulatu eu his, probatus
-                neglegentur disputationi sit et. Ei nec ludus epicuri petentium,
-                vis appetere maluisset ad. Et hinc exerci utinam cum. Sonet
-                saperet nominavi est at, vel eu sumo tritani. Cum ex minim
-                legere.
+                A groundbreaking exploration of how thoughtful design can make
+                everyday objects intuitive and user-friendly. Originally
+                published in 1988 and updated in later editions, the book is a
+                must-read for designers, engineers, and anyone interested in
+                understanding the relationship between humans and the objects
+                they use daily.
               </p>
               <p>
-                Sed an nominavi maiestatis, et duo corrumpit constituto, duo id
-                rebum lucilius. Te eam iisque deseruisse, ipsum euismod his at.
-                Eu putent habemus voluptua sit, sit cu rationibus scripserit,
-                modus voluptaria ex per. Aeque dicam consulatu eu his, probatus
-                neglegentur disputationi sit et. Ei nec ludus epicuri petentium,
-                vis appetere maluisset ad. Et hinc exerci utinam cum. Sonet
-                saperet nominavi est at, vel eu sumo tritani. Cum ex minim
-                legere.
+                Norman introduces the concept of user-centered design,
+                emphasizing that the needs, abilities, and limitations of people
+                should be at the forefront of the design process. Through
+                relatable examples and engaging anecdotes, he highlights how
+                poor design choices can lead to confusion, frustration, and
+                inefficiency. From doors that don’t make it clear whether to
+                push or pull, to appliances with overly complex controls, Norman
+                sheds light on common design failures and their impact on our
+                lives.
               </p>
               <p>
-                Ipsum euismod his at. Eu putent habemus voluptua sit, sit cu
-                rationibus scripserit, modus voluptaria ex per. Aeque dicam
-                consulatu eu his, probatus neglegentur disputationi sit et. Ei
-                nec ludus epicuri petentium, vis appetere maluisset ad. Et hinc
-                exerci utinam cum. Sonet saperet nominavi est at, vel eu sumo
-                tritani. Cum ex minim legere.
+                One of the book’s core principles is the idea of affordances—the
+                clues embedded in an object that suggest how it should be used.
+                Norman also explores the importance of feedback and visibility,
+                arguing that a well-designed object should communicate its
+                purpose and provide users with clear indications of their
+                actions.
               </p>
             </>
           )}
@@ -156,12 +151,11 @@ const ProductTabs = () => {
           {active === 4 && (
             <>
               <p>
-                Ipsum euismod his at. Eu putent habemus voluptua sit, sit cu
-                rationibus scripserit, modus voluptaria ex per. Aeque dicam
-                consulatu eu his, probatus neglegentur disputationi sit et. Ei
-                nec ludus epicuri petentium, vis appetere maluisset ad. Et hinc
-                exerci utinam cum. Sonet saperet nominavi est at, vel eu sumo
-                tritani. Cum ex minim legere.
+                Beyond critiquing poor design, Norman offers practical guidance
+                for creating products that are functional, aesthetically
+                pleasing, and enjoyable to use. His insights extend beyond
+                physical objects to digital interfaces, making the book highly
+                relevant in today’s technology-driven world.
               </p>
               <p>
                 Te eam iisque deseruisse, ipsum euismod his at. Eu putent

@@ -20,10 +20,10 @@ const ProductDetail: FC = () => {
             </h2>
             <div className="flex gap-2">
               <StarsElement num={4} />
-              <span>4 Customer Reviews</span>
+              <span>230 Customer Reviews</span>
             </div>
             <span className="text__accent-color font-bold text-4xl">
-              $ 19.90
+              $ 29.95
             </span>
             <p className="font-medium">
               Author :{" "}
@@ -32,9 +32,10 @@ const ProductDetail: FC = () => {
           </div>
           <hr />
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto.
+            Discover why some objects are a joy to use while others frustrate.
+            Norman reveals the psychology behind good design, transforming how
+            you see everyday objects. A must-read for designers and curious
+            minds.
           </p>
           <hr />
           <ul>
