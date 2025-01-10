@@ -11,7 +11,7 @@ const BlogMainArticle = () => {
   return (
     <article className="blog-main__article__container grid gap-6 grid-cols-5 border-b border-neutral-200 pb-8">
       <div className="col-span-1 flex flex-col gap-4">
-        <figure className="blog-main__article__img-container rounded-full overflow-hidden w-28">
+        <figure className="blog-main__article__user-img__container rounded-full overflow-hidden w-28">
           <img className="w-full h-full" src={MainBlogWriter1} alt="" />
         </figure>
 
@@ -29,17 +29,29 @@ const BlogMainArticle = () => {
         </div>
       </div>
 
-      <div className="col-span-4">
-        <div className="relat">
+      <div className="col-span-4 flex flex-col gap-4">
+        <div className="blog-main__article__post__img-list__container">
           <img src={MainBlogImg1} alt="" />
-          <div className="flex">
-            <FaSearch />
-            <FaShareAlt />
-            <FaHeart />
-          </div>
+          <ul className="blog-main__article__social-icons">
+            <li>
+              <a href="#">
+                <FaSearch />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <FaShareAlt />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <FaHeart />
+              </a>
+            </li>
+          </ul>
         </div>
         <div className="flex flex-col gap-4">
-          <h2 className="uppercase font-bold text-2xl text-black">
+          <h2 className="blog-main__article__title uppercase font-bold text-2xl text-black">
             NerdCon Stories, Day Two
           </h2>
           <p>
