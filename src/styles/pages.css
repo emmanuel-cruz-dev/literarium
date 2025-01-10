@@ -308,6 +308,37 @@
   color: var(--accent-color);
 }
 
+.blog-main__article__arrows-list {
+  width: fit-content;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  border: 1px solid var(--background-dark-fade);
+}
+
+.blog-main__article__arrows-list li {
+  border-right: 1px solid var(--background-dark-fade);
+  display: inline-block;
+  background-color: var(--white-color);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.blog-main__article__arrows-list li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.blog-main__article__arrows-list li:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
 .blog-content__user-image__container {
   width: 4.8rem;
   height: 4.8rem;

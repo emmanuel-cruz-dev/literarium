@@ -76,7 +76,7 @@ const BlogMain = () => {
       <BlogMainArticle />
       <BlogMainArticle />
       <div>
-        <ul className="w-fit flex justify-center items-center mx-auto border border-neutral-400 [&>li]:py-3 [&>li]:px-4 [&>li]:font-medium [&>li]:border-r [&>li]:border-neutral-400">
+        <ul className="blog-main__article__arrows-list">
           <li>
             <a href="#">1</a>
           </li>
@@ -93,7 +93,7 @@ const BlogMain = () => {
             <a href="#">5</a>
           </li>
           <li>
-            <a className="text-sm" href="#">
+            <a href="#">
               <FaAngleDoubleRight />
             </a>
           </li>
