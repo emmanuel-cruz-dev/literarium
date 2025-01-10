@@ -1,5 +1,8 @@
 import { FaHeart, FaShoppingCart, FaLink } from "react-icons/fa";
 import BookImg1 from "../../../assets/images/books-list1.jpg";
+import ArrivalsImg1 from "../../../assets/images/arrivals-img1.jpg";
+import ArrivalsImg2 from "../../../assets/images/arrivals-img2.jpg";
+import ArrivalsImg3 from "../../../assets/images/arrivals-img3.jpg";
 import { SearchItem, AsideItemList } from "../blog/BlogContent";
 import CarouselItems from "../../CarouselItems";
 import preOrder from "../../../data/preOrder.json";
@@ -21,21 +24,21 @@ const data1 = [
 const arrivalsData = [
   {
     id: 1,
-    img: BookImg1,
-    title: "consetetur sadip scing",
-    text: "Sed diam nonumy eirmod tempor invidunt ut labore et dolore.",
+    img: ArrivalsImg1,
+    title: "Breath of the Dragon",
+    text: "The first book in the series, was published in 1997.",
   },
   {
     id: 2,
-    img: BookImg1,
-    title: "Consetetur sadi elitr",
-    text: "Magna aliquyam erat, sed diam voluptua. At vero eos et accusam.",
+    img: ArrivalsImg2,
+    title: "Blood Over Bright Heaven",
+    text: "Political intrigue and dangerous magic in a fractured kingdom.",
   },
   {
     id: 3,
-    img: BookImg1,
-    title: "Conset sading elitr",
-    text: "At vero eos et accusam et justo duo dolores et ea rebum.",
+    img: ArrivalsImg3,
+    title: "Bloodguard",
+    text: "Fantasy story about a warrior who protects humans from supernatural creatures.",
   },
 ];
 
