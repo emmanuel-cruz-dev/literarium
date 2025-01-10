@@ -1,5 +1,5 @@
 import { FaHeart, FaShoppingCart, FaLink } from "react-icons/fa";
-import BookImg1 from "../../../assets/images/books-list1.jpg";
+import BookImg1 from "../../../assets/images/products-img4.jpg";
 import ArrivalsImg1 from "../../../assets/images/arrivals-img1.jpg";
 import ArrivalsImg2 from "../../../assets/images/arrivals-img2.jpg";
 import ArrivalsImg3 from "../../../assets/images/arrivals-img3.jpg";
