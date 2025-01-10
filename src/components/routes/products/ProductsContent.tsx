@@ -23,7 +23,8 @@ interface ProductCardProps {
   img: string;
   title: string;
   text: string;
-  price: string;
+  price: number;
+  sales?: boolean;
 }
 
 const data1 = [
@@ -64,67 +65,78 @@ const productsData = [
     img: ProductsImg1,
     title: "Lauren Roberts",
     text: "Powerful (Special Edition): A Powerless Story",
-    price: "$80.75",
+    price: 30.75,
+    sales: true,
   },
   {
     id: 2,
     img: ProductsImg2,
-    title: "Stephen King",
-    text: "Reading books as a hobby was always a noble and pleasant pastime.",
-    price: "$80.75",
+    title: "Rachel Gillig",
+    text: "Two Twisted Crowns (Exclusive Edition)",
+    price: 38.75,
   },
   {
     id: 3,
     img: ProductsImg3,
-    title: "Stephen King",
-    text: "Reading books as a hobby was always a noble and pleasant pastime.",
-    price: "$87.95",
+    title: "Rachel Gillig",
+    text: "The Knight and the Moth (Limited Edition)",
+    price: 29.99,
+    sales: true,
   },
   {
     id: 4,
     img: ProductsImg4,
     title: "Sarah J. Maas",
     text: "A Court of Silver Flames (Exclusive Night Court Edition) (A Court of Thorns and Roses Series #4)",
-    price: "$80.75",
+    price: 35.15,
   },
   {
     id: 5,
     img: ProductsImg5,
     title: "Rebecca Yarros",
     text: "Onyx Storm (Deluxe Limited Edition)",
-    price: "$80.75",
+    price: 26.25,
+    sales: true,
   },
   {
     id: 6,
     img: ProductsImg6,
-    title: "Rebecca Yarros",
-    text: "Onyx Storm (Deluxe Limited Edition)",
-    price: "$80.75",
+    title: "Suzanne Collins",
+    text: "Sunrise on the Reaping (Exclusive Edition) (A Hunger Games Novel)",
+    price: 33.75,
   },
   {
     id: 7,
     img: ProductsImg7,
-    title: "Rebecca Yarros",
-    text: "Onyx Storm (Deluxe Limited Edition)",
-    price: "$80.75",
+    title: "Mary Kubica",
+    text: "She's not Worried (Extended Edition)",
+    price: 26.99,
+    sales: true,
   },
   {
     id: 8,
     img: ProductsImg8,
     title: "Rebecca Yarros",
-    text: "Onyx Storm (Deluxe Limited Edition)",
-    price: "$80.75",
+    text: "Fourth Wing (Deluxe Limited Edition)",
+    price: 28.99,
   },
   {
     id: 9,
     img: ProductsImg9,
-    title: "Rebecca Yarros",
-    text: "Onyx Storm (Deluxe Limited Edition)",
-    price: "$80.75",
+    title: "Sue Lynn Tan",
+    text: "Immortal (Collector's Edition)",
+    price: 34.65,
+    sales: true,
   },
 ];
 
-const ProductCard: FC<ProductCardProps> = ({ title, text, price, img }) => {
+const ProductCard: FC<ProductCardProps> = ({
+  title,
+  text,
+  price,
+  img,
+  sales,
+}) => {
   const { handleClick } = useContext(ProductsContext);
 
   return (
@@ -136,7 +148,11 @@ const ProductCard: FC<ProductCardProps> = ({ title, text, price, img }) => {
         <div className="products-content__article-text">
           <p className="flex gap-2 justify-center items-center font-bold text-xl">
             <span className="text-neutral-600">${price}</span>
-            <span className="text-neutral-400/70 line-through">$90.75</span>
+            {sales && (
+              <span className="text-neutral-400/70 line-through">
+                ${(price * 1.21).toFixed(2)}
+              </span>
+            )}
           </p>
           <button onClick={handleClick} title="Go to Details">
             <h2 className="uppercase font-bold text-2xl text-black">{title}</h2>
