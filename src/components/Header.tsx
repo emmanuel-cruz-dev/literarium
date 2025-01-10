@@ -46,17 +46,18 @@ const Header = () => {
           </li>
         </ul>
         <div className="block md:hidden">
-          <span onClick={handleClick} className="cursor-pointer">
+          <button onClick={handleClick} title="Open Menu">
             <HiMenu className="text-3xl" />
-          </span>
+          </button>
 
           <div className={`${menu ? "active" : ""} header__hidden-menu`}>
-            <span
-              className="absolute top-6 right-4 cursor-pointer"
+            <button
+              className="absolute top-6 right-4"
               onClick={handleClick}
+              title="Close Menu"
             >
               <HiX className="text-3xl" />
-            </span>
+            </button>
             <ul className="h-full flex flex-col justify-center items-center gap-5 text-xl">
               <li onClick={handleClick}>
                 <Link to="/">Home</Link>

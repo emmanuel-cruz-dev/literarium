@@ -26,7 +26,7 @@ interface CarouselItemsProps {
 const BookArticleCard: FC<CarouselItem> = ({ title, author, img, price }) => {
   return (
     <article className="products__article-item box-shadow-mode h-full flex gap-4">
-      <div className="relative w-20 lg:w-32 h-full flex-shrink-0">
+      <div className={`relative w-28 lg:w-32 h-full flex-shrink-0`}>
         <img className="w-full object-cover flex-shrink-0" src={img} alt="" />
         <a href="#" className="products__plus-item">
           +
