@@ -12,6 +12,7 @@ import {
   FaSearch,
 } from "react-icons/fa";
 import { InformationList } from "../../Footer";
+import BlogMain from "./BlogMain";
 import BlogImg1 from "../../../assets/images/blog-detail-img.jpg";
 import BlogUser1 from "../../../assets/images/blog-user1.jpg";
 import FounderImg2 from "../../../assets/images/founder2.jpg";
@@ -22,7 +23,16 @@ import CommentUser4 from "../../../assets/images/comment-user4.jpg";
 import CommentUser5 from "../../../assets/images/comment-user5.jpg";
 import CommentUser6 from "../../../assets/images/comment-user6.jpg";
 import CommentUser7 from "../../../assets/images/comment-user7.jpg";
-import BlogMain from "./BlogMain";
+
+import TabImg1 from "../../../assets/images/tabs-img1.jpg";
+import TabImg3 from "../../../assets/images/tabs-img3.jpg";
+import TabImg5 from "../../../assets/images/tabs-img5.jpg";
+import TabImg6 from "../../../assets/images/tabs-img6.jpg";
+import TabImg7 from "../../../assets/images/tabs-img7.jpg";
+import TabImg8 from "../../../assets/images/tabs-img8.jpg";
+import TabImg9 from "../../../assets/images/tabs-img9.jpg";
+import TabImg10 from "../../../assets/images/tabs-img10.jpg";
+import TabImg11 from "../../../assets/images/tabs-img11.jpg";
 
 interface CommentCardProps {
   id: number;
@@ -166,15 +176,15 @@ const posts = [
 ];
 
 const instagramImages = [
-  "https://images.freejpg.com.ar/900/2512/woman-reading-a-book-in-bed-before-sleeping-F100030927.jpg",
-  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/ba/86/b5/and-even-more-books.jpg?w=900&h=500&s=1",
-  "https://img.freepik.com/fotos-premium/mujer-leyendo-libro-biblioteca_123211-3375.jpg",
-  "https://assets.weforum.org/article/image/RM56CoG0a4-UPVNMyAkMKRGkCBkJiIwH5wOsupmChbE.jpg",
-  "https://image.freepik.com/foto-gratis/hombre-negocios-sentado-mesa-leyendo-libro_1423-256.jpg",
-  "https://media.istockphoto.com/id/1402835350/photo/pensive-relaxed-african-american-woman-reading-a-book-at-home-drinking-coffee-sitting-on-the.jpg?s=612x612&w=0&k=20&c=aw9R68ENkPNqEQqQKcPqIlwAefRSQnymCifEjKd-4aE=",
-  "https://cdn.zmescience.com/wp-content/uploads/2015/04/Girl-reading-book-.jpg",
-  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/96/40/00/the-new-fiction-table.jpg?w=900&h=500&s=1",
-  "https://thumbs.dreamstime.com/b/old-man-sitting-home-reading-16618123.jpg",
+  TabImg1,
+  TabImg3,
+  TabImg5,
+  TabImg6,
+  TabImg7,
+  TabImg8,
+  TabImg9,
+  TabImg10,
+  TabImg11,
 ];
 
 export const AsideItemList: FC<AsideItemListProps> = ({ title, dataArr }) => {
