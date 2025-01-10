@@ -87,8 +87,8 @@ const BlogMainArticle: FC<BlogMainArticleProps> = ({
   const { handleClick } = useContext(BlogContext);
 
   return (
-    <article className="blog-main__article__container grid gap-6 grid-cols-5 border-b border-neutral-200 pb-8">
-      <div className="col-span-1 flex flex-col gap-4">
+    <article className="blog-main__article__container grid gap-6 md:grid-cols-5 border-b border-neutral-200 pb-8">
+      <div className="col-span-1 flex md:flex-col items-center gap-4">
         <a
           href="#"
           className="blog-main__article__user-img__container rounded-full overflow-hidden w-28"
@@ -97,23 +97,29 @@ const BlogMainArticle: FC<BlogMainArticleProps> = ({
           <img className="w-full h-full" src={userImage} alt="" />
         </a>
 
-        <div className="border-b border-neutral-300 pb-4">
-          <p>Written By</p>
-          <h2 className="text-lg uppercase font-semibold text-black">{user}</h2>
-        </div>
-
         <div>
-          <span className="blog-main__article__date-number text-3xl font-bold">
-            {dateNumber}
-          </span>
-          <span className="uppercase font-bold text-sm">th</span>
-          <p>
-            {dateMonth} {dateYear}
-          </p>
+          <div className="flex md:flex-col gap-2 border-b border-neutral-300 pb-4">
+            <p>Written By</p>
+            <h2 className="text-lg uppercase font-semibold text-black">
+              {user}
+            </h2>
+          </div>
+
+          <div className="flex items-end gap-2 md:flex-col md:items-start pt-2">
+            <div>
+              <span className="blog-main__article__date-number text-3xl font-bold">
+                {dateNumber}
+              </span>
+              <span className="uppercase font-bold text-sm">th</span>
+            </div>
+            <p>
+              {dateMonth} {dateYear}
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="col-span-4 flex flex-col gap-4">
+      <div className="md:col-span-4 flex flex-col gap-4">
         <div className="blog-main__article__post__img-list__container">
           <img src={blogImage} alt="" />
           <ul className="blog-main__article__social-icons">
