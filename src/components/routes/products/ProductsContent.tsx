@@ -4,6 +4,10 @@ import ProductsImg2 from "../../../assets/images/products-img2.jpg";
 import ProductsImg3 from "../../../assets/images/products-img3.jpg";
 import ProductsImg4 from "../../../assets/images/products-img4.jpg";
 import ProductsImg5 from "../../../assets/images/products-img5.jpg";
+import ProductsImg6 from "../../../assets/images/products-img6.jpg";
+import ProductsImg7 from "../../../assets/images/products-img7.jpg";
+import ProductsImg8 from "../../../assets/images/products-img8.jpg";
+import ProductsImg9 from "../../../assets/images/products-img9.jpg";
 import ArrivalsImg1 from "../../../assets/images/arrivals-img1.jpg";
 import ArrivalsImg2 from "../../../assets/images/arrivals-img2.jpg";
 import ArrivalsImg3 from "../../../assets/images/arrivals-img3.jpg";
@@ -86,6 +90,34 @@ const productsData = [
   {
     id: 5,
     img: ProductsImg5,
+    title: "Rebecca Yarros",
+    text: "Onyx Storm (Deluxe Limited Edition)",
+    price: "$80.75",
+  },
+  {
+    id: 6,
+    img: ProductsImg6,
+    title: "Rebecca Yarros",
+    text: "Onyx Storm (Deluxe Limited Edition)",
+    price: "$80.75",
+  },
+  {
+    id: 7,
+    img: ProductsImg7,
+    title: "Rebecca Yarros",
+    text: "Onyx Storm (Deluxe Limited Edition)",
+    price: "$80.75",
+  },
+  {
+    id: 8,
+    img: ProductsImg8,
+    title: "Rebecca Yarros",
+    text: "Onyx Storm (Deluxe Limited Edition)",
+    price: "$80.75",
+  },
+  {
+    id: 9,
+    img: ProductsImg9,
     title: "Rebecca Yarros",
     text: "Onyx Storm (Deluxe Limited Edition)",
     price: "$80.75",
