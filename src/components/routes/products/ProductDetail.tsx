@@ -12,7 +12,7 @@ const ProductDetail: FC = () => {
   return (
     <section className="md:col-span-2 xl:col-span-3 flex flex-col gap-8 relative">
       <article className="flex flex-col lg:flex-row gap-4">
-        <figure className="max-w-xs md:w-64 lg:shrink-0">
+        <figure className="max-w-[18rem] md:max-w-64 lg:shrink-0">
           <img className="w-full object-cover" src={BookDetail} alt="" />
         </figure>
         <div className="flex flex-col gap-4">
