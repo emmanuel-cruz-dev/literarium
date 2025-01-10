@@ -11,7 +11,7 @@ const BlogMainArticle = () => {
   return (
     <article className="blog-main__article__container grid gap-6 grid-cols-5 border-b border-neutral-200 pb-8">
       <div className="col-span-1 flex flex-col gap-4">
-        <figure className="rounded-full overflow-hidden w-20">
+        <figure className="blog-main__article__img-container rounded-full overflow-hidden w-28">
           <img className="w-full h-full" src={MainBlogWriter1} alt="" />
         </figure>
 

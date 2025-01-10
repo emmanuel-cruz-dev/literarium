@@ -225,6 +225,15 @@
  *             Start: Blog             *
  ***************************************/
 
+.blog-main__article__img-container {
+  border: 4px solid var(--black-color);
+  transition: border 0.3s ease-in-out;
+}
+
+.blog-main__article__container:hover .blog-main__article__img-container {
+  border: 4px solid var(--accent-color);
+}
+
 .blog-main__article__date-number {
   transition: color 0.3s ease-in-out;
 }
