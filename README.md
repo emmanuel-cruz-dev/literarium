@@ -1,6 +1,6 @@
 ![](https://github.com/EmmaLCruz/literarium/blob/main/public/images/literarium-banner.jpg)
 
-# Literarium
+# Literarium | Bookstore
 
 Sitio web de tienda de libros en línea, desarrollado con React, TypeScript y Tailwind CSS. Incluye funciones como catálogo de libros, detalles del producto y carrito de compras. Diseñado para una experiencia de usuario moderna y responsive.
 
@@ -20,8 +20,8 @@ Sitio web de tienda de libros en línea, desarrollado con React, TypeScript y Ta
 - Navbar funcional: Incluye navegación hacia las diferentes secciones de la página.
 - Diseño responsive: Adaptado para diferentes dispositivos.
 - Catálogo de libros: Muestra una lista de libros disponibles en la tienda.
-- Detalles del producto: Proporciona información adicional, incluyendo su autor, título, descripción, precio.
-- Página de contacto: Proporciona información sobre la tienda, incluyendo dirección, teléfono y correo electrónico.
+- Detalles del producto: Información adicional, incluyendo su autor, título, descripción, precio.
+- Página de contacto: Detalles sobre la tienda, incluyendo dirección, teléfono y correo electrónico.
 
 ## Estado
 
