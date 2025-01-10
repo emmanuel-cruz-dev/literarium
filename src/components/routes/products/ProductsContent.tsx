@@ -1,14 +1,26 @@
 import { FaHeart, FaShoppingCart, FaLink } from "react-icons/fa";
-import BookImg1 from "../../../assets/images/products-img4.jpg";
+import ProductsImg1 from "../../../assets/images/products-img1.jpg";
+import ProductsImg2 from "../../../assets/images/products-img2.jpg";
+import ProductsImg3 from "../../../assets/images/products-img3.jpg";
+import ProductsImg4 from "../../../assets/images/products-img4.jpg";
+import ProductsImg5 from "../../../assets/images/products-img5.jpg";
 import ArrivalsImg1 from "../../../assets/images/arrivals-img1.jpg";
 import ArrivalsImg2 from "../../../assets/images/arrivals-img2.jpg";
 import ArrivalsImg3 from "../../../assets/images/arrivals-img3.jpg";
 import { SearchItem, AsideItemList } from "../blog/BlogContent";
 import CarouselItems from "../../CarouselItems";
 import preOrder from "../../../data/preOrder.json";
-import { useContext } from "react";
+import { useContext, FC } from "react";
 import ProductDetail from "./ProductDetail";
 import { ProductsContext } from "./ProductsContext";
+
+interface ProductCardProps {
+  id: number;
+  img: string;
+  title: string;
+  text: string;
+  price: string;
+}
 
 const data1 = [
   "Fiction",
@@ -42,30 +54,64 @@ const arrivalsData = [
   },
 ];
 
-const ProductCard = () => {
+const productsData = [
+  {
+    id: 1,
+    img: ProductsImg1,
+    title: "Lauren Roberts",
+    text: "Powerful (Special Edition): A Powerless Story",
+    price: "$80.75",
+  },
+  {
+    id: 2,
+    img: ProductsImg2,
+    title: "Stephen King",
+    text: "Reading books as a hobby was always a noble and pleasant pastime.",
+    price: "$80.75",
+  },
+  {
+    id: 3,
+    img: ProductsImg3,
+    title: "Stephen King",
+    text: "Reading books as a hobby was always a noble and pleasant pastime.",
+    price: "$87.95",
+  },
+  {
+    id: 4,
+    img: ProductsImg4,
+    title: "Sarah J. Maas",
+    text: "A Court of Silver Flames (Exclusive Night Court Edition) (A Court of Thorns and Roses Series #4)",
+    price: "$80.75",
+  },
+  {
+    id: 5,
+    img: ProductsImg5,
+    title: "Rebecca Yarros",
+    text: "Onyx Storm (Deluxe Limited Edition)",
+    price: "$80.75",
+  },
+];
+
+const ProductCard: FC<ProductCardProps> = ({ title, text, price, img }) => {
   const { handleClick } = useContext(ProductsContext);
 
   return (
     <article className="products-content__article-container flex flex-col gap-4 pb-4 bg-white">
       <button onClick={handleClick} title="Go to Details">
-        <img className="w-full object-cover" src={BookImg1} alt="" />
+        <img className="w-full object-cover" src={img} alt="" />
       </button>
       <div className="flex flex-col gap-2 text-center">
         <div className="products-content__article-text">
           <p className="flex gap-2 justify-center items-center font-bold text-xl">
-            <span className="text-neutral-600">$80.75</span>
+            <span className="text-neutral-600">${price}</span>
             <span className="text-neutral-400/70 line-through">$90.75</span>
           </p>
           <button onClick={handleClick} title="Go to Details">
-            <h2 className="uppercase font-bold text-2xl text-black">
-              Stephen King
-            </h2>
+            <h2 className="uppercase font-bold text-2xl text-black">{title}</h2>
           </button>
         </div>
         <div className="products-content__hidden-container">
-          <p>
-            Reading books as a hobby was always a noble and pleasant pastime.
-          </p>
+          <p>{text}</p>
           <ul className="products-content__hidden-container__list">
             <li>
               <a href="#">
@@ -123,15 +169,9 @@ const NewArrivals = () => {
 const ProductMain = () => {
   return (
     <article className="auto-rows-[600px] md:auto-rows-[400px] lg:auto-rows-[528px] xl:auto-rows-[440px] md:col-span-2 grid md:grid-cols-2 xl:col-span-3 xl:grid-cols-3 gap-8">
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
+      {productsData.map((product) => (
+        <ProductCard key={product.id} {...product} />
+      ))}
     </article>
   );
 };
