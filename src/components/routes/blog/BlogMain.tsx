@@ -1,3 +1,4 @@
+import { FC } from "react";
 import {
   FaSearch,
   FaShareAlt,
@@ -5,33 +6,113 @@ import {
   FaAngleDoubleRight,
 } from "react-icons/fa";
 import MainBlogWriter1 from "../../../assets/images/main-blog-writer1.jpg";
-import MainBlogImg1 from "../../../assets/images/main-blog-img1.jpg";
+import MainBlogWriter2 from "../../../assets/images/main-blog-writer2.jpg";
+import MainBlogWriter3 from "../../../assets/images/main-blog-writer3.jpg";
+import MainBlogWriter4 from "../../../assets/images/main-blog-writer4.jpg";
 
-const BlogMainArticle = () => {
+import MainBlogImg1 from "../../../assets/images/main-blog-img1.jpg";
+import MainBlogImg2 from "../../../assets/images/main-blog-img2.jpg";
+import MainBlogImg3 from "../../../assets/images/main-blog-img3.jpg";
+import MainBlogImg4 from "../../../assets/images/main-blog-img4.jpg";
+
+interface BlogMainArticleProps {
+  blogImage: string;
+  title: string;
+  text: string;
+  userImage: string;
+  user: string;
+  dateNumber: number;
+  dateMonth: string;
+  dateYear: number;
+}
+
+const blogArticles = [
+  {
+    id: 1,
+    blogImage: MainBlogImg1,
+    title: "How to build a blog with Next.js",
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    userImage: MainBlogWriter1,
+    user: "Belly",
+    dateNumber: 26,
+    dateMonth: "August",
+    dateYear: 2024,
+  },
+  {
+    id: 2,
+    blogImage: MainBlogImg2,
+    title: "How to build a blog with Next.js",
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    userImage: MainBlogWriter2,
+    user: "Belly",
+    dateNumber: 26,
+    dateMonth: "August",
+    dateYear: 2024,
+  },
+  {
+    id: 3,
+    blogImage: MainBlogImg3,
+    title: "How to build a blog with Next.js",
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    userImage: MainBlogWriter3,
+    user: "Belly",
+    dateNumber: 26,
+    dateMonth: "August",
+    dateYear: 2024,
+  },
+  {
+    id: 4,
+    blogImage: MainBlogImg4,
+    title: "How to build a blog with Next.js",
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    userImage: MainBlogWriter4,
+    user: "Belly",
+    dateNumber: 26,
+    dateMonth: "August",
+    dateYear: 2024,
+  },
+];
+
+const BlogMainArticle: FC<BlogMainArticleProps> = ({
+  blogImage,
+  title,
+  text,
+  userImage,
+  user,
+  dateNumber,
+  dateMonth,
+  dateYear,
+}) => {
   return (
     <article className="blog-main__article__container grid gap-6 grid-cols-5 border-b border-neutral-200 pb-8">
       <div className="col-span-1 flex flex-col gap-4">
-        <figure className="blog-main__article__user-img__container rounded-full overflow-hidden w-28">
-          <img className="w-full h-full" src={MainBlogWriter1} alt="" />
-        </figure>
+        <a
+          href="#"
+          className="blog-main__article__user-img__container rounded-full overflow-hidden w-28"
+          title="Author profile"
+        >
+          <img className="w-full h-full" src={userImage} alt="" />
+        </a>
 
         <div className="border-b border-neutral-300 pb-4">
           <p>Writen By</p>
-          <h2 className="text-xl uppercase font-semibold text-black">Belly</h2>
+          <h2 className="text-xl uppercase font-semibold text-black">{user}</h2>
         </div>
 
         <div>
           <span className="blog-main__article__date-number text-3xl font-bold">
-            26
+            {dateNumber}
           </span>
           <span className="uppercase font-bold text-sm">th</span>
-          <p>August 2024</p>
+          <p>
+            {dateMonth} {dateYear}
+          </p>
         </div>
       </div>
 
       <div className="col-span-4 flex flex-col gap-4">
         <div className="blog-main__article__post__img-list__container">
-          <img src={MainBlogImg1} alt="" />
+          <img src={blogImage} alt="" />
           <ul className="blog-main__article__social-icons">
             <li>
               <a href="#">
@@ -51,16 +132,12 @@ const BlogMainArticle = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-4">
-          <h2 className="blog-main__article__title uppercase font-bold text-2xl text-black">
-            NerdCon Stories, Day Two
-          </h2>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam.ipsam
-            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-            consequuntur magni dolores eos qui ratione voluptatem sequi
-            nesciunt.
-          </p>
+          <button className="w-fit">
+            <h2 className="blog-main__article__title uppercase font-bold text-2xl text-black">
+              {title}
+            </h2>
+          </button>
+          <p>{text}</p>
           <button className="btn">Read More</button>
         </div>
       </div>
@@ -71,10 +148,9 @@ const BlogMainArticle = () => {
 const BlogMain = () => {
   return (
     <article className="lg:col-span-3 mx-auto flex flex-col gap-8">
-      <BlogMainArticle />
-      <BlogMainArticle />
-      <BlogMainArticle />
-      <BlogMainArticle />
+      {blogArticles.map((article) => (
+        <BlogMainArticle key={article.id} {...article} />
+      ))}
       <div>
         <ul className="blog-main__article__arrows-list">
           <li>
