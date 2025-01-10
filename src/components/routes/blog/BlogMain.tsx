@@ -9,22 +9,22 @@ import MainBlogImg1 from "../../../assets/images/main-blog-img1.jpg";
 
 const BlogMainArticle = () => {
   return (
-    <article className="grid grid-cols-5 border-b border-neutral-200 pb-8">
-      <div>
-        <div>
-          <figure>
-            <img src={MainBlogWriter1} alt="" />
-          </figure>
-          <div>
-            <p>Writen By</p>
-            <h2>Belly</h2>
-          </div>
+    <article className="blog-main__article__container grid gap-6 grid-cols-5 border-b border-neutral-200 pb-8">
+      <div className="col-span-1 flex flex-col gap-4">
+        <figure className="rounded-full overflow-hidden w-20">
+          <img className="w-full h-full" src={MainBlogWriter1} alt="" />
+        </figure>
+
+        <div className="border-b border-neutral-300 pb-4">
+          <p>Writen By</p>
+          <h2 className="text-xl uppercase font-semibold text-black">Belly</h2>
         </div>
+
         <div>
-          <p>
+          <span className="blog-main__article__date-number text-3xl font-bold">
             26
-            <span>th</span>
-          </p>
+          </span>
+          <span className="uppercase font-bold text-sm">th</span>
           <p>August 2024</p>
         </div>
       </div>

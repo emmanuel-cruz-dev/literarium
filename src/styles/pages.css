@@ -225,6 +225,14 @@
  *             Start: Blog             *
  ***************************************/
 
+.blog-main__article__date-number {
+  transition: color 0.3s ease-in-out;
+}
+
+.blog-main__article__container:hover .blog-main__article__date-number {
+  color: var(--accent-color);
+}
+
 .blog-content__user-image__container {
   width: 4.8rem;
   height: 4.8rem;
