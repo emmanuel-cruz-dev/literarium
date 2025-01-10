@@ -316,13 +316,16 @@
   align-items: center;
   font-size: 1.15em;
   border: 1px solid var(--background-dark-fade);
+  border-radius: 4px;
 }
 
 .blog-main__article__arrows-list li {
-  border-right: 1px solid var(--background-dark-fade);
   display: inline-block;
-  background-color: var(--white-color);
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.blog-main__article__arrows-list li:not(:last-of-type) {
+  border-right: 1px solid var(--background-dark-fade);
 }
 
 .blog-main__article__arrows-list li a {
@@ -335,8 +338,13 @@
 }
 
 .blog-main__article__arrows-list li:hover {
+  border-right: 1px solid var(--accent-color);
   background-color: var(--accent-color);
   color: var(--white-color);
+}
+
+.blog-main__article__arrows-list li:last-of-type {
+  border-right: none;
 }
 
 .blog-content__user-image__container {

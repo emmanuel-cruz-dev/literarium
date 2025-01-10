@@ -31,7 +31,7 @@ const blogArticles = [
     id: 1,
     blogImage: MainBlogImg1,
     title: "NerdCon Stories: Day Two",
-    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    text: "Day two of NerdCon was packed with exciting talks, unforgettable stories, and unique encounters with authors. Find out what happened on this special day and the moments that thrilled fans of storytelling in all its forms.",
     userImage: MainBlogWriter1,
     user: "Clara",
     dateNumber: 25,
@@ -42,7 +42,7 @@ const blogArticles = [
     id: 2,
     blogImage: MainBlogImg2,
     title: "October Reading: Easier Than Ever",
-    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    text: "This October, dive into accessible and exciting reads that fit into any schedule. From short novels to inspirational articles, it’s never been easier to enjoy the pleasure of reading and disconnect from daily stress.",
     userImage: MainBlogWriter2,
     user: "Jhony",
     dateNumber: 19,
@@ -53,7 +53,7 @@ const blogArticles = [
     id: 3,
     blogImage: MainBlogImg3,
     title: "Just Trying to Be Part of the Herd",
-    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    text: "Sometimes, fitting in can feel like a constant struggle. Explore this honest reflection on belonging, authenticity, and what it really means to feel part of something bigger, without losing sight of who you are.",
     userImage: MainBlogWriter3,
     user: "James",
     dateNumber: 13,
@@ -64,7 +64,7 @@ const blogArticles = [
     id: 4,
     blogImage: MainBlogImg4,
     title: "Depression: Is This Autumn?",
-    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    text: "Autumn can be beautiful, but it also brings with it feelings of melancholy. This article looks at how seasonal changes affect our mood and offers tips for coping with emotional challenges during this season.",
     userImage: MainBlogWriter4,
     user: "Valerie",
     dateNumber: 4,
@@ -95,8 +95,8 @@ const BlogMainArticle: FC<BlogMainArticleProps> = ({
         </a>
 
         <div className="border-b border-neutral-300 pb-4">
-          <p>Writen By</p>
-          <h2 className="text-xl uppercase font-semibold text-black">{user}</h2>
+          <p>Written By</p>
+          <h2 className="text-lg uppercase font-semibold text-black">{user}</h2>
         </div>
 
         <div>
