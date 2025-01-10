@@ -12,6 +12,15 @@ Sitio web de tienda de libros en línea, desarrollado con React, TypeScript y Ta
 - Tailwind CSS
 - TypeScript
 
+## Funcionalidades
+
+- Navbar funcional: Incluye navegación hacia las secciones principales de la página.
+- Diseño responsive: Adaptado para diferentes dispositivos.
+- Catálogo de libros: Muestra una lista de libros disponibles en la tienda.
+- Detalles del producto: Proporciona información adicional, incluyendo su autor, título, descripción, precio.
+- Página de inicio: Presenta una vista general de la tienda, incluyendo información sobre la tienda, nuevos productos, recomendaciones, top-sellers y pre-ordenes.
+- Página de contacto: Proporciona información sobre la tienda, incluyendo dirección, teléfono y correo electrónico.
+
 ## Estado
 
 - En desarrollo.
