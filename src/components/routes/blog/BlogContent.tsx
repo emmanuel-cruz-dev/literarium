@@ -1,4 +1,5 @@
-import { FC, useState } from "react";
+import { FC, useContext } from "react";
+import { BlogContext } from "./BlogContext";
 import {
   FaFacebookF,
   FaTwitter,
@@ -296,17 +297,11 @@ export const CommentContentReview: FC = () => {
 };
 
 const BlogContent = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const { isVisible, handleClick } = useContext(BlogContext);
 
   return (
     <section className="blog-content mt-8" id="blog-content">
       <article className="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 py-6 text-neutral-600 font-light relative">
-        <button
-          className="btn absolute -top-7 left-1/3"
-          onClick={() => setIsVisible(!isVisible)}
-        >
-          Click
-        </button>
         {!isVisible && <BlogMain />}
         {isVisible && (
           <article className="lg:col-span-3 mx-auto flex flex-col gap-4">
@@ -453,6 +448,15 @@ const BlogContent = () => {
               </div>
             </article>
             <FormItem title="Leave a Reply" button="Submit" />
+            <div className="flex justify-end">
+              <button
+                className="btn uppercase"
+                onClick={() => handleClick()}
+                title="Back to Main Blog"
+              >
+                Back to Blog
+              </button>
+            </div>
           </article>
         )}
         <aside className="lg:col-span-1 flex flex-col gap-8">

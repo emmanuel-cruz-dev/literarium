@@ -1,4 +1,5 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
+import { BlogContext } from "./BlogContext";
 import {
   FaSearch,
   FaShareAlt,
@@ -83,6 +84,8 @@ const BlogMainArticle: FC<BlogMainArticleProps> = ({
   dateMonth,
   dateYear,
 }) => {
+  const { handleClick } = useContext(BlogContext);
+
   return (
     <article className="blog-main__article__container grid gap-6 grid-cols-5 border-b border-neutral-200 pb-8">
       <div className="col-span-1 flex flex-col gap-4">
@@ -132,13 +135,15 @@ const BlogMainArticle: FC<BlogMainArticleProps> = ({
           </ul>
         </div>
         <div className="flex flex-col gap-4">
-          <button className="w-fit">
+          <button className="w-fit" onClick={handleClick} title="Blog Details">
             <h2 className="blog-main__article__title uppercase font-bold text-2xl text-black">
               {title}
             </h2>
           </button>
           <p>{text}</p>
-          <button className="btn">Read More</button>
+          <button className="btn" onClick={handleClick} title="Blog Details">
+            Read More
+          </button>
         </div>
       </div>
     </article>
