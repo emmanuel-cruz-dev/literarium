@@ -94,7 +94,14 @@ const BlogMainArticle: FC<BlogMainArticleProps> = ({
           className="blog-main__article__user-img__container rounded-full overflow-hidden w-28"
           title="Author profile"
         >
-          <img className="w-full h-full" src={userImage} alt="" />
+          <img
+            className="w-full h-full"
+            src={userImage}
+            alt={user}
+            width="77"
+            height="76"
+            loading="lazy"
+          />
         </a>
 
         <div>
@@ -121,7 +128,13 @@ const BlogMainArticle: FC<BlogMainArticleProps> = ({
 
       <div className="md:col-span-4 flex flex-col gap-4">
         <div className="blog-main__article__post__img-list__container">
-          <img src={blogImage} alt="" />
+          <img
+            src={blogImage}
+            alt={title}
+            width="711"
+            height="310"
+            loading="lazy"
+          />
           <ul className="blog-main__article__social-icons">
             <li>
               <a href="#">

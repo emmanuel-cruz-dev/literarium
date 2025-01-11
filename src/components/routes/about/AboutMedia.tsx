@@ -31,7 +31,10 @@ const AboutMedia = () => {
               <img
                 className="w-full h-full object-cover"
                 src={VideoImg}
-                alt=""
+                alt={`Imagen del video de la historia de Literarium`}
+                width="570"
+                height="316"
+                loading="lazy"
               />
               <a
                 href="#"

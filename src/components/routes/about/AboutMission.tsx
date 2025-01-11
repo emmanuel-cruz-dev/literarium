@@ -84,7 +84,13 @@ const MissionRender: FC<MissionRenderProps> = ({ arr }) => {
   return (
     <article className="flex flex-col gap-4">
       <div className="relative">
-        <img src={arr[active - 1].img} alt="mission" />
+        <img
+          src={arr[active - 1].img}
+          alt={`mission ${arr[active - 1].title}`}
+          width="573"
+          height="220"
+          loading="lazy"
+        />
         <div className="flex gap-4 justify-center items-end absolute bottom-0 left-0 w-full">
           {arr.map((item) => (
             <button
@@ -107,8 +113,6 @@ const MissionRender: FC<MissionRenderProps> = ({ arr }) => {
 };
 
 const DetailsItem: FC<DetailsItemProps> = ({ title, text, id }) => {
-  // const [active, setActive] = useState(1);
-
   const handleClick = (index: number) => {
     document
       .querySelector(`.about-mission__accordion-block:nth-child(${1})`)
@@ -123,8 +127,6 @@ const DetailsItem: FC<DetailsItemProps> = ({ title, text, id }) => {
     document
       .querySelector(`.about-mission__accordion-block:nth-child(${index})`)
       ?.classList.add("active-item");
-
-    // setActive(index);
   };
 
   return (

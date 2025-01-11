@@ -212,7 +212,14 @@ const CommentCard: FC<CommentCardProps> = ({
         href="#"
         className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0"
       >
-        <img className="w-full h-full object-cover" src={img} alt="" />
+        <img
+          className="w-full h-full object-cover"
+          src={img}
+          alt={`Foto de ${name}`}
+          width="370"
+          height="370"
+          loading="lazy"
+        />
       </a>
       <div className="flex flex-col gap-2 uppercase">
         <a href="#">
@@ -288,7 +295,14 @@ export const FormItem: FC<FormItemProps> = ({ title, button }) => {
 const LatestPosts: FC<LatestPostsProps> = ({ title, date, img }) => {
   return (
     <article className="flex items-center gap-4 pb-4 border-b border-slate-300">
-      <img className="w-16 h-16 rounded-full" src={img} alt={title} />
+      <img
+        className="w-16 h-16 rounded-full"
+        src={img}
+        alt={title}
+        width="370"
+        height="370"
+        loading="lazy"
+      />
       <div className="uppercase text-sm">
         <h3 className="font-bold text-black">{title}</h3>
         <p>{date}</p>
@@ -316,7 +330,13 @@ const BlogContent = () => {
         {isVisible && (
           <article className="lg:col-span-3 mx-auto flex flex-col gap-4">
             <div className="relative">
-              <img src={BlogImg1} alt="" />
+              <img
+                src={BlogImg1}
+                alt="Foto de 4 personas leyendo un libro"
+                width="870"
+                height="375"
+                loading="lazy"
+              />
               <div className="background-accent__item absolute top-0 left-0 flex flex-col justify-center items-center gap-1 py-3 px-8 text-white text-4xl uppercase">
                 <p>16</p>
                 <p className="font-bold text-lg">May</p>
@@ -325,7 +345,13 @@ const BlogContent = () => {
             <article className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 py-2">
               <div className="flex items-center gap-4">
                 <a href="#" className="blog-content__user-image__container">
-                  <img src={BlogUser1} alt="" />
+                  <img
+                    src={BlogUser1}
+                    alt="Foto de Anni Hollin"
+                    width="74"
+                    height="76"
+                    loading="lazy"
+                  />
                 </a>
                 <div className="flex flex-col gap-1 uppercase [&>p]:text-sm">
                   <h3 className="font-bold text-lg text-black">
@@ -425,7 +451,14 @@ const BlogContent = () => {
                   </li>
                 </ul>
               </div>
-              <img className="w-20 h-20" src={FounderImg2} alt="" />
+              <img
+                className="w-20 h-20"
+                src={FounderImg2}
+                alt="Foto de Jhony Thapya"
+                width="370"
+                height="370"
+                loading="lazy"
+              />
               <div>
                 <h2 className="uppercase font-bold text-lg text-black">
                   Jhony Thapya
@@ -539,6 +572,9 @@ const BlogContent = () => {
                     className="w-full h-full object-cover hover:opacity-40 transition-opacity duration-300 ease-in-out"
                     src={image}
                     alt="People reading books"
+                    width="573"
+                    height="220"
+                    loading="lazy"
                   />
                 </a>
               ))}
@@ -554,6 +590,9 @@ const BlogContent = () => {
                 className="hover:scale-110 transition-transform duration-300 ease-in-out"
                 src="https://i0.wp.com/ebookfriendly.com/wp-content/uploads/2014/05/Books-make-you-someone-else-ad-4.jpg?resize=1066%2C1600&ssl=1"
                 alt="Advertisement girl reading a book"
+                width="1066"
+                height="1600"
+                loading="lazy"
               />
             </a>
           </div>

@@ -148,7 +148,14 @@ const TabsRender: FC<TabsRenderProps> = ({ arr }) => {
         ))}
       </div>
       <div className="md:col-span-3 flex flex-col gap-4 items-center">
-        <img className="w-full" src={arr[activeTab].img} alt="img" />
+        <img
+          className="w-full"
+          src={arr[activeTab].img}
+          alt={`tab ${arr[activeTab].title}`}
+          width="573"
+          height="220"
+          loading="lazy"
+        />
         <div className="flex flex-col gap-4">
           <p>{arr[activeTab].text1}</p>
           <p>{arr[activeTab].text2}</p>
