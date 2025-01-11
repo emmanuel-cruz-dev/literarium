@@ -25,6 +25,7 @@ const Header = () => {
             alt="Icono de librería, 3 libros apilados uno sobre otro"
             width="600"
             height="600"
+            loading="lazy"
           />
           <a href="/" className="text-2xl">
             Literarium

@@ -55,6 +55,7 @@ const TestimoniesCard: FC<TestimoniesCardProps> = ({
           alt={name}
           width="300"
           height="300"
+          loading="lazy"
         />
       </figure>
       <div className="flex flex-col gap-3 [&>h4]:uppercase justify-center text-center text-white">
