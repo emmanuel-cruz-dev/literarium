@@ -78,6 +78,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
           alt={`Post ${title} de ${author}`}
           width="270"
           height="247"
+          loading="lazy"
         />
         <div className="blog__card-article__date absolute bottom-0 right-0 left-40 transition-all duration-300 text-white text-center">
           <p className="flex flex-col">

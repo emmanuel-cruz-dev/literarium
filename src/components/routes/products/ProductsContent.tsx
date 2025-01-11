@@ -142,7 +142,13 @@ const ProductCard: FC<ProductCardProps> = ({
   return (
     <article className="products-content__article-container flex flex-col gap-4 pb-4 bg-white">
       <button onClick={handleClick} title="Go to Details">
-        <img className="w-full object-cover" src={img} alt="" />
+        <img
+          className="w-full object-cover"
+          src={img}
+          alt={`Portada de ${title}`}
+          width="467"
+          height="700"
+        />
       </button>
       <div className="flex flex-col gap-2 text-center">
         <div className="products-content__article-text">
@@ -199,7 +205,9 @@ const NewArrivals = () => {
             <img
               className="new-arrivals__img w-full h-full object-cover"
               src={item.img}
-              alt=""
+              alt={`Portada de ${item.title}`}
+              width="467"
+              height="700"
             />
           </a>
           <div className="flex flex-col gap-2">

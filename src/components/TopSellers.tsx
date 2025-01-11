@@ -65,7 +65,14 @@ const BookCard: FC<BookCardProps> = ({
     <article key={id} className="top-sellers__book-card bg-white">
       <div className="flex flex-col items-center">
         <figure className="book-card__image">
-          <img className="p-6" src={img} alt="Book Image" />
+          <img
+            className="p-6"
+            src={img}
+            alt={`Portada de ${title}`}
+            width="620"
+            height="900"
+            loading="lazy"
+          />
         </figure>
         <h3 className="-mt-4 pb-3 text-lg">{title}</h3>
       </div>
@@ -115,13 +122,6 @@ const TopSellers = () => {
           </p>
         </div>
         <BookArticleItems cols={4} />
-        {/* <article>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 lg:gap-8 py-6">
-            {books.map((book) => (
-              <BookCard key={book.id} {...book} />
-            ))}
-          </div>
-        </article> */}
       </article>
     </section>
   );

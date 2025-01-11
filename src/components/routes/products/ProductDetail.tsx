@@ -13,7 +13,13 @@ const ProductDetail: FC = () => {
     <section className="md:col-span-2 xl:col-span-3 flex flex-col gap-8 relative">
       <article className="flex flex-col lg:flex-row gap-4">
         <figure className="max-w-[18rem] md:max-w-64 lg:shrink-0">
-          <img className="w-full object-cover" src={BookDetail} alt="" />
+          <img
+            className="w-full object-cover"
+            src={BookDetail}
+            alt="Portada de libro The Design of Everyday Things de Donald A. Norman"
+            width="323"
+            height="486"
+          />
         </figure>
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-4">

@@ -79,7 +79,14 @@ const BookGuideItem: FC<BookGuideProps> = ({
     <article className="products__article-item flex flex-col border border-slate-200 hover:border-transparent">
       <div className="relative mt-6 w-9/12 mx-auto">
         <div className="relative">
-          <img className="border-2 border-white" src={img} alt="" />
+          <img
+            className="border-2 border-white"
+            src={img}
+            alt={`Portada de ${title}`}
+            width="620"
+            height="900"
+            loading="lazy"
+          />
           <span className="absolute top-4 left-0 bottom-4 -right-2 z-[-1] bg-slate-300"></span>
         </div>
         <a href="#" className="book-guide__plus-item">

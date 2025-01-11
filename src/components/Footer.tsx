@@ -153,6 +153,7 @@ const Footer = () => {
           alt="Tarjetas de crédito"
           width="1800"
           height="251"
+          loading="lazy"
         />
       </article>
     </footer>

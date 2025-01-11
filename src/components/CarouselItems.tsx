@@ -33,6 +33,7 @@ const BookArticleCard: FC<CarouselItem> = ({ title, author, img, price }) => {
           alt={`Portada de ${title}`}
           width="620"
           height="900"
+          loading="lazy"
         />
         <a href="#" className="products__plus-item">
           +
