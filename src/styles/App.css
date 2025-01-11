@@ -244,6 +244,10 @@ body {
  *         Inicio: Main Cards          *
  ***************************************/
 
+.main-cards {
+  content-visibility: auto;
+}
+
 .main-cards__title {
   position: relative;
 }
@@ -306,6 +310,10 @@ body {
  *         Inicio: Top Sellers         *
  ***************************************/
 
+.top-sellers{
+  content-visibility: auto;
+}
+
 .top-sellers__book-card {
   position: relative;
 }
@@ -352,6 +360,10 @@ body {
  *           Inicio: Products          *
  ***************************************/
 
+.products{
+  content-visibility: auto;
+}
+
 .products__plus-item {
   position: absolute;
   top: 0;
@@ -365,7 +377,6 @@ body {
   background-color: var(--accent-color);
   color: var(--white-color);
   font-weight: 800;
-  /* font-size: 3.75rem; */
   font-size: 2.75em;
   transition: opacity 0.3s ease-in-out;
 }
@@ -410,6 +421,10 @@ body {
  *         Inicio: Book Guide          *
  ***************************************/
 
+.book-guide{
+  content-visibility: auto;
+}
+
 .book-guide__btn {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -439,6 +454,10 @@ body {
 /***************************************
  *           Inicio: Blog              *
  ***************************************/
+
+.blog {
+  content-visibility: auto;
+}
 
 .blog__card-title {
   position: relative;
@@ -491,6 +510,7 @@ body {
  ***************************************/
 
 .testimonies {
+  content-visibility: auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../assets/images/testimonials-bg.webp");
   background-size: cover;
@@ -547,6 +567,7 @@ body {
  ***************************************/
 
 .gift {
+  content-visibility: auto;
   position: relative;
   overflow: visible;
   height: 120vh;
@@ -610,6 +631,10 @@ body {
 /***************************************
  *       Inicio: Price Package         *
  ***************************************/
+
+.price-package {
+  content-visibility: auto;
+}
 
 .price-card-container {
   position: relative;
@@ -707,6 +732,7 @@ body {
  ***************************************/
 
 .newsletter {
+  content-visibility: auto;
   background-image: url("../assets/images/newsletter-bg.png");
   background-size: auto;
   background-position: bottom center;
@@ -725,6 +751,10 @@ body {
 /***************************************
  *         Inicio: Footer              *
  ***************************************/
+
+.footer{
+  content-visibility: auto;
+}
 
 .footer__list-title {
   text-transform: uppercase;
