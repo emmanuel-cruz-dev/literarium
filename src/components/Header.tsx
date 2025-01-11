@@ -53,7 +53,9 @@ const Header = () => {
             <HiMenu className="text-3xl" />
           </button>
 
-          <div className={`${menu ? "active" : ""} header__hidden-menu`}>
+          <div
+            className={`${menu ? "active" : ""} header__hidden-menu text-white`}
+          >
             <button
               className="absolute top-6 right-4"
               onClick={handleClick}
