@@ -88,7 +88,7 @@ const Footer = () => {
               <FaTwitter />
               <p>
                 🙏 Thank you for making this community thrive with stories.
-                We’re now 10,000 strong! 🎉
+                We're now 10,000 strong! 🎉
                 <span>⏰ Posted 2 days ago</span>
               </p>
             </li>
@@ -147,7 +147,13 @@ const Footer = () => {
           </a>{" "}
           © 2024-25 · Bringing the web to life, one component at a time.
         </span>
-        <img className="w-64" src={CreditCards} alt="Credit Cards" />
+        <img
+          className="w-64"
+          src={CreditCards}
+          alt="Tarjetas de crédito"
+          width="1800"
+          height="251"
+        />
       </article>
     </footer>
   );
