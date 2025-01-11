@@ -19,6 +19,7 @@ const ProductDetail: FC = () => {
             alt="Portada de libro The Design of Everyday Things de Donald A. Norman"
             width="323"
             height="486"
+            loading="lazy"
           />
         </figure>
         <div className="flex flex-col gap-4">

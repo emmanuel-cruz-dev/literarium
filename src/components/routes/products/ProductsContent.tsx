@@ -148,6 +148,7 @@ const ProductCard: FC<ProductCardProps> = ({
           alt={`Portada de ${title}`}
           width="467"
           height="700"
+          loading="lazy"
         />
       </button>
       <div className="flex flex-col gap-2 text-center">
@@ -208,6 +209,7 @@ const NewArrivals = () => {
               alt={`Portada de ${item.title}`}
               width="467"
               height="700"
+              loading="lazy"
             />
           </a>
           <div className="flex flex-col gap-2">
