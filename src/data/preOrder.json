@@ -3,28 +3,28 @@
     "id": 1,
     "title": "Design Patterns",
     "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
-    "img": "/images/design-patterns.jpg",
+    "img": "/images/design-patterns.webp",
     "price": 695
   },
   {
     "id": 2,
     "title": "Código Limpio",
     "author": "Robert C. Martin",
-    "img": "/images/codigo-limpio.jpg",
+    "img": "/images/codigo-limpio.webp",
     "price": 1123
   },
   {
     "id": 3,
     "title": "Atomic Design",
     "author": "Brad Frost",
-    "img": "/images/atomic-design.jpg",
+    "img": "/images/atomic-design.webp",
     "price": 759
   },
   {
     "id": 4,
     "title": "La Guerra del Arte",
     "author": "Steven Pressfield",
-    "img": "/images/la-guerra-del-arte.jpg",
+    "img": "/images/la-guerra-del-arte.webp",
     "price": 936
   }
 ]

@@ -61,8 +61,8 @@ const SuspenseRoute: FC<SuspenseRouteProps> = ({
 function App() {
   return (
     <>
-      <Header />
       <Suspense fallback={<Loader />}>
+        <Header />
         <Routes>
           <Route path="/" element={<SuspenseRoute element={Home} />} />
           <Route path="/about" element={<SuspenseRoute element={About} />} />
@@ -75,16 +75,9 @@ function App() {
             path="/contact"
             element={<SuspenseRoute element={ContactPage} />}
           />
-          {/* <Route path="/" element={<Home />} /> */}
-          {/* <Route path="*" element={<SuspenseRoute element={Home} />} /> */}
-          {/* <Route path="/about" element={<About />} /> */}
-          {/* <Route path="/blog" element={<BlogPage />} />
-          <Route path="/products" element={<ProductsPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="*" element={<Home />} /> */}
         </Routes>
+        <Footer />
       </Suspense>
-      <Footer />
     </>
   );
 }
