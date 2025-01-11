@@ -1,5 +1,5 @@
 import { FC } from "react";
-import AprendaMafia from "../assets/images/aprenda-de-la-mafia.jpg";
+import AprendaMafia from "../assets/images/aprenda-de-la-mafia.webp";
 import ComunidadAnillo from "../assets/images/comunidad-anillo.jpg";
 import HarryPotter from "../assets/images/harry-potter.jpg";
 import It from "../assets/images/it.jpg";

@@ -1,6 +1,6 @@
 import { FC } from "react";
 import JuegoTronos from "../assets/images/juego-tronos.jpg";
-import DoceReglas from "../assets/images/12-reglas-para-vivir.jpg";
+import DoceReglas from "../assets/images/12-reglas-para-vivir.webp";
 import LibertadPrimera from "../assets/images/libertad-primera-y-ultima.jpg";
 import PoderHabitos from "../assets/images/poder-habitos.jpg";
 import StarsElement from "./StarsElement";

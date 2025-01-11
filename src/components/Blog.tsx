@@ -1,7 +1,7 @@
-import BlogImage1 from "../assets/images/blog1.jpg";
-import BlogImage2 from "../assets/images/blog2.jpg";
-import BlogImage3 from "../assets/images/blog3.jpg";
-import BlogImage4 from "../assets/images/blog4.jpg";
+import BlogImage1 from "../assets/images/blog1.webp";
+import BlogImage2 from "../assets/images/blog2.webp";
+import BlogImage3 from "../assets/images/blog3.webp";
+import BlogImage4 from "../assets/images/blog4.webp";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 
 const posts = [
