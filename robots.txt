@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /static/
+Disallow: /assets/
+Allow: /
+
+Sitemap: https://literarium.netlify.app/sitemap.xml
