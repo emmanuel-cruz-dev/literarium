@@ -72,7 +72,13 @@ const BlogCard: React.FC<BlogCardProps> = ({
       className="blog__card-article flex flex-col md:flex-row md:w-fit mx-auto items-center gap-6 box-shadow__item bg-gray-100/60 hover:bg-white transition-colors duration-300 ease-in-out"
     >
       <div className="relative w-full h-96 md:h-full">
-        <img className="h-full object-cover" src={image} alt="" />
+        <img
+          className="h-full object-cover"
+          src={image}
+          alt={`Post ${title} de ${author}`}
+          width="270"
+          height="247"
+        />
         <div className="blog__card-article__date absolute bottom-0 right-0 left-40 transition-all duration-300 text-white text-center">
           <p className="flex flex-col">
             <span className="bg-slate-100/70 text-slate-600 text-2xl">

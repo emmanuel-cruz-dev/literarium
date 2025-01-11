@@ -64,7 +64,6 @@ function App() {
       <Header />
       <Suspense fallback={<Loader />}>
         <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
           <Route path="/" element={<SuspenseRoute element={Home} />} />
           <Route path="/about" element={<SuspenseRoute element={About} />} />
           <Route path="/blog" element={<SuspenseRoute element={BlogPage} />} />
@@ -76,6 +75,7 @@ function App() {
             path="/contact"
             element={<SuspenseRoute element={ContactPage} />}
           />
+          {/* <Route path="/" element={<Home />} /> */}
           {/* <Route path="*" element={<SuspenseRoute element={Home} />} /> */}
           {/* <Route path="/about" element={<About />} /> */}
           {/* <Route path="/blog" element={<BlogPage />} />
