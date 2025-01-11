@@ -1,5 +1,5 @@
 import { FC } from "react";
-import BookDetail from "../../../assets/images/book-detail.jpg";
+import BookDetail from "../../../assets/images/book-detail.webp";
 import StarsElement from "../../StarsElement";
 import { BookArticleItems } from "../../TopSellers";
 import ProductTabs from "./ProductTabs";

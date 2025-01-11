@@ -1,4 +1,4 @@
-import PeopleImage from "../../../assets/images/about-people-img.jpg";
+import PeopleImage from "../../../assets/images/about-people-img.webp";
 
 const AboutWelcome = () => {
   return (
