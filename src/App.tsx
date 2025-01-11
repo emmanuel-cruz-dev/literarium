@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, FC, ComponentType } from "react";
 import "./styles/App.css";
+import Loader from "./components/Loader";
 
 const MainCards = lazy(() => import("./components/MainCards"));
 const Banner = lazy(() => import("./components/Banner"));
@@ -25,9 +26,14 @@ const ContactPage = lazy(
   () => import("./components/routes/contact/ContactPage")
 );
 
+interface SuspenseRouteProps {
+  element: ComponentType;
+  fallback?: React.ReactNode;
+}
+
 const Home = () => {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Loader />}>
       <Hero />
       <Banner />
       <MainCards />
@@ -43,20 +49,43 @@ const Home = () => {
   );
 };
 
+const SuspenseRoute: FC<SuspenseRouteProps> = ({
+  element: Element,
+  fallback = <Loader />,
+}) => (
+  <Suspense fallback={fallback}>
+    <Element />
+  </Suspense>
+);
+
 function App() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/products" element={<ProductsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="*" element={<Home />} />
-      </Routes>
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/" element={<SuspenseRoute element={Home} />} />
+          <Route path="/about" element={<SuspenseRoute element={About} />} />
+          <Route path="/blog" element={<SuspenseRoute element={BlogPage} />} />
+          <Route
+            path="/products"
+            element={<SuspenseRoute element={ProductsPage} />}
+          />
+          <Route
+            path="/contact"
+            element={<SuspenseRoute element={ContactPage} />}
+          />
+          {/* <Route path="*" element={<SuspenseRoute element={Home} />} /> */}
+          {/* <Route path="/about" element={<About />} /> */}
+          {/* <Route path="/blog" element={<BlogPage />} />
+          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<Home />} /> */}
+        </Routes>
+      </Suspense>
       <Footer />
-    </Suspense>
+    </>
   );
 }
 
