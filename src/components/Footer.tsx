@@ -1,4 +1,4 @@
-import CreditCards from "../assets/images/credit-cards.png";
+import CreditCards from "../assets/images/credit-cards.avif";
 import {
   FaTags,
   FaPhoneAlt,
@@ -151,8 +151,8 @@ const Footer = () => {
           className="w-64"
           src={CreditCards}
           alt="Tarjetas de crédito"
-          width="1800"
-          height="251"
+          width="1000"
+          height="139"
           loading="lazy"
         />
       </article>

@@ -733,7 +733,7 @@ body {
 
 .newsletter {
   content-visibility: auto;
-  background-image: url("../assets/images/newsletter-bg.png");
+  background-image: url("../assets/images/newsletter-bg.avif");
   background-size: auto;
   background-position: bottom center;
   background-repeat: no-repeat;
