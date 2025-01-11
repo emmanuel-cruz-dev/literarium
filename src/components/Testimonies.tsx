@@ -49,7 +49,13 @@ const TestimoniesCard: FC<TestimoniesCardProps> = ({
   return (
     <article className="flex flex-col gap-5 justify-center items-center h-full">
       <figure className="testimonies__card-container">
-        <img className="object-cover" src={image} alt={name} />
+        <img
+          className="object-cover"
+          src={image}
+          alt={name}
+          width="300"
+          height="300"
+        />
       </figure>
       <div className="flex flex-col gap-3 [&>h4]:uppercase justify-center text-center text-white">
         <h3 className="text__accent-color uppercase font-bold text-3xl">

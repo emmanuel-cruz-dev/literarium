@@ -1,27 +1,33 @@
 import { Route, Routes } from "react-router-dom";
+import { lazy, Suspense } from "react";
 import "./styles/App.css";
-import MainCards from "./components/MainCards";
-import Banner from "./components/Banner";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import TopSellers from "./components/TopSellers";
-import Footer from "./components/Footer";
-import Products from "./components/Products";
-import BookGuide from "./components/BookGuide";
-import Blog from "./components/Blog";
-import Testimonies from "./components/Testimonies";
-import Gift from "./components/Gift";
-import PricePackage from "./components/PricePackage";
-import Newsletter from "./components/Newsletter";
 
-import About from "./components/routes/about/About";
-import BlogPage from "./components/routes/blog/BlogPage";
-import ProductsPage from "./components/routes/products/ProductsPage";
-import ContactPage from "./components/routes/contact/ContactPage";
+const MainCards = lazy(() => import("./components/MainCards"));
+const Banner = lazy(() => import("./components/Banner"));
+const Header = lazy(() => import("./components/Header"));
+const Hero = lazy(() => import("./components/Hero"));
+const TopSellers = lazy(() => import("./components/TopSellers"));
+const Footer = lazy(() => import("./components/Footer"));
+const Products = lazy(() => import("./components/Products"));
+const BookGuide = lazy(() => import("./components/BookGuide"));
+const Blog = lazy(() => import("./components/Blog"));
+const Testimonies = lazy(() => import("./components/Testimonies"));
+const Gift = lazy(() => import("./components/Gift"));
+const PricePackage = lazy(() => import("./components/PricePackage"));
+const Newsletter = lazy(() => import("./components/Newsletter"));
+
+const About = lazy(() => import("./components/routes/about/About"));
+const BlogPage = lazy(() => import("./components/routes/blog/BlogPage"));
+const ProductsPage = lazy(
+  () => import("./components/routes/products/ProductsPage")
+);
+const ContactPage = lazy(
+  () => import("./components/routes/contact/ContactPage")
+);
 
 const Home = () => {
   return (
-    <>
+    <Suspense fallback={<div>Loading...</div>}>
       <Hero />
       <Banner />
       <MainCards />
@@ -29,12 +35,11 @@ const Home = () => {
       <Products />
       <Testimonies />
       <BookGuide />
-
       <Blog />
       <Gift />
       <PricePackage />
       <Newsletter />
-    </>
+    </Suspense>
   );
 };
 
@@ -42,14 +47,16 @@ function App() {
   return (
     <>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/products" element={<ProductsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="*" element={<Home />} />
-      </Routes>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </Suspense>
 
       <Footer />
     </>
