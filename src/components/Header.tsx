@@ -22,9 +22,9 @@ const Header = () => {
           <img
             className="w-8"
             src={Logo}
-            alt="Icono de librería, 3 libros apilados uno sobre otro"
-            width="600"
-            height="600"
+            alt="Icono de Literarium, una persona leyendo un libro"
+            width="300"
+            height="300"
             loading="lazy"
           />
           <a href="/" className="text-2xl">
