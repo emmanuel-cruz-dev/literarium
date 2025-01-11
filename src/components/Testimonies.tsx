@@ -2,9 +2,9 @@ import { FC } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Navigation, Autoplay, Pagination } from "swiper/modules";
 
-import Img1 from "../assets/images/testimonials-img1.jpg";
-import Img2 from "../assets/images/testimonials-img2.jpg";
-import Img3 from "../assets/images/testimonials-img3.jpg";
+import Img1 from "../assets/images/testimonials-img1.webp";
+import Img2 from "../assets/images/testimonials-img2.webp";
+import Img3 from "../assets/images/testimonials-img3.webp";
 
 interface TestimoniesCardProps {
   image: string;

@@ -1,8 +1,8 @@
 import { FC } from "react";
 import AprendaMafia from "../assets/images/aprenda-de-la-mafia.webp";
-import ComunidadAnillo from "../assets/images/comunidad-anillo.jpg";
-import HarryPotter from "../assets/images/harry-potter.jpg";
-import It from "../assets/images/it.jpg";
+import ComunidadAnillo from "../assets/images/comunidad-anillo.webp";
+import HarryPotter from "../assets/images/harry-potter.webp";
+import It from "../assets/images/it.webp";
 import StarsElement from "./StarsElement";
 import CounterBanner from "./CounterBanner";
 

@@ -13,16 +13,16 @@ import {
 } from "react-icons/fa";
 import { InformationList } from "../../Footer";
 import BlogMain from "./BlogMain";
-import BlogImg1 from "../../../assets/images/blog-detail-img.jpg";
-import BlogUser1 from "../../../assets/images/blog-user1.jpg";
-import FounderImg2 from "../../../assets/images/founder2.jpg";
-import CommentUser1 from "../../../assets/images/comment-user1.jpg";
-import CommentUser2 from "../../../assets/images/comment-user2.jpg";
-import CommentUser3 from "../../../assets/images/comment-user3.jpg";
-import CommentUser4 from "../../../assets/images/comment-user4.jpg";
-import CommentUser5 from "../../../assets/images/comment-user5.jpg";
-import CommentUser6 from "../../../assets/images/comment-user6.jpg";
-import CommentUser7 from "../../../assets/images/comment-user7.jpg";
+import BlogImg1 from "../../../assets/images/blog-detail-img.webp";
+import BlogUser1 from "../../../assets/images/blog-user1.webp";
+import FounderImg2 from "../../../assets/images/founder2.webp";
+import CommentUser1 from "../../../assets/images/comment-user1.webp";
+import CommentUser2 from "../../../assets/images/comment-user2.webp";
+import CommentUser3 from "../../../assets/images/comment-user3.webp";
+import CommentUser4 from "../../../assets/images/comment-user4.webp";
+import CommentUser5 from "../../../assets/images/comment-user5.webp";
+import CommentUser6 from "../../../assets/images/comment-user6.webp";
+import CommentUser7 from "../../../assets/images/comment-user7.webp";
 
 import TabImg1 from "../../../assets/images/tabs-img1.jpg";
 import TabImg3 from "../../../assets/images/tabs-img3.jpg";

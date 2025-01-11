@@ -5,9 +5,9 @@ import {
   FaGooglePlusG,
   FaLinkedinIn,
 } from "react-icons/fa";
-import FounderImg1 from "../../../assets/images/founder1.jpg";
-import FounderImg2 from "../../../assets/images/founder2.jpg";
-import FounderImg3 from "../../../assets/images/founder3.jpg";
+import FounderImg1 from "../../../assets/images/founder1.webp";
+import FounderImg2 from "../../../assets/images/founder2.webp";
+import FounderImg3 from "../../../assets/images/founder3.webp";
 
 interface Founder {
   id: number;

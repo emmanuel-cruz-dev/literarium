@@ -1,7 +1,7 @@
 import { FC } from "react";
-import PersonalImg from "../assets/images/package1.jpg";
-import ProfessionalImg from "../assets/images/package2.jpg";
-import BusinessImg from "../assets/images/package3.jpg";
+import PersonalImg from "../assets/images/package1.webp";
+import ProfessionalImg from "../assets/images/package2.webp";
+import BusinessImg from "../assets/images/package3.webp";
 
 interface PriceCardProps {
   title: string;

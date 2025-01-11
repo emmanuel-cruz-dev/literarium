@@ -1,5 +1,5 @@
 import CounterBanner from "../../../components/CounterBanner";
-import VideoImg from "../../../assets/images/video-bg2.jpg";
+import VideoImg from "../../../assets/images/video-bg2.webp";
 import { FaPlay } from "react-icons/fa";
 
 const items = [

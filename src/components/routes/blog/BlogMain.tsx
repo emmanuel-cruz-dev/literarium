@@ -6,15 +6,15 @@ import {
   FaHeart,
   FaAngleDoubleRight,
 } from "react-icons/fa";
-import MainBlogWriter1 from "../../../assets/images/main-blog-writer1.jpg";
-import MainBlogWriter2 from "../../../assets/images/main-blog-writer2.jpg";
-import MainBlogWriter3 from "../../../assets/images/main-blog-writer3.jpg";
-import MainBlogWriter4 from "../../../assets/images/main-blog-writer4.jpg";
+import MainBlogWriter1 from "../../../assets/images/main-blog-writer1.webp";
+import MainBlogWriter2 from "../../../assets/images/main-blog-writer2.webp";
+import MainBlogWriter3 from "../../../assets/images/main-blog-writer3.webp";
+import MainBlogWriter4 from "../../../assets/images/main-blog-writer4.webp";
 
-import MainBlogImg1 from "../../../assets/images/main-blog-img1.jpg";
-import MainBlogImg2 from "../../../assets/images/main-blog-img2.jpg";
-import MainBlogImg3 from "../../../assets/images/main-blog-img3.jpg";
-import MainBlogImg4 from "../../../assets/images/main-blog-img4.jpg";
+import MainBlogImg1 from "../../../assets/images/main-blog-img1.webp";
+import MainBlogImg2 from "../../../assets/images/main-blog-img2.webp";
+import MainBlogImg3 from "../../../assets/images/main-blog-img3.webp";
+import MainBlogImg4 from "../../../assets/images/main-blog-img4.webp";
 
 interface BlogMainArticleProps {
   blogImage: string;

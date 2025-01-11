@@ -1,10 +1,10 @@
 import { FC, useState } from "react";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
-import MissionImg1 from "../../../assets/images/mission-img1.jpg";
-import MissionImg2 from "../../../assets/images/mission-img2.jpg";
-import MissionImg3 from "../../../assets/images/mission-img3.jpg";
-import MissionImg4 from "../../../assets/images/mission-img4.jpg";
+import MissionImg1 from "../../../assets/images/mission-img1.webp";
+import MissionImg2 from "../../../assets/images/mission-img2.webp";
+import MissionImg3 from "../../../assets/images/mission-img3.webp";
+import MissionImg4 from "../../../assets/images/mission-img4.webp";
 
 interface Item {
   id: number;
