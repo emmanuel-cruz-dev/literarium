@@ -29,7 +29,9 @@ body {
 :root {
   --primary-color: #007bff;
   --secondary-color: #6c757d;
-  --accent-color: #32b5f3;
+  /* --accent-color: #32b5f3; */
+  --accent-color-light: #c7ebfb;
+  --accent-color: #2279b1;
   --accent-color-fade: #32b6f39e;
   --background-dark-color: #10121a;
   --background-dark-grey: #191d2b;
@@ -803,7 +805,8 @@ body {
 .footer__list-container span {
   margin-top: 0.2rem;
   font-size: 0.86em;
-  color: var(--accent-color);
+  color: var(--white-color);
+  opacity: 0.8;
 }
 
 .unordered__list-container li {
