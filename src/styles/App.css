@@ -569,14 +569,13 @@ body {
  ***************************************/
 
 .gift {
-  content-visibility: auto;
   position: relative;
   overflow: visible;
   height: 120vh;
 }
 
 .gift__background-image {
-  background-image: url("../assets/images/laptop.png");
+  background-image: url("../assets/images/laptop.avif");
   background-repeat: no-repeat;
   background-size: auto;
   height: 470px;
