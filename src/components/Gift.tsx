@@ -5,7 +5,7 @@ import {
   FaChevronRight,
 } from "react-icons/fa";
 import { FC } from "react";
-import laptopImg1 from "../assets/images/laptop1.png";
+import laptopImg1 from "../assets/images/laptop1.avif";
 
 interface GiftCardProps {
   icon: JSX.Element;
