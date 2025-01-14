@@ -24,15 +24,15 @@ import CommentUser5 from "../../../assets/images/comment-user5.webp";
 import CommentUser6 from "../../../assets/images/comment-user6.webp";
 import CommentUser7 from "../../../assets/images/comment-user7.webp";
 
-import TabImg1 from "../../../assets/images/tabs-img1.jpg";
-import TabImg3 from "../../../assets/images/tabs-img3.jpg";
-import TabImg5 from "../../../assets/images/tabs-img5.jpg";
-import TabImg6 from "../../../assets/images/tabs-img6.jpg";
-import TabImg7 from "../../../assets/images/tabs-img7.jpg";
-import TabImg8 from "../../../assets/images/tabs-img8.jpg";
-import TabImg9 from "../../../assets/images/tabs-img9.jpg";
-import TabImg10 from "../../../assets/images/tabs-img10.jpg";
-import TabImg11 from "../../../assets/images/tabs-img11.jpg";
+import TabImg1 from "../../../assets/images/tabs-img1.webp";
+import TabImg3 from "../../../assets/images/tabs-img3.webp";
+import TabImg5 from "../../../assets/images/tabs-img5.webp";
+import TabImg6 from "../../../assets/images/tabs-img6.webp";
+import TabImg7 from "../../../assets/images/tabs-img7.webp";
+import TabImg8 from "../../../assets/images/tabs-img8.webp";
+import TabImg9 from "../../../assets/images/tabs-img9.webp";
+import TabImg10 from "../../../assets/images/tabs-img10.webp";
+import TabImg11 from "../../../assets/images/tabs-img11.webp";
 
 interface CommentCardProps {
   id: number;

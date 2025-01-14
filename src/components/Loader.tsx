@@ -22,7 +22,7 @@ const Loader: React.FC<LoaderProps> = ({
   };
 
   return (
-    <div className={`flex items-center justify-center ${className}`}>
+    <div className={`w-screen h-screen bg-cyan-400 flex items-center justify-center ${className}`}>
       <div
         className={`
           animate-spin
