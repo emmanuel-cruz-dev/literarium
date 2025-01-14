@@ -41,7 +41,7 @@ function ScrollToTopButton() {
       <div
         className="absolute top-0 left-0 w-full h-full rounded-full"
       />
-      <span className="text-4xl rounded-full z-10">
+      <span className="text-3xl lg:text-4xl rounded-full z-10">
         <FaChevronUp />
       </span>
     </button>
