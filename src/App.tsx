@@ -37,7 +37,6 @@ const Home = () => {
     <Suspense fallback={<Loader />}>
       <Hero />
       <Banner />
-      <ScrollToTopButton />
       <MainCards />
       <TopSellers />
       <Products />
@@ -78,6 +77,7 @@ function App() {
             element={<SuspenseRoute element={ContactPage} />}
           />
         </Routes>
+        <ScrollToTopButton />
         <Footer />
       </Suspense>
     </>

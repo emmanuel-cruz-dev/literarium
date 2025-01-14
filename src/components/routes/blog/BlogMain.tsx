@@ -92,7 +92,6 @@ const BlogMainArticle: FC<BlogMainArticleProps> = ({
         <a
           href="#"
           className="blog-main__article__user-img__container rounded-full overflow-hidden w-28"
-          title="Author profile"
         >
           <img
             className="w-full h-full"
