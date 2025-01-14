@@ -108,7 +108,7 @@ const PricePackage = () => {
         </article>
       </article>
       <div className="price-package__background-image">
-          <img src={laptopImg2} alt="Laptop" />
+          <img src={laptopImg2} alt="Laptop" loading="lazy"width="891" height="33" />
         </div>
     </section>
   );

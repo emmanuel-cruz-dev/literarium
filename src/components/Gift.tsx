@@ -71,7 +71,7 @@ const Gift = () => {
         </article>
       </article>
         <div className="gift__background-image">
-          <img src={laptopImg1} alt="Laptop" />
+          <img src={laptopImg1} alt="Laptop" loading="lazy"width="891" height="437" />
         </div>
     </section>
   );
