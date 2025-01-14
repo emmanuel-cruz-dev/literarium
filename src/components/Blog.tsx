@@ -73,7 +73,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
     >
       <div className="relative w-full h-96 md:h-full">
         <img
-          className="h-full object-cover"
+          className="w-full h-full object-cover"
           src={image}
           alt={`Post ${title} de ${author}`}
           width="270"
