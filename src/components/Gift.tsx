@@ -5,6 +5,7 @@ import {
   FaChevronRight,
 } from "react-icons/fa";
 import { FC } from "react";
+import laptopImg1 from "../assets/images/laptop1.png";
 
 interface GiftCardProps {
   icon: JSX.Element;
@@ -57,7 +58,7 @@ const Gift = () => {
   return (
     <section className="gift background-accent__item" id="gift">
       <article className="w-11/12 mx-auto py-12 px-4">
-        <div className="gift__background-image"></div>
+        
         <div className="flex flex-col gap-4 justify-center items-center text-center py-4">
           <h2 className="text-white section__title gift__title">
             Bookstore Gift Cards
@@ -69,6 +70,9 @@ const Gift = () => {
           ))}
         </article>
       </article>
+        <div className="gift__background-image">
+          <img src={laptopImg1} alt="Laptop" />
+        </div>
     </section>
   );
 };

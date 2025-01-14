@@ -512,7 +512,7 @@ body {
  ***************************************/
 
 .testimonies {
-  content-visibility: auto;
+  /* content-visibility: auto; */
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../assets/images/testimonials-bg.webp");
   background-size: cover;
@@ -568,34 +568,23 @@ body {
  *           Inicio: Gift              *
  ***************************************/
 
-.gift {
+.gift__background-image {
   position: relative;
-  overflow: visible;
-  height: 120vh;
 }
 
-.gift__background-image {
-  background-image: url("../assets/images/laptop.avif");
-  background-repeat: no-repeat;
-  background-size: auto;
+.gift__background-image img {
+  position:absolute;
   height: 470px;
   width: 891px;
   z-index: 100;
-  position: absolute;
-  bottom: -4%;
-  right: -22%;
+  bottom: 0;
+  right: -22.5%;
   display: none;
 }
 
 @media screen and (min-width: 1024px) {
-  .gift__background-image {
+  .gift__background-image img {
     display: block;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .gift {
-    height: fit-content;
   }
 }
 
@@ -625,6 +614,7 @@ body {
   opacity: 1;
   background-color: #47bdf4;
 }
+
 /***************************************
  *             Fin: Gift               *
  ***************************************/
@@ -722,6 +712,22 @@ body {
   width: 260%;
   bottom: -8px;
   background-color: var(--background-dark-fade);
+}
+
+.price-package__background-image {
+  position: absolute;
+  top: 0;
+  right: -22.5%;
+  width: 891px;
+  object-fit: cover;
+  z-index: 100;
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .price-package__background-image {
+    display: block;
+  }
 }
 
 /***************************************

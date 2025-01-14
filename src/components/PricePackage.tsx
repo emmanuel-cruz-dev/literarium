@@ -2,6 +2,7 @@ import { FC } from "react";
 import PersonalImg from "../assets/images/package1.webp";
 import ProfessionalImg from "../assets/images/package2.webp";
 import BusinessImg from "../assets/images/package3.webp";
+import laptopImg2 from "../assets/images/laptop2.png";
 
 interface PriceCardProps {
   title: string;
@@ -106,6 +107,9 @@ const PricePackage = () => {
           </div>
         </article>
       </article>
+      <div className="price-package__background-image">
+          <img src={laptopImg2} alt="Laptop" />
+        </div>
     </section>
   );
 };
