@@ -32,7 +32,7 @@ function ScrollToTopButton() {
 
   return (
     <button
-      className={`up-btn fixed bottom-20 lg:bottom-6 right-6 z-[500] background-accent__item text-white rounded-full cursor-pointer transition-all duration-300 w-[4.4rem] h-[4.4rem] flex justify-center items-center border-[3px] border-white hover:bg-black ${
+      className={`up-btn fixed bottom-16 lg:bottom-6 right-6 z-[500] background-accent__item text-white rounded-full cursor-pointer transition-all duration-300 w-14 h-14 lg:w-[4.4rem] lg:h-[4.4rem] flex justify-center items-center border-[3px] border-white hover:bg-black ${
         isVisible ? "opacity-100" : "opacity-0"
       } focus:outline-none focus:ring-0 focus:ring-offset-0`}
       onClick={handleClick}
