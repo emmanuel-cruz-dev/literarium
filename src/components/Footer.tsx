@@ -133,28 +133,32 @@ const Footer = () => {
           </ul>
         </div>
       </article>
-      <article className="bg-neutral-900/60 px-4 py-8 lg:py-6 lg:px-12 mx-auto flex flex-col lg:flex-row gap-6 justify-between items-center text-center">
-        <span>
-          Crafted by{" "}
-          <a
-            className="hover:underline"
-            href="https://emmanuel-cruz.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Emmanuel Cruz Portfolio"
-          >
-            Emmanuel
-          </a>{" "}
-          © 2024-25 · Bringing the web to life, one component at a time.
-        </span>
+      <article className="bg-neutral-900/60 px-4 py-8 lg:px-12 mx-auto flex flex-col lg:flex-row gap-6 justify-between items-center text-center">
         <img
-          className="w-64"
+          className="max-w-60"
           src={CreditCards}
           alt="Tarjetas de crédito"
           width="1000"
           height="139"
           loading="lazy"
         />
+        <div className="flex flex-col justify-center items-center">
+          <span>
+            Crafted by{" "}
+            <a
+              className="hover:underline"
+              href="https://emmanuel-cruz.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Emmanuel Cruz Portfolio"
+            >
+              Emmanuel
+            </a>{" "}
+            © 2024-25.
+          </span>
+          <span>Bringing the web to life, one component at a time.</span>
+        </div>
+        <div className="hidden lg:block w-60"></div>
       </article>
     </footer>
   );
