@@ -7,6 +7,7 @@ const MainCards = lazy(() => import("./components/MainCards"));
 const Banner = lazy(() => import("./components/Banner"));
 const Header = lazy(() => import("./components/Header"));
 const Hero = lazy(() => import("./components/Hero"));
+const ScrollToTopButton = lazy(() => import("./components/ScrollToTopButton"));
 const TopSellers = lazy(() => import("./components/TopSellers"));
 const Footer = lazy(() => import("./components/Footer"));
 const Products = lazy(() => import("./components/Products"));
@@ -36,6 +37,7 @@ const Home = () => {
     <Suspense fallback={<Loader />}>
       <Hero />
       <Banner />
+      <ScrollToTopButton />
       <MainCards />
       <TopSellers />
       <Products />
