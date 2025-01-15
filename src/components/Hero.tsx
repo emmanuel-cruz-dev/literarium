@@ -8,7 +8,7 @@ const Hero = () => {
     >
       <div className="hidden lg:flex flex-grow"></div>
       <div className="flex flex-col items-center gap-6 text-center pb-8 w-11/12">
-        <h1 className="text-4xl lg:text-4xl font-bold uppercase tracking-wide">
+        <h1 className="text-4xl lg:text-5xl font-bold uppercase tracking-wide">
           Your trusted bookstore
         </h1>
         <h2 className="hidden lg:block text-2xl lg:text-3xl font-bold uppercase title__double-lines">
