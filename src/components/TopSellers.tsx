@@ -1,8 +1,8 @@
 import { FC } from "react";
-import JuegoTronos from "../assets/images/juego-tronos.webp";
-import DoceReglas from "../assets/images/12-reglas-para-vivir.webp";
-import LibertadPrimera from "../assets/images/libertad-primera-y-ultima.webp";
-import PoderHabitos from "../assets/images/poder-habitos.webp";
+import JuegoTronos from "../assets/images/knight-seven-kingdoms.webp";
+import DoceReglas from "../assets/images/rules-life.webp";
+import LibertadPrimera from "../assets/images/first-last-freedom.webp";
+import PoderHabitos from "../assets/images/power-habit.webp";
 import StarsElement from "./StarsElement";
 
 const books = [
