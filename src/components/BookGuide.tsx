@@ -36,7 +36,7 @@ const items = [
 const books = [
   {
     id: 1,
-    title: "The Fellowship of the Ring",
+    title: "The Lord of the Rings: The Fellowship of the Ring",
     author: "J. R. R. Tolkien",
     img: FellowshipRing,
     rating: 4,
@@ -94,7 +94,10 @@ const BookGuideItem: FC<BookGuideProps> = ({
         </a>
       </div>
       <div className="flex flex-col gap-2 text-center border-b border-slate-200 py-4 px-6">
-        <h2 className="products__card-title leading-tight font-bold text-xl text-slate-700">
+        <h2
+          className="products__card-title line-clamp-2 leading-tight font-bold text-xl text-slate-700"
+          title={title}
+        >
           {title}
         </h2>
         <p className="font-light text-slate-500">{author}</p>
