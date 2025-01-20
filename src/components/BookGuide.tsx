@@ -1,7 +1,7 @@
 import { FC } from "react";
-import AprendaMafia from "../assets/images/aprenda-de-la-mafia.webp";
-import ComunidadAnillo from "../assets/images/comunidad-anillo.webp";
-import HarryPotter from "../assets/images/harry-potter.webp";
+import MobRules from "../assets/images/mob-rules.webp";
+import FellowshipRing from "../assets/images/fellowship-ring.webp";
+import PhilosopherStone from "../assets/images/philosopher-stone.webp";
 import It from "../assets/images/it.webp";
 import StarsElement from "./StarsElement";
 import CounterBanner from "./CounterBanner";
@@ -36,25 +36,25 @@ const items = [
 const books = [
   {
     id: 1,
-    title: "La Comunidad del Anillo",
+    title: "The Fellowship of the Ring",
     author: "J. R. R. Tolkien",
-    img: ComunidadAnillo,
+    img: FellowshipRing,
     rating: 4,
     price: 1132.25,
   },
   {
     id: 2,
-    title: "Aprenda de la Mafia",
+    title: "Mob Rules: What the Mafia Can Teach the Legitimate Businessman",
     author: "Louis Ferrante",
-    img: AprendaMafia,
+    img: MobRules,
     rating: 5,
     price: 695.99,
   },
   {
     id: 3,
-    title: "Harry Potter y la Piedra Filosofal",
+    title: "Harry Potter and the Philosopher's Stone",
     author: "J. K. Rowling",
-    img: HarryPotter,
+    img: PhilosopherStone,
     rating: 5,
     price: 849.39,
   },
