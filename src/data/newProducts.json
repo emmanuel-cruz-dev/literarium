@@ -8,16 +8,16 @@
   },
   {
     "id": 2,
-    "title": "El Resplandor",
+    "title": "The Shining",
     "author": "Stephen King",
-    "img": "/images/el-resplandor.webp",
+    "img": "/images/shining.webp",
     "price": 623
   },
   {
     "id": 3,
-    "title": "El Exorcista",
+    "title": "The Exorcist",
     "author": "William Peter Blatty",
-    "img": "/images/el-exorcista.webp",
+    "img": "/images/exorcist.webp",
     "price": 759
   },
   {
