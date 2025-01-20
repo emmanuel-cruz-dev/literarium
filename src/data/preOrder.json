@@ -8,9 +8,9 @@
   },
   {
     "id": 2,
-    "title": "Código Limpio",
+    "title": "Clean Code",
     "author": "Robert C. Martin",
-    "img": "/images/codigo-limpio.webp",
+    "img": "/images/clean-code.webp",
     "price": 1123
   },
   {
@@ -22,9 +22,9 @@
   },
   {
     "id": 4,
-    "title": "La Guerra del Arte",
+    "title": "The War of Art",
     "author": "Steven Pressfield",
-    "img": "/images/la-guerra-del-arte.webp",
+    "img": "/images/war-art.webp",
     "price": 936
   }
 ]
