@@ -11,7 +11,7 @@ import {
   FaChevronRight,
   FaSearch,
 } from "react-icons/fa";
-import { InformationList } from "../../Footer";
+import { InformationList } from "../../layout/Footer/Footer";
 import BlogMain from "./BlogMain";
 import BlogImg1 from "../../../assets/images/blog-detail-img.webp";
 import BlogUser1 from "../../../assets/images/blog-user1.webp";

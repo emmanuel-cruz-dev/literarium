@@ -9,7 +9,7 @@ const Header = lazy(() => import("./components/Header"));
 const Hero = lazy(() => import("./components/Hero"));
 const ScrollToTopButton = lazy(() => import("./components/ScrollToTopButton"));
 const TopSellers = lazy(() => import("./components/TopSellers"));
-const Footer = lazy(() => import("./components/Footer"));
+const Footer = lazy(() => import("./components/layout/Footer/Footer"));
 const Products = lazy(() => import("./components/Products"));
 const BookGuide = lazy(() => import("./components/BookGuide"));
 const Blog = lazy(() => import("./components/Blog"));

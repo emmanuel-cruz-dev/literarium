@@ -1,41 +1,9 @@
-import CreditCards from "../assets/images/credit-cards.avif";
-import {
-  FaTags,
-  FaPhoneAlt,
-  FaEnvelope,
-  FaTwitter,
-  FaChevronRight,
-} from "react-icons/fa";
-import { FC } from "react";
+import { InformationList } from "../../ui/InformationList";
+import CreditCards from "../../../assets/images/credit-cards.avif";
+import { FaTags, FaPhoneAlt, FaEnvelope, FaTwitter } from "react-icons/fa";
+import { listData } from "../../../data/listData";
 
-interface InformationListProps {
-  data: string[];
-}
-
-const data = [
-  "Specials",
-  "New Products",
-  "Best Sellers",
-  "Contact Us",
-  "Terms Of Use",
-  "Site Map",
-];
-
-export const InformationList: FC<InformationListProps> = ({ data }) => {
-  return (
-    <ul className="unordered__list-container hover-item">
-      {data.map((item) => (
-        <li key={item}>
-          <a className="flex items-center justify-between" href="#">
-            {item} <FaChevronRight />
-          </a>
-        </li>
-      ))}
-    </ul>
-  );
-};
-
-const Footer = () => {
+function Footer() {
   return (
     <footer className="footer bg-black text-white" id="footer">
       <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 px-4 py-8 md:p-12 mx-auto">
@@ -97,7 +65,7 @@ const Footer = () => {
 
         <div>
           <h2 className="footer__list-title">Information</h2>
-          <InformationList data={data} />
+          <InformationList data={listData} />
         </div>
 
         <div>
@@ -162,6 +130,6 @@ const Footer = () => {
       </article>
     </footer>
   );
-};
+}
 
 export default Footer;
