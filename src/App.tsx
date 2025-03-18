@@ -14,7 +14,7 @@ const TopSellers = lazy(() => import("./pages/Home/TopSellers/TopSellers"));
 const Footer = lazy(() => import("./components/layout/Footer/Footer"));
 const Products = lazy(() => import("./components/Products"));
 const BookGuide = lazy(() => import("./components/BookGuide"));
-const Blog = lazy(() => import("./components/Blog"));
+const Blog = lazy(() => import("./pages/Home/Blog/Blog"));
 const Testimonials = lazy(
   () => import("./pages/Home/Testimonials/Testimonials")
 );

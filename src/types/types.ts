@@ -46,6 +46,16 @@ export interface TestimonialsCardProps {
   description: string;
 }
 
+export interface BlogCardProps {
+  id: number;
+  author: string;
+  title: string;
+  description: string;
+  image: string;
+  date: number;
+  month: string;
+}
+
 export interface GiftCardProps {
   icon: ElementType;
   title: string;
