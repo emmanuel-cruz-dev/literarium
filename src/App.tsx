@@ -5,7 +5,7 @@ import Loader from "./components/Loader";
 
 const MainCards = lazy(() => import("./components/MainCards"));
 const Banner = lazy(() => import("./components/Banner"));
-const Header = lazy(() => import("./components/Header"));
+const Header = lazy(() => import("./components/layout/Navbar/Header"));
 const Hero = lazy(() => import("./components/Hero"));
 const ScrollToTopButton = lazy(() => import("./components/ScrollToTopButton"));
 const TopSellers = lazy(() => import("./components/TopSellers"));

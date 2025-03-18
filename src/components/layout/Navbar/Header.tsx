@@ -1,19 +1,10 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/icons/literarium-icono.png";
+import Logo from "../../../assets/icons/literarium-icono.png";
 import { HiMenu, HiX } from "react-icons/hi";
+import useMenu from "../../../hooks/useMenu";
 
-const Header = () => {
-  const [menu, setMenu] = useState(false);
-
-  const handleClick = () => {
-    setMenu(!menu);
-    if (!menu) {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
-    }
-  };
+function Header() {
+  const { menu, toggleMenu } = useMenu();
 
   return (
     <header className="absolute top-0 left-0 right-0 text-white">
@@ -49,7 +40,7 @@ const Header = () => {
           </li>
         </ul>
         <div className="block md:hidden">
-          <button onClick={handleClick} title="Open Menu">
+          <button onClick={toggleMenu} title="Open Menu">
             <HiMenu className="text-3xl" />
           </button>
 
@@ -58,25 +49,25 @@ const Header = () => {
           >
             <button
               className="absolute top-6 right-4"
-              onClick={handleClick}
+              onClick={toggleMenu}
               title="Close Menu"
             >
               <HiX className="text-3xl" />
             </button>
             <ul className="h-full flex flex-col justify-center items-center gap-5 text-xl">
-              <li onClick={handleClick}>
+              <li onClick={toggleMenu}>
                 <Link to="/">Home</Link>
               </li>
-              <li onClick={handleClick}>
+              <li onClick={toggleMenu}>
                 <Link to="/about">About Us</Link>
               </li>
-              <li onClick={handleClick}>
+              <li onClick={toggleMenu}>
                 <Link to="/blog">Our Blog</Link>
               </li>
-              <li onClick={handleClick}>
+              <li onClick={toggleMenu}>
                 <Link to="/products">Products</Link>
               </li>
-              <li onClick={handleClick}>
+              <li onClick={toggleMenu}>
                 <Link to="/contact">Contact Us</Link>
               </li>
             </ul>
@@ -85,6 +76,6 @@ const Header = () => {
       </nav>
     </header>
   );
-};
+}
 
 export default Header;

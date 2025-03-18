@@ -11,7 +11,6 @@ import {
   FaChevronRight,
   FaSearch,
 } from "react-icons/fa";
-import { InformationList } from "../../layout/Footer/Footer";
 import BlogMain from "./BlogMain";
 import BlogImg1 from "../../../assets/images/blog-detail-img.webp";
 import BlogUser1 from "../../../assets/images/blog-user1.webp";
@@ -33,6 +32,7 @@ import TabImg8 from "../../../assets/images/tabs-img8.webp";
 import TabImg9 from "../../../assets/images/tabs-img9.webp";
 import TabImg10 from "../../../assets/images/tabs-img10.webp";
 import TabImg11 from "../../../assets/images/tabs-img11.webp";
+import { InformationList } from "../../ui/InformationList";
 
 interface CommentCardProps {
   id: number;
