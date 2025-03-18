@@ -61,6 +61,14 @@ export interface BlogCardProps {
   month: string;
 }
 
+export interface BookGuideProps {
+  title: string;
+  author: string;
+  img: string;
+  rating: number;
+  price: number;
+}
+
 export interface GiftCardProps {
   icon: ElementType;
   title: string;
