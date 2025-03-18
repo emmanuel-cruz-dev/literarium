@@ -6,6 +6,15 @@ export interface LoaderProps {
   className?: string;
 }
 
+export interface CounterItemProps {
+  number: number;
+  title: string;
+}
+
+export interface CounterBannerProps {
+  arr: CounterItemProps[];
+}
+
 export interface InformationListProps {
   data: string[];
 }

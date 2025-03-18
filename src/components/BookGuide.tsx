@@ -4,7 +4,7 @@ import FellowshipRing from "../assets/images/fellowship-ring.webp";
 import PhilosopherStone from "../assets/images/philosopher-stone.webp";
 import It from "../assets/images/it.webp";
 import StarsElement from "./StarsElement";
-import CounterBanner from "./CounterBanner";
+import CounterBanner from "./layout/CounterBanner/CounterBanner";
 
 interface BookGuideProps {
   title: string;
