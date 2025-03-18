@@ -9,7 +9,7 @@ function Header() {
   return (
     <header className="absolute top-0 left-0 right-0 text-white">
       <nav className="flex justify-between items-center h-full px-4 md:px-8 lg:px-16">
-        <div className="flex items-center gap-2 py-6">
+        <a href="/" className="flex items-center gap-2 py-6" title="Home">
           <img
             className="w-8"
             src={Logo}
@@ -18,10 +18,8 @@ function Header() {
             height="100"
             loading="lazy"
           />
-          <a href="/" className="text-2xl">
-            Literarium
-          </a>
-        </div>
+          <span className="text-2xl">Literarium</span>
+        </a>
         <ul className="header__list-container gap-4 hidden md:flex text-lg">
           <li>
             <Link to="/">Home</Link>
