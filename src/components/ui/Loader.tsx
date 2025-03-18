@@ -1,10 +1,7 @@
-interface LoaderProps {
-  size?: "sm" | "md" | "lg";
-  color?: string;
-  className?: string;
-}
+import { FC } from "react";
+import { LoaderProps } from "types/types";
 
-const Loader: React.FC<LoaderProps> = ({
+const Loader: FC<LoaderProps> = ({
   size = "md",
   color = "primary",
   className = "",
@@ -22,7 +19,9 @@ const Loader: React.FC<LoaderProps> = ({
   };
 
   return (
-    <div className={`w-screen h-screen bg-cyan-400 flex items-center justify-center ${className}`}>
+    <article
+      className={`w-screen h-screen bg-cyan-400 flex items-center justify-center ${className}`}
+    >
       <div
         className={`
           animate-spin
@@ -37,7 +36,7 @@ const Loader: React.FC<LoaderProps> = ({
       >
         <span className="sr-only">Cargando...</span>
       </div>
-    </div>
+    </article>
   );
 };
 

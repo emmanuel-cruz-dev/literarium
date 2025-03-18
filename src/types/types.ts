@@ -1,5 +1,11 @@
 import { ElementType } from "react";
 
+export interface LoaderProps {
+  size?: "sm" | "md" | "lg";
+  color?: string;
+  className?: string;
+}
+
 export interface InformationListProps {
   data: string[];
 }
@@ -22,4 +28,11 @@ export interface BookCardProps {
 
 export interface BookArticleItemsProps {
   cols: number;
+}
+
+export interface TestimonialsCardProps {
+  image: string;
+  name: string;
+  occupation: string;
+  description: string;
 }

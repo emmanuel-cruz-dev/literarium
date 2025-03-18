@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { lazy, Suspense, FC, ComponentType } from "react";
 import "./styles/App.css";
-import Loader from "./components/Loader";
+import Loader from "./components/ui/Loader";
 
 const MainCards = lazy(() => import("./pages/Home/MainCards/MainCards"));
 const Banner = lazy(() => import("./components/ui/Banner"));
@@ -15,7 +15,9 @@ const Footer = lazy(() => import("./components/layout/Footer/Footer"));
 const Products = lazy(() => import("./components/Products"));
 const BookGuide = lazy(() => import("./components/BookGuide"));
 const Blog = lazy(() => import("./components/Blog"));
-const Testimonies = lazy(() => import("./components/Testimonies"));
+const Testimonials = lazy(
+  () => import("./pages/Home/Testimonials/Testimonials")
+);
 const Gift = lazy(() => import("./components/Gift"));
 const PricePackage = lazy(() => import("./components/PricePackage"));
 const Newsletter = lazy(() => import("./components/Newsletter"));
@@ -42,7 +44,7 @@ const Home = () => {
       <MainCards />
       <TopSellers />
       <Products />
-      <Testimonies />
+      <Testimonials />
       <BookGuide />
       <Blog />
       <Gift />
