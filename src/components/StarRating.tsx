@@ -8,7 +8,7 @@ const StarRating = () => {
   const stars = [1, 2, 3, 4, 5]; // Representa el número de estrellas
 
   return (
-    <div style={{ display: "flex" }}>
+    <article style={{ display: "flex" }}>
       {stars.map((star) => (
         <div
           key={star}
@@ -25,7 +25,7 @@ const StarRating = () => {
           )}
         </div>
       ))}
-    </div>
+    </article>
   );
 };
 

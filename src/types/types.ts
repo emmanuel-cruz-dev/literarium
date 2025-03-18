@@ -66,3 +66,13 @@ export interface GiftCardProps {
   title: string;
   description: string;
 }
+
+export interface PriceCardProps {
+  title: string;
+  image: string;
+  price: number;
+  eBooks: number;
+  comics: number;
+  books: number;
+  magazines: number;
+}

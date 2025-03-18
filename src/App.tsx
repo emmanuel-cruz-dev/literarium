@@ -20,7 +20,9 @@ const Testimonials = lazy(
   () => import("./pages/Home/Testimonials/Testimonials")
 );
 const Gift = lazy(() => import("./pages/Home/Gift/Gift"));
-const PricePackage = lazy(() => import("./components/PricePackage"));
+const PricePackage = lazy(
+  () => import("./pages/Home/PricePackage/PricePackage")
+);
 const Newsletter = lazy(() => import("./components/ui/Newsletter"));
 
 const About = lazy(() => import("./components/routes/about/About"));
