@@ -1,6 +1,6 @@
 import { FaSearch } from "react-icons/fa";
 
-const Hero = () => {
+function Hero() {
   return (
     <main
       className="hero h-screen flex flex-col justify-center items-center text-white"
@@ -25,13 +25,18 @@ const Hero = () => {
             type="text"
             placeholder="Enter your book title here"
           />
-          <button className="w-[14%] flex justify-center items-center h-full background-accent__item hover:bg-white hover:text-gray-800 transition-colors duration-300 ease-in-out" id="search" name="search" title="Search">
+          <button
+            className="w-[14%] flex justify-center items-center h-full background-accent__item hover:bg-white hover:text-gray-800 transition-colors duration-300 ease-in-out"
+            id="search"
+            name="search"
+            title="Search"
+          >
             <FaSearch className="text-xl" />
           </button>
         </div>
       </div>
     </main>
   );
-};
+}
 
 export default Hero;
