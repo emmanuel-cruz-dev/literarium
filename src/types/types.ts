@@ -1,4 +1,9 @@
-import { ElementType } from "react";
+import { ComponentType, ElementType, ReactNode } from "react";
+
+export interface SuspenseRouteProps {
+  element: ComponentType;
+  fallback?: ReactNode;
+}
 
 export interface LoaderProps {
   size?: "sm" | "md" | "lg";

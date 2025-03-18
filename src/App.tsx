@@ -1,7 +1,8 @@
 import { Route, Routes } from "react-router-dom";
-import { lazy, Suspense, FC, ComponentType } from "react";
+import { lazy, Suspense, FC } from "react";
 import "./styles/App.css";
 import Loader from "./components/ui/Loader";
+import { SuspenseRouteProps } from "types/types";
 
 const MainCards = lazy(() => import("./pages/Home/MainCards/MainCards"));
 const Banner = lazy(() => import("./components/ui/Banner"));
@@ -20,7 +21,7 @@ const Testimonials = lazy(
 );
 const Gift = lazy(() => import("./pages/Home/Gift/Gift"));
 const PricePackage = lazy(() => import("./components/PricePackage"));
-const Newsletter = lazy(() => import("./components/Newsletter"));
+const Newsletter = lazy(() => import("./components/ui/Newsletter"));
 
 const About = lazy(() => import("./components/routes/about/About"));
 const BlogPage = lazy(() => import("./components/routes/blog/BlogPage"));
@@ -30,11 +31,6 @@ const ProductsPage = lazy(
 const ContactPage = lazy(
   () => import("./components/routes/contact/ContactPage")
 );
-
-interface SuspenseRouteProps {
-  element: ComponentType;
-  fallback?: React.ReactNode;
-}
 
 const Home = () => {
   return (
