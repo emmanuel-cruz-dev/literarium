@@ -36,3 +36,9 @@ export interface TestimonialsCardProps {
   occupation: string;
   description: string;
 }
+
+export interface GiftCardProps {
+  icon: ElementType;
+  title: string;
+  description: string;
+}

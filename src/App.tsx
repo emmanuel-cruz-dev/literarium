@@ -18,7 +18,7 @@ const Blog = lazy(() => import("./components/Blog"));
 const Testimonials = lazy(
   () => import("./pages/Home/Testimonials/Testimonials")
 );
-const Gift = lazy(() => import("./components/Gift"));
+const Gift = lazy(() => import("./pages/Home/Gift/Gift"));
 const PricePackage = lazy(() => import("./components/PricePackage"));
 const Newsletter = lazy(() => import("./components/Newsletter"));
 
