@@ -4,10 +4,12 @@ import "./styles/App.css";
 import Loader from "./components/Loader";
 
 const MainCards = lazy(() => import("./pages/Home/MainCards/MainCards"));
-const Banner = lazy(() => import("./components/Banner"));
+const Banner = lazy(() => import("./components/ui/Banner"));
 const Header = lazy(() => import("./components/layout/Navbar/Header"));
 const Hero = lazy(() => import("./pages/Home/Hero/Hero"));
-const ScrollToTopButton = lazy(() => import("./components/ScrollToTopButton"));
+const ScrollToTopButton = lazy(
+  () => import("./components/ui/ScrollToTopButton")
+);
 const TopSellers = lazy(() => import("./pages/Home/TopSellers/TopSellers"));
 const Footer = lazy(() => import("./components/layout/Footer/Footer"));
 const Products = lazy(() => import("./components/Products"));

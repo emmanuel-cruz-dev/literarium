@@ -1,4 +1,4 @@
-const Banner = () => {
+function Banner() {
   return (
     <article
       className="banner flex flex-col gap-4 xl:flex-row items-center justify-between text-center lg:text-left py-12 px-3 lg:px-16 bg-gray-800 text-white"
@@ -29,6 +29,6 @@ const Banner = () => {
       </div>
     </article>
   );
-};
+}
 
 export default Banner;
