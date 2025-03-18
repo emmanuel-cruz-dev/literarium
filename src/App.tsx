@@ -8,7 +8,7 @@ const Banner = lazy(() => import("./components/Banner"));
 const Header = lazy(() => import("./components/layout/Navbar/Header"));
 const Hero = lazy(() => import("./pages/Home/Hero/Hero"));
 const ScrollToTopButton = lazy(() => import("./components/ScrollToTopButton"));
-const TopSellers = lazy(() => import("./components/TopSellers"));
+const TopSellers = lazy(() => import("./pages/Home/TopSellers/TopSellers"));
 const Footer = lazy(() => import("./components/layout/Footer/Footer"));
 const Products = lazy(() => import("./components/Products"));
 const BookGuide = lazy(() => import("./components/BookGuide"));

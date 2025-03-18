@@ -1,7 +1,7 @@
 import { FC } from "react";
 import BookDetail from "../../../assets/images/book-detail.webp";
 import StarsElement from "../../StarsElement";
-import { BookArticleItems } from "../../TopSellers";
+import { BookArticleItems } from "../../ui/BookArticleItems";
 import ProductTabs from "./ProductTabs";
 import { ProductsContext } from "./ProductsContext";
 import { useContext } from "react";
