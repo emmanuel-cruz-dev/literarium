@@ -3,7 +3,7 @@ import { lazy, Suspense, FC, ComponentType } from "react";
 import "./styles/App.css";
 import Loader from "./components/Loader";
 
-const MainCards = lazy(() => import("./components/MainCards"));
+const MainCards = lazy(() => import("./pages/Home/MainCards/MainCards"));
 const Banner = lazy(() => import("./components/Banner"));
 const Header = lazy(() => import("./components/layout/Navbar/Header"));
 const Hero = lazy(() => import("./pages/Home/Hero/Hero"));
