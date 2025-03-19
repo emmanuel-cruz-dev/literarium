@@ -1,6 +1,6 @@
 import PagesHero from "../../../components/routes/PagesHero";
 import Founders from "../Founders/Founders";
-import AboutMedia from "../Media/AboutMedia";
+import Media from "../Media/Media";
 import AboutMission from "../Mission/AboutMission";
 import AboutTabs from "../Tabs/AboutTabs";
 import AboutWelcome from "../Welcome/AboutWelcome";
@@ -11,7 +11,7 @@ const About = () => {
       <PagesHero title="About" />
       <AboutWelcome />
       <AboutTabs />
-      <AboutMedia />
+      <Media />
       <AboutMission />
       <Founders />
     </>

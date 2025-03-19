@@ -1,27 +1,9 @@
 import CounterBanner from "../../../components/layout/CounterBanner/CounterBanner";
 import VideoImg from "../../../assets/images/video-bg2.webp";
 import { FaPlay } from "react-icons/fa";
+import mediaItems from "../../../data/mediaItems";
 
-const items = [
-  {
-    number: 34,
-    title: "Years of Excellence",
-  },
-  {
-    number: 10000,
-    title: "Happy Customers",
-  },
-  {
-    number: 19,
-    title: "Partner Stores Worldwide",
-  },
-  {
-    number: 500,
-    title: "Books Donated Every Year",
-  },
-];
-
-const AboutMedia = () => {
+function Media() {
   return (
     <>
       <section className="about-media bg-black/95 text-white" id="about-media">
@@ -66,9 +48,9 @@ const AboutMedia = () => {
           </div>
         </article>
       </section>
-      <CounterBanner arr={items} />
+      <CounterBanner arr={mediaItems} />
     </>
   );
-};
+}
 
-export default AboutMedia;
+export default Media;
