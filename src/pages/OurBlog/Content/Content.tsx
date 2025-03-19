@@ -1,4 +1,4 @@
-import { FC, useContext } from "react";
+import { useContext } from "react";
 import { BlogContext } from "../../../context/BlogContext";
 import {
   FaFacebookF,
@@ -9,7 +9,6 @@ import {
   FaHeart,
   FaChevronLeft,
   FaChevronRight,
-  FaSearch,
 } from "react-icons/fa";
 import BlogImg1 from "../../../assets/images/blog-detail-img.webp";
 import BlogUser1 from "../../../assets/images/blog-user1.webp";
@@ -17,10 +16,6 @@ import FounderImg2 from "../../../assets/images/founder2.webp";
 import CommentUser1 from "../../../assets/images/comment-user1.webp";
 import CommentUser2 from "../../../assets/images/comment-user2.webp";
 import CommentUser3 from "../../../assets/images/comment-user3.webp";
-import CommentUser4 from "../../../assets/images/comment-user4.webp";
-import CommentUser5 from "../../../assets/images/comment-user5.webp";
-import CommentUser6 from "../../../assets/images/comment-user6.webp";
-import CommentUser7 from "../../../assets/images/comment-user7.webp";
 
 import TabImg1 from "../../../assets/images/tabs-img1.webp";
 import TabImg3 from "../../../assets/images/tabs-img3.webp";
@@ -31,102 +26,17 @@ import TabImg8 from "../../../assets/images/tabs-img8.webp";
 import TabImg9 from "../../../assets/images/tabs-img9.webp";
 import TabImg10 from "../../../assets/images/tabs-img10.webp";
 import TabImg11 from "../../../assets/images/tabs-img11.webp";
-import { InformationList } from "../../../components/ui/InformationList";
 import FormItem from "../../../components/ui/FormItem";
 import Main from "../Main/Main";
-
-interface CommentCardProps {
-  id: number;
-  img: string;
-  name: string;
-  date: string;
-  comment: string;
-  children?: React.ReactNode;
-}
-
-interface AsideItemListProps {
-  title: string;
-  dataArr: string[];
-}
-
-interface LatestPostsProps {
-  title: string;
-  date: string;
-  img: string;
-}
-
-type UserItem = {
-  id: number;
-  name: string;
-  date: string;
-  comment: string;
-  img: string;
-};
-
-const users: UserItem[] = [
-  {
-    id: 1,
-    name: "Clara Hoffman",
-    date: "June 20, 2024",
-    comment:
-      "I completely agree! Digital formats have made reading more accessible, but there's nothing like holding a physical book in your hands.",
-    img: CommentUser1,
-  },
-  {
-    id: 2,
-    name: "Isabelle McKenzie",
-    date: "August 12, 2024",
-    comment:
-      "This article really resonated with me. I've been exploring global literature recently, and it's opened my eyes to so many new perspectives!",
-    img: CommentUser2,
-  },
-  {
-    id: 3,
-    name: "Luca Moretti",
-    date: "September 18, 2024",
-    comment:
-      "The diversity in self-published books is amazing, but sometimes it's hard to find quality stories. Any tips on good curation platforms?",
-    img: CommentUser3,
-  },
-  {
-    id: 4,
-    name: "James Green",
-    date: "June 09, 2024",
-    comment:
-      "This was such a thoughtful piece. I'd love to hear more about your favorite global authors and their impact on literature.",
-    img: CommentUser7,
-  },
-];
-
-const usersReply1: UserItem[] = [
-  {
-    id: 1,
-    name: "Amelie Schneider",
-    date: "June 21, 2024",
-    comment:
-      "I hadn't thought about how algorithms are shaping what we read. It's fascinating and a bit scary. Excellent read!",
-    img: CommentUser4,
-  },
-  {
-    id: 2,
-    name: "Erik Johansson",
-    date: "June 22, 2024",
-    comment:
-      "Thank you for highlighting the impact of self-publishing. As an aspiring author, it's encouraging to see these changes.",
-    img: CommentUser5,
-  },
-];
-
-const usersReply2: UserItem[] = [
-  {
-    id: 3,
-    name: "Freya Nielsen",
-    date: "August 29, 2024",
-    comment:
-      "Beautifully written! Stories truly connect us all, no matter the format. I hope printed books never disappear completely",
-    img: CommentUser6,
-  },
-];
+import SearchItem from "../../../components/ui/SearchItem";
+import LatestPosts from "../../../components/ui/LatestPosts";
+import CommentCard from "./CommentCard";
+import AsideItemList from "./AsideItemList";
+import {
+  contentUsers,
+  usersReply1,
+  usersReply2,
+} from "../../../data/contentUsers";
 
 const data1 = [
   "Photoshop",
@@ -183,104 +93,7 @@ const instagramImages = [
   TabImg11,
 ];
 
-export const AsideItemList: FC<AsideItemListProps> = ({ title, dataArr }) => {
-  return (
-    <article className="blog-content__aside__item-container flex flex-col gap-6">
-      <h2 className="blog-content__aside__item-title">{title}</h2>
-      <InformationList data={dataArr} />
-    </article>
-  );
-};
-
-const CommentCard: FC<CommentCardProps> = ({
-  img,
-  name,
-  date,
-  comment,
-  children,
-}) => {
-  return (
-    <article className="flex flex-row gap-6 relative">
-      <button className="blog-content__btn__comment hidden absolute md:block">
-        Reply
-      </button>
-      <a
-        href="#"
-        className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0"
-      >
-        <img
-          className="w-full h-full object-cover"
-          src={img}
-          alt={`Foto de ${name}`}
-          width="370"
-          height="370"
-          loading="lazy"
-        />
-      </a>
-      <div className="flex flex-col gap-2 uppercase">
-        <a href="#">
-          <h3 className="font-semibold text-[17px] text-black">{name}</h3>
-        </a>
-        <a href="#" className="text-[13px]">
-          {date}
-        </a>
-        <p className="normal-case">{comment}</p>
-        <button className="blog-content__btn__comment md:hidden">Reply</button>
-        <div className="mt-4">{children}</div>
-      </div>
-    </article>
-  );
-};
-
-export const SearchItem = () => {
-  return (
-    <article className="flex flex-col gap-4">
-      <h2 className="blog-content__aside__item-title">Search</h2>
-      <div className="flex items-center border border-slate-300 py-2 px-3 text-inherit">
-        <input
-          name="search"
-          id="search"
-          className="focus:outline-none w-11/12 bg-inherit"
-          type="text"
-          placeholder="Enter Keyword"
-        />
-        <a className="w-1/12" href="#">
-          <FaSearch />
-        </a>
-      </div>
-    </article>
-  );
-};
-
-const LatestPosts: FC<LatestPostsProps> = ({ title, date, img }) => {
-  return (
-    <article className="flex items-center gap-4 pb-4 border-b border-slate-300">
-      <img
-        className="w-16 h-16 rounded-full"
-        src={img}
-        alt={title}
-        width="370"
-        height="370"
-        loading="lazy"
-      />
-      <div className="uppercase text-sm">
-        <h3 className="font-bold text-black">{title}</h3>
-        <p>{date}</p>
-      </div>
-    </article>
-  );
-};
-
-export const CommentContentReview: FC = () => {
-  return (
-    <>
-      <CommentCard {...users[2]} />
-      <CommentCard {...users[1]} />
-    </>
-  );
-};
-
-const BlogContent = () => {
+function Content() {
   const { isVisible, handleClick } = useContext(BlogContext);
 
   return (
@@ -436,18 +249,18 @@ const BlogContent = () => {
                 132 Comments
               </h2>
               <div className="flex flex-col gap-4">
-                <CommentCard {...users[2]} />
-                <CommentCard {...users[1]}>
+                <CommentCard {...contentUsers[2]} />
+                <CommentCard {...contentUsers[1]}>
                   {usersReply2.map((reply) => (
                     <CommentCard key={reply.id} {...reply}></CommentCard>
                   ))}
                 </CommentCard>
-                <CommentCard {...users[0]}>
+                <CommentCard {...contentUsers[0]}>
                   {usersReply1.map((reply) => (
                     <CommentCard key={reply.id} {...reply}></CommentCard>
                   ))}
                 </CommentCard>
-                <CommentCard {...users[3]} />
+                <CommentCard {...contentUsers[3]} />
               </div>
             </article>
             <FormItem title="Leave a Reply" button="Submit" />
@@ -560,6 +373,6 @@ const BlogContent = () => {
       </article>
     </section>
   );
-};
+}
 
-export default BlogContent;
+export default Content;

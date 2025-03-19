@@ -67,6 +67,12 @@ export interface CarouselItemsProps {
   arr: CarouselItem[];
 }
 
+export interface LatestPostsProps {
+  title: string;
+  date: string;
+  img: string;
+}
+
 export interface TestimonialsCardProps {
   image: string;
   name: string;
@@ -170,3 +176,25 @@ export interface MainArticleProps {
   dateMonth: string;
   dateYear: number;
 }
+
+export interface CommentCardProps {
+  id: number;
+  img: string;
+  name: string;
+  date: string;
+  comment: string;
+  children?: ReactNode;
+}
+
+export interface AsideItemListProps {
+  title: string;
+  dataArr: string[];
+}
+
+export type UserItem = {
+  id: number;
+  name: string;
+  date: string;
+  comment: string;
+  img: string;
+};
