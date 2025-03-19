@@ -21,7 +21,7 @@ function Header() {
           />
           <span className="text-2xl">Literarium</span>
         </a>
-        <ul className="header__list-container gap-4 hidden md:flex text-lg">
+        <ul className="header__list-container gap-6 hidden md:flex text-lg">
           <li>
             <Link to="/">Home</Link>
           </li>
