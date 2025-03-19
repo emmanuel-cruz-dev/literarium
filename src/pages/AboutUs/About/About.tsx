@@ -1,15 +1,15 @@
-import PagesHero from "../../../components/routes/PagesHero";
+import PagesHero from "../../PagesHero";
 import Founders from "../Founders/Founders";
 import Media from "../Media/Media";
 import Mission from "../Mission/Mission";
 import Tabs from "../Tabs/Tabs";
-import AboutWelcome from "../Welcome/AboutWelcome";
+import Welcome from "../Welcome/Welcome";
 
 const About = () => {
   return (
     <>
       <PagesHero title="About" />
-      <AboutWelcome />
+      <Welcome />
       <Tabs />
       <Media />
       <Mission />

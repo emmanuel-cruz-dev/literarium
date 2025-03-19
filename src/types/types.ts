@@ -103,6 +103,10 @@ export interface PriceCardProps {
   magazines: number;
 }
 
+export interface PagesHeroProps {
+  title: string;
+}
+
 export interface Founder {
   id: number;
   name: string;

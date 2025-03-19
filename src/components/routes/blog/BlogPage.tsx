@@ -1,5 +1,5 @@
 import { useState } from "react";
-import PagesHero from "../PagesHero";
+import PagesHero from "../../../pages/PagesHero";
 import BlogContent from "./BlogContent";
 import { BlogContext } from "./BlogContext";
 

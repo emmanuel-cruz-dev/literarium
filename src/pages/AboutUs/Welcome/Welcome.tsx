@@ -1,6 +1,6 @@
 import PeopleImage from "../../../assets/images/about-people-img.webp";
 
-const AboutWelcome = () => {
+function Welcome() {
   return (
     <section className="about-welcome w-11/12 mx-auto py-12" id="about-welcome">
       <div className="flex flex-col gap-4 justify-center items-center text-center py-4">
@@ -57,6 +57,6 @@ const AboutWelcome = () => {
       </article>
     </section>
   );
-};
+}
 
-export default AboutWelcome;
+export default Welcome;

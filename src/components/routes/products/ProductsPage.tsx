@@ -1,4 +1,4 @@
-import PagesHero from "../PagesHero";
+import PagesHero from "../../../pages/PagesHero";
 import ProductsContent from "./ProductsContent";
 import { ProductsContext } from "./ProductsContext";
 import { useState } from "react";

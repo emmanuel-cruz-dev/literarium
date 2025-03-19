@@ -1,4 +1,4 @@
-import PagesHero from "../PagesHero";
+import PagesHero from "../../../pages/PagesHero";
 import ContactContent from "./ContactContent";
 
 const ContactPage = () => {

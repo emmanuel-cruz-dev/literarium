@@ -1,8 +1,5 @@
 import { FC } from "react";
-
-interface PagesHeroProps {
-  title: string;
-}
+import { PagesHeroProps } from "types/types";
 
 const PagesHero: FC<PagesHeroProps> = ({ title }) => {
   return (
