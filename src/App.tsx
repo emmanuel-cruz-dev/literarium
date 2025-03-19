@@ -30,9 +30,7 @@ const Newsletter = lazy(() => import("./components/ui/Newsletter"));
 const About = lazy(() => import("./pages/AboutUs/About/About"));
 const Blog = lazy(() => import("./pages/OurBlog/Blog/Blog"));
 const Products = lazy(() => import("./pages/Products/Products/Products"));
-const ContactPage = lazy(
-  () => import("./components/routes/contact/ContactPage")
-);
+const Contact = lazy(() => import("./pages/ContactUs/Contact/Contact"));
 
 const Home = () => {
   return (
@@ -76,7 +74,7 @@ function App() {
           />
           <Route
             path="/contact"
-            element={<SuspenseRoute element={ContactPage} />}
+            element={<SuspenseRoute element={Contact} />}
           />
         </Routes>
         <ScrollToTopButton />

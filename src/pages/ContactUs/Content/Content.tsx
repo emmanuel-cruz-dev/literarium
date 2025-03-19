@@ -3,7 +3,7 @@ import { MdEmail } from "react-icons/md";
 import { BiWorld } from "react-icons/bi";
 import FormItem from "../../../components/ui/FormItem";
 
-const ContactContent = () => {
+function Content() {
   return (
     <section className="contact-page w-11/12 mx-auto py-12" id="contact-page">
       <div className="flex flex-col gap-4 justify-center items-center text-center py-4">
@@ -64,6 +64,6 @@ const ContactContent = () => {
       </article>
     </section>
   );
-};
+}
 
-export default ContactContent;
+export default Content;
