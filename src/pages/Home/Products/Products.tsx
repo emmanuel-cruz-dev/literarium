@@ -1,4 +1,4 @@
-import CarouselItems from "../../../components/CarouselItems";
+import CarouselItems from "../../../components/ui/CarouselItems";
 import newProducts from "../../../data/newProducts.json";
 import bestSellers from "../../../data/bestSellers.json";
 import preOrder from "../../../data/preOrder.json";

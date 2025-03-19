@@ -48,6 +48,20 @@ export interface BookArticleItemsProps {
   cols: number;
 }
 
+export interface CarouselItem {
+  id: number;
+  title: string;
+  author: string;
+  img: string;
+  price: number;
+}
+
+export interface CarouselItemsProps {
+  articleClass?: string;
+  articleTitle: string;
+  arr: CarouselItem[];
+}
+
 export interface TestimonialsCardProps {
   image: string;
   name: string;
