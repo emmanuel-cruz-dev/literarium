@@ -1,7 +1,7 @@
 import blogPosts from "../../../data/blogPosts";
 import BlogCard from "./BlogCard";
 
-function Blog() {
+function BlogSection() {
   return (
     <section className="blog" id="blog">
       <article className="w-11/12 mx-auto py-12">
@@ -28,4 +28,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default BlogSection;

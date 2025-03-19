@@ -1,5 +1,5 @@
 import { FC, useContext } from "react";
-import { BlogContext } from "./BlogContext";
+import { BlogContext } from "../../../context/BlogContext";
 import {
   FaFacebookF,
   FaTwitter,
@@ -11,7 +11,6 @@ import {
   FaChevronRight,
   FaSearch,
 } from "react-icons/fa";
-import BlogMain from "./BlogMain";
 import BlogImg1 from "../../../assets/images/blog-detail-img.webp";
 import BlogUser1 from "../../../assets/images/blog-user1.webp";
 import FounderImg2 from "../../../assets/images/founder2.webp";
@@ -32,7 +31,9 @@ import TabImg8 from "../../../assets/images/tabs-img8.webp";
 import TabImg9 from "../../../assets/images/tabs-img9.webp";
 import TabImg10 from "../../../assets/images/tabs-img10.webp";
 import TabImg11 from "../../../assets/images/tabs-img11.webp";
-import { InformationList } from "../../ui/InformationList";
+import { InformationList } from "../../../components/ui/InformationList";
+import FormItem from "../../../components/ui/FormItem";
+import Main from "../Main/Main";
 
 interface CommentCardProps {
   id: number;
@@ -52,11 +53,6 @@ interface LatestPostsProps {
   title: string;
   date: string;
   img: string;
-}
-
-interface FormItemProps {
-  title: string;
-  button: string;
 }
 
 type UserItem = {
@@ -256,42 +252,6 @@ export const SearchItem = () => {
   );
 };
 
-export const FormItem: FC<FormItemProps> = ({ title, button }) => {
-  return (
-    <article className="flex flex-col gap-4 mb-12">
-      <h2 className="uppercase font-semibold text-2xl text-black">{title}</h2>
-      <form className="blog-content__form flex flex-col gap-6" action="">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Name"
-            autoComplete="off"
-          />
-          <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="Email"
-            autoComplete="off"
-          />
-          <input
-            type="text"
-            name="phone-number"
-            id="phone-number"
-            placeholder="Phone Number"
-          />
-        </div>
-        <textarea name="form__message" id="form__message"></textarea>
-        <button className="w-fit py-3 px-6 text-white text-lg background-accent__item uppercase font-bold hover:bg-black transition-colors duration-300 ease-in-out">
-          {button}
-        </button>
-      </form>
-    </article>
-  );
-};
-
 const LatestPosts: FC<LatestPostsProps> = ({ title, date, img }) => {
   return (
     <article className="flex items-center gap-4 pb-4 border-b border-slate-300">
@@ -326,7 +286,7 @@ const BlogContent = () => {
   return (
     <section className="blog-content mt-8" id="blog-content">
       <article className="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 py-6 text-neutral-600 font-light relative">
-        {!isVisible && <BlogMain />}
+        {!isVisible && <Main />}
         {isVisible && (
           <article className="lg:col-span-3 mx-auto flex flex-col gap-4">
             <div className="relative">

@@ -1,7 +1,7 @@
 import { BsTelephone } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { BiWorld } from "react-icons/bi";
-import { FormItem } from "../blog/BlogContent";
+import FormItem from "../../../components/ui/FormItem";
 
 const ContactContent = () => {
   return (

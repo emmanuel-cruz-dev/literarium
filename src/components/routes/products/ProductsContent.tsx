@@ -11,7 +11,10 @@ import ProductsImg9 from "../../../assets/images/products-img9.webp";
 import ArrivalsImg1 from "../../../assets/images/arrivals-img1.webp";
 import ArrivalsImg2 from "../../../assets/images/arrivals-img2.webp";
 import ArrivalsImg3 from "../../../assets/images/arrivals-img3.webp";
-import { SearchItem, AsideItemList } from "../blog/BlogContent";
+import {
+  SearchItem,
+  AsideItemList,
+} from "../../../pages/OurBlog/Content/BlogContent";
 import CarouselItems from "../../ui/CarouselItems";
 import preOrder from "../../../data/preOrder.json";
 import { useContext, FC } from "react";

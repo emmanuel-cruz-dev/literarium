@@ -40,6 +40,11 @@ export interface BookCardProps {
   rating: number;
 }
 
+export interface FormItemProps {
+  title: string;
+  button: string;
+}
+
 export interface StarsElementProps {
   num: number;
 }
@@ -153,4 +158,15 @@ export interface TabsItem {
 
 export interface TabsRenderProps {
   arr: TabsItem[];
+}
+
+export interface MainArticleProps {
+  blogImage: string;
+  title: string;
+  text: string;
+  userImage: string;
+  user: string;
+  dateNumber: number;
+  dateMonth: string;
+  dateYear: number;
 }

@@ -15,7 +15,7 @@ const TopSellers = lazy(() => import("./pages/Home/TopSellers/TopSellers"));
 const Footer = lazy(() => import("./components/layout/Footer/Footer"));
 const Products = lazy(() => import("./pages/Home/Products/Products"));
 const BookGuide = lazy(() => import("./pages/Home/BookGuide/BookGuide"));
-const Blog = lazy(() => import("./pages/Home/Blog/Blog"));
+const BlogSection = lazy(() => import("./pages/Home/BlogSection/BlogSection"));
 const Testimonials = lazy(
   () => import("./pages/Home/Testimonials/Testimonials")
 );
@@ -26,7 +26,7 @@ const PricePackage = lazy(
 const Newsletter = lazy(() => import("./components/ui/Newsletter"));
 
 const About = lazy(() => import("./pages/AboutUs/About/About"));
-const BlogPage = lazy(() => import("./components/routes/blog/BlogPage"));
+const Blog = lazy(() => import("./pages/OurBlog/Blog/Blog"));
 const ProductsPage = lazy(
   () => import("./components/routes/products/ProductsPage")
 );
@@ -44,7 +44,7 @@ const Home = () => {
       <Products />
       <Testimonials />
       <BookGuide />
-      <Blog />
+      <BlogSection />
       <Gift />
       <PricePackage />
       <Newsletter />
@@ -69,7 +69,7 @@ function App() {
         <Routes>
           <Route path="/" element={<SuspenseRoute element={Home} />} />
           <Route path="/about" element={<SuspenseRoute element={About} />} />
-          <Route path="/blog" element={<SuspenseRoute element={BlogPage} />} />
+          <Route path="/blog" element={<SuspenseRoute element={Blog} />} />
           <Route
             path="/products"
             element={<SuspenseRoute element={ProductsPage} />}
