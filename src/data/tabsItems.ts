@@ -1,30 +1,17 @@
-import { FC } from "react";
-import { useState } from "react";
-import TabImg1 from "../../../assets/images/tabs-img1.webp";
-import TabImg2 from "../../../assets/images/tabs-img2.webp";
-import TabImg3 from "../../../assets/images/tabs-img3.webp";
-import TabImg4 from "../../../assets/images/tabs-img4.webp";
-import TabImg5 from "../../../assets/images/tabs-img5.webp";
-import TabImg6 from "../../../assets/images/tabs-img6.webp";
-import TabImg7 from "../../../assets/images/tabs-img7.webp";
-import TabImg8 from "../../../assets/images/tabs-img8.webp";
-import TabImg9 from "../../../assets/images/tabs-img9.webp";
-import TabImg10 from "../../../assets/images/tabs-img10.webp";
-import TabImg11 from "../../../assets/images/tabs-img11.webp";
+import TabImg1 from "../assets/images/tabs-img1.webp";
+import TabImg2 from "../assets/images/tabs-img2.webp";
+import TabImg3 from "../assets/images/tabs-img3.webp";
+import TabImg4 from "../assets/images/tabs-img4.webp";
+import TabImg5 from "../assets/images/tabs-img5.webp";
+import TabImg6 from "../assets/images/tabs-img6.webp";
+import TabImg7 from "../assets/images/tabs-img7.webp";
+import TabImg8 from "../assets/images/tabs-img8.webp";
+import TabImg9 from "../assets/images/tabs-img9.webp";
+import TabImg10 from "../assets/images/tabs-img10.webp";
+import TabImg11 from "../assets/images/tabs-img11.webp";
+import { TabsItem } from "types/types";
 
-interface Item {
-  id: number;
-  title: string;
-  img: string;
-  text1: string;
-  text2: string;
-}
-
-interface TabsRenderProps {
-  arr: Item[];
-}
-
-const tabs: Item[] = [
+const tabsItems: TabsItem[] = [
   {
     id: 1,
     title: "Passionate About Every Page",
@@ -58,8 +45,6 @@ const tabs: Item[] = [
     img: TabImg4,
     text1:
       "Our bookstore has evolved into much more than a retail space; it's become a vibrant community hub where ideas are exchanged, friendships are formed, and cultural connections are strengthened. Through our regular events, book clubs, and author visits, we've created a space where literature comes alive through discussion and shared experiences. Our commitment to community extends beyond our physical walls, as we actively collaborate with local schools, libraries, and cultural organizations to promote literacy and learning. We believe that books have the power to bring people together, bridging differences and fostering understanding.",
-    text2:
-      "Our bookstore has evolved into much more than a retail space; it's become a vibrant community hub where ideas are exchanged, friendships are formed, and cultural connections are strengthened. Through our regular events, book clubs, and author visits, we've created a space where literature comes alive through discussion and shared experiences. Our commitment to community extends beyond our physical walls, as we actively collaborate with local schools, libraries, and cultural organizations to promote literacy and learning. We believe that books have the power to bring people together, bridging differences and fostering understanding.",
   },
   {
     id: 5,
@@ -68,7 +53,7 @@ const tabs: Item[] = [
     text1:
       "For nearly three decades, we've dedicated ourselves to the art of literary curation, carefully selecting each title that graces our shelves. Our longevity in the community isn't just about selling books; it's about understanding the evolving needs and interests of our readers while maintaining our commitment to quality and diversity in literature.",
     text2:
-      "We've witnessed the changing landscape of bookselling, from the rise of online retailers to the digital revolution, yet we've remained true to our core mission: providing personally selected, quality books to our community. Our experience has taught us that true curation requires more than just stocking bestsellers; it demands an understanding of both classic literature and contemporary trends, a keen eye for emerging talents, and the ability to recognize works that will resonate with our unique community.",
+      "We've witnessed the changing landscape of book selling, from the rise of online retailers to the digital revolution, yet we've remained true to our core mission: providing personally selected, quality books to our community. Our experience has taught us that true curation requires more than just stocking bestsellers; it demands an understanding of both classic literature and contemporary trends, a keen eye for emerging talents, and the ability to recognize works that will resonate with our unique community.",
   },
   {
     id: 6,
@@ -84,7 +69,7 @@ const tabs: Item[] = [
     title: "Knowledge Share With Care",
     img: TabImg7,
     text1:
-      "Our approach to bookselling is rooted in the belief that knowledge should be shared with enthusiasm and understanding. Each member of our team brings unique expertise and a genuine passion for helping others discover the perfect book. We invest significant time in staff training and development, ensuring that our booksellers are well-versed not only in literature but also in the art of listening and understanding customer needs. Our recommendations come from a place of genuine knowledge and experience, as we personally read and discuss many of the books we stock.",
+      "Our approach to book selling is rooted in the belief that knowledge should be shared with enthusiasm and understanding. Each member of our team brings unique expertise and a genuine passion for helping others discover the perfect book. We invest significant time in staff training and development, ensuring that our booksellers are well-versed not only in literature but also in the art of listening and understanding customer needs. Our recommendations come from a place of genuine knowledge and experience, as we personally read and discuss many of the books we stock.",
     text2:
       "We take pride in our ability to connect readers with books that might otherwise go undiscovered, sharing our insights while respecting individual preferences and interests. This careful balance of expertise and empathy defines our approach to sharing knowledge.",
   },
@@ -126,58 +111,4 @@ const tabs: Item[] = [
   },
 ];
 
-const TabsRender: FC<TabsRenderProps> = ({ arr }) => {
-  const [activeTab, setActiveTab] = useState(0);
-  const handleClick = (index: number) => {
-    setActiveTab(index - 1); // -1 porque el primer elemento es el index 0
-  };
-
-  return (
-    <article className="grid md:grid-cols-4 gap-4" key={activeTab}>
-      <div className="flex md:col-span-1 flex-col gap-4">
-        {arr.map((tab) => (
-          <button
-            className={`btn__accent-color__hover ${
-              activeTab === tab.id - 1 ? "active" : ""
-            } bg-neutral-200/40 text-white px-4 py-3 text-left`}
-            onClick={() => handleClick(tab.id)}
-            key={tab.id}
-          >
-            {tab.title}
-          </button>
-        ))}
-      </div>
-      <div className="md:col-span-3 flex flex-col gap-4 items-center">
-        <img
-          className="w-full"
-          src={arr[activeTab].img}
-          alt={`tab ${arr[activeTab].title}`}
-          width="573"
-          height="220"
-          loading="lazy"
-        />
-        <div className="flex flex-col gap-4">
-          <p>{arr[activeTab].text1}</p>
-          <p>{arr[activeTab].text2}</p>
-        </div>
-      </div>
-    </article>
-  );
-};
-
-const AboutTabs = () => {
-  return (
-    <section
-      className="about-tabs bg-gray-100 text-neutral-600"
-      id="about-tabs"
-    >
-      <article className="w-11/12 mx-auto py-12" id="main-cards">
-        <div className="grid grid-cols-1 gap-12 lg:gap-16 py-6 font-thin">
-          <TabsRender arr={tabs} />
-        </div>
-      </article>
-    </section>
-  );
-};
-
-export default AboutTabs;
+export default tabsItems;

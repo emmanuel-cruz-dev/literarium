@@ -138,3 +138,15 @@ export interface DetailsItemProps {
   title: string;
   text: string;
 }
+
+export interface TabsItem {
+  id: number;
+  title: string;
+  img: string;
+  text1: string;
+  text2?: string;
+}
+
+export interface TabsRenderProps {
+  arr: TabsItem[];
+}
