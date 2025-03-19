@@ -1,0 +1,54 @@
+/***************************************
+ *           Inicio: Gift              *
+ ***************************************/
+
+.gift__background-image {
+  position: relative;
+}
+
+.gift__background-image img {
+  position: absolute;
+  height: 470px;
+  width: 891px;
+  z-index: 100;
+  bottom: 0;
+  right: -22.5%;
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .gift__background-image img {
+    display: block;
+  }
+}
+
+.gift__title::after,
+.gift__title::before {
+  background-color: var(--white-color);
+}
+
+.gift__card-item {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.gift__card-item__arrow {
+  opacity: 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.gift__card-body:hover .gift__card-item {
+  background-color: var(--accent-color-dark);
+  border-top: 1px solid var(--white-color);
+  border-bottom: 1px solid var(--white-color);
+}
+
+.gift__card-body:hover .gift__card-item__arrow {
+  opacity: 1;
+  background-color: var(--accent-color-dark);
+}
+
+/***************************************
+ *             Fin: Gift               *
+ ***************************************/

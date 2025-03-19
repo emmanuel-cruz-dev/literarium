@@ -42,6 +42,7 @@ body {
   --accent-color-light: #c7ebfb;
   --accent-color: #2279b1;
   --accent-color-fade: #32b6f39e;
+  --accent-color-dark: #063b5e;
   --background-dark-color: #10121a;
   --background-dark-grey: #191d2b;
   --background-dark-fade: rgba(0, 0, 0, 0.2);
@@ -131,61 +132,6 @@ body {
 
 /***************************************
  *       Fin: Estilos Globales         *
- ***************************************/
-
-/***************************************
- *           Inicio: Gift              *
- ***************************************/
-
-.gift__background-image {
-  position: relative;
-}
-
-.gift__background-image img {
-  position: absolute;
-  height: 470px;
-  width: 891px;
-  z-index: 100;
-  bottom: 0;
-  right: -22.5%;
-  display: none;
-}
-
-@media screen and (min-width: 1024px) {
-  .gift__background-image img {
-    display: block;
-  }
-}
-
-.gift__title::after,
-.gift__title::before {
-  background-color: var(--white-color);
-}
-
-.gift__card-item {
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
-}
-
-.gift__card-item__arrow {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-.gift__card-body:hover .gift__card-item {
-  background-color: #47bdf4;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-}
-
-.gift__card-body:hover .gift__card-item__arrow {
-  opacity: 1;
-  background-color: #47bdf4;
-}
-
-/***************************************
- *             Fin: Gift               *
  ***************************************/
 
 /***************************************

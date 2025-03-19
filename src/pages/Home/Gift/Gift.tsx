@@ -1,6 +1,7 @@
 import giftCards from "../../../data/giftCards";
 import laptopImg1 from "../../../assets/images/laptop1.avif";
 import GiftCard from "./GiftCard";
+import "../../../styles/pages/Home/gift.css";
 
 function Gift() {
   return (
