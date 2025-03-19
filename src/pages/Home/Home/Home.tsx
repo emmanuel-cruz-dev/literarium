@@ -12,7 +12,7 @@ import Gift from "../Gift/Gift";
 import PricePackage from "../PricePackage/PricePackage";
 import Newsletter from "../../../components/ui/Newsletter";
 
-const Home = () => {
+function Home() {
   return (
     <Suspense fallback={<Loader />}>
       <Hero />
@@ -28,6 +28,6 @@ const Home = () => {
       <Newsletter />
     </Suspense>
   );
-};
+}
 
 export default Home;

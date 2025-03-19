@@ -9,16 +9,21 @@ const Blog = lazy(() => import("../pages/OurBlog/Blog/Blog"));
 const Products = lazy(() => import("../pages/Products/Products/Products"));
 const Contact = lazy(() => import("../pages/ContactUs/Contact/Contact"));
 
-const AppRoutes = () => (
-  <Suspense fallback={<Loader />}>
-    <Routes>
-      <Route path="/" element={<SuspenseRoute element={Home} />} />
-      <Route path="/about" element={<SuspenseRoute element={About} />} />
-      <Route path="/blog" element={<SuspenseRoute element={Blog} />} />
-      <Route path="/products" element={<SuspenseRoute element={Products} />} />
-      <Route path="/contact" element={<SuspenseRoute element={Contact} />} />
-    </Routes>
-  </Suspense>
-);
+function AppRoutes() {
+  return (
+    <Suspense fallback={<Loader />}>
+      <Routes>
+        <Route path="/" element={<SuspenseRoute element={Home} />} />
+        <Route path="/about" element={<SuspenseRoute element={About} />} />
+        <Route path="/blog" element={<SuspenseRoute element={Blog} />} />
+        <Route
+          path="/products"
+          element={<SuspenseRoute element={Products} />}
+        />
+        <Route path="/contact" element={<SuspenseRoute element={Contact} />} />
+      </Routes>
+    </Suspense>
+  );
+}
 
 export default AppRoutes;
