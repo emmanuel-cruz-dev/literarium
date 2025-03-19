@@ -1,8 +1,8 @@
-import { FC } from "react";
 import CardArticle from "./CardArticle";
 import { mainCardItems } from "../../../data/mainCardItems";
+import "../../../styles/pages/Home/mainCards.css";
 
-const MainCards: FC = () => {
+function MainCards() {
   return (
     <section className="main-cards w-11/12 mx-auto py-12" id="main-cards">
       <div className="flex flex-col gap-4 justify-center items-center text-center py-4">
@@ -25,6 +25,6 @@ const MainCards: FC = () => {
       </article>
     </section>
   );
-};
+}
 
 export default MainCards;

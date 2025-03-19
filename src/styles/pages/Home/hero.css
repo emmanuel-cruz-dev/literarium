@@ -23,7 +23,7 @@
   left: -16%;
   width: 5rem;
   height: 1.3px; /* Grosor de la línea */
-  background-color: white; /* Color de la línea */
+  background-color: var(--white-color); /* Color de la línea */
 }
 
 .title__double-lines::after {
@@ -34,15 +34,15 @@
   right: -16%;
   width: 5rem;
   height: 1.3px; /* Grosor de la línea */
-  background-color: white; /* Color de la línea */
+  background-color: var(--white-color); /* Color de la línea */
 }
 
 .title__double-lines::before {
-  box-shadow: 0 5px 0 white;
+  box-shadow: 0 5px 0 var(--white-color);
 }
 
 .title__double-lines::after {
-  box-shadow: 0 5px 0 white;
+  box-shadow: 0 5px 0 var(--white-color);
 }
 
 /***************************************

@@ -1,4 +1,5 @@
 import { BookArticleItems } from "../../../components/ui/BookArticleItems";
+import "../../../styles/pages/Home/topSellers.css";
 
 function TopSellers() {
   return (
