@@ -25,7 +25,7 @@ const PricePackage = lazy(
 );
 const Newsletter = lazy(() => import("./components/ui/Newsletter"));
 
-const About = lazy(() => import("./components/routes/about/About"));
+const About = lazy(() => import("./pages/AboutUs/About/About"));
 const BlogPage = lazy(() => import("./components/routes/blog/BlogPage"));
 const ProductsPage = lazy(
   () => import("./components/routes/products/ProductsPage")

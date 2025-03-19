@@ -1,4 +1,4 @@
-import CounterBanner from "../../layout/CounterBanner/CounterBanner";
+import CounterBanner from "../../../components/layout/CounterBanner/CounterBanner";
 import VideoImg from "../../../assets/images/video-bg2.webp";
 import { FaPlay } from "react-icons/fa";
 

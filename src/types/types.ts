@@ -102,3 +102,16 @@ export interface PriceCardProps {
   books: number;
   magazines: number;
 }
+
+export interface Founder {
+  id: number;
+  name: string;
+  title: string;
+  img: string;
+}
+
+export interface FounderCardProps {
+  name: string;
+  title: string;
+  img: string;
+}
