@@ -1,4 +1,6 @@
-const Newsletter = () => {
+import "../../styles/components/newsletter.css";
+
+function Newsletter() {
   return (
     <section className="newsletter background-accent__item" id="newsletter">
       <article className="flex flex-col gap-6 w-11/12 mx-auto py-12">
@@ -36,6 +38,6 @@ const Newsletter = () => {
       </article>
     </section>
   );
-};
+}
 
 export default Newsletter;

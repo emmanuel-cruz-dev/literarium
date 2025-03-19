@@ -2,6 +2,7 @@ import missionDetailsItems from "../../../data/missionDetailsItem";
 import missionItems from "../../../data/missionItems";
 import MissionRender from "./MissionRender";
 import DetailsItem from "./DetailsItem";
+import "../../../styles/pages/AboutUs/mission.css";
 
 function Mission() {
   return (

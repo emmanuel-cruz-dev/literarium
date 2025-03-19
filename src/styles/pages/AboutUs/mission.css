@@ -1,0 +1,63 @@
+/***************************************
+ *            Inicio: Mission          *
+ ***************************************/
+
+.about-mission summary {
+  border-bottom: 1px solid var(--background-dark-fade);
+  color: black;
+  font-size: 1.15em;
+  font-weight: 600;
+  padding-block: 0.5rem;
+  cursor: pointer;
+}
+
+.about-mission__accordion-title {
+  color: var(--black-color);
+  font-size: 1.1em;
+  font-weight: 700;
+  padding-block: 0.5rem;
+  cursor: pointer;
+}
+
+.about-mission__accordion-content {
+  border: 1px solid var(--background-dark-fade);
+  height: 0;
+  padding-inline: 1rem;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.about-mission__accordion-block.active-item .about-mission__accordion-content {
+  height: 18rem;
+  padding: 1rem;
+}
+
+.about-mission__accordion-block.active-item .decrement-symbol {
+  display: flex;
+}
+
+.about-mission__accordion-block.active-item .plus-symbol {
+  display: none;
+}
+
+.about-mission__title-btn {
+  color: var(--accent-color);
+  border-top: 4px solid var(--accent-color);
+}
+
+@media (min-width: 1024px) {
+  .about-mission__accordion-block.active-item
+    .about-mission__accordion-content {
+    height: 14rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about-mission__accordion-block.active-item
+    .about-mission__accordion-content {
+    height: 10rem;
+  }
+}
+/***************************************
+ *            Fin: Mission            *
+ ***************************************/

@@ -1,4 +1,5 @@
 import PeopleImage from "../../../assets/images/about-people-img.webp";
+import "../../../styles/pages/AboutUs/welcome.css";
 
 function Welcome() {
   return (

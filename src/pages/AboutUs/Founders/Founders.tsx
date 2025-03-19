@@ -1,5 +1,6 @@
 import founderMembers from "../../../data/founderMembers";
 import FounderCard from "./FounderCard";
+import "../../../styles/pages/AboutUs/founders.css";
 
 function Founders() {
   return (

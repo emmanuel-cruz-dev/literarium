@@ -2,6 +2,7 @@ import PagesHero from "../../PagesHero";
 import Content from "../Content/Content";
 import { BlogContext } from "../../../context/BlogContext";
 import useToggleVisibility from "../../../hooks/useToggleVisibility";
+import "../../../styles/pages/OurBlog/blog.css";
 
 function Blog() {
   const { isVisible, handleClick } = useToggleVisibility();

@@ -1,6 +1,7 @@
 import pricePlans from "../../../data/pricePlans";
 import laptopImg2 from "../../../assets/images/laptop2.avif";
 import PriceCard from "./PriceCard";
+import "../../../styles/pages/Home/pricePackage.css";
 
 function PricePackage() {
   return (
