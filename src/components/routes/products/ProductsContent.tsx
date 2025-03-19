@@ -11,13 +11,13 @@ import ProductsImg9 from "../../../assets/images/products-img9.webp";
 import ArrivalsImg1 from "../../../assets/images/arrivals-img1.webp";
 import ArrivalsImg2 from "../../../assets/images/arrivals-img2.webp";
 import ArrivalsImg3 from "../../../assets/images/arrivals-img3.webp";
-import { AsideItemList } from "../../../pages/OurBlog/Content/Content";
 import CarouselItems from "../../ui/CarouselItems";
 import preOrder from "../../../data/preOrder.json";
 import { useContext, FC } from "react";
 import ProductDetail from "./ProductDetail";
 import { ProductsContext } from "./ProductsContext";
 import SearchItem from "../../../components/ui/SearchItem";
+import AsideItemList from "../../../pages/OurBlog/Content/AsideItemList";
 
 interface ProductCardProps {
   id: number;

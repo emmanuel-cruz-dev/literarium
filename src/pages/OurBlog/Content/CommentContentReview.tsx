@@ -1,11 +1,14 @@
 import { FC } from "react";
 import CommentCard from "./CommentCard";
+import { contentUsers } from "data/contentUsers";
 
-export const CommentContentReview: FC = () => {
+const CommentContentReview: FC = () => {
   return (
     <>
-      <CommentCard {...users[2]} />
-      <CommentCard {...users[1]} />
+      <CommentCard {...contentUsers[2]} />
+      <CommentCard {...contentUsers[1]} />
     </>
   );
 };
+
+export default CommentContentReview;

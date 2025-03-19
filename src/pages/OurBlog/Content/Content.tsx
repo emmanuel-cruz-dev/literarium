@@ -13,19 +13,7 @@ import {
 import BlogImg1 from "../../../assets/images/blog-detail-img.webp";
 import BlogUser1 from "../../../assets/images/blog-user1.webp";
 import FounderImg2 from "../../../assets/images/founder2.webp";
-import CommentUser1 from "../../../assets/images/comment-user1.webp";
-import CommentUser2 from "../../../assets/images/comment-user2.webp";
-import CommentUser3 from "../../../assets/images/comment-user3.webp";
 
-import TabImg1 from "../../../assets/images/tabs-img1.webp";
-import TabImg3 from "../../../assets/images/tabs-img3.webp";
-import TabImg5 from "../../../assets/images/tabs-img5.webp";
-import TabImg6 from "../../../assets/images/tabs-img6.webp";
-import TabImg7 from "../../../assets/images/tabs-img7.webp";
-import TabImg8 from "../../../assets/images/tabs-img8.webp";
-import TabImg9 from "../../../assets/images/tabs-img9.webp";
-import TabImg10 from "../../../assets/images/tabs-img10.webp";
-import TabImg11 from "../../../assets/images/tabs-img11.webp";
 import FormItem from "../../../components/ui/FormItem";
 import Main from "../Main/Main";
 import SearchItem from "../../../components/ui/SearchItem";
@@ -37,61 +25,9 @@ import {
   usersReply1,
   usersReply2,
 } from "../../../data/contentUsers";
-
-const data1 = [
-  "Photoshop",
-  "Graphic Design",
-  "Mobile Development",
-  "Illustration",
-  "Video Editing",
-  "UX Design",
-  "3D Modeling",
-  "Animation Graphics",
-];
-
-const data2 = [
-  "Creative Workflow Tips",
-  "Breaking the Rules of Design",
-  "From Concept to Creation",
-  "Inspiration from the Masters",
-  "The Art of Minimalism",
-  "Building Better Portfolio",
-  "Color Psychology in Media",
-  "Mastering the Creative Process",
-];
-
-const posts = [
-  {
-    id: 1,
-    title: "The Power of Storytelling",
-    date: "07 January, 2025",
-    img: CommentUser1,
-  },
-  {
-    id: 2,
-    title: "Hidden Gems of Literature",
-    date: "30 December, 2024",
-    img: CommentUser2,
-  },
-  {
-    id: 3,
-    title: "From Literature to Life",
-    date: "25 December, 2024",
-    img: CommentUser3,
-  },
-];
-
-const instagramImages = [
-  TabImg1,
-  TabImg3,
-  TabImg5,
-  TabImg6,
-  TabImg7,
-  TabImg8,
-  TabImg9,
-  TabImg10,
-  TabImg11,
-];
+import { instagramImages } from "../../../data/instagramImages";
+import { data1, data2 } from "../../../data/contentListData";
+import { contentPosts } from "../../../data/contentPosts";
 
 function Content() {
   const { isVisible, handleClick } = useContext(BlogContext);
@@ -327,7 +263,7 @@ function Content() {
 
           <div className="flex flex-col gap-4">
             <h2 className="blog-content__aside__item-title">Latest Posts</h2>
-            {posts.map((post) => (
+            {contentPosts.map((post) => (
               <LatestPosts key={post.id} {...post} />
             ))}
           </div>
