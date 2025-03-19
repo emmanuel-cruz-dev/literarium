@@ -1,24 +1,9 @@
 import { FC } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import { DetailsItemProps } from "types/types";
+import { handleAccordionClick } from "../../../utils/handleAccordionClick";
 
 const DetailsItem: FC<DetailsItemProps> = ({ title, text, id }) => {
-  const handleClick = (index: number) => {
-    document
-      .querySelector(`.about-mission__accordion-block:nth-child(${1})`)
-      ?.classList.add("active-item");
-
-    document
-      .querySelectorAll(".about-mission__accordion-block")
-      .forEach((item) => {
-        item.classList.remove("active-item");
-      });
-
-    document
-      .querySelector(`.about-mission__accordion-block:nth-child(${index})`)
-      ?.classList.add("active-item");
-  };
-
   return (
     <div
       className={`${
@@ -27,7 +12,7 @@ const DetailsItem: FC<DetailsItemProps> = ({ title, text, id }) => {
       key={id}
     >
       <h2
-        onClick={() => handleClick(id)}
+        onClick={() => handleAccordionClick(id)}
         className="about-mission__accordion-title flex justify-between items-center gap-4"
       >
         {title}

@@ -1,12 +1,9 @@
-import { FC, useState } from "react";
+import useMissionRender from "../../../hooks/useMissionRender";
+import { FC } from "react";
 import { MissionRenderProps } from "types/types";
 
 const MissionRender: FC<MissionRenderProps> = ({ arr }) => {
-  const [active, setActive] = useState(1);
-
-  const handleClick = (index: number) => {
-    setActive(index);
-  };
+  const { active, handleClick } = useMissionRender(1);
 
   return (
     <article className="flex flex-col gap-4">
