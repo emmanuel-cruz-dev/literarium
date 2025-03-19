@@ -1,11 +1,9 @@
-import { FC, useState } from "react";
+import useActiveTab from "../../../hooks/useActiveTab";
+import { FC } from "react";
 import { TabsRenderProps } from "types/types";
 
 const TabsRender: FC<TabsRenderProps> = ({ arr }) => {
-  const [activeTab, setActiveTab] = useState(0);
-  const handleClick = (index: number) => {
-    setActiveTab(index - 1); // -1 porque el primer elemento es el index 0
-  };
+  const { activeTab, handleClick } = useActiveTab();
 
   return (
     <article className="grid md:grid-cols-4 gap-4" key={activeTab}>
