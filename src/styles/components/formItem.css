@@ -1,0 +1,10 @@
+.form-item input,
+.form-item textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  border: 1px solid var(--background-dark-fade);
+}
+
+.form-item textarea {
+  min-height: 16rem;
+}

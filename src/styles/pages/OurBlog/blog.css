@@ -208,17 +208,6 @@
   color: var(--white-color);
 }
 
-.blog-content__form input,
-.blog-content__form textarea {
-  padding: 0.5rem 1rem;
-  border-radius: 2px;
-  border: 1px solid var(--background-dark-fade);
-}
-
-.blog-content__form textarea {
-  min-height: 16rem;
-}
-
 .blog-content__aside__item-container ul li:hover {
   color: var(--white-color);
 }

@@ -102,7 +102,7 @@ function Footer() {
           </ul>
         </div>
       </article>
-      <article className="bg-neutral-900/60 px-4 py-8 lg:py-7 lg:px-6 mx-auto flex flex-col lg:flex-row gap-6 justify-between items-center text-center">
+      <article className="bg-neutral-900/60 px-4 py-8 lg:py-6 lg:px-12 mx-auto flex flex-col lg:flex-row gap-6 justify-between items-center text-center">
         <img
           className="max-w-60"
           src={CreditCards}

@@ -1,11 +1,12 @@
 import { FC } from "react";
 import { FormItemProps } from "types/types";
+import "../../styles/components/formItem.css";
 
 const FormItem: FC<FormItemProps> = ({ title, button }) => {
   return (
     <article className="flex flex-col gap-4 mb-12">
       <h2 className="uppercase font-semibold text-2xl text-black">{title}</h2>
-      <form className="blog-content__form flex flex-col gap-6" action="">
+      <form className="form-item flex flex-col gap-6" action="">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <input
             type="text"

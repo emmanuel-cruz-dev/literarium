@@ -9,7 +9,7 @@ function Header() {
 
   return (
     <header className="absolute top-0 left-0 right-0 text-white">
-      <nav className="flex justify-between items-center h-full px-4 md:px-8 lg:px-16">
+      <nav className="flex justify-between items-center h-full px-4 md:px-8 lg:px-12">
         <a href="/" className="flex items-center gap-2 py-6" title="Home">
           <img
             className="w-8"
