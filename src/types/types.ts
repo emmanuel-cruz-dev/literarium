@@ -115,3 +115,26 @@ export interface FounderCardProps {
   title: string;
   img: string;
 }
+
+export interface Item {
+  id: number;
+  title: string;
+  img: string;
+  text: string;
+}
+
+export interface DetailsItem {
+  id: number;
+  title: string;
+  text: string;
+}
+
+export interface MissionRenderProps {
+  arr: Item[];
+}
+
+export interface DetailsItemProps {
+  id: number;
+  title: string;
+  text: string;
+}

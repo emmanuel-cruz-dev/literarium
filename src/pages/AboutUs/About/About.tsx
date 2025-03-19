@@ -1,7 +1,7 @@
 import PagesHero from "../../../components/routes/PagesHero";
 import Founders from "../Founders/Founders";
 import Media from "../Media/Media";
-import AboutMission from "../Mission/AboutMission";
+import Mission from "../Mission/Mission";
 import AboutTabs from "../Tabs/AboutTabs";
 import AboutWelcome from "../Welcome/AboutWelcome";
 
@@ -12,7 +12,7 @@ const About = () => {
       <AboutWelcome />
       <AboutTabs />
       <Media />
-      <AboutMission />
+      <Mission />
       <Founders />
     </>
   );
