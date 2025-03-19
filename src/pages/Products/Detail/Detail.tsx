@@ -1,12 +1,12 @@
 import { FC } from "react";
 import BookDetail from "../../../assets/images/book-detail.webp";
-import StarsElement from "../../ui/StarsElement";
-import { BookArticleItems } from "../../ui/BookArticleItems";
-import ProductTabs from "./ProductTabs";
-import { ProductsContext } from "./ProductsContext";
+import StarsElement from "../../../components/ui/StarsElement";
+import { BookArticleItems } from "../../../components/ui/BookArticleItems";
+import ProductTabs from "../Tabs/ProductTabs";
+import { ProductsContext } from "../../../context/ProductsContext";
 import { useContext } from "react";
 
-const ProductDetail: FC = () => {
+const Detail: FC = () => {
   const { handleClick } = useContext(ProductsContext);
 
   return (
@@ -82,4 +82,4 @@ const ProductDetail: FC = () => {
   );
 };
 
-export default ProductDetail;
+export default Detail;

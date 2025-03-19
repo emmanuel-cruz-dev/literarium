@@ -1,5 +1,5 @@
 import { FC, useState } from "react";
-import CommentContentReview from "../../../pages/OurBlog/Content/Content";
+import CommentContentReview from "../../OurBlog/Content/CommentContentReview";
 
 const tags = [
   "Fiction",

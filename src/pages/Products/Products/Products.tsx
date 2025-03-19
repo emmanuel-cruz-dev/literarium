@@ -1,9 +1,9 @@
-import PagesHero from "../../../pages/PagesHero";
-import ProductsContent from "./ProductsContent";
-import { ProductsContext } from "./ProductsContext";
+import PagesHero from "../../PagesHero";
+import Content from "../Content/Content";
+import { ProductsContext } from "../../../context/ProductsContext";
 import { useState } from "react";
 
-const ProductsPage = () => {
+function Products() {
   const [isVisible, setVisible] = useState(false);
 
   const handleClick = () => {
@@ -18,10 +18,10 @@ const ProductsPage = () => {
     <>
       <ProductsContext.Provider value={{ isVisible, handleClick }}>
         <PagesHero title="Products" />
-        <ProductsContent />
+        <Content />
       </ProductsContext.Provider>
     </>
   );
-};
+}
 
-export default ProductsPage;
+export default Products;

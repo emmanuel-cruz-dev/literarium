@@ -13,7 +13,9 @@ const ScrollToTopButton = lazy(
 );
 const TopSellers = lazy(() => import("./pages/Home/TopSellers/TopSellers"));
 const Footer = lazy(() => import("./components/layout/Footer/Footer"));
-const Products = lazy(() => import("./pages/Home/Products/Products"));
+const ProductsSection = lazy(
+  () => import("./pages/Home/ProductsSection/ProductsSection")
+);
 const BookGuide = lazy(() => import("./pages/Home/BookGuide/BookGuide"));
 const BlogSection = lazy(() => import("./pages/Home/BlogSection/BlogSection"));
 const Testimonials = lazy(
@@ -27,9 +29,7 @@ const Newsletter = lazy(() => import("./components/ui/Newsletter"));
 
 const About = lazy(() => import("./pages/AboutUs/About/About"));
 const Blog = lazy(() => import("./pages/OurBlog/Blog/Blog"));
-const ProductsPage = lazy(
-  () => import("./components/routes/products/ProductsPage")
-);
+const Products = lazy(() => import("./pages/Products/Products/Products"));
 const ContactPage = lazy(
   () => import("./components/routes/contact/ContactPage")
 );
@@ -41,7 +41,7 @@ const Home = () => {
       <Banner />
       <MainCards />
       <TopSellers />
-      <Products />
+      <ProductsSection />
       <Testimonials />
       <BookGuide />
       <BlogSection />
@@ -72,7 +72,7 @@ function App() {
           <Route path="/blog" element={<SuspenseRoute element={Blog} />} />
           <Route
             path="/products"
-            element={<SuspenseRoute element={ProductsPage} />}
+            element={<SuspenseRoute element={Products} />}
           />
           <Route
             path="/contact"

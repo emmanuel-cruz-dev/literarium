@@ -3,7 +3,7 @@ import newProducts from "../../../data/newProducts.json";
 import bestSellers from "../../../data/bestSellers.json";
 import preOrder from "../../../data/preOrder.json";
 
-function Products() {
+function ProductsSection() {
   return (
     <section className="products w-full" id="products">
       <article className="w-11/12 mx-auto py-20">
@@ -27,4 +27,4 @@ function Products() {
   );
 }
 
-export default Products;
+export default ProductsSection;

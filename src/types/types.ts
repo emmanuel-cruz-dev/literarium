@@ -198,3 +198,12 @@ export type UserItem = {
   comment: string;
   img: string;
 };
+
+export interface ProductCardProps {
+  id: number;
+  img: string;
+  title: string;
+  text: string;
+  price: number;
+  sales?: boolean;
+}
