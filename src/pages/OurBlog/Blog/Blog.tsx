@@ -1,10 +1,10 @@
 import PagesHero from "../../PagesHero";
 import Content from "../Content/Content";
 import { BlogContext } from "../../../context/BlogContext";
-import useBlog from "../../../hooks/useBlog";
+import useToggleVisibility from "../../../hooks/useToggleVisibility";
 
 function Blog() {
-  const { isVisible, handleClick } = useBlog();
+  const { isVisible, handleClick } = useToggleVisibility();
 
   return (
     <>

@@ -1,18 +1,10 @@
 import PagesHero from "../../PagesHero";
 import Content from "../Content/Content";
 import { ProductsContext } from "../../../context/ProductsContext";
-import { useState } from "react";
+import useToggleVisibility from "../../../hooks/useToggleVisibility";
 
 function Products() {
-  const [isVisible, setVisible] = useState(false);
-
-  const handleClick = () => {
-    setVisible(!isVisible);
-    window.scrollTo({
-      top: 450,
-      behavior: "smooth",
-    });
-  };
+  const { isVisible, handleClick } = useToggleVisibility();
 
   return (
     <>

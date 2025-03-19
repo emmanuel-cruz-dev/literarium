@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const useBlog = () => {
+const useToggleVisibility = () => {
   const [isVisible, setVisible] = useState(false);
 
   const handleClick = () => {
@@ -13,4 +13,4 @@ const useBlog = () => {
   return { isVisible, handleClick };
 };
 
-export default useBlog;
+export default useToggleVisibility;

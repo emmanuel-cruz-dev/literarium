@@ -1,4 +1,3 @@
-import { FC } from "react";
 import BookDetail from "../../../assets/images/book-detail.webp";
 import StarsElement from "../../../components/ui/StarsElement";
 import { BookArticleItems } from "../../../components/ui/BookArticleItems";
@@ -6,7 +5,7 @@ import ProductTabs from "../Tabs/ProductTabs";
 import { ProductsContext } from "../../../context/ProductsContext";
 import { useContext } from "react";
 
-const Detail: FC = () => {
+function Detail() {
   const { handleClick } = useContext(ProductsContext);
 
   return (
@@ -80,6 +79,6 @@ const Detail: FC = () => {
       </article>
     </section>
   );
-};
+}
 
 export default Detail;
