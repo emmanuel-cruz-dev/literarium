@@ -1,10 +1,8 @@
+import { FC } from "react";
 import { MdStarOutline, MdStar } from "react-icons/md";
+import { StarsElementProps } from "../../types/types";
 
-interface StarsElementProps {
-  num: number;
-}
-
-const StarsElement: React.FC<StarsElementProps> = ({ num }) => {
+const StarsElement: FC<StarsElementProps> = ({ num }) => {
   const totalStars: number = 5;
 
   // Crea un array dinámico para representar las estrellas

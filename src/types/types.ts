@@ -40,6 +40,10 @@ export interface BookCardProps {
   rating: number;
 }
 
+export interface StarsElementProps {
+  num: number;
+}
+
 export interface BookArticleItemsProps {
   cols: number;
 }

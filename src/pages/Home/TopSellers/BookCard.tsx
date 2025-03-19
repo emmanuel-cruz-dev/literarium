@@ -1,4 +1,4 @@
-import StarsElement from "../../../components/StarsElement";
+import StarsElement from "../../../components/ui/StarsElement";
 import { FC } from "react";
 import { BookCardProps } from "types/types";
 

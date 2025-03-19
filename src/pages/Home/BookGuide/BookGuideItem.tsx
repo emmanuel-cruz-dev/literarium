@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { BookGuideProps } from "../../../types/types";
-import StarsElement from "../../../components/StarsElement";
+import StarsElement from "../../../components/ui/StarsElement";
 
 const BookGuideItem: FC<BookGuideProps> = ({
   title,

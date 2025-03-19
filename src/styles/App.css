@@ -16,8 +16,13 @@
   /* border: 1px solid red; */
 }
 
-h1, h2, h3, h4, h5, h6{
-  font-family: 'Roboto', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -316,7 +321,7 @@ body {
  *         Inicio: Top Sellers         *
  ***************************************/
 
-.top-sellers{
+.top-sellers {
   content-visibility: auto;
 }
 
@@ -366,7 +371,7 @@ body {
  *           Inicio: Products          *
  ***************************************/
 
-.products{
+.products {
   content-visibility: auto;
 }
 
@@ -427,7 +432,7 @@ body {
  *         Inicio: Book Guide          *
  ***************************************/
 
-.book-guide{
+.book-guide {
   content-visibility: auto;
 }
 
@@ -512,7 +517,7 @@ body {
  ***************************************/
 
 /***************************************
- *        Inicio: Testimonies          *
+ *        Inicio: Testimonials          *
  ***************************************/
 
 .testimonies {
@@ -539,6 +544,11 @@ body {
   color: var(--accent-color); /* Color de las flechas */
   font-weight: 900;
   transition: transform 0.3s ease;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 2rem;
 }
 
 /* Hover para dar efecto */
@@ -577,7 +587,7 @@ body {
 }
 
 .gift__background-image img {
-  position:absolute;
+  position: absolute;
   height: 470px;
   width: 891px;
   z-index: 100;
@@ -763,7 +773,7 @@ body {
  *         Inicio: Footer              *
  ***************************************/
 
-.footer{
+.footer {
   content-visibility: auto;
 }
 

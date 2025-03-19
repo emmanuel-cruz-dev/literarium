@@ -13,7 +13,7 @@ const ScrollToTopButton = lazy(
 );
 const TopSellers = lazy(() => import("./pages/Home/TopSellers/TopSellers"));
 const Footer = lazy(() => import("./components/layout/Footer/Footer"));
-const Products = lazy(() => import("./components/Products"));
+const Products = lazy(() => import("./pages/Home/Products/Products"));
 const BookGuide = lazy(() => import("./pages/Home/BookGuide/BookGuide"));
 const Blog = lazy(() => import("./pages/Home/Blog/Blog"));
 const Testimonials = lazy(

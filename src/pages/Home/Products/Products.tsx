@@ -1,7 +1,7 @@
-import CarouselItems from "./CarouselItems";
-import newProducts from "../data/newProducts.json";
-import bestSellers from "../data/bestSellers.json";
-import preOrder from "../data/preOrder.json";
+import CarouselItems from "../../../components/CarouselItems";
+import newProducts from "../../../data/newProducts.json";
+import bestSellers from "../../../data/bestSellers.json";
+import preOrder from "../../../data/preOrder.json";
 
 function Products() {
   return (
