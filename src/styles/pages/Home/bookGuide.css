@@ -1,0 +1,33 @@
+/***************************************
+ *         Inicio: Book Guide          *
+ ***************************************/
+
+.book-guide {
+  content-visibility: auto;
+}
+
+.book-guide__btn {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.book-guide__plus-item {
+  position: absolute;
+  background-color: var(--accent-color-fade);
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  color: var(--white-color);
+  font-weight: 800;
+  font-size: 3.5rem;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/***************************************
+ *          Fin: Book Guide            *
+ ***************************************/

@@ -1,0 +1,53 @@
+/***************************************
+ *           Inicio: Blog              *
+ ***************************************/
+
+.blog {
+  content-visibility: auto;
+}
+
+.blog__card-title {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.blog__card-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 1.75rem;
+  height: 0.5px;
+  background-color: var(--accent-color);
+}
+
+.blog__card-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 1.75rem;
+  height: 0.5px;
+  background-color: var(--accent-color);
+}
+
+.blog__card-article:hover .blog__card-article__date {
+  left: 0;
+}
+
+.blog__card-anchor {
+  width: fit-content;
+  transition: color 0.3s ease-in-out, gap 0.3s ease-in-out;
+}
+
+.blog__card-anchor:hover {
+  color: var(--accent-color);
+  gap: 1rem;
+}
+
+/***************************************
+ *             Fin: Blog               *
+ ***************************************/

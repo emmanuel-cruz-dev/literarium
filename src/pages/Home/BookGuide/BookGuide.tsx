@@ -2,6 +2,7 @@ import bookGuideItems from "../../../data/bookGuideItems";
 import bookGuideCounterItems from "../../../data/bookGuideCounterItems";
 import CounterBanner from "../../../components/layout/CounterBanner/CounterBanner";
 import BookGuideItem from "./BookGuideItem";
+import "../../../styles/pages/Home/bookGuide.css";
 
 function BookGuide() {
   return (

@@ -1,5 +1,6 @@
 import blogPosts from "../../../data/blogPosts";
 import BlogCard from "./BlogCard";
+import "../../../styles/pages/Home/blogSection.css";
 
 function BlogSection() {
   return (
