@@ -1,0 +1,50 @@
+/***************************************
+ *            Inicio: Hero             *
+ ***************************************/
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../assets/images/hero-banner.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.title__double-lines {
+  position: relative;
+}
+
+.title__double-lines::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -16%;
+  width: 5rem;
+  height: 1.3px; /* Grosor de la línea */
+  background-color: white; /* Color de la línea */
+}
+
+.title__double-lines::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -16%;
+  width: 5rem;
+  height: 1.3px; /* Grosor de la línea */
+  background-color: white; /* Color de la línea */
+}
+
+.title__double-lines::before {
+  box-shadow: 0 5px 0 white;
+}
+
+.title__double-lines::after {
+  box-shadow: 0 5px 0 white;
+}
+
+/***************************************
+ *             Fin: Hero               *
+ ***************************************/

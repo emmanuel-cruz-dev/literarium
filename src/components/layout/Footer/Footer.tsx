@@ -2,6 +2,7 @@ import { InformationList } from "../../ui/InformationList";
 import CreditCards from "../../../assets/images/credit-cards.avif";
 import { FaTags, FaPhoneAlt, FaEnvelope, FaTwitter } from "react-icons/fa";
 import { listData } from "../../../data/listData";
+import "../../../styles/components/layout.css";
 
 function Footer() {
   return (

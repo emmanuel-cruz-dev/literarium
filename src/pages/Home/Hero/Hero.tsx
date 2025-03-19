@@ -1,4 +1,5 @@
 import { FaSearch } from "react-icons/fa";
+import "../../../styles/pages/Home/hero.css";
 
 function Hero() {
   return (

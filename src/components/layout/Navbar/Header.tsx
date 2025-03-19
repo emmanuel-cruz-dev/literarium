@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Logo from "../../../assets/icons/literarium-icono.png";
 import { HiMenu, HiX } from "react-icons/hi";
 import useMenu from "../../../hooks/useMenu";
+import "../../../styles/components/layout.css";
 
 function Header() {
   const { menu, toggleMenu } = useMenu();
