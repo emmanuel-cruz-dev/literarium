@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Navigation, Autoplay, Pagination } from "swiper/modules";
 import TestimonialsCard from "./TestimonialsCard";
 import testimonialsArr from "../../../data/testimonialsArr";
+import "../../../styles/pages/Home/testimonials.css";
 
 function Testimonials() {
   return (

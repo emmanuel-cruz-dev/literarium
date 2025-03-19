@@ -222,68 +222,6 @@ body {
  ***************************************/
 
 /***************************************
- *        Inicio: Testimonials          *
- ***************************************/
-
-.testimonies {
-  /* content-visibility: auto; */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../assets/images/testimonials-bg.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100vw;
-}
-
-.testimonies__card-container {
-  width: 10rem;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 5px solid var(--accent-color);
-}
-
-/* Personalizar las flechas */
-.swiper-button-prev,
-.swiper-button-next {
-  opacity: 0.8;
-  color: var(--accent-color); /* Color de las flechas */
-  font-weight: 900;
-  transition: transform 0.3s ease;
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  font-size: 2rem;
-}
-
-/* Hover para dar efecto */
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  transform: scale(1.05); /* Agranda las flechas al pasar el cursor */
-  opacity: 1;
-}
-
-/* Personalizar puntos de paginación */
-.swiper-pagination-bullet {
-  background: var(--white-color);
-  width: 12px; /* Ancho */
-  height: 12px; /* Alto */
-  opacity: 0.6; /* Opacidad inicial */
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-/* Punto activo */
-.swiper-pagination-bullet-active {
-  background: var(--accent-color); /* Color del punto activo */
-  transform: scale(1.1); /* Tamaño más grande */
-  opacity: 1; /* Totalmente visible */
-}
-
-/***************************************
- *          Fin: Testimonies           *
- ***************************************/
-
-/***************************************
  *           Inicio: Gift              *
  ***************************************/
 
