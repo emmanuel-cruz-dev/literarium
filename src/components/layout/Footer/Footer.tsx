@@ -111,7 +111,7 @@ function Footer() {
           height="139"
           loading="lazy"
         />
-        <div className="flex flex-col justify-center items-center">
+        <div className=" flex flex-col justify-center items-center">
           <span>
             Crafted by{" "}
             <a
