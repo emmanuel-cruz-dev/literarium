@@ -1,8 +1,8 @@
 import Img1 from "../assets/images/testimonials-img1.webp";
 import Img2 from "../assets/images/testimonials-img2.webp";
-import Img3 from "../assets/images/testimonials-img3.jpg";
+import Img3 from "../assets/images/testimonials-img3.webp";
 import Img4 from "../assets/images/testimonials-img4.webp";
-import Img5 from "../assets/images/testimonials-img5.jpg";
+import Img5 from "../assets/images/testimonials-img5.webp";
 
 const testimonialsArr = [
   {
