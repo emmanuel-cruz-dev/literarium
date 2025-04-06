@@ -1,6 +1,8 @@
 import Img1 from "../assets/images/testimonials-img1.webp";
 import Img2 from "../assets/images/testimonials-img2.webp";
-import Img3 from "../assets/images/testimonials-img3.webp";
+import Img3 from "../assets/images/testimonials-img3.jpg";
+import Img4 from "../assets/images/testimonials-img4.webp";
+import Img5 from "../assets/images/testimonials-img5.jpg";
 
 const testimonialsArr = [
   {
@@ -22,10 +24,26 @@ const testimonialsArr = [
   {
     id: 3,
     image: Img3,
+    name: "Romello Morris",
+    occupation: "History Professor",
+    description:
+      "An exceptional selection of titles and outstanding customer service. I always find something new and inspiring with each visit.",
+  },
+  {
+    id: 4,
+    image: Img4,
     name: "Anna Hawke",
     occupation: "Marketing Manager",
     description:
       "Thank you for your support over the years! Every interaction I've had with your team has been positive and seamless. I would gladly recommend you to my friends.",
+  },
+  {
+    id: 5,
+    image: Img5,
+    name: "James Thompson",
+    occupation: "Graphic Designer",
+    description:
+      "The Book Library is my go-to place for creative inspiration. Great prices, fast delivery, and a beautifully curated collection.",
   },
 ];
 
