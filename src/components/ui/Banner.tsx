@@ -4,7 +4,7 @@ function Banner() {
       className="banner flex flex-col gap-4 xl:flex-row items-center justify-between text-center lg:text-left py-12 px-3 lg:px-16 bg-gray-800 text-white"
       id="banner"
     >
-      <div className="flex flex-col gap-1">
+      <header className="flex flex-col gap-1">
         <h2 className="uppercase font-bold text-xl lg:text-[1.65rem]">
           The World's Largest Online Bookstore
         </h2>
@@ -12,8 +12,8 @@ function Banner() {
           Easily find available eBooks in our collection. Explore a wide variety
           of titles with just a click.
         </p>
-      </div>
-      <div className="flex gap-4 uppercase font-semibold [&>a]:py-3 [&>a]:px-4">
+      </header>
+      <footer className="flex gap-4 uppercase font-semibold [&>a]:py-3 [&>a]:px-4">
         <a
           href="#"
           className="bg-gray-600 hover:bg-white hover:text-gray-900 transition-colors duration-300 ease-in-out"
@@ -26,7 +26,7 @@ function Banner() {
         >
           Buy Now
         </a>
-      </div>
+      </footer>
     </article>
   );
 }
