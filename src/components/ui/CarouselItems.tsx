@@ -50,7 +50,7 @@ const CarouselItems: FC<CarouselItemsProps> = ({
           delay: 5000,
           disableOnInteraction: false,
         }}
-        className="w-full lg:w-80 xl:w-full h-[400px]" // Clases de Tailwind
+        className="w-full lg:w-80 xl:w-full h-[400px]"
       >
         {arr.map((item) => (
           <SwiperSlide key={item.id}>

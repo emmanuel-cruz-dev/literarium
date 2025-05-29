@@ -5,7 +5,6 @@ import { StarsElementProps } from "../../types/types";
 const StarsElement: FC<StarsElementProps> = ({ num }) => {
   const totalStars: number = 5;
 
-  // Crea un array dinámico para representar las estrellas
   const stars: JSX.Element[] = Array.from({ length: totalStars }, (_, index) =>
     index < num ? (
       <MdStar key={index} color="#ffc107" />
