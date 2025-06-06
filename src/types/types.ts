@@ -207,3 +207,7 @@ export interface ProductCardProps {
   price: number;
   sales?: boolean;
 }
+
+export interface TagItemProps {
+  arr: string[];
+}
