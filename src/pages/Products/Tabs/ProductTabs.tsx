@@ -1,23 +1,7 @@
-import { FC, useState } from "react";
+import { useState } from "react";
 import CommentContentReview from "../../OurBlog/Content/CommentContentReview";
-import { tags } from "constants/constants";
-import { TagItemProps } from "types/types";
-
-const TagItem: FC<TagItemProps> = ({ arr }) => {
-  return (
-    <div className="flex gap-2 flex-wrap">
-      {arr.map((item, index) => (
-        <a
-          href="#"
-          className="border border-slate-300 py-2 px-3 uppercase font-semibold text-sm hover:bg-neutral-600 hover:text-white transition-colors duration-300 ease-in-out"
-          key={index}
-        >
-          {item}
-        </a>
-      ))}
-    </div>
-  );
-};
+import { tags } from "../../../constants/constants";
+import TagItem from "./TagItem";
 
 const ProductTabs = () => {
   const [active, setActive] = useState<number | null>(1);

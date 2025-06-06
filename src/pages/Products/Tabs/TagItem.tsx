@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { TagItemProps } from "types/types";
+import { TagItemProps } from "../../../types/types";
 
 const TagItem: FC<TagItemProps> = ({ arr }) => {
   return (
