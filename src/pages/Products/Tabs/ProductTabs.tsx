@@ -1,50 +1,7 @@
 import { FC, useState } from "react";
 import CommentContentReview from "../../OurBlog/Content/CommentContentReview";
-
-const tags = [
-  "Fiction",
-  "Non-fiction",
-  "Fantasy",
-  "Science fiction",
-  "Romance",
-  "Mystery",
-  "Suspense",
-  "Thriller",
-  "History",
-  "Biography",
-  "Autobiography",
-  "Essay",
-  "Classics",
-  "Childrens",
-  "Young adult",
-  "Drama",
-  "Horror",
-  "Poetry",
-  "Adventure",
-  "Contemporary",
-  "Philosophy",
-  "Psychology",
-  "Self-help",
-  "Economy",
-  "Personal development",
-  "Technology",
-  "Science",
-  "Politics",
-  "Art",
-  "Graphic design",
-  "Cooking",
-  "Travel",
-  "Photography",
-  "Crafts",
-  "Comics",
-  "Manga",
-  "Graphic novel",
-  "E-books",
-];
-
-interface TagItemProps {
-  arr: string[];
-}
+import { tags } from "constants/constants";
+import { TagItemProps } from "types/types";
 
 const TagItem: FC<TagItemProps> = ({ arr }) => {
   return (
