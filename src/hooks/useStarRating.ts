@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 const useStarRating = () => {
-  const [hoveredStar, setHoveredStar] = useState<number | null>(null); // Estado para la estrella en hover
-  const [selectedRating, setSelectedRating] = useState(0); // Estado para la calificación seleccionada
+  const [hoveredStar, setHoveredStar] = useState<number | null>(null);
+  const [selectedRating, setSelectedRating] = useState(0);
 
   const handleMouseEnter = (star: number) => {
     setHoveredStar(star);
