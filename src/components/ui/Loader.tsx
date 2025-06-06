@@ -1,3 +1,4 @@
+import { colorClasses, sizeClasses } from "../../constants/constants";
 import { FC } from "react";
 import { LoaderProps } from "types/types";
 
@@ -6,18 +7,6 @@ const Loader: FC<LoaderProps> = ({
   color = "primary",
   className = "",
 }) => {
-  const sizeClasses = {
-    sm: "w-6 h-6",
-    md: "w-8 h-8",
-    lg: "w-12 h-12",
-  };
-
-  const colorClasses = {
-    primary: "text-blue-600",
-    secondary: "text-gray-600",
-    white: "text-white",
-  };
-
   return (
     <article
       className={`w-screen h-screen bg-cyan-400 flex items-center justify-center ${className}`}
